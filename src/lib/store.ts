@@ -64,7 +64,7 @@ export const useGame = create<State>()(
           return { completed, points, score: Math.max(0, s.score - back), streak: 0 };
         }),
       complete: (sceneId) =>
-        set((s) => (sceneId in s.completed ? s : { completed: { ...s.completed, [sceneId]: true } })),
+        set((s) => (sceneId in s.completed ? s : { completed: { ...s.completed, [sceneId]: false } })),
       reset: () => set(initial),
     }),
     { name: "river-story-v1" },

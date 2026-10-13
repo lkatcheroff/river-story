@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { eras, scenesForEra } from "./lib/content";
-import { isEraComplete, isEraUnlocked } from "./lib/game";
+import { eraStats, isEraComplete, isEraUnlocked } from "./lib/game";
 import { useGame } from "./lib/store";
 import type { Era, Scene } from "./lib/schema";
 import { ComicScene } from "./components/ComicScene";
@@ -164,16 +164,26 @@ function SceneView({ era, scenes, index, go }: { era: Era; scenes: Scene[]; inde
 }
 
 function Summary({ era, go }: { era: Era; go: Go }) {
-  const { completed, score } = useGame();
+  const { completed, points, score } = useGame();
   const scenes = scenesForEra(era.id);
-  const hits = scenes.filter((s) => completed[s.id]).length;
-  const text = `Completé "${era.name}" en River Story: ${hits}/${scenes.length} aciertos, ${score} puntos. ¡Vamos River!`;
+  const st = eraStats(scenes.map((s) => s.id), completed, points ?? {});
+  const text = `Terminé "${era.name}" en River Story: ${st.solved}/${st.total} escenas resueltas (${st.firstTry} a la primera) y ${st.points} puntos en esta época. ¡Vamos River!`;
   const [copied, setCopied] = useState(false);
   return (
     <Shell onBack={() => go.back({ name: "map" })}>
       <h2 className="font-display text-5xl">{era.name}</h2>
-      <p className="text-xl">{hits}/{scenes.length} aciertos · {score} pts</p>
-      <ul className="list-disc pl-5">{scenes.map((s) => <li key={s.id}>{completed[s.id] ? "⭐" : "·"} {s.title}</li>)}</ul>
+      <div className="comic-box flex flex-col gap-0.5">
+        <p className="text-lg font-extrabold">{st.solved} de {st.total} escenas resueltas</p>
+        <p>⭐ {st.firstTry} a la primera (sin pistas ni errores)</p>
+        {st.quizAnswered > 0 && <p>❓ {st.quizHits} de {st.quizAnswered} preguntas extra acertadas</p>}
+        <p>🏆 {st.points} puntos en esta época · {score} en total</p>
+      </div>
+      <ul className="flex flex-col gap-1 text-sm">
+        {scenes.map((s) => (
+          <li key={s.id}>{!(s.id in completed) ? "·" : completed[s.id] ? "⭐" : "✅"} {s.title}</li>
+        ))}
+      </ul>
+      <p className="text-xs">⭐ a la primera · ✅ resuelta con ayuda o más de un intento · · sin jugar</p>
       <button className="btn" onClick={async () => { try { await navigator.clipboard.writeText(text); setCopied(true); } catch { /* sin permiso */ } }}>
         {copied ? "¡Copiado!" : "Copiar resultado"}
       </button>

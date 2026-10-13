@@ -1,6 +1,6 @@
 import type { Challenge } from "./schema";
 import { describe, expect, it } from "vitest";
-import { yearFeedback, isCorrect, pointsFor, nextStreak, isEraUnlocked, isEraComplete } from "./game";
+import { eraStats, yearFeedback, isCorrect, pointsFor, nextStreak, isEraUnlocked, isEraComplete } from "./game";
 
 describe("isCorrect", () => {
   it("quiz", () => {
@@ -59,4 +59,22 @@ describe("devolución del año con margen", () => {
     expect(yearFeedback(1995, 1, 1994).text).toMatch(/te quedaste 1 año corto/);
   });
   it("fuera del margen recuerda el margen", () => expect(yearFeedback(1995, 1, 1998).text).toContain("±1"));
+});
+
+describe("cuenta de una época", () => {
+  const ids = ["a", "b", "c", "d"];
+  it("separa resueltas, a la primera, preguntas extra y puntos de esa época", () => {
+    const st = eraStats(
+      ids,
+      { a: true, b: false, "a:q": true, "b:q": false, otra: true, "otra:q": true },
+      { a: 100, "a:q": 125, b: 0, otra: 999 },
+    );
+    expect(st).toEqual({ total: 4, solved: 2, firstTry: 1, quizHits: 1, quizAnswered: 2, points: 225 });
+  });
+  it("una escena resuelta con ayuda cuenta como resuelta pero no como acierto a la primera", () => {
+    const st = eraStats(["a"], { a: false });
+    expect(st.solved).toBe(1);
+    expect(st.firstTry).toBe(0);
+  });
+  it("sin jugar todo da cero", () => expect(eraStats(ids, {}).solved).toBe(0));
 });

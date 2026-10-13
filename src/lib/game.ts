@@ -54,3 +54,33 @@ export function yearFeedback(correctYear: number, tolerance: number, guess: numb
     text: `No era esa. Fue en ${correctYear}, ${years} ${diff > 0 ? "antes" : "después"} de lo que pusiste.${tolerance > 0 ? ` (Se aceptaba un margen de ±${tolerance} ${tolerance === 1 ? "año" : "años"}.)` : ""}`,
   };
 }
+
+export type EraStats = {
+  total: number;
+  /** Escenas resueltas (con o sin ayuda). */
+  solved: number;
+  /** Resueltas a la primera, sin pistas ni intentos fallidos. */
+  firstTry: number;
+  /** Preguntas extra acertadas / preguntas extra respondidas. */
+  quizHits: number;
+  quizAnswered: number;
+  /** Puntos ganados en esta época (tira + pregunta extra). */
+  points: number;
+};
+
+/** Cuenta de una época: cada número sale de lo realmente guardado, sin mezclar épocas ni conceptos. */
+export function eraStats(
+  sceneIds: string[],
+  completed: Record<string, boolean>,
+  points: Record<string, number> = {},
+): EraStats {
+  const has = (k: string) => k in completed;
+  return {
+    total: sceneIds.length,
+    solved: sceneIds.filter(has).length,
+    firstTry: sceneIds.filter((id) => completed[id] === true).length,
+    quizHits: sceneIds.filter((id) => completed[`${id}:q`] === true).length,
+    quizAnswered: sceneIds.filter((id) => has(`${id}:q`)).length,
+    points: sceneIds.reduce((sum, id) => sum + (points[id] ?? 0) + (points[`${id}:q`] ?? 0), 0),
+  };
+}
