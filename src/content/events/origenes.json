@@ -1,0 +1,390 @@
+[
+  {
+    "id": "fundacion-1901",
+    "eraId": "origenes",
+    "order": 1,
+    "title": "Nace el club en La Boca",
+    "date": "1901",
+    "headline": "Dos equipos de carboneros se juntan y nace River Plate",
+    "description": "En las carboneras de la Dársena Sur, en La Boca, dos equipos de barrio se disputaban la supremacía: La Rosales y Santa Rosa. Se fusionaron y eligieron llamarse River Plate, nombre que Pedro Martínez vio en unos cajones del puerto. El club sostiene 1901 como año de fundación, aunque una investigación de 2004 propone 1904.",
+    "protagonists": [
+      "Pedro Martínez",
+      "Isidoro Kitzler"
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Qué dos clubes de La Boca se fusionaron para dar origen a River Plate?",
+      "options": [
+        "La Rosales y Santa Rosa",
+        "Forward y Juventud Boquense",
+        "Santa Rosa y Facultad de Medicina",
+        "La Rosales y Argentino de Quilmes"
+      ],
+      "answerIndex": 0,
+      "explanation": "Wikipedia, ESPN y RSSSF coinciden: River nació de la fusión de La Rosales y Santa Rosa. Forward y Juventud Boquense fueron otros nombres que se barajaron para el club."
+    },
+    "sources": [
+      {
+        "label": "Wikipedia - History of Club Atlético River Plate",
+        "url": "https://en.wikipedia.org/wiki/History_of_Club_Atl%C3%A9tico_River_Plate"
+      },
+      {
+        "label": "ESPN Deportes - Una historia larga y muy rica",
+        "url": "https://espndeportes.espn.com/futbolargentino/noticias/riverhistoria120502.html"
+      },
+      {
+        "label": "RSSSF - Club Atlético River Plate",
+        "url": "https://rsssf.org/tablesr/riverplate.html"
+      },
+      {
+        "label": "442 Perfil - River festeja su cumpleaños",
+        "url": "https://442.perfil.com/noticias/futbol/river-festeja-su-cumpleanos-121-nuestro-glorioso-pasado-y-brillante-porvenir.phtml"
+      }
+    ],
+    "verified": false
+  },
+  {
+    "id": "ascenso-1908",
+    "eraId": "origenes",
+    "order": 2,
+    "title": "El ascenso a Primera",
+    "date": "1908-12-27",
+    "headline": "Siete a cero a Racing para llegar a la máxima categoría",
+    "description": "River ganó la Segunda División de 1908 y selló el ascenso el 27 de diciembre con un 7 a 0 sobre Racing Club. El primer partido de la final se había anulado cuando el público invadió la cancha. En 1909 debutó en Primera y le ganó 5 a 0 a Argentino de Quilmes.",
+    "protagonists": [],
+    "rival": "Racing Club",
+    "result": "7-0",
+    "panels": [
+      {
+        "caption": "River gana la Segunda División de 1908 y se juega el ascenso a Primera.",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "River"
+        ],
+        "tone": "calma"
+      },
+      {
+        "caption": "El primer partido de la final se anula: el público invade la cancha.",
+        "setting": {
+          "label": "La tribuna",
+          "kind": "tribuna"
+        },
+        "figures": [
+          "Hinchas"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "El 27 de diciembre, River le gana 7 a 0 a Racing Club y sella el ascenso.",
+        "setting": {
+          "label": "La cancha",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River",
+          "Racing Club"
+        ],
+        "tone": "gloria"
+      },
+      {
+        "caption": "En 1909 debuta en Primera y le gana 5 a 0 a Argentino de Quilmes.",
+        "setting": {
+          "label": "La cancha",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "guess-year",
+      "correctYear": 1908,
+      "tolerance": 1
+    },
+    "sources": [
+      {
+        "label": "Wikipedia - History of Club Atlético River Plate",
+        "url": "https://en.wikipedia.org/wiki/History_of_Club_Atl%C3%A9tico_River_Plate"
+      },
+      {
+        "label": "ESPN Deportes - Una historia larga y muy rica",
+        "url": "https://espndeportes.espn.com/futbolargentino/noticias/riverhistoria120502.html"
+      },
+      {
+        "label": "RSSSF - Club Atlético River Plate",
+        "url": "https://rsssf.org/tablesr/riverplate.html"
+      },
+      {
+        "label": "EFDeportes - River Plate",
+        "url": "https://efdeportes.com/milenio/river.htm"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "bernabe-ferreyra",
+    "eraId": "origenes",
+    "order": 3,
+    "title": "Llega Bernabé Ferreyra",
+    "date": "1932-03-13",
+    "headline": "El pase récord que le dio al club el apodo de Millonario",
+    "description": "Bernabé Ferreyra llegó desde Tigre en una operación récord para el fútbol argentino de la época. Debutó con la camiseta de River el 13 de marzo de 1932. La prensa empezó a hablar de los Millonarios por ese desembolso, un apodo que el club conserva hasta hoy.",
+    "protagonists": [
+      "Bernabé Ferreyra"
+    ],
+    "panels": [
+      {
+        "caption": "River hace una operación récord para el fútbol argentino de la época.",
+        "setting": {
+          "label": "La sede",
+          "kind": "sede"
+        },
+        "figures": [
+          "River"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Bernabé Ferreyra llega desde Tigre a la camiseta de River.",
+        "setting": {
+          "label": "La sede",
+          "kind": "sede"
+        },
+        "figures": [
+          "River",
+          "Bernabé Ferreyra"
+        ],
+        "tone": "calma"
+      },
+      {
+        "caption": "El 13 de marzo de 1932 debuta con River.",
+        "setting": {
+          "label": "La cancha",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Bernabé Ferreyra"
+        ],
+        "tone": "drama"
+      },
+      {
+        "caption": "La prensa habla de los Millonarios por ese desembolso: el apodo que el club conserva hasta hoy.",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "River"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "guess-year",
+      "correctYear": 1932,
+      "tolerance": 1
+    },
+    "sources": [
+      {
+        "label": "Wikipedia - Bernabé Ferreyra",
+        "url": "https://en.wikipedia.org/wiki/Bernab%C3%A9_Ferreyra"
+      },
+      {
+        "label": "La Página Millonaria - El debut de Bernabé",
+        "url": "https://lapaginamillonaria.com/riverplate/El-debut-de-Bernabe-20140313-0002.html"
+      },
+      {
+        "label": "Wikipedia - History of Club Atlético River Plate",
+        "url": "https://en.wikipedia.org/wiki/History_of_Club_Atl%C3%A9tico_River_Plate"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "campeon-1932",
+    "eraId": "origenes",
+    "order": 4,
+    "title": "El primer título profesional",
+    "date": "1932",
+    "headline": "Desempate ante Independiente para quedarse con el campeonato",
+    "description": "River e Independiente terminaron igualados en puntos y el campeonato de 1932 se definió en un desempate. River ganó 3 a 0 con goles de Bernabé Ferreyra, Carlos Peucelle y Zatelli. Fue el primer título profesional del club.",
+    "protagonists": [
+      "Bernabé Ferreyra",
+      "Carlos Peucelle",
+      "Zatelli"
+    ],
+    "rival": "Independiente",
+    "result": "3-0",
+    "panels": [
+      {
+        "caption": "River e Independiente terminan igualados en puntos en el campeonato de 1932.",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "River",
+          "Independiente"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "El título se define en un desempate entre los dos.",
+        "setting": {
+          "label": "La cancha",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River",
+          "Independiente"
+        ],
+        "tone": "drama"
+      },
+      {
+        "caption": "River gana 3 a 0 con goles de Bernabé Ferreyra, Carlos Peucelle y Zatelli.",
+        "setting": {
+          "label": "La cancha",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Bernabé Ferreyra",
+          "Carlos Peucelle",
+          "Zatelli"
+        ],
+        "tone": "gloria"
+      },
+      {
+        "caption": "Es el primer título profesional del club.",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "River"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Contra quién jugó River el desempate que le dio el campeonato de 1932?",
+      "options": [
+        "Boca Juniors",
+        "Independiente",
+        "Racing Club",
+        "San Lorenzo"
+      ],
+      "answerIndex": 1,
+      "explanation": "River e Independiente igualaron en la tabla y el desempate lo ganó River 3 a 0, con goles de Ferreyra, Peucelle y Zatelli."
+    },
+    "sources": [
+      {
+        "label": "La Página Millonaria - 1932, campeones con Bernabé",
+        "url": "https://lapaginamillonaria.com/riverplate/1932-Campeones-con-Bernabe-20121120-0005.html"
+      },
+      {
+        "label": "Wikipedia - History of Club Atlético River Plate",
+        "url": "https://en.wikipedia.org/wiki/History_of_Club_Atl%C3%A9tico_River_Plate"
+      },
+      {
+        "label": "EFDeportes - River Plate",
+        "url": "https://efdeportes.com/milenio/river.htm"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "inauguracion-monumental",
+    "eraId": "origenes",
+    "order": 5,
+    "title": "Se inaugura el Monumental",
+    "date": "1938-05",
+    "headline": "Peñarol estrena el estadio de Núñez",
+    "description": "La primera piedra se había colocado el 25 de mayo de 1935 y las obras arrancaron en septiembre de 1936. En mayo de 1938 River inauguró el Monumental, en Núñez, con un amistoso ante Peñarol que ganó 3 a 1.",
+    "protagonists": [
+      "Antonio Vespucio Liberti"
+    ],
+    "rival": "Peñarol",
+    "result": "3-1",
+    "panels": [
+      {
+        "caption": "La primera piedra se coloca el 25 de mayo de 1935.",
+        "setting": {
+          "label": "La sede",
+          "kind": "sede"
+        },
+        "figures": [
+          "River"
+        ],
+        "tone": "calma"
+      },
+      {
+        "caption": "Las obras arrancan en septiembre de 1936.",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "River"
+        ],
+        "tone": "calma"
+      },
+      {
+        "caption": "En mayo de 1938 River inaugura el Monumental, en Núñez.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River",
+          "Antonio Vespucio Liberti"
+        ],
+        "tone": "drama"
+      },
+      {
+        "caption": "Con un amistoso ante Peñarol, el estadio se estrena con un 3 a 1 para River.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River",
+          "Peñarol"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Qué equipo fue el rival en el partido inaugural del Monumental?",
+      "options": [
+        "Nacional",
+        "Peñarol",
+        "Independiente",
+        "Racing Club"
+      ],
+      "answerIndex": 1,
+      "explanation": "El partido inaugural fue un amistoso contra Peñarol, que River ganó 3 a 1."
+    },
+    "sources": [
+      {
+        "label": "La Página Millonaria - El Monumental cumple 85 años",
+        "url": "https://lapaginamillonaria.com/riverplate/el-monumental-cumple-85-anos-del-sueno-de-antonio-vespucio-liberti-al-avance-del-estadio-mas-grande-de-sudamerica-20230526-LPM-4951.html"
+      },
+      {
+        "label": "Goal - Estadio Monumental",
+        "url": "https://www.goal.com/es-mx/noticias/estadio-monumental-inauguracion-historia-y-capacidad-de-la-cancha-de-river/fqwh2k9uw6f01izix9vb54yjp"
+      },
+      {
+        "label": "Wikipedia - History of Club Atlético River Plate",
+        "url": "https://en.wikipedia.org/wiki/History_of_Club_Atl%C3%A9tico_River_Plate"
+      }
+    ],
+    "verified": true
+  }
+]

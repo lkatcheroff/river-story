@@ -1,0 +1,530 @@
+[
+  {
+    "id": "metropolitano-1975",
+    "eraId": "era-labruna",
+    "order": 1,
+    "title": "El zurdazo de Bruno",
+    "date": "1975-08-14",
+    "headline": "Un equipo de pibes de las inferiores corta la sequía en cancha de Vélez",
+    "description": "El 14 de agosto de 1975 los futbolistas profesionales estaban de paro, así que River salió con juveniles ante Argentinos Juniors. Rubén Norberto Bruno hizo el 1-0 y se terminó la sequía. Labruna no dirigió: siguió el partido desde la platea.",
+    "protagonists": [
+      "Rubén Norberto Bruno",
+      "Ángel Labruna"
+    ],
+    "rival": "Argentinos Juniors",
+    "result": "River 1-0 Argentinos Juniors",
+    "panels": [
+      {
+        "caption": "El 14 de agosto de 1975 los futbolistas profesionales están de paro.",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "River"
+        ],
+        "tone": "calma"
+      },
+      {
+        "caption": "River sale con juveniles ante Argentinos Juniors, y Labruna sigue el partido desde la platea.",
+        "setting": {
+          "label": "La tribuna",
+          "kind": "tribuna"
+        },
+        "figures": [
+          "Ángel Labruna",
+          "River"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Rubén Norberto Bruno hace el 1-0.",
+        "setting": {
+          "label": "La cancha",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Rubén Norberto Bruno"
+        ],
+        "tone": "gloria"
+      },
+      {
+        "caption": "River 1-0 Argentinos Juniors: se terminó la sequía.",
+        "setting": {
+          "label": "La cancha",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River",
+          "Argentinos Juniors"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "who-scored",
+      "options": [
+        "Rubén Norberto Bruno",
+        "Leopoldo Luque",
+        "Norberto Alonso",
+        "Oscar Más"
+      ],
+      "answerIndex": 0
+    },
+    "sources": [
+      {
+        "label": "442 Perfil - River campeón del Metropolitano 1975, 50 años",
+        "url": "https://442.perfil.com/noticias/futbol/river-campeon-del-metropolitano-1975-50-anos-del-titulo-que-corto-la-mayor-sequia-millonaria.phtml"
+      },
+      {
+        "label": "El Economista - Hace 50 años River cortaba su sequía más larga",
+        "url": "https://eleconomista.com.ar/deportes/hace-50-anos-river-cortaba-su-sequia-mas-larga-titulos-equipo-juvenil-medio-pais-convulsionado-n87552/amp"
+      },
+      {
+        "label": "La Página Millonaria - River campeón del Metropolitano 1975",
+        "url": "https://lapaginamillonaria.com/riverplate/River-se-consagro-campeon-del-Metropolitano-de-1975-y-corto-una-racha-de-18-anos-sin-poder-hacerlo-20210814-0005.html"
+      },
+      {
+        "label": "Infobae - De gallinas a campeones",
+        "url": "https://www.infobae.com/2005/08/14/203777-de-gallinas-campeones/"
+      }
+    ],
+    "verified": true,
+    "imageAlt": "River campeón del Metropolitano 1975"
+  },
+  {
+    "id": "nacional-1975",
+    "eraId": "era-labruna",
+    "order": 2,
+    "title": "Bicampeón en el mismo año",
+    "date": "1975",
+    "headline": "Después del Metropolitano, River se queda también con el Nacional",
+    "description": "La sequía no solo se cortó: se dio vuelta. Con Labruna al frente, River sumó el Nacional de 1975 al Metropolitano: doblete en una misma temporada, después de 17 años sin festejar un título local.",
+    "protagonists": [
+      "Ángel Labruna"
+    ],
+    "panels": [
+      {
+        "caption": "La sequía no solo se corta: se da vuelta.",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "River"
+        ],
+        "tone": "calma"
+      },
+      {
+        "caption": "Con Labruna al frente, River suma el Nacional de 1975 al Metropolitano.",
+        "setting": {
+          "label": "La cancha",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Ángel Labruna",
+          "River"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Doblete en una misma temporada.",
+        "setting": {
+          "label": "La cancha",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Ángel Labruna"
+        ],
+        "tone": "gloria"
+      },
+      {
+        "caption": "Después de 17 años sin festejar un título local, River vuelve a ser campeón.",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "River",
+          "Ángel Labruna"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Qué torneo ganó River en 1975, además del Metropolitano?",
+      "options": [
+        "El Nacional",
+        "La Copa Libertadores",
+        "La Copa de Oro",
+        "La Supercopa"
+      ],
+      "answerIndex": 0,
+      "explanation": "Wikipedia (temporada 1975 y perfil de Labruna) coinciden: River ganó Metropolitano y Nacional de 1975."
+    },
+    "sources": [
+      {
+        "label": "Wikipedia - 1975 Argentine Primera División",
+        "url": "https://en.wikipedia.org/wiki/1975_Argentine_Primera_Divisi%C3%B3n"
+      },
+      {
+        "label": "Wikipedia - Ángel Labruna",
+        "url": "https://en.wikipedia.org/wiki/%C3%81ngel_Labruna"
+      },
+      {
+        "label": "La Página Millonaria - A cuatro décadas de un bicampeonato sonado",
+        "url": "https://lapaginamillonaria.com/riverplate/A-cuatro-decadas-de-un-bicampeonato-sonado-20151228-0006.html"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "libertadores-1976",
+    "eraId": "era-labruna",
+    "order": 3,
+    "title": "Otra vez Santiago, otra vez a un gol",
+    "date": "1976-07-30",
+    "headline": "River vuelve a una final de Libertadores y la pierde en el desempate",
+    "description": "En 1976 River llegó a la final con Cruzeiro. Perdió 4-1 en Belo Horizonte, ganó 2-1 en el Monumental y el 30 de julio se jugó el tercer partido en Santiago. Más y Urquiza anotaron para River, pero Cruzeiro ganó 3-2 con un gol sobre el final. La Libertadores seguía esquiva.",
+    "protagonists": [
+      "Oscar Más",
+      "Urquiza"
+    ],
+    "rival": "Cruzeiro",
+    "result": "Cruzeiro 3-2 River",
+    "panels": [
+      {
+        "caption": "En 1976 River llega a la final de la Libertadores con Cruzeiro: pierde 4-1 en Belo Horizonte.",
+        "setting": {
+          "label": "Belo Horizonte",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River",
+          "Cruzeiro"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Gana 2-1 en el Monumental y el tercer partido se juega en Santiago, el 30 de julio.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Más y Urquiza anotan para River.",
+        "setting": {
+          "label": "Santiago",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Oscar Más",
+          "Urquiza"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Cruzeiro gana 3-2 con un gol sobre el final: la Libertadores sigue esquiva.",
+        "setting": {
+          "label": "Santiago",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Cruzeiro"
+        ],
+        "tone": "drama"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Qué equipo le ganó a River el desempate de la final de la Libertadores 1976?",
+      "options": [
+        "Cruzeiro",
+        "Peñarol",
+        "Independiente",
+        "Olimpia"
+      ],
+      "answerIndex": 0,
+      "explanation": "Wikipedia y RSSSF coinciden: Cruzeiro ganó 3-2 el desempate del 30 de julio de 1976 en Santiago."
+    },
+    "sources": [
+      {
+        "label": "Wikipedia - 1976 Copa Libertadores finals",
+        "url": "https://en.wikipedia.org/wiki/1976_Copa_Libertadores_finals"
+      },
+      {
+        "label": "RSSSF - Copa Libertadores de América 1976",
+        "url": "https://rsssf.org/sacups/copa76.html"
+      },
+      {
+        "label": "Wikipedia (es) - Club Atlético River Plate",
+        "url": "https://es.wikipedia.org/wiki/Club_Atlético_River_Plate"
+      }
+    ],
+    "verified": true,
+    "imageAlt": "Final de la Copa Libertadores 1976"
+  },
+  {
+    "id": "metropolitano-1979",
+    "eraId": "era-labruna",
+    "order": 4,
+    "title": "7-1 a Vélez",
+    "date": "1979-08",
+    "headline": "River aplasta a Vélez en la final del Metropolitano",
+    "description": "En agosto de 1979 River ganó 2-0 en Liniers y 5-1 en el Monumental la final del Metropolitano ante Vélez. En la vuelta hicieron goles Pedro González (dos), Alonso, Commisso y Luque. Global: 7-1, un campeonato que se definió sin sufrir.",
+    "protagonists": [
+      "Pedro González",
+      "Norberto Alonso",
+      "Emilio Commisso",
+      "Leopoldo Luque"
+    ],
+    "rival": "Vélez Sarsfield",
+    "result": "River 7-1 Vélez (global)",
+    "panels": [
+      {
+        "caption": "En agosto de 1979 River juega la final del Metropolitano ante Vélez.",
+        "setting": {
+          "label": "La cancha",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River",
+          "Vélez Sarsfield"
+        ],
+        "tone": "calma"
+      },
+      {
+        "caption": "En Liniers gana 2-0.",
+        "setting": {
+          "label": "Vélez",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "En el Monumental lo golea 5-1, con dos goles de Pedro González y otros de Alonso, Commisso y Luque.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Pedro González",
+          "Norberto Alonso",
+          "Leopoldo Luque"
+        ],
+        "tone": "gloria"
+      },
+      {
+        "caption": "Global de 7-1: un campeonato que se definió sin sufrir.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Cuál fue el resultado global de River ante Vélez en la final del Metropolitano 1979?",
+      "options": [
+        "7-1",
+        "5-1",
+        "3-1",
+        "7-2"
+      ],
+      "answerIndex": 0,
+      "explanation": "Wikipedia y La Página Millonaria coinciden: 2-0 en la ida y 5-1 en la vuelta, 7-1 en el global."
+    },
+    "sources": [
+      {
+        "label": "Wikipedia - 1979 Campeonato Metropolitano finals",
+        "url": "https://en.wikipedia.org/wiki/1979_Campeonato_Metropolitano_finals"
+      },
+      {
+        "label": "La Página Millonaria - River campeón del Metro 79",
+        "url": "https://lapaginamillonaria.com/riverplate/River-campeon-del-Metro-79-20090819-0009.html"
+      }
+    ],
+    "verified": true,
+    "imageAlt": "River campeón del Metropolitano 1979"
+  },
+  {
+    "id": "nacional-1979",
+    "eraId": "era-labruna",
+    "order": 5,
+    "title": "El gol de Alonso en Santa Fe",
+    "date": "1979",
+    "headline": "River se queda con el Nacional por gol de visitante y es bicampeón del año",
+    "description": "La final del Nacional 1979 con Unión de Santa Fe terminó 1-1 en la ida y 0-0 en el Monumental. El gol de Alonso, ya sobre el final en Santa Fe, le dio a River la ventaja de visitante y el bicampeonato: Metropolitano y Nacional en la misma temporada.",
+    "protagonists": [
+      "Norberto Alonso"
+    ],
+    "rival": "Unión de Santa Fe",
+    "result": "1-1 y 0-0 (campeón por gol de visitante)",
+    "panels": [
+      {
+        "caption": "River llega a la final del Nacional 1979 con Unión de Santa Fe.",
+        "setting": {
+          "label": "La cancha",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River",
+          "Unión de Santa Fe"
+        ],
+        "tone": "calma"
+      },
+      {
+        "caption": "La ida termina 1-1 y la vuelta en el Monumental, 0-0.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River",
+          "Unión de Santa Fe"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Ya sobre el final en Santa Fe, aparece el gol de Alonso.",
+        "setting": {
+          "label": "Santa Fe",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Norberto Alonso"
+        ],
+        "tone": "drama"
+      },
+      {
+        "caption": "Ventaja de visitante y bicampeonato: Metropolitano y Nacional en la misma temporada.",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "Norberto Alonso",
+          "River"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "who-scored",
+      "options": [
+        "Norberto Alonso",
+        "Leopoldo Luque",
+        "Daniel Passarella",
+        "Pedro González"
+      ],
+      "answerIndex": 0
+    },
+    "sources": [
+      {
+        "label": "Wikipedia - 1979 Campeonato Nacional finals",
+        "url": "https://en.wikipedia.org/wiki/1979_Campeonato_Nacional_finals"
+      },
+      {
+        "label": "La Página Millonaria - River bicampeón 1979",
+        "url": "https://lapaginamillonaria.com/riverplate/River-bicampeon-1979-20091223-0010.html"
+      }
+    ],
+    "verified": true,
+    "imageAlt": "River bicampeón 1979"
+  },
+  {
+    "id": "balance-labruna",
+    "eraId": "era-labruna",
+    "order": 6,
+    "title": "Seis campeonatos y una cuenta pendiente",
+    "date": "1981",
+    "headline": "Labruna se va de River tras seis títulos de liga",
+    "description": "Entre 1975 y 1980, Labruna conquistó seis campeonatos de liga con River: los Metropolitanos de 1975, 1977, 1979 y 1980, y los Nacionales de 1975 y 1979. En 1981 dejó el cargo. Se fue con el club otra vez en lo más alto, pero con la Libertadores todavía sin ganar.",
+    "protagonists": [
+      "Ángel Labruna"
+    ],
+    "panels": [
+      {
+        "caption": "Entre 1975 y 1980, Labruna conquista seis campeonatos de liga con River.",
+        "setting": {
+          "label": "La cancha",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River",
+          "Ángel Labruna"
+        ],
+        "tone": "gloria"
+      },
+      {
+        "caption": "Son los Metropolitanos de 1975, 1977, 1979 y 1980, y los Nacionales de 1975 y 1979.",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "Ángel Labruna"
+        ],
+        "tone": "gloria"
+      },
+      {
+        "caption": "En 1981 deja el cargo.",
+        "setting": {
+          "label": "La sede",
+          "kind": "sede"
+        },
+        "figures": [
+          "Ángel Labruna"
+        ],
+        "tone": "calma"
+      },
+      {
+        "caption": "Se va con el club en lo más alto, pero con la Libertadores todavía sin ganar.",
+        "setting": {
+          "label": "La cancha",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Ángel Labruna"
+        ],
+        "tone": "tension"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Cuántos campeonatos de liga ganó Labruna como DT de River entre 1975 y 1980?",
+      "options": [
+        "6",
+        "3",
+        "4",
+        "8"
+      ],
+      "answerIndex": 0,
+      "explanation": "Wikipedia en su perfil de Labruna y en la historia del club coinciden: seis ligas entre 1975 y 1980."
+    },
+    "sources": [
+      {
+        "label": "Wikipedia - Ángel Labruna",
+        "url": "https://en.wikipedia.org/wiki/%C3%81ngel_Labruna"
+      },
+      {
+        "label": "Wikipedia (es) - Club Atlético River Plate",
+        "url": "https://es.wikipedia.org/wiki/Club_Atlético_River_Plate"
+      }
+    ],
+    "verified": true
+  }
+]

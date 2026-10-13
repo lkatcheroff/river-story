@@ -1,0 +1,277 @@
+[
+  {
+    "id": "promocion-ida-belgrano-2011",
+    "eraId": "descenso",
+    "order": 1,
+    "title": "La ida en Alberdi",
+    "date": "2011-06-22",
+    "headline": "River pierde 2-0 con Belgrano en Córdoba",
+    "description": "El 22 de junio de 2011, River viajó a Córdoba para la ida de la promoción y volvió con una mochila enorme. Belgrano ganó 2-0, con goles de César Mansanelli, de penal, y de César Pereyra. Para zafar, River necesitaba ganar por dos goles de diferencia en el Monumental.",
+    "protagonists": [
+      "César Mansanelli",
+      "César Pereyra"
+    ],
+    "rival": "Belgrano",
+    "result": "Belgrano 2-0 River",
+    "panels": [
+      {
+        "caption": "El 22 de junio de 2011, River viaja a Córdoba para la ida de la promoción ante Belgrano.",
+        "setting": {
+          "label": "Córdoba",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River",
+          "Belgrano"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "César Mansanelli, de penal, pone el 1-0 para Belgrano.",
+        "setting": {
+          "label": "Córdoba",
+          "kind": "cancha"
+        },
+        "figures": [
+          "César Mansanelli"
+        ],
+        "tone": "drama"
+      },
+      {
+        "caption": "César Pereyra marca el segundo: Belgrano gana 2-0.",
+        "setting": {
+          "label": "Córdoba",
+          "kind": "cancha"
+        },
+        "figures": [
+          "César Pereyra"
+        ],
+        "tone": "drama"
+      },
+      {
+        "caption": "River vuelve con una mochila enorme: para zafar necesita ganar por dos goles en el Monumental.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River"
+        ],
+        "tone": "tension"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Contra qué equipo jugó River la promoción de 2011?",
+      "options": [
+        "Belgrano",
+        "Talleres",
+        "Instituto",
+        "Rosario Central"
+      ],
+      "answerIndex": 0,
+      "explanation": "River jugó la promoción contra Belgrano de Córdoba: perdió 2-0 en la ida y empató 1-1 en la vuelta."
+    },
+    "sources": [
+      {
+        "label": "Goal.com: River-Belgrano, promoción 2011, resumen",
+        "url": "https://www.goal.com/es-ar/noticias/river-belgrano-promocion-descenso-2011-formaciones-resumen/mczwcby48ug414asbtswuulw7"
+      },
+      {
+        "label": "442 Perfil: Descenso de River, 15 años del partido",
+        "url": "https://442.perfil.com/noticias/amp/futbol/descenso-de-river-plate-15-anos-del-partido-que-mando-al-millonario-a-la-b.phtml"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "descenso-river-2011",
+    "eraId": "descenso",
+    "order": 2,
+    "title": "El día más triste",
+    "date": "2011-06-26",
+    "headline": "River 1-1 Belgrano: el primer descenso de la historia",
+    "description": "El 26 de junio de 2011, en un Monumental lleno de tensión, Mariano Pavone puso en ventaja a River a los pocos minutos. Pero Guillermo Farré empató para Belgrano y el 1-1 selló un global de 3-1. River, que nunca había bajado de categoría, se fue a la B Nacional.",
+    "protagonists": [
+      "Mariano Pavone",
+      "Guillermo Farré"
+    ],
+    "rival": "Belgrano",
+    "result": "River 1-1 Belgrano (global 1-3)",
+    "panels": [
+      {
+        "caption": "El 26 de junio de 2011, el Monumental está lleno de tensión.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "A los pocos minutos, Mariano Pavone pone en ventaja a River.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Mariano Pavone"
+        ],
+        "tone": "gloria"
+      },
+      {
+        "caption": "Guillermo Farré empata para Belgrano.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Guillermo Farré",
+          "Belgrano"
+        ],
+        "tone": "drama"
+      },
+      {
+        "caption": "El 1-1 sella un global de 3-1: River, que nunca había bajado, se va a la B Nacional.",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "River",
+          "Belgrano"
+        ],
+        "tone": "drama"
+      }
+    ],
+    "challenge": {
+      "type": "who-scored",
+      "options": [
+        "Mariano Pavone",
+        "Fernando Cavenaghi",
+        "Ariel Rojas",
+        "Erik Lamela"
+      ],
+      "answerIndex": 0
+    },
+    "sources": [
+      {
+        "label": "Goal.com: River-Belgrano, promoción 2011, resumen",
+        "url": "https://www.goal.com/es-ar/noticias/river-belgrano-promocion-descenso-2011-formaciones-resumen/mczwcby48ug414asbtswuulw7"
+      },
+      {
+        "label": "442 Perfil: Descenso de River, 15 años del partido",
+        "url": "https://442.perfil.com/noticias/amp/futbol/descenso-de-river-plate-15-anos-del-partido-que-mando-al-millonario-a-la-b.phtml"
+      },
+      {
+        "label": "La Capital MdP: Se cumplen 9 años del descenso",
+        "url": "https://www.lacapitalmdp.com/se-cumplen-9-anos-del-descenso-de-river-a-la-b-nacional/"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "trezeguet-llega-a-la-b",
+    "eraId": "descenso",
+    "order": 3,
+    "title": "Un campeón del mundo en la B",
+    "date": "2012",
+    "headline": "Trezeguet se pone la banda roja en la B Nacional",
+    "description": "En plena B Nacional, River sumó a David Trezeguet, un delantero de peso internacional que eligió jugar en la categoría de ascenso para ayudar a volver a Primera. Fue uno de los refuerzos que marcaron la campaña de la vuelta. Fecha exacta de firma y debut pendientes de confirmar.",
+    "protagonists": [
+      "David Trezeguet"
+    ],
+    "sources": [],
+    "verified": false
+  },
+  {
+    "id": "ascenso-river-2012",
+    "eraId": "descenso",
+    "order": 4,
+    "title": "La vuelta a Primera",
+    "date": "2012-06-23",
+    "headline": "River 2-0 Almirante Brown: campeón de la B Nacional",
+    "description": "El 23 de junio de 2012, en el Monumental, River le ganó 2-0 a Almirante Brown y cerró el ascenso en la última fecha. Los dos goles fueron de David Trezeguet. El equipo de Matías Almeyda, en su primera experiencia como técnico, terminó campeón de la B Nacional 2011/12 y volvió a Primera.",
+    "protagonists": [
+      "David Trezeguet",
+      "Matías Almeyda"
+    ],
+    "rival": "Almirante Brown",
+    "result": "River 2-0 Almirante Brown",
+    "panels": [
+      {
+        "caption": "El 23 de junio de 2012, en el Monumental, River juega la última fecha de la B Nacional ante Almirante Brown.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River",
+          "Almirante Brown"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Matías Almeyda dirige por primera vez como técnico y busca cerrar el ascenso.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Matías Almeyda"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "David Trezeguet marca los dos goles del 2-0.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "David Trezeguet"
+        ],
+        "tone": "gloria"
+      },
+      {
+        "caption": "River es campeón de la B Nacional 2011/12 y vuelve a Primera.",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "River",
+          "Matías Almeyda"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "who-scored",
+      "options": [
+        "David Trezeguet",
+        "Fernando Cavenaghi",
+        "Lucas Ocampos",
+        "Leonardo Ponzio"
+      ],
+      "answerIndex": 0
+    },
+    "sources": [
+      {
+        "label": "Diario de Cuyo: Se cumplen 9 años del regreso de River a Primera",
+        "url": "https://www.diariodecuyo.com.ar/pasiondeportiva/Se-cumplen-9-anos-del-regreso-de-River-a-Primera-20210623-0019.html"
+      },
+      {
+        "label": "Tiempo de San Juan: Nueve años del ascenso",
+        "url": "https://www.tiempodesanjuan.com/deportes/2021/6/23/que-si-tropezas-grande-te-levantas-gigante-el-mensaje-de-river-nueve-anos-del-ascenso-primera-316296.html"
+      },
+      {
+        "label": "Diario de Cuyo: Gloria al rey David",
+        "url": "https://diariodecuyo.com.ar/pasiondeportiva/Gloria-al-rey-David-20120624-0068.html"
+      }
+    ],
+    "verified": true
+  }
+]

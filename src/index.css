@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;800&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Bebas Neue", Impact, sans-serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --color-river: #d4101f;
+  --color-ink: #111;
+  --color-paper: #faf6ee;
+}
+
+body { margin: 0; background: var(--color-paper); color: var(--color-ink); font-family: var(--font-sans); }
+.btn { @apply rounded-lg bg-river px-5 py-3 font-semibold text-white active:scale-95 transition disabled:opacity-40; }
+.btn-ghost { @apply rounded-lg border-2 border-ink px-5 py-3 font-semibold active:scale-95 transition; }
+
+/* ===== Estética cómic ===== */
+body {
+  background-color: #fbf3df;
+  background-image: radial-gradient(rgba(212,16,31,.12) 1.2px, transparent 1.4px);
+  background-size: 14px 14px;
+}
+.btn { border: 3px solid #111; box-shadow: 4px 4px 0 #111; border-radius: 0; text-transform: uppercase; letter-spacing: .04em; }
+.btn:active { box-shadow: 1px 1px 0 #111; transform: translate(3px,3px); }
+.btn-ghost { border-radius: 0; background: #fff; box-shadow: 4px 4px 0 #111; text-transform: uppercase; }
+.comic-title { background: #d4101f; color: #fff; border: 4px solid #111; box-shadow: 5px 5px 0 #111; padding: .5rem .8rem; font-family: var(--font-display); font-size: 2.4rem; line-height: 1; transform: rotate(-1deg); }
+.comic-title small { display: block; font-family: var(--font-sans); font-size: .7rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; opacity: .9; margin-bottom: .2rem; }
+.comic-box { background: #ffe066; border: 3px solid #111; box-shadow: 3px 3px 0 #111; padding: .6rem .8rem; font-weight: 600; font-size: .95rem; }
+.comic-panel { position: relative; display: flex; flex-direction: column; min-height: 11rem; border: 4px solid #111; box-shadow: 4px 4px 0 #111; background: #fff; overflow: hidden; }
+.comic-panel.empty { border-style: dashed; background: rgba(255,255,255,.6); box-shadow: none; }
+.panel-num { position: absolute; top: 0; left: 0; z-index: 1; background: #111; color: #fff; font-family: var(--font-display); padding: 0 .5rem; font-size: 1.1rem; }
+.panel-caption { background: #fffbe8; border-top: 3px solid #111; padding: .4rem .5rem; font-size: .8rem; font-weight: 600; line-height: 1.2; }
+.comic-card { text-align: left; background: #fffbe8; border: 3px solid #111; box-shadow: 3px 3px 0 #111; padding: .6rem .7rem; font-weight: 600; font-size: .9rem; }
+.comic-card:active { transform: translate(2px,2px); box-shadow: 1px 1px 0 #111; }
+.tone-calma { background: #cfe8f7; }
+.tone-tension { background: repeating-linear-gradient(45deg,#f6c453 0 10px,#f9d77a 10px 20px); }
+.tone-drama { background: #6b6b7a; background-image: radial-gradient(rgba(0,0,0,.25) 1.5px, transparent 1.7px); background-size: 8px 8px; }
+.tone-gloria { background: radial-gradient(circle at 50% 45%, #fff6c2 0, #ffd84a 45%, #f08a24 100%); }
+.comic-panel.empty { min-height: 6rem; }
+
+/* ===== Animaciones de personajes ===== */
+@keyframes fig-jump { 0%,100% { transform: translateY(0); } 40% { transform: translateY(-12px); } }
+@keyframes fig-shake { 0%,100% { transform: translateX(0); } 25% { transform: translateX(-3px); } 75% { transform: translateX(3px); } }
+@keyframes fig-slump { 0%,100% { transform: translateY(0) scaleY(1); } 50% { transform: translateY(3px) scaleY(.96); } }
+@keyframes fig-bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-2px); } }
+.anim-gloria { animation: fig-jump .6s ease-in-out infinite; transform-origin: bottom; }
+.anim-tension { animation: fig-shake .25s linear infinite; }
+.anim-drama { animation: fig-slump 1.4s ease-in-out infinite; transform-origin: bottom; }
+.anim-idle { animation: fig-bob 2.4s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) { .anim-gloria, .anim-tension, .anim-drama, .anim-idle { animation: none; } }

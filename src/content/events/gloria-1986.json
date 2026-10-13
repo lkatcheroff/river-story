@@ -1,0 +1,279 @@
+[
+  {
+    "id": "libertadores-86-ida-cali",
+    "eraId": "gloria-1986",
+    "order": 1,
+    "title": "Ida en Cali",
+    "date": "1986-10-22",
+    "headline": "River le gana a América en Cali y se lleva ventaja",
+    "description": "En el Pascual Guerrero, América de Cali abrió el partido de ida de la final con Cabañas en el arranque del segundo tiempo, pero antes River ya había golpeado: Funes a los 22 y Beto Alonso a los 25 le dieron la ventaja que cruzó el continente. Con Veira en el banco, el equipo volvió con un 2-1 bajo el brazo.",
+    "protagonists": [
+      "Juan Gilberto Funes",
+      "Norberto Alonso",
+      "Héctor Veira"
+    ],
+    "rival": "América de Cali",
+    "result": "América de Cali 1-2 River Plate",
+    "panels": [
+      {
+        "caption": "Final de la Libertadores: la ida se juega en el Pascual Guerrero, con Veira en el banco.",
+        "setting": {
+          "label": "Cali",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Héctor Veira",
+          "América de Cali"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "River golpea primero: Funes a los 22 y Beto Alonso a los 25.",
+        "setting": {
+          "label": "Cali",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Juan Gilberto Funes",
+          "Norberto Alonso"
+        ],
+        "tone": "gloria"
+      },
+      {
+        "caption": "En el arranque del segundo tiempo, Cabañas descuenta para América.",
+        "setting": {
+          "label": "Cali",
+          "kind": "cancha"
+        },
+        "figures": [
+          "América de Cali"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "River vuelve con un 2-1 bajo el brazo y la ventaja para la revancha.",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "River"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Cuál fue el resultado global de la final de la Libertadores 1986 entre River y América de Cali?",
+      "options": [
+        "River 3-1",
+        "River 2-1",
+        "River 2-0",
+        "River 3-0"
+      ],
+      "answerIndex": 0,
+      "explanation": "Ganó 2-1 en la ida y 1-0 en la vuelta: 3-1 en el global."
+    },
+    "sources": [
+      {
+        "label": "Wikipedia - 1986 Copa Libertadores finals",
+        "url": "https://en.wikipedia.org/wiki/1986_Copa_Libertadores_finals"
+      },
+      {
+        "label": "RSSSF - Copa Libertadores 1986",
+        "url": "https://rsssf.org/sacups/copa86.html"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "libertadores-86-vuelta-monumental",
+    "eraId": "gloria-1986",
+    "order": 2,
+    "title": "La vuelta en el Monumental",
+    "date": "1986-10-29",
+    "headline": "Funes marca el gol de la primera Libertadores",
+    "description": "El Monumental se llenó para la revancha. El partido fue cerrado hasta que a los 69 minutos Juan Gilberto Funes, que ya había convertido en Cali, metió el único gol de la noche. River se quedó con la Copa Libertadores por primera vez en su historia.",
+    "protagonists": [
+      "Juan Gilberto Funes",
+      "Héctor Veira"
+    ],
+    "rival": "América de Cali",
+    "result": "River Plate 1-0 América de Cali",
+    "panels": [
+      {
+        "caption": "El Monumental se llena para la revancha ante América de Cali.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River",
+          "América de Cali"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "El partido es cerrado y el gol se hace esperar.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "A los 69 minutos, Juan Gilberto Funes, que ya había convertido en Cali, mete el único gol.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Juan Gilberto Funes"
+        ],
+        "tone": "drama"
+      },
+      {
+        "caption": "River 1-0: se queda con la Copa Libertadores por primera vez en su historia.",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "River",
+          "Juan Gilberto Funes"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "who-scored",
+      "options": [
+        "Juan Gilberto Funes",
+        "Antonio Alzamendi",
+        "Norberto Alonso",
+        "Américo Gallego"
+      ],
+      "answerIndex": 0
+    },
+    "sources": [
+      {
+        "label": "Wikipedia - 1986 Copa Libertadores finals",
+        "url": "https://en.wikipedia.org/wiki/1986_Copa_Libertadores_finals"
+      },
+      {
+        "label": "RSSSF - Copa Libertadores 1986",
+        "url": "https://rsssf.org/sacups/copa86.html"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "intercontinental-86-tokio",
+    "eraId": "gloria-1986",
+    "order": 3,
+    "title": "Campeón del mundo en Tokio",
+    "date": "1986-12-14",
+    "headline": "River 1, Steaua Bucarest 0 en el Estadio Nacional",
+    "description": "En el Estadio Nacional de Tokio, ante 62.000 personas, River y el Steaua de Bucarest se jugaron la Copa Intercontinental. A los 28 minutos Antonio Alzamendi marcó el único gol y el equipo de Veira se consagró campeón del mundo.",
+    "protagonists": [
+      "Antonio Alzamendi",
+      "Héctor Veira"
+    ],
+    "rival": "Steaua Bucarest",
+    "result": "Steaua Bucarest 0-1 River Plate",
+    "panels": [
+      {
+        "caption": "River y el Steaua de Bucarest se juegan la Copa Intercontinental en el Estadio Nacional de Tokio.",
+        "setting": {
+          "label": "Estadio Nacional de Tokio",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River",
+          "Steaua Bucarest"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "62.000 personas miran la final de la Copa Intercontinental.",
+        "setting": {
+          "label": "La tribuna",
+          "kind": "tribuna"
+        },
+        "figures": [
+          "Hinchas"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "A los 28 minutos, Antonio Alzamendi marca el único gol.",
+        "setting": {
+          "label": "Estadio Nacional de Tokio",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Antonio Alzamendi"
+        ],
+        "tone": "drama"
+      },
+      {
+        "caption": "River 1-0: el equipo de Veira se consagra campeón del mundo.",
+        "setting": {
+          "label": "Estadio Nacional de Tokio",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Héctor Veira",
+          "River"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "who-scored",
+      "options": [
+        "Antonio Alzamendi",
+        "Juan Gilberto Funes",
+        "Norberto Alonso",
+        "Roque Alfaro"
+      ],
+      "answerIndex": 0
+    },
+    "sources": [
+      {
+        "label": "Wikipedia - 1986 Intercontinental Cup",
+        "url": "https://en.wikipedia.org/wiki/1986_Intercontinental_Cup"
+      },
+      {
+        "label": "RSSSF - Intercontinental Club Cup 1986",
+        "url": "https://rsssf.org/tablest/toyota86.html"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "libertadores-86-desempate",
+    "eraId": "gloria-1986",
+    "order": 4,
+    "title": "El desempate de la semifinal",
+    "date": "1986",
+    "headline": "Un 0-0 y la diferencia de gol abren la puerta de la final",
+    "description": "Antes de la final, River empató sin goles un desempate de la fase semifinal y avanzó por diferencia de gol. Por ese margen mínimo llegó a jugarle a América de Cali la definición de la Copa.",
+    "protagonists": [],
+    "challenge": {
+      "type": "guess-year",
+      "correctYear": 1986,
+      "tolerance": 0
+    },
+    "sources": [
+      {
+        "label": "RSSSF - Copa Libertadores 1986",
+        "url": "https://rsssf.org/sacups/copa86.html"
+      }
+    ],
+    "verified": false
+  }
+]

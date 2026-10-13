@@ -1,0 +1,11 @@
+[
+  { "id": "origenes", "name": "Los orígenes", "range": "1901–1930s", "order": 1 },
+  { "id": "monumental-fiera", "name": "La Fiera y el Monumental", "range": "1930s–1940", "order": 2 },
+  { "id": "la-maquina", "name": "La Máquina", "range": "1941–1947", "order": 3 },
+  { "id": "sequia", "name": "La sequía", "range": "1957–1975", "order": 4 },
+  { "id": "era-labruna", "name": "La era Labruna", "range": "1975–1981", "order": 5 },
+  { "id": "gloria-1986", "name": "La gloria del '86", "range": "1986", "order": 6 },
+  { "id": "era-ramon", "name": "Los '90 y Ramón Díaz", "range": "1990s", "order": 7 },
+  { "id": "descenso", "name": "El descenso y la vuelta", "range": "2011–2012", "order": 8 },
+  { "id": "era-gallardo", "name": "La era Gallardo", "range": "2014–2022", "order": 9 }
+]

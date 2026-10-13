@@ -1,0 +1,442 @@
+[
+  {
+    "id": "gallardo-llega-2014",
+    "eraId": "era-gallardo",
+    "order": 1,
+    "title": "Llega el Muñeco",
+    "date": "2014-06-06",
+    "headline": "Gallardo es presentado como técnico de River",
+    "description": "El 6 de junio de 2014, Marcelo Gallardo habló por primera vez como entrenador de River. Reemplazaba a Ramón Díaz, que se había ido de golpe tras ganar el torneo local. Dijo que era un privilegio ocupar ese lugar y que quería un equipo protagonista, dueño de la pelota. Ahí empezó un ciclo largo.",
+    "protagonists": [
+      "Marcelo Gallardo",
+      "Ramón Díaz",
+      "Enzo Francescoli"
+    ],
+    "panels": [
+      {
+        "caption": "Ramón Díaz se había ido de golpe de River tras ganar el torneo local.",
+        "setting": {
+          "label": "La sede",
+          "kind": "sede"
+        },
+        "figures": [
+          "Ramón Díaz"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "El 6 de junio de 2014, Marcelo Gallardo habla por primera vez como entrenador del club.",
+        "setting": {
+          "label": "La sede",
+          "kind": "sede"
+        },
+        "figures": [
+          "Marcelo Gallardo"
+        ],
+        "tone": "calma"
+      },
+      {
+        "caption": "Dice que es un privilegio ocupar ese lugar y que quiere un equipo protagonista, dueño de la pelota.",
+        "setting": {
+          "label": "La cancha",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Marcelo Gallardo"
+        ],
+        "tone": "calma"
+      },
+      {
+        "caption": "Ahí empieza un ciclo largo.",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "Marcelo Gallardo"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿A qué entrenador reemplazó Gallardo en River en 2014?",
+      "options": [
+        "Ramón Díaz",
+        "Matías Almeyda",
+        "Leonardo Astrada",
+        "Juan José López"
+      ],
+      "answerIndex": 0,
+      "explanation": "Gallardo asumió después de la salida repentina de Ramón Díaz, que había ganado el torneo local."
+    },
+    "sources": [
+      {
+        "label": "La Página Millonaria: frases de la primera conferencia de Gallardo en 2014",
+        "url": "https://lapaginamillonaria.com/amp/riverplate/Las-mejores-frases-de-Gallardo-en-su-primera-conferencia-como-tecnico-de-River-en-2014-20210601-0014.html"
+      },
+      {
+        "label": "ESPN Deportes: las frases de su primera era como DT de River",
+        "url": "https://espndeportes.espn.com/futbol/argentina/nota/_/id/7011813/gallardo-las-frases-que-marcaron-su-primera-era-como-dt-de-river"
+      },
+      {
+        "label": "El Universo (Reuters): Gallardo es nuevo DT de River",
+        "url": "https://www.eluniverso.com/deportes/2014/05/30/nota/3033341/marcelo-muneco-gallardo-es-nuevo-dt-river-plate"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "sudamericana-2014",
+    "eraId": "era-gallardo",
+    "order": 2,
+    "title": "Campeón de la Sudamericana",
+    "date": "2014-12-10",
+    "headline": "River 2-0 Atlético Nacional en el Monumental",
+    "description": "Después del 1-1 en Medellín, la vuelta se definió en el Monumental el 10 de diciembre de 2014. En el segundo tiempo, Gabriel Mercado y Germán Pezzella, los dos de cabeza, le dieron el 2-0 a River. Fue la primera copa internacional de Gallardo y cortó 17 años sin títulos fuera del país.",
+    "protagonists": [
+      "Gabriel Mercado",
+      "Germán Pezzella",
+      "Leonardo Pisculichi",
+      "Marcelo Gallardo"
+    ],
+    "rival": "Atlético Nacional",
+    "result": "River 2-0 Atlético Nacional (global 3-1)",
+    "panels": [
+      {
+        "caption": "En la final de la Sudamericana, River y Atlético Nacional habían empatado 1-1 en Medellín.",
+        "setting": {
+          "label": "Medellín",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River",
+          "Atlético Nacional"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "La vuelta se define en el Monumental el 10 de diciembre de 2014.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River",
+          "Atlético Nacional"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "En el segundo tiempo, Gabriel Mercado y Germán Pezzella, los dos de cabeza, marcan el 2-0.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Gabriel Mercado",
+          "Germán Pezzella"
+        ],
+        "tone": "gloria"
+      },
+      {
+        "caption": "Primera copa internacional de Gallardo: se cortan 17 años sin títulos fuera del país.",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "Marcelo Gallardo"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Contra qué equipo jugó River la final de la Sudamericana 2014?",
+      "options": [
+        "Atlético Nacional",
+        "Independiente Santa Fe",
+        "Boca Juniors",
+        "Estudiantes"
+      ],
+      "answerIndex": 0,
+      "explanation": "Atlético Nacional de Medellín: 1-1 en Colombia y 2-0 para River en el Monumental."
+    },
+    "sources": [
+      {
+        "label": "Wikipedia: 2014 Copa Sudamericana finals",
+        "url": "https://en.wikipedia.org/wiki/2014_Copa_Sudamericana_finals"
+      },
+      {
+        "label": "Cooperativa.cl: River se coronó campeón de la Sudamericana",
+        "url": "https://cooperativa.cl/noticias/deportes/futbol/copa-sudamericana/river-plate-se-corono-campeon-de-la-copa-sudamericana-tras-superar-a/2014-12-10/231024.html"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "libertadores-2015",
+    "eraId": "era-gallardo",
+    "order": 3,
+    "title": "La tercera Libertadores",
+    "date": "2015-08-05",
+    "headline": "River 3-0 Tigres en el Monumental",
+    "description": "La ida en México había terminado 0-0. El 5 de agosto de 2015, en el Monumental, Lucas Alario abrió el marcador antes del descanso, Carlos Sánchez sumó de penal en el segundo tiempo y Ramiro Funes Mori cerró de cabeza. River levantó su tercera Copa Libertadores.",
+    "protagonists": [
+      "Lucas Alario",
+      "Carlos Sánchez",
+      "Ramiro Funes Mori",
+      "Marcelo Gallardo"
+    ],
+    "rival": "Tigres",
+    "result": "River 3-0 Tigres (global 3-0)",
+    "panels": [
+      {
+        "caption": "La ida en México contra Tigres había terminado 0-0.",
+        "setting": {
+          "label": "México",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River",
+          "Tigres"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "El 5 de agosto de 2015, en el Monumental, Lucas Alario abre el marcador antes del descanso.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Lucas Alario"
+        ],
+        "tone": "gloria"
+      },
+      {
+        "caption": "En el segundo tiempo, Carlos Sánchez suma de penal.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Carlos Sánchez"
+        ],
+        "tone": "gloria"
+      },
+      {
+        "caption": "Ramiro Funes Mori cierra de cabeza el 3-0: River levanta su tercera Copa Libertadores.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Ramiro Funes Mori",
+          "River"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "who-scored",
+      "options": [
+        "Lucas Alario",
+        "Teófilo Gutiérrez",
+        "Rodrigo Mora",
+        "Leonardo Pisculichi"
+      ],
+      "answerIndex": 0
+    },
+    "sources": [
+      {
+        "label": "Wikipedia: 2015 Copa Libertadores finals",
+        "url": "https://en.wikipedia.org/wiki/2015_Copa_Libertadores_finals"
+      },
+      {
+        "label": "T13: River campeón de la Copa Libertadores, 3-0 a Tigres",
+        "url": "https://www.t13.cl/noticia/deportes13/futbol-internacional/river-campeon-copa-libertadores-cuadro-millonario-se-impuso-3-0-tigres"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "copa-argentina-2016",
+    "eraId": "era-gallardo",
+    "order": 4,
+    "title": "Una final para el infarto",
+    "date": "2016-12",
+    "headline": "River 4-3 Rosario Central en Córdoba",
+    "description": "En diciembre de 2016, en el Kempes de Córdoba, River y Rosario Central se dieron una final de siete goles. Lucas Alario hizo tres, dos de ellos de penal, e Iván Alonso puso el cuarto. Para River fue la Copa Argentina y el pasaje a la Libertadores.",
+    "protagonists": [
+      "Lucas Alario",
+      "Iván Alonso"
+    ],
+    "rival": "Rosario Central",
+    "result": "River 4-3 Rosario Central",
+    "panels": [
+      {
+        "caption": "En diciembre de 2016, en el Kempes de Córdoba, River y Rosario Central juegan la final de la Copa Argentina.",
+        "setting": {
+          "label": "Kempes",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River",
+          "Rosario Central"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Es una final de siete goles.",
+        "setting": {
+          "label": "Kempes",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Lucas Alario hace tres, dos de ellos de penal, e Iván Alonso pone el cuarto.",
+        "setting": {
+          "label": "Kempes",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Lucas Alario",
+          "Iván Alonso"
+        ],
+        "tone": "drama"
+      },
+      {
+        "caption": "River 4-3: se queda con la Copa Argentina y el pasaje a la Libertadores.",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "River"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Cuántos goles hizo Lucas Alario en la final de la Copa Argentina 2016?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answerIndex": 2,
+      "explanation": "Alario hizo tres, dos de penal. El cuarto fue de Iván Alonso."
+    },
+    "sources": [
+      {
+        "label": "La Capital MdP: River campeón de la Copa Argentina",
+        "url": "https://www.lacapitalmdp.com/river-campeon-de-la-copa-argentina/"
+      },
+      {
+        "label": "ESPN Deportes: River le ganó a Central y logró la Copa Argentina",
+        "url": "https://espndeportes.espn.com/futbol/reporte/_/juegoId/468782"
+      },
+      {
+        "label": "442 Perfil: River dio vuelta una final para el infarto",
+        "url": "https://442.perfil.com/noticias/futbol/2016-12-15-499447-river-dio-vuelta-una-final-para-el-infarto-y-es-campeon.phtml"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "final-madrid-2018",
+    "eraId": "era-gallardo",
+    "order": 5,
+    "title": "La final en Madrid",
+    "date": "2018-12-09",
+    "headline": "River 3-1 Boca en el Bernabéu, tras alargue",
+    "description": "La vuelta de la final de la Libertadores 2018 se jugó en el Santiago Bernabéu, de Madrid, el 9 de diciembre. Benedetto puso en ventaja a Boca y Pratto empató. En el alargue, Juan Fernando Quintero y Gonzalo Martínez cerraron el 3-1. River ganó la Libertadores ante su máximo rival.",
+    "protagonists": [
+      "Lucas Pratto",
+      "Juan Fernando Quintero",
+      "Gonzalo Martínez",
+      "Darío Benedetto"
+    ],
+    "rival": "Boca Juniors",
+    "result": "River 3-1 Boca (alargue; global 5-3)",
+    "panels": [
+      {
+        "caption": "La vuelta de la final de la Libertadores 2018 se juega el 9 de diciembre en el Bernabéu, de Madrid.",
+        "setting": {
+          "label": "Bernabéu",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River",
+          "Boca Juniors"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Benedetto pone en ventaja a Boca.",
+        "setting": {
+          "label": "Bernabéu",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Darío Benedetto"
+        ],
+        "tone": "drama"
+      },
+      {
+        "caption": "Pratto empata y el partido se va al alargue.",
+        "setting": {
+          "label": "Bernabéu",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Lucas Pratto"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "En el alargue, Juan Fernando Quintero y Gonzalo Martínez cierran el 3-1: River gana la Libertadores ante su máximo rival.",
+        "setting": {
+          "label": "Bernabéu",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Juan Fernando Quintero",
+          "Gonzalo Martínez"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿En qué estadio se jugó la vuelta de la final de la Libertadores 2018?",
+      "options": [
+        "Santiago Bernabéu",
+        "Camp Nou",
+        "Wanda Metropolitano",
+        "Estadio Monumental"
+      ],
+      "answerIndex": 0,
+      "explanation": "La vuelta se jugó en el Santiago Bernabéu, en Madrid, el 9 de diciembre de 2018."
+    },
+    "sources": [
+      {
+        "label": "Wikipedia: 2018 Copa Libertadores finals",
+        "url": "https://en.wikipedia.org/wiki/2018_Copa_Libertadores_finals"
+      },
+      {
+        "label": "Montevideo Portal: River se coronó campeón al vencer a Boca 3-1",
+        "url": "https://www.montevideo.com.uy/Deportes/Libertadores-River-Plate-se-corono-campeon-al-vencer-a-Boca-Juniors-3-1-de-atras-uc704204"
+      }
+    ],
+    "verified": true
+  }
+]

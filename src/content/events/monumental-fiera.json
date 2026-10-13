@@ -1,0 +1,335 @@
+[
+  {
+    "id": "pedernera-debuta-1935",
+    "eraId": "monumental-fiera",
+    "order": 1,
+    "title": "Debuta Pedernera",
+    "date": "1935",
+    "headline": "Un pibe de Avellaneda llega para quedarse",
+    "description": "En 1935 debuta en Primera Adolfo Pedernera, un pibe de Avellaneda que había llegado a las inferiores de River en 1933. Con los años se va a retrasar como centrodelantero y va a ser el eje de la delantera más famosa del club. Juega en River hasta 1946 y en 1947 pasa a Atlanta.",
+    "protagonists": [
+      "Adolfo Pedernera"
+    ],
+    "panels": [
+      {
+        "caption": "Adolfo Pedernera, un pibe de Avellaneda, llega a las inferiores de River en 1933.",
+        "setting": {
+          "label": "La sede",
+          "kind": "sede"
+        },
+        "figures": [
+          "Adolfo Pedernera"
+        ],
+        "tone": "calma"
+      },
+      {
+        "caption": "En 1935 debuta en Primera.",
+        "setting": {
+          "label": "La cancha",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Adolfo Pedernera"
+        ],
+        "tone": "drama"
+      },
+      {
+        "caption": "Con los años se retrasa como centrodelantero y es el eje de la delantera más famosa del club.",
+        "setting": {
+          "label": "La cancha",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Adolfo Pedernera",
+          "River"
+        ],
+        "tone": "gloria"
+      },
+      {
+        "caption": "Juega en River hasta 1946 y en 1947 pasa a Atlanta.",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "Adolfo Pedernera"
+        ],
+        "tone": "calma"
+      }
+    ],
+    "challenge": {
+      "type": "guess-year",
+      "correctYear": 1935,
+      "tolerance": 0
+    },
+    "sources": [
+      {
+        "label": "La Página Millonaria: Pedernera, sinónimo de talento y de River",
+        "url": "https://lapaginamillonaria.com/riverplate/Pedernera-sinonimo-de-talento-y-de-River-20151115-0010.html"
+      },
+      {
+        "label": "Wikipedia (en): Adolfo Pedernera",
+        "url": "https://en.wikipedia.org/wiki/Adolfo_Pedernera"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "copa-campeonato-1936",
+    "eraId": "monumental-fiera",
+    "order": 2,
+    "title": "Copa Campeonato 1936",
+    "date": "1936",
+    "headline": "River gana la final 4 a 2 sobre San Lorenzo",
+    "description": "En 1936 River se queda con la Copa Campeonato: la final es un 4 a 2 sobre San Lorenzo. Ese mismo año suma también la Copa de Oro. Pedernera, que había debutado un año antes, ya figura entre los campeones de esa temporada.",
+    "protagonists": [
+      "Adolfo Pedernera"
+    ],
+    "rival": "San Lorenzo",
+    "result": "River 4-2 San Lorenzo",
+    "panels": [
+      {
+        "caption": "Pedernera había debutado un año antes y ya figura entre los campeones de 1936.",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "River",
+          "Adolfo Pedernera"
+        ],
+        "tone": "calma"
+      },
+      {
+        "caption": "River llega a la final de la Copa Campeonato frente a San Lorenzo.",
+        "setting": {
+          "label": "La cancha",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River",
+          "San Lorenzo"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "River gana la final 4 a 2 y se queda con la Copa Campeonato.",
+        "setting": {
+          "label": "La cancha",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River"
+        ],
+        "tone": "gloria"
+      },
+      {
+        "caption": "Ese mismo año suma también la Copa de Oro.",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "River"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿A qué rival venció River en la final de la Copa Campeonato de 1936?",
+      "options": [
+        "Boca Juniors",
+        "San Lorenzo",
+        "Independiente",
+        "Racing"
+      ],
+      "answerIndex": 1,
+      "explanation": "La final fue 4 a 2 sobre San Lorenzo, según Wikipedia y el registro de RSSSF."
+    },
+    "sources": [
+      {
+        "label": "Wikipedia: Club Atlético River Plate",
+        "url": "https://es.wikipedia.org/wiki/Club_Atl%C3%A9tico_River_Plate"
+      },
+      {
+        "label": "RSSSF: Argentina - Vueltas Olímpicas in League",
+        "url": "https://rsssf.org/miscellaneous/arg-honourround.html"
+      },
+      {
+        "label": "La Página Millonaria: Pedernera, sinónimo de talento y de River",
+        "url": "https://lapaginamillonaria.com/riverplate/Pedernera-sinonimo-de-talento-y-de-River-20151115-0010.html"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "campeon-1937",
+    "eraId": "monumental-fiera",
+    "order": 3,
+    "title": "Campeón de 1937",
+    "date": "1937",
+    "headline": "58 puntos y título con dos fechas de ventaja",
+    "description": "River gana el campeonato de 1937 con 58 puntos: 27 victorias, 4 empates y 3 derrotas en 34 partidos. Se consagra dos fechas antes del final y deja la marca de una campaña casi sin fisuras.",
+    "protagonists": [],
+    "panels": [
+      {
+        "caption": "River arranca el campeonato de 1937 y juega una campaña casi sin fisuras.",
+        "setting": {
+          "label": "La sede",
+          "kind": "sede"
+        },
+        "figures": [
+          "River"
+        ],
+        "tone": "calma"
+      },
+      {
+        "caption": "En 34 partidos suma 27 victorias, 4 empates y 3 derrotas.",
+        "setting": {
+          "label": "La cancha",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Se consagra campeón dos fechas antes del final.",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "River"
+        ],
+        "tone": "gloria"
+      },
+      {
+        "caption": "Termina con 58 puntos.",
+        "setting": {
+          "label": "La tribuna",
+          "kind": "tribuna"
+        },
+        "figures": [
+          "River"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Cuántos puntos sumó River para salir campeón en 1937 (34 partidos)?",
+      "options": [
+        "46",
+        "52",
+        "58",
+        "64"
+      ],
+      "answerIndex": 2,
+      "explanation": "Fueron 58 puntos, con 27 victorias, 4 empates y 3 derrotas."
+    },
+    "sources": [
+      {
+        "label": "Wikipedia: Campeonato de Primera División 1937",
+        "url": "https://es.wikipedia.org/wiki/Campeonato_de_Primera_Divisi%C3%B3n_1937_(Argentina)"
+      },
+      {
+        "label": "Wikipedia: Club Atlético River Plate",
+        "url": "https://es.wikipedia.org/wiki/Club_Atl%C3%A9tico_River_Plate"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "debut-labruna-1939",
+    "eraId": "monumental-fiera",
+    "order": 4,
+    "title": "Debuta Labruna",
+    "date": "1939-06-18",
+    "headline": "Entra por el Charro y empieza una leyenda",
+    "description": "El 18 de junio de 1939 River pierde 1 a 0 con Estudiantes de La Plata, pero el partido queda en la historia por otra cosa: Ángel Labruna entra en lugar de José Manuel Moreno y debuta en Primera. Con el tiempo va a ser el máximo goleador de la historia del club.",
+    "protagonists": [
+      "Ángel Labruna",
+      "José Manuel Moreno"
+    ],
+    "rival": "Estudiantes de La Plata",
+    "result": "Estudiantes 1-0 River",
+    "panels": [
+      {
+        "caption": "El 18 de junio de 1939 River juega con Estudiantes de La Plata.",
+        "setting": {
+          "label": "La cancha",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River",
+          "Estudiantes de La Plata"
+        ],
+        "tone": "calma"
+      },
+      {
+        "caption": "Ángel Labruna entra en lugar de José Manuel Moreno y debuta en Primera.",
+        "setting": {
+          "label": "La cancha",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Ángel Labruna",
+          "José Manuel Moreno"
+        ],
+        "tone": "drama"
+      },
+      {
+        "caption": "River pierde 1 a 0, pero el partido queda en la historia por el debut.",
+        "setting": {
+          "label": "La cancha",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Estudiantes de La Plata"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Con el tiempo, Labruna va a ser el máximo goleador de la historia del club.",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "Ángel Labruna"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿A quién reemplazó Labruna en su debut en Primera con River?",
+      "options": [
+        "Adolfo Pedernera",
+        "Juan Carlos Muñoz",
+        "José Manuel Moreno",
+        "Félix Loustau"
+      ],
+      "answerIndex": 2,
+      "explanation": "Entró por el Charro Moreno, según Diario de Cuyo y La Nación."
+    },
+    "sources": [
+      {
+        "label": "Cadena 3: Labruna, el ángel de la banda roja",
+        "url": "https://www.cadena3.com/noticia/la-previa/labruna-el-angel-de-la-banda-roja_241881"
+      },
+      {
+        "label": "Diario de Cuyo: Día del Hincha de River",
+        "url": "https://diariodecuyo.com.ar/pasiondeportiva/De-fiesta-hoy-se-celebra-el-Dia-del-Hincha-de-River-20170928-0044.html"
+      },
+      {
+        "label": "Wikipedia: Ángel Labruna",
+        "url": "https://es.wikipedia.org/wiki/%C3%81ngel_Labruna"
+      }
+    ],
+    "verified": true
+  }
+]

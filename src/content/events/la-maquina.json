@@ -1,0 +1,548 @@
+[
+  {
+    "id": "campeon-1941",
+    "eraId": "la-maquina",
+    "order": 1,
+    "title": "Campeón de 1941",
+    "date": "1941",
+    "headline": "Se define en La Plata, bajo la lluvia",
+    "description": "River se consagra campeón de 1941 en la última fecha, con un 3 a 1 como visitante frente a Estudiantes de La Plata. Es el título con el que arranca el ciclo de Renato Cesarini y el de la delantera que años después todos van a llamar La Máquina.",
+    "protagonists": [
+      "Renato Cesarini"
+    ],
+    "rival": "Estudiantes de La Plata",
+    "result": "Estudiantes 1-3 River",
+    "panels": [
+      {
+        "caption": "El campeonato de 1941 se define en la última fecha, en La Plata.",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "River"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "River visita a Estudiantes de La Plata con el título en juego.",
+        "setting": {
+          "label": "La Plata",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River",
+          "Estudiantes de La Plata"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Gana 3 a 1 como visitante y se consagra campeón.",
+        "setting": {
+          "label": "La Plata",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River"
+        ],
+        "tone": "gloria"
+      },
+      {
+        "caption": "Arranca el ciclo de Renato Cesarini y la delantera que después llamarán La Máquina.",
+        "setting": {
+          "label": "La sede",
+          "kind": "sede"
+        },
+        "figures": [
+          "Renato Cesarini"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Contra quién ganó River 3 a 1 para consagrarse campeón en 1941?",
+      "options": [
+        "Estudiantes de La Plata",
+        "San Lorenzo",
+        "Boca Juniors",
+        "Chacarita Juniors"
+      ],
+      "answerIndex": 0,
+      "explanation": "El título se definió en la fecha 30, con el 3 a 1 sobre Estudiantes, según Wikipedia y RSSSF."
+    },
+    "sources": [
+      {
+        "label": "Wikipedia: Campeonato de Primera División 1941",
+        "url": "https://es.wikipedia.org/wiki/Campeonato_de_Primera_Divisi%C3%B3n_1941_(Argentina)"
+      },
+      {
+        "label": "RSSSF: Argentina - Vueltas Olímpicas in League",
+        "url": "https://rsssf.org/miscellaneous/arg-honourround.html"
+      },
+      {
+        "label": "Wikipedia (en): La Máquina",
+        "url": "https://en.wikipedia.org/wiki/La_M%C3%A1quina"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "nace-la-maquina-1942",
+    "eraId": "la-maquina",
+    "order": 2,
+    "title": "Nace el apodo",
+    "date": "1942",
+    "headline": "6 a 2 a Chacarita y Borocotó bautiza al equipo",
+    "description": "En 1942 River le gana 6 a 2 a Chacarita Juniors por la octava fecha. El periodista Borocotó, de El Gráfico, destaca el funcionamiento de la delantera y la llama \"máquina\". El apodo se pega para siempre al quinteto de Muñoz, Moreno, Pedernera, Labruna y Loustau.",
+    "protagonists": [
+      "Borocotó",
+      "Juan Carlos Muñoz",
+      "José Manuel Moreno",
+      "Adolfo Pedernera",
+      "Ángel Labruna"
+    ],
+    "rival": "Chacarita Juniors",
+    "result": "River 6-2 Chacarita Juniors",
+    "panels": [
+      {
+        "caption": "En 1942, por la octava fecha, River recibe a Chacarita Juniors.",
+        "setting": {
+          "label": "La cancha",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River",
+          "Chacarita Juniors"
+        ],
+        "tone": "calma"
+      },
+      {
+        "caption": "River le gana 6 a 2 a Chacarita Juniors.",
+        "setting": {
+          "label": "La cancha",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River"
+        ],
+        "tone": "gloria"
+      },
+      {
+        "caption": "Borocotó, de El Gráfico, destaca el funcionamiento de la delantera y la llama \"máquina\".",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "Borocotó"
+        ],
+        "tone": "drama"
+      },
+      {
+        "caption": "El apodo se pega para siempre al quinteto de Muñoz, Moreno, Pedernera, Labruna y Loustau.",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "River"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Con qué goleada a Chacarita se asocia el nacimiento del apodo La Máquina?",
+      "options": [
+        "4 a 0",
+        "5 a 1",
+        "6 a 2",
+        "7 a 3"
+      ],
+      "answerIndex": 2,
+      "explanation": "Fue un 6 a 2 en 1942. La fecha exacta se discute (7 o 12 de junio), pero el resultado coincide en todas las fuentes."
+    },
+    "sources": [
+      {
+        "label": "Wikipedia (en): La Máquina",
+        "url": "https://en.wikipedia.org/wiki/La_M%C3%A1quina"
+      },
+      {
+        "label": "El Litoral: 75 años del último partido de La Máquina",
+        "url": "https://www.ellitoral.com/deportes/75-anos-ultimo-partido-maquina-river_0_Nk72E9xpwv.html"
+      },
+      {
+        "label": "Los Andes: Un día como hoy nacía La Máquina de River",
+        "url": "https://www.losandes.com.ar/un-dia-como-hoy-nacia-la-maquina-de-river-quien-lo-bautizo-asi-y-quienes-la-integraban"
+      },
+      {
+        "label": "Wikipedia: Campeonato de Primera División 1942",
+        "url": "https://es.wikipedia.org/wiki/Campeonato_de_Primera_Divisi%C3%B3n_1942_(Argentina)"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "debut-loustau-1942",
+    "eraId": "la-maquina",
+    "order": 3,
+    "title": "Debuta Loustau",
+    "date": "1942-06-28",
+    "headline": "Por primera vez, los cinco juntos",
+    "description": "El 28 de junio de 1942, en el Monumental, River le gana 1 a 0 a Platense. Félix Loustau, que había llegado como marcador de punta, debuta en el extremo izquierdo en lugar de Aristóbulo Deambrosi. Es la primera vez que juegan juntos Muñoz, Moreno, Pedernera, Labruna y Loustau.",
+    "protagonists": [
+      "Félix Loustau",
+      "Aristóbulo Deambrosi"
+    ],
+    "rival": "Platense",
+    "result": "River 1-0 Platense",
+    "panels": [
+      {
+        "caption": "Félix Loustau había llegado a River como marcador de punta.",
+        "setting": {
+          "label": "La sede",
+          "kind": "sede"
+        },
+        "figures": [
+          "Félix Loustau"
+        ],
+        "tone": "calma"
+      },
+      {
+        "caption": "El 28 de junio de 1942, en el Monumental, River juega con Platense.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River",
+          "Platense"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Loustau debuta en el extremo izquierdo en lugar de Aristóbulo Deambrosi.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Félix Loustau",
+          "Aristóbulo Deambrosi"
+        ],
+        "tone": "drama"
+      },
+      {
+        "caption": "River gana 1 a 0 y por primera vez juegan juntos los cinco de La Máquina.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Ante qué rival debutó Félix Loustau en River, el 28 de junio de 1942?",
+      "options": [
+        "Platense",
+        "Huracán",
+        "Independiente",
+        "Lanús"
+      ],
+      "answerIndex": 0,
+      "explanation": "River ganó 1 a 0 a Platense en el Monumental, según Wikipedia y La Página Millonaria."
+    },
+    "sources": [
+      {
+        "label": "Wikipedia: Félix Loustau",
+        "url": "https://es.wikipedia.org/wiki/F%C3%A9lix_Loustau"
+      },
+      {
+        "label": "Wikipedia (en): La Máquina",
+        "url": "https://en.wikipedia.org/wiki/La_M%C3%A1quina"
+      },
+      {
+        "label": "La Página Millonaria: Se cumplen 73 años del debut de La Máquina",
+        "url": "https://lapaginamillonaria.com/riverplate/Se-cumplen-73-anos-del-debut-de-La-Maquina-20150628-0004.html"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "campeon-1942",
+    "eraId": "la-maquina",
+    "order": 4,
+    "title": "Bicampeón de la Máquina",
+    "date": "1942",
+    "headline": "Un 2 a 2 con Boca alcanza para repetir",
+    "description": "River se consagra campeón de 1942, el segundo título seguido, con dos fechas de anticipación. Lo logra empatando 2 a 2 como visitante frente a Boca Juniors, en la fecha 28 de 30. Ese año también se queda con la Copa Ibarguren.",
+    "protagonists": [],
+    "rival": "Boca Juniors",
+    "result": "Boca Juniors 2-2 River",
+    "panels": [
+      {
+        "caption": "River busca repetir el título en 1942, el segundo seguido.",
+        "setting": {
+          "label": "La sede",
+          "kind": "sede"
+        },
+        "figures": [
+          "River"
+        ],
+        "tone": "calma"
+      },
+      {
+        "caption": "En la fecha 28 de 30 visita a Boca Juniors.",
+        "setting": {
+          "label": "La cancha",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River",
+          "Boca Juniors"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "El 2 a 2 como visitante alcanza para ser campeón con dos fechas de anticipación.",
+        "setting": {
+          "label": "La cancha",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River"
+        ],
+        "tone": "gloria"
+      },
+      {
+        "caption": "Ese año también se queda con la Copa Ibarguren.",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "River"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Frente a qué rival empató River 2 a 2 para quedar campeón en 1942?",
+      "options": [
+        "Independiente",
+        "Boca Juniors",
+        "Racing",
+        "San Lorenzo"
+      ],
+      "answerIndex": 1,
+      "explanation": "El 2 a 2 con Boca en la fecha 28 aseguró el título, según Wikipedia y RSSSF."
+    },
+    "sources": [
+      {
+        "label": "Wikipedia: Campeonato de Primera División 1942",
+        "url": "https://es.wikipedia.org/wiki/Campeonato_de_Primera_Divisi%C3%B3n_1942_(Argentina)"
+      },
+      {
+        "label": "RSSSF: Argentina - Vueltas Olímpicas in League",
+        "url": "https://rsssf.org/miscellaneous/arg-honourround.html"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "campeon-1945",
+    "eraId": "la-maquina",
+    "order": 5,
+    "title": "Campeón de 1945",
+    "date": "1945",
+    "headline": "Labruna goleador y título en el Monumental",
+    "description": "River gana el campeonato de 1945 con 46 puntos en 30 fechas, por delante de Boca. Lo define en el Monumental con un 2 a 0 sobre Chacarita en la penúltima fecha. Ángel Labruna termina como goleador del torneo, con 25 tantos.",
+    "protagonists": [
+      "Ángel Labruna"
+    ],
+    "rival": "Chacarita Juniors",
+    "result": "River 2-0 Chacarita Juniors",
+    "panels": [
+      {
+        "caption": "River pelea el campeonato de 1945 por delante de Boca.",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "River"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "En la penúltima fecha, en el Monumental, recibe a Chacarita.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River",
+          "Chacarita Juniors"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Gana 2 a 0 y lo define: 46 puntos en 30 fechas.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River"
+        ],
+        "tone": "gloria"
+      },
+      {
+        "caption": "Ángel Labruna termina como goleador del torneo, con 25 tantos.",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "Ángel Labruna"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Cuántos goles hizo Labruna para ser el goleador del campeonato de 1945?",
+      "options": [
+        "19",
+        "22",
+        "25",
+        "31"
+      ],
+      "answerIndex": 2,
+      "explanation": "Hizo 25 goles, según Wikipedia (tanto el torneo como su biografía)."
+    },
+    "sources": [
+      {
+        "label": "Wikipedia: Campeonato de Primera División 1945",
+        "url": "https://es.wikipedia.org/wiki/Campeonato_de_Primera_Divisi%C3%B3n_1945_(Argentina)"
+      },
+      {
+        "label": "RSSSF: Argentina - Vueltas Olímpicas in League",
+        "url": "https://rsssf.org/miscellaneous/arg-honourround.html"
+      },
+      {
+        "label": "Wikipedia (en): Ángel Labruna",
+        "url": "https://en.wikipedia.org/wiki/%C3%81ngel_Labruna"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "fin-de-la-maquina-1946-47",
+    "eraId": "la-maquina",
+    "order": 6,
+    "title": "El último partido juntos",
+    "date": "1946-11-17",
+    "headline": "Un 2 a 2 con Huracán cierra el quinteto",
+    "description": "El 17 de noviembre de 1946 River empata 2 a 2 con Huracán, y es el último partido con la delantera completa. En 1947 River sale campeón con 48 puntos y 90 goles, pero Pedernera se va a Atlanta y la historia de La Máquina queda atrás.",
+    "protagonists": [
+      "Adolfo Pedernera",
+      "Juan Carlos Muñoz",
+      "José Manuel Moreno",
+      "Ángel Labruna",
+      "Félix Loustau"
+    ],
+    "rival": "Huracán",
+    "result": "River 2-2 Huracán",
+    "panels": [
+      {
+        "caption": "El 17 de noviembre de 1946 River empata 2 a 2 con Huracán.",
+        "setting": {
+          "label": "La cancha",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River",
+          "Huracán"
+        ],
+        "tone": "drama"
+      },
+      {
+        "caption": "Es el último partido con la delantera completa.",
+        "setting": {
+          "label": "La cancha",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Juan Carlos Muñoz",
+          "José Manuel Moreno",
+          "Adolfo Pedernera"
+        ],
+        "tone": "drama"
+      },
+      {
+        "caption": "En 1947 River sale campeón con 48 puntos y 90 goles.",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "River"
+        ],
+        "tone": "gloria"
+      },
+      {
+        "caption": "Pedernera se va a Atlanta y la historia de La Máquina queda atrás.",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "Adolfo Pedernera"
+        ],
+        "tone": "calma"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿A qué club se fue Pedernera en 1947 al dejar River?",
+      "options": [
+        "Boca Juniors",
+        "Huracán",
+        "Atlanta",
+        "Racing"
+      ],
+      "answerIndex": 2,
+      "explanation": "Pedernera pasó a Atlanta en 1947, según Wikipedia y La Página Millonaria."
+    },
+    "sources": [
+      {
+        "label": "El Litoral: 75 años del último partido de La Máquina",
+        "url": "https://www.ellitoral.com/deportes/75-anos-ultimo-partido-maquina-river_0_Nk72E9xpwv.html"
+      },
+      {
+        "label": "La Página Millonaria: Se cumplen 73 años del debut de La Máquina",
+        "url": "https://lapaginamillonaria.com/riverplate/Se-cumplen-73-anos-del-debut-de-La-Maquina-20150628-0004.html"
+      },
+      {
+        "label": "Wikipedia: Campeonato de Primera División 1947",
+        "url": "https://es.wikipedia.org/wiki/Campeonato_de_Primera_Divisi%C3%B3n_1947_(Argentina)"
+      },
+      {
+        "label": "Wikipedia: Club Atlético River Plate",
+        "url": "https://es.wikipedia.org/wiki/Club_Atl%C3%A9tico_River_Plate"
+      },
+      {
+        "label": "La Página Millonaria: Pedernera, sinónimo de talento y de River",
+        "url": "https://lapaginamillonaria.com/riverplate/Pedernera-sinonimo-de-talento-y-de-River-20151115-0010.html"
+      }
+    ],
+    "verified": true
+  }
+]

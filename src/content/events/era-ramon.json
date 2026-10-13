@@ -1,0 +1,436 @@
+[
+  {
+    "id": "ramon-diaz-asume-1995",
+    "eraId": "era-ramon",
+    "order": 1,
+    "title": "Ramón Díaz toma el mando",
+    "date": "1995",
+    "headline": "Empieza un ciclo que dura hasta febrero de 2000",
+    "description": "En 1995 Ramón Díaz empezó su primer ciclo como entrenador de River, que se extendió hasta febrero de 2000. Con él al frente, el club ganó la Libertadores de 1996, la Supercopa de 1997 y cinco torneos locales.",
+    "protagonists": [
+      "Ramón Díaz"
+    ],
+    "panels": [
+      {
+        "caption": "En 1995 Ramón Díaz empieza su primer ciclo como entrenador de River.",
+        "setting": {
+          "label": "La sede",
+          "kind": "sede"
+        },
+        "figures": [
+          "Ramón Díaz"
+        ],
+        "tone": "calma"
+      },
+      {
+        "caption": "Con él al frente, el club gana la Libertadores de 1996.",
+        "setting": {
+          "label": "La cancha",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Ramón Díaz",
+          "River"
+        ],
+        "tone": "gloria"
+      },
+      {
+        "caption": "Después llega la Supercopa de 1997.",
+        "setting": {
+          "label": "La cancha",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Ramón Díaz"
+        ],
+        "tone": "gloria"
+      },
+      {
+        "caption": "Suma cinco torneos locales hasta febrero de 2000, cuando termina el ciclo.",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "Ramón Díaz"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "guess-year",
+      "correctYear": 1995,
+      "tolerance": 1
+    },
+    "sources": [
+      {
+        "label": "Wikipedia ES - Ramón Ángel Díaz",
+        "url": "https://es.wikipedia.org/wiki/Ramón_Ángel_Díaz"
+      },
+      {
+        "label": "Wikipedia EN - Ramón Díaz",
+        "url": "https://en.wikipedia.org/wiki/Ramón_Díaz"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "libertadores-96-semis",
+    "eraId": "era-ramon",
+    "order": 2,
+    "title": "Semifinal ante la U de Chile",
+    "date": "1996",
+    "headline": "River sufre, pero llega a la final",
+    "description": "En las semifinales de la Libertadores 1996 River se midió con Universidad de Chile y avanzó a la final. Fue una serie ajustada, definida por pocos goles.",
+    "protagonists": [],
+    "rival": "Universidad de Chile",
+    "sources": [
+      {
+        "label": "RSSSF - Copa Libertadores 1996",
+        "url": "https://rsssf.org/sacups/copa96.html"
+      }
+    ],
+    "verified": false
+  },
+  {
+    "id": "libertadores-96-ida-cali",
+    "eraId": "era-ramon",
+    "order": 3,
+    "title": "Ida en Cali",
+    "date": "1996-06-19",
+    "headline": "América gana 1-0 en el Pascual Guerrero",
+    "description": "En la ida de la final, América de Cali ganó 1-0 en el Pascual Guerrero con gol de Anthony de Ávila a los 26 minutos. River se volvió con una derrota corta y la serie abierta para el Monumental.",
+    "protagonists": [
+      "Ramón Díaz"
+    ],
+    "rival": "América de Cali",
+    "result": "América de Cali 1-0 River Plate",
+    "panels": [
+      {
+        "caption": "En la ida de la final, River visita a América de Cali en el Pascual Guerrero.",
+        "setting": {
+          "label": "Cali",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River",
+          "América de Cali"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "A los 26 minutos, Anthony de Ávila marca para América.",
+        "setting": {
+          "label": "Cali",
+          "kind": "cancha"
+        },
+        "figures": [
+          "América de Cali"
+        ],
+        "tone": "drama"
+      },
+      {
+        "caption": "América gana 1-0.",
+        "setting": {
+          "label": "La cancha",
+          "kind": "cancha"
+        },
+        "figures": [
+          "América de Cali"
+        ],
+        "tone": "drama"
+      },
+      {
+        "caption": "River se vuelve con una derrota corta y la serie abierta para el Monumental.",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "Ramón Díaz"
+        ],
+        "tone": "tension"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Cómo terminó la ida de la final de la Libertadores 1996 en Cali?",
+      "options": [
+        "América 1-0 River",
+        "River 1-0 América",
+        "América 2-1 River",
+        "0-0"
+      ],
+      "answerIndex": 0,
+      "explanation": "América ganó 1-0 con gol de De Ávila; River dio vuelta la serie en el Monumental."
+    },
+    "sources": [
+      {
+        "label": "Wikipedia - 1996 Copa Libertadores finals",
+        "url": "https://en.wikipedia.org/wiki/1996_Copa_Libertadores_finals"
+      },
+      {
+        "label": "RSSSF - Copa Libertadores 1996",
+        "url": "https://rsssf.org/sacups/copa96.html"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "libertadores-96-vuelta",
+    "eraId": "era-ramon",
+    "order": 4,
+    "title": "Crespo y la segunda Libertadores",
+    "date": "1996-06-26",
+    "headline": "River 2, América 0 y la Copa vuelve al Monumental",
+    "description": "El 26 de junio de 1996, ante unos 73.000 hinchas en el Monumental, Hernán Crespo marcó a los 6 y a los 59 minutos. El 2-0 le dio a River el 2-1 global y su segunda Copa Libertadores, con Ramón Díaz como técnico.",
+    "protagonists": [
+      "Hernán Crespo",
+      "Ramón Díaz",
+      "Enzo Francescoli"
+    ],
+    "rival": "América de Cali",
+    "result": "River Plate 2-0 América de Cali",
+    "panels": [
+      {
+        "caption": "El 26 de junio de 1996, unos 73.000 hinchas llenan el Monumental para la vuelta.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Hinchas",
+          "América de Cali"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "A los 6 minutos, Hernán Crespo abre el marcador.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Hernán Crespo"
+        ],
+        "tone": "gloria"
+      },
+      {
+        "caption": "A los 59, Crespo vuelve a marcar y pone el 2-0.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Hernán Crespo",
+          "River"
+        ],
+        "tone": "gloria"
+      },
+      {
+        "caption": "El 2-1 global le da a River su segunda Copa Libertadores, con Ramón Díaz como técnico.",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "Ramón Díaz",
+          "River"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "who-scored",
+      "options": [
+        "Hernán Crespo",
+        "Enzo Francescoli",
+        "Ariel Ortega",
+        "Matías Almeyda"
+      ],
+      "answerIndex": 0
+    },
+    "sources": [
+      {
+        "label": "Wikipedia - 1996 Copa Libertadores finals",
+        "url": "https://en.wikipedia.org/wiki/1996_Copa_Libertadores_finals"
+      },
+      {
+        "label": "RSSSF - Copa Libertadores 1996",
+        "url": "https://rsssf.org/sacups/copa96.html"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "intercontinental-96-tokio",
+    "eraId": "era-ramon",
+    "order": 5,
+    "title": "Final con Juventus en Tokio",
+    "date": "1996-11-26",
+    "headline": "Del Piero rompe el 0-0 a los 81 minutos",
+    "description": "River viajó a Tokio como campeón de América y se enfrentó con Juventus en el Estadio Nacional. El partido estuvo 0-0 hasta el segundo tiempo, cuando Alessandro Del Piero marcó a los 81 minutos y el título quedó en manos italianas.",
+    "protagonists": [
+      "Ramón Díaz"
+    ],
+    "rival": "Juventus",
+    "result": "Juventus 1-0 River Plate",
+    "panels": [
+      {
+        "caption": "River viaja a Tokio como campeón de América para enfrentar a Juventus en el Estadio Nacional.",
+        "setting": {
+          "label": "Estadio Nacional de Tokio",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Juventus",
+          "Ramón Díaz"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "El partido está 0-0 hasta el segundo tiempo.",
+        "setting": {
+          "label": "Estadio Nacional de Tokio",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River",
+          "Juventus"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "A los 81 minutos, Alessandro Del Piero rompe el empate.",
+        "setting": {
+          "label": "Estadio Nacional de Tokio",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Juventus"
+        ],
+        "tone": "drama"
+      },
+      {
+        "caption": "Juventus 1-0 River: el título queda en manos italianas.",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "Juventus",
+          "River"
+        ],
+        "tone": "drama"
+      }
+    ],
+    "challenge": {
+      "type": "who-scored",
+      "options": [
+        "Alessandro Del Piero",
+        "Hernán Crespo",
+        "Enzo Francescoli",
+        "Gianluca Vialli"
+      ],
+      "answerIndex": 0
+    },
+    "sources": [
+      {
+        "label": "Wikipedia - 1996 Intercontinental Cup",
+        "url": "https://en.wikipedia.org/wiki/1996_Intercontinental_Cup"
+      },
+      {
+        "label": "RSSSF - Intercontinental Club Cup 1996",
+        "url": "https://rsssf.org/tablest/toyota96.html"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "tricampeonato-96-97",
+    "eraId": "era-ramon",
+    "order": 6,
+    "title": "El tricampeonato local",
+    "date": "1997",
+    "headline": "Apertura 96, Clausura 97 y Apertura 97",
+    "description": "Entre 1996 y 1997 River ganó tres torneos locales seguidos con Ramón Díaz: el Apertura 1996, el Clausura 1997 y el Apertura 1997, este último con 45 puntos, uno más que Boca.",
+    "protagonists": [
+      "Ramón Díaz"
+    ],
+    "panels": [
+      {
+        "caption": "Entre 1996 y 1997, River arma un ciclo ganador con Ramón Díaz en el banco.",
+        "setting": {
+          "label": "La sede",
+          "kind": "sede"
+        },
+        "figures": [
+          "Ramón Díaz",
+          "River"
+        ],
+        "tone": "calma"
+      },
+      {
+        "caption": "Gana el Apertura 1996.",
+        "setting": {
+          "label": "La cancha",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Ramón Díaz"
+        ],
+        "tone": "gloria"
+      },
+      {
+        "caption": "Sigue con el Clausura 1997.",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "Ramón Díaz"
+        ],
+        "tone": "gloria"
+      },
+      {
+        "caption": "Cierra con el Apertura 1997, con 45 puntos, uno más que Boca: tres torneos locales seguidos.",
+        "setting": {
+          "label": "La cancha",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Ramón Díaz",
+          "River"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Cuántos torneos locales seguidos ganó River entre 1996 y 1997?",
+      "options": [
+        "Tres",
+        "Dos",
+        "Cuatro",
+        "Uno"
+      ],
+      "answerIndex": 0,
+      "explanation": "Apertura 1996, Clausura 1997 y Apertura 1997."
+    },
+    "sources": [
+      {
+        "label": "RSSSF - Argentina 1996/97",
+        "url": "https://rsssf.org/tablesa/arg97.html"
+      },
+      {
+        "label": "RSSSF - Argentina 1997/98",
+        "url": "https://rsssf.org/tablesa/arg98.html"
+      },
+      {
+        "label": "Wikipedia ES - Ramón Ángel Díaz",
+        "url": "https://es.wikipedia.org/wiki/Ramón_Ángel_Díaz"
+      }
+    ],
+    "verified": true
+  }
+]

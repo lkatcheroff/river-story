@@ -1,0 +1,438 @@
+[
+  {
+    "id": "ultimo-titulo-1957",
+    "eraId": "sequia",
+    "order": 1,
+    "title": "El último título antes de la noche larga",
+    "date": "1957",
+    "headline": "River se consagra campeón sin saber que empieza la peor sequía de su historia",
+    "description": "En 1957 River ganó el campeonato de Primera con la autoridad de un equipo que ya era leyenda. Nadie en el Monumental imaginaba lo que venía: durante las 17 temporadas siguientes no ganó un solo torneo local, aunque rozó la gloria una y otra vez.",
+    "protagonists": [
+      "River Plate"
+    ],
+    "panels": [
+      {
+        "caption": "En 1957 River gana el campeonato de Primera con la autoridad de un equipo que ya era leyenda.",
+        "setting": {
+          "label": "La cancha",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River Plate"
+        ],
+        "tone": "gloria"
+      },
+      {
+        "caption": "En el Monumental nadie imagina lo que viene después de la fiesta.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River Plate"
+        ],
+        "tone": "calma"
+      },
+      {
+        "caption": "Arranca la peor sequía de su historia: 17 temporadas sin ganar un solo torneo local.",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "River Plate"
+        ],
+        "tone": "drama"
+      },
+      {
+        "caption": "Rozó la gloria una y otra vez, pero la vuelta olímpica nunca llegó.",
+        "setting": {
+          "label": "La tribuna",
+          "kind": "tribuna"
+        },
+        "figures": [
+          "River Plate"
+        ],
+        "tone": "tension"
+      }
+    ],
+    "challenge": {
+      "type": "guess-year",
+      "correctYear": 1957,
+      "tolerance": 0
+    },
+    "sources": [
+      {
+        "label": "442 Perfil - River campeón del Metropolitano 1975, 50 años",
+        "url": "https://442.perfil.com/noticias/futbol/river-campeon-del-metropolitano-1975-50-anos-del-titulo-que-corto-la-mayor-sequia-millonaria.phtml"
+      },
+      {
+        "label": "El Economista - Hace 50 años River cortaba su sequía más larga",
+        "url": "https://eleconomista.com.ar/deportes/hace-50-anos-river-cortaba-su-sequia-mas-larga-titulos-equipo-juvenil-medio-pais-convulsionado-n87552/amp"
+      },
+      {
+        "label": "La Página Millonaria - River campeón del Metropolitano 1975",
+        "url": "https://lapaginamillonaria.com/riverplate/River-se-consagro-campeon-del-Metropolitano-de-1975-y-corto-una-racha-de-18-anos-sin-poder-hacerlo-20210814-0005.html"
+      }
+    ],
+    "verified": true,
+    "imageAlt": "River Plate campeón de 1957"
+  },
+  {
+    "id": "libertadores-1966-vuelta",
+    "eraId": "sequia",
+    "order": 2,
+    "title": "Monumental 3, Peñarol 2",
+    "date": "1966-05-18",
+    "headline": "River pierde 2-0 en Montevideo y da vuelta la serie en su cancha",
+    "description": "River llegó a su primera final de Libertadores con un 0-2 de visitante en el Centenario. El 18 de mayo, en el Monumental, lo dio vuelta con goles de los dos Onega (D. y E.) y de Sarnari. Como entonces no se contaba la diferencia de gol, la serie quedó igualada y hubo que jugar un tercer partido.",
+    "protagonists": [
+      "Daniel Onega",
+      "Sarnari"
+    ],
+    "rival": "Peñarol",
+    "result": "River 3-2 Peñarol",
+    "panels": [
+      {
+        "caption": "River llega a su primera final de Libertadores y en el Centenario cae 2-0 ante Peñarol.",
+        "setting": {
+          "label": "Centenario",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River",
+          "Peñarol"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "El 18 de mayo, en el Monumental, los dos Onega (D. y E.) y Sarnari empiezan a dar vuelta la serie.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Daniel Onega",
+          "Sarnari"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "River gana 3-2 y la serie queda igualada, porque entonces no se contaba la diferencia de gol.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River",
+          "Peñarol"
+        ],
+        "tone": "gloria"
+      },
+      {
+        "caption": "Hay que jugar un tercer partido para definir al campeón.",
+        "setting": {
+          "label": "La cancha",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River",
+          "Peñarol"
+        ],
+        "tone": "tension"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Cómo terminó la vuelta de la final de 1966 en el Monumental?",
+      "options": [
+        "River 3-2 Peñarol",
+        "River 1-0 Peñarol",
+        "River 2-2 Peñarol",
+        "River 4-2 Peñarol"
+      ],
+      "answerIndex": 0,
+      "explanation": "Wikipedia y RSSSF coinciden: 3-2 para River el 18 de mayo de 1966. Como cada equipo ganó una vez, se fue a un desempate."
+    },
+    "sources": [
+      {
+        "label": "Wikipedia - 1966 Copa Libertadores finals",
+        "url": "https://en.wikipedia.org/wiki/1966_Copa_Libertadores_finals"
+      },
+      {
+        "label": "RSSSF - Copa Libertadores de América 1966",
+        "url": "https://rsssf.org/sacups/copa66.html"
+      },
+      {
+        "label": "El Litoral - Hace 45 años River ganaba el mote de gallina",
+        "url": "https://www.ellitoral.com/deportes/hace-45-anos-river-ganaba-mote-gallina_0_QNKc0YqRXn.html"
+      }
+    ],
+    "verified": true,
+    "imageAlt": "Estadio Monumental en la final de 1966"
+  },
+  {
+    "id": "libertadores-1966-desempate",
+    "eraId": "sequia",
+    "order": 3,
+    "title": "La final que nació para ser ganada",
+    "date": "1966-05-20",
+    "headline": "River gana 2-0 el primer tiempo en Santiago y termina perdiendo en la prórroga",
+    "description": "El 20 de mayo de 1966, en el Estadio Nacional de Santiago, River se fue al descanso 2-0 con goles de Daniel Onega y Solari. Peñarol lo igualó y lo ganó 4-2 en el alargue, con goles de Spencer y Rocha, entre otros. La derrota dejó una herida y el apodo de 'gallinas', que con los años los hinchas hicieron propio.",
+    "protagonists": [
+      "Daniel Onega",
+      "Jorge Solari",
+      "Alberto Spencer"
+    ],
+    "rival": "Peñarol",
+    "result": "Peñarol 4-2 River (alargue)",
+    "panels": [
+      {
+        "caption": "El 20 de mayo de 1966, en el Estadio Nacional de Santiago, River juega el partido decisivo ante Peñarol.",
+        "setting": {
+          "label": "Santiago",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River",
+          "Peñarol"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Con goles de Daniel Onega y Solari, River se va al descanso 2-0.",
+        "setting": {
+          "label": "Santiago",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Daniel Onega",
+          "Jorge Solari"
+        ],
+        "tone": "gloria"
+      },
+      {
+        "caption": "Peñarol lo iguala y lo gana 4-2 en el alargue, con goles de Spencer y Rocha, entre otros.",
+        "setting": {
+          "label": "Santiago",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Alberto Spencer",
+          "Peñarol"
+        ],
+        "tone": "drama"
+      },
+      {
+        "caption": "Queda la herida y el apodo de 'gallinas', que con los años los hinchas hicieron propio.",
+        "setting": {
+          "label": "La tribuna",
+          "kind": "tribuna"
+        },
+        "figures": [
+          "Hinchas"
+        ],
+        "tone": "drama"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿En qué ciudad se jugó el desempate de la final de la Libertadores 1966?",
+      "options": [
+        "Santiago de Chile",
+        "Montevideo",
+        "Lima",
+        "Asunción"
+      ],
+      "answerIndex": 0,
+      "explanation": "Wikipedia, RSSSF y El Litoral coinciden: el tercer partido se jugó en el Estadio Nacional de Santiago de Chile."
+    },
+    "sources": [
+      {
+        "label": "Wikipedia - 1966 Copa Libertadores finals",
+        "url": "https://en.wikipedia.org/wiki/1966_Copa_Libertadores_finals"
+      },
+      {
+        "label": "RSSSF - Copa Libertadores de América 1966",
+        "url": "https://rsssf.org/sacups/copa66.html"
+      },
+      {
+        "label": "El Litoral - Hace 45 años River ganaba el mote de gallina",
+        "url": "https://www.ellitoral.com/deportes/hace-45-anos-river-ganaba-mote-gallina_0_QNKc0YqRXn.html"
+      },
+      {
+        "label": "Wikipedia (es) - Club Atlético River Plate",
+        "url": "https://es.wikipedia.org/wiki/Club_Atlético_River_Plate"
+      }
+    ],
+    "verified": true,
+    "imageAlt": "Estadio Nacional de Santiago, 1966"
+  },
+  {
+    "id": "puerta-12-1968",
+    "eraId": "sequia",
+    "order": 4,
+    "title": "Puerta 12",
+    "date": "1968-06-23",
+    "headline": "La tragedia más dura del fútbol argentino ocurre en el Monumental",
+    "description": "El 23 de junio de 1968, tras el 0-0 entre River y Boca por el Metropolitano, una avalancha en la escalera de la Puerta 12 mató a 71 hinchas de Boca. Fue la peor tragedia del fútbol argentino y, más allá de la rivalidad, un duelo compartido: ninguno de esos chicos volvió a casa.",
+    "protagonists": [],
+    "rival": "Boca Juniors",
+    "result": "0-0",
+    "panels": [
+      {
+        "caption": "El 23 de junio de 1968, River y Boca empatan 0-0 por el Metropolitano en el Monumental.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River",
+          "Boca Juniors"
+        ],
+        "tone": "calma"
+      },
+      {
+        "caption": "Terminado el partido, una avalancha se desata en la escalera de la Puerta 12.",
+        "setting": {
+          "label": "Puerta 12",
+          "kind": "tribuna"
+        },
+        "figures": [
+          "Hinchas"
+        ],
+        "tone": "drama"
+      },
+      {
+        "caption": "Mueren 71 hinchas de Boca: la peor tragedia del fútbol argentino.",
+        "setting": {
+          "label": "Puerta 12",
+          "kind": "tribuna"
+        },
+        "figures": [
+          "Hinchas",
+          "Boca Juniors"
+        ],
+        "tone": "drama"
+      },
+      {
+        "caption": "Más allá de la rivalidad, un duelo compartido: ninguno de esos chicos volvió a casa.",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "Hinchas"
+        ],
+        "tone": "drama"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Cuántas personas murieron oficialmente en la tragedia de la Puerta 12?",
+      "options": [
+        "71",
+        "34",
+        "52",
+        "100"
+      ],
+      "answerIndex": 0,
+      "explanation": "Wikipedia y MDZ coinciden en 71 víctimas fatales; algunos testigos hablaron de más, pero la cifra oficial es 71."
+    },
+    "sources": [
+      {
+        "label": "Wikipedia - The Tragedy of Gate 12",
+        "url": "https://en.wikipedia.org/wiki/The_Tragedy_of_Gate_12"
+      },
+      {
+        "label": "MDZ - Homenaje de Boca a las víctimas de la Puerta 12",
+        "url": "https://www.mdzol.com/deportes/2020/6/23/conmovedor-homenaje-de-boca-las-victimas-de-la-tragedia-de-la-puerta-12-87527.html"
+      }
+    ],
+    "verified": true,
+    "imageAlt": "Estadio Monumental"
+  },
+  {
+    "id": "labruna-vuelve-1975",
+    "eraId": "sequia",
+    "order": 5,
+    "title": "Vuelve el máximo goleador",
+    "date": "1975-01",
+    "headline": "River contrata a Ángel Labruna para dirigir al equipo",
+    "description": "En enero de 1975 la dirigencia fue a buscar a un prócer: Ángel Labruna, el hombre que más goles hizo con la banda roja. Llegaba con una promesa simple y enorme: terminar con la sequía.",
+    "protagonists": [
+      "Ángel Labruna"
+    ],
+    "panels": [
+      {
+        "caption": "En enero de 1975 la dirigencia sale a buscar a un prócer del club.",
+        "setting": {
+          "label": "La sede",
+          "kind": "sede"
+        },
+        "figures": [
+          "River"
+        ],
+        "tone": "calma"
+      },
+      {
+        "caption": "Es Ángel Labruna, el hombre que más goles hizo con la banda roja.",
+        "setting": {
+          "label": "La sede",
+          "kind": "sede"
+        },
+        "figures": [
+          "Ángel Labruna"
+        ],
+        "tone": "calma"
+      },
+      {
+        "caption": "River lo contrata para dirigir al equipo.",
+        "setting": {
+          "label": "La sede",
+          "kind": "sede"
+        },
+        "figures": [
+          "River",
+          "Ángel Labruna"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Llega con una promesa simple y enorme: terminar con la sequía.",
+        "setting": {
+          "label": "La cancha",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Ángel Labruna"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Quién fue contratado en enero de 1975 como director técnico de River?",
+      "options": [
+        "Ángel Labruna",
+        "José María Minella",
+        "Alfredo Di Stéfano",
+        "Federico Vairo"
+      ],
+      "answerIndex": 0,
+      "explanation": "El Economista y La Página Millonaria coinciden: Labruna fue contratado en enero de 1975."
+    },
+    "sources": [
+      {
+        "label": "El Economista - Hace 50 años River cortaba su sequía más larga",
+        "url": "https://eleconomista.com.ar/deportes/hace-50-anos-river-cortaba-su-sequia-mas-larga-titulos-equipo-juvenil-medio-pais-convulsionado-n87552/amp"
+      },
+      {
+        "label": "La Página Millonaria - River campeón del Metropolitano 1975",
+        "url": "https://lapaginamillonaria.com/riverplate/River-se-consagro-campeon-del-Metropolitano-de-1975-y-corto-una-racha-de-18-anos-sin-poder-hacerlo-20210814-0005.html"
+      }
+    ],
+    "verified": true,
+    "imageAlt": "Ángel Labruna"
+  }
+]
