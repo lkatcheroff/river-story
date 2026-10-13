@@ -7,6 +7,11 @@ describe("isCorrect", () => {
     expect(isCorrect(c, 1)).toBe(true);
     expect(isCorrect(c, 0)).toBe(false);
   });
+  it("guess-year sin tolerancia: 1996 no es 1995", () => {
+    const c = { type: "guess-year", correctYear: 1995, tolerance: 0 } satisfies Challenge;
+    expect(isCorrect(c, 1995)).toBe(true);
+    expect(isCorrect(c, 1996)).toBe(false);
+  });
   it("guess-year respeta tolerancia", () => {
     const c = { type: "guess-year", correctYear: 1986, tolerance: 2 } satisfies Challenge;
     expect(isCorrect(c, 1988)).toBe(true);

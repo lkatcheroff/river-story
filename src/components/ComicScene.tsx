@@ -346,7 +346,7 @@ export function ComicScene({ era, scene, index, total, onNext, onReplay, practic
             <section className="comic-box flex flex-col gap-2">
               <p className="font-display text-2xl">Pregunta extra</p>
               {c.type === "quiz" && <p className="font-semibold">{c.question}</p>}
-              {c.type === "guess-year" && <p className="font-semibold">¿En qué año fue?</p>}
+              {c.type === "guess-year" && <p className="font-semibold">¿En qué año fue?{c.tolerance > 0 ? ` (se acepta ±${c.tolerance})` : ""}</p>}
               {c.type === "who-scored" && <p className="font-semibold">¿Quién la metió?</p>}
               {c.type !== "guess-year" ? c.options.map((o, k) => (
                 <button key={o} disabled={quizAnswered} onClick={() => submitQuiz(k)}
@@ -359,7 +359,7 @@ export function ComicScene({ era, scene, index, total, onNext, onReplay, practic
               )}
               {quizAnswered && (
                 <p className="text-sm">
-                  {pick !== null && !isCorrect(c, pick) ? "No era esa. " : pick !== null ? "¡Bien! " : ""}
+                  {pick !== null && !isCorrect(c, pick) ? "No era esa. " : pick !== null ? (c.type === "guess-year" && pick !== c.correctYear ? "¡Casi, y cuenta! " : c.type === "guess-year" ? "¡Exacto! " : "¡Bien! ") : ""}
                   {c.type === "quiz" ? c.explanation : c.type === "guess-year" ? `Fue en ${c.correctYear}.` : ""}
                 </p>
               )}

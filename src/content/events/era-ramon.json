@@ -60,7 +60,7 @@
     "challenge": {
       "type": "guess-year",
       "correctYear": 1995,
-      "tolerance": 1
+      "tolerance": 0
     },
     "sources": [
       {

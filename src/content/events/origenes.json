@@ -104,7 +104,7 @@
     "challenge": {
       "type": "guess-year",
       "correctYear": 1908,
-      "tolerance": 1
+      "tolerance": 0
     },
     "sources": [
       {
@@ -187,7 +187,7 @@
     "challenge": {
       "type": "guess-year",
       "correctYear": 1932,
-      "tolerance": 1
+      "tolerance": 0
     },
     "sources": [
       {
