@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import type { Era, Panel, Scene } from "../lib/schema";
 import { scenes as allScenes } from "../lib/content";
-import { isCorrect } from "../lib/game";
+import { isCorrect, yearFeedback } from "../lib/game";
 import { isRivalName } from "../lib/characters";
 import {
   MAX_CLUE, analyze, buildPieces, buildRegistry, clue, emptySlots, summary, toggleCast,
@@ -30,6 +30,15 @@ const REACT: Record<Panel["tone"], { mood: Mood; say: string }> = {
 };
 
 type Reaction = { panel: number; key: number } | null;
+
+function shuffleIndices(n: number): number[] {
+  const a = Array.from({ length: n }, (_, i) => i);
+  for (let i = n - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
 
 function PanelView({
   index, tone, slot, locked, active, over, playing, reacting, scene, drag, onClear,
@@ -129,6 +138,12 @@ export function ComicScene({ era, scene, index, total, onNext, onReplay, practic
   const [reaction, setReaction] = useState<Reaction>(null);
   const [pick, setPick] = useState<number | null>(null);
   const [year, setYear] = useState("");
+  const [yearAnswer, setYearAnswer] = useState<number | null>(null);
+  // Orden de las opciones mezclado (si no, la correcta quedaba casi siempre primera).
+  const optionOrder = useMemo(() => {
+    const k = scene.challenge && scene.challenge.type !== "guess-year" ? scene.challenge.options.length : 0;
+    return shuffleIndices(k);
+  }, [scene]);
   const timer = useRef<ReturnType<typeof setTimeout>>(undefined);
   useEffect(() => () => clearTimeout(timer.current), []);
 
@@ -345,22 +360,24 @@ export function ComicScene({ era, scene, index, total, onNext, onReplay, practic
           {c && !practice && (
             <section className="comic-box flex flex-col gap-2">
               <p className="font-display text-2xl">Pregunta extra</p>
-              {c.type === "quiz" && <p className="font-semibold">{c.question}</p>}
-              {c.type === "guess-year" && <p className="font-semibold">¿En qué año fue?{c.tolerance > 0 ? ` (se acepta ±${c.tolerance})` : ""}</p>}
-              {c.type === "who-scored" && <p className="font-semibold">¿Quién la metió?</p>}
-              {c.type !== "guess-year" ? c.options.map((o, k) => (
-                <button key={o} disabled={quizAnswered} onClick={() => submitQuiz(k)}
-                  className={`border-2 p-2 text-left ${quizAnswered && k === c.answerIndex ? "border-green-700 bg-green-100" : pick === k ? "border-river bg-red-50" : "border-ink bg-white"}`}>{o}</button>
-              )) : (
+              <p className="font-semibold">{c.question}{c.type === "guess-year" && c.tolerance > 0 ? ` (se acepta ±${c.tolerance} años)` : ""}</p>
+              {c.type !== "guess-year" ? optionOrder.map((k) => {
+                const o = c.options[k];
+                return (
+                  <button key={o} disabled={quizAnswered} onClick={() => submitQuiz(k)}
+                    className={`border-2 p-2 text-left ${quizAnswered && k === c.answerIndex ? "border-green-700 bg-green-100" : pick === k ? "border-river bg-red-50" : "border-ink bg-white"}`}>{o}</button>
+                );
+              }) : (
                 <div className="flex gap-2">
-                  <input inputMode="numeric" value={year} onChange={(e) => setYear(e.target.value)} disabled={quizAnswered} aria-label="Año" placeholder="Año" className="w-full border-2 border-ink p-2" />
-                  <button className="btn" disabled={quizAnswered || !/^\d{4}$/.test(year)} onClick={() => submitQuiz(Number(year))}>OK</button>
+                  <input inputMode="numeric" value={year} onChange={(e) => setYear(e.target.value)} disabled={quizAnswered} aria-label="Año" placeholder="Año (4 cifras)" className="w-full border-2 border-ink p-2" />
+                  <button className="btn" disabled={quizAnswered || !/^\d{4}$/.test(year)} onClick={() => { setYearAnswer(Number(year)); submitQuiz(Number(year)); }}>OK</button>
                 </div>
               )}
               {quizAnswered && (
-                <p className="text-sm">
-                  {pick !== null && !isCorrect(c, pick) ? "No era esa. " : pick !== null ? (c.type === "guess-year" && pick !== c.correctYear ? "¡Casi, y cuenta! " : c.type === "guess-year" ? "¡Exacto! " : "¡Bien! ") : ""}
-                  {c.type === "quiz" ? c.explanation : c.type === "guess-year" ? `Fue en ${c.correctYear}.` : ""}
+                <p className="text-sm font-semibold">
+                  {c.type === "guess-year"
+                    ? (yearAnswer !== null ? yearFeedback(c.correctYear, c.tolerance, yearAnswer).text : `Fue en ${c.correctYear}.`)
+                    : <>{pick !== null && !isCorrect(c, pick) ? "No era esa. " : pick !== null ? "¡Bien! " : ""}{c.type === "quiz" ? c.explanation : `Era ${c.options[c.answerIndex]}.`}</>}
                 </p>
               )}
             </section>

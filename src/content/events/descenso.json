@@ -148,6 +148,7 @@
     ],
     "challenge": {
       "type": "who-scored",
+      "question": "¿Quién puso en ventaja a River en el 1-1 con Belgrano que lo mandó a la B Nacional?",
       "options": [
         "Mariano Pavone",
         "Fernando Cavenaghi",
@@ -250,6 +251,7 @@
     ],
     "challenge": {
       "type": "who-scored",
+      "question": "¿Quién hizo los dos goles del 2-0 a Almirante Brown que le dio el ascenso a River?",
       "options": [
         "David Trezeguet",
         "Fernando Cavenaghi",

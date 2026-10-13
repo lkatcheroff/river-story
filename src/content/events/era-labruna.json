@@ -63,6 +63,7 @@
     ],
     "challenge": {
       "type": "who-scored",
+      "question": "¿Quién hizo el 1-0 a Argentinos Juniors que cortó la sequía de River?",
       "options": [
         "Rubén Norberto Bruno",
         "Leopoldo Luque",
@@ -424,6 +425,7 @@
     ],
     "challenge": {
       "type": "who-scored",
+      "question": "¿Quién hizo el gol en Santa Fe que le dio a River el Nacional de 1979?",
       "options": [
         "Norberto Alonso",
         "Leopoldo Luque",

@@ -10,11 +10,13 @@ export const ChallengeSchema = z.discriminatedUnion("type", [
   }),
   z.object({
     type: z.literal("guess-year"),
+    question: z.string().min(1),
     correctYear: z.number().int(),
     tolerance: z.number().int().min(0),
   }),
   z.object({
     type: z.literal("who-scored"),
+    question: z.string().min(1),
     options: z.array(z.string().min(1)).min(2),
     answerIndex: z.number().int().min(0),
   }),

@@ -58,6 +58,7 @@
     ],
     "challenge": {
       "type": "guess-year",
+      "question": "¿En qué año ganó River el último campeonato antes de la larga sequía?",
       "correctYear": 1957,
       "tolerance": 0
     },

@@ -103,6 +103,7 @@
     ],
     "challenge": {
       "type": "guess-year",
+      "question": "¿En qué año River le ganó 7 a 0 a Racing Club y consiguió el ascenso a Primera?",
       "correctYear": 1908,
       "tolerance": 0
     },
@@ -186,6 +187,7 @@
     ],
     "challenge": {
       "type": "guess-year",
+      "question": "¿En qué año debutó Bernabé Ferreyra con la camiseta de River?",
       "correctYear": 1932,
       "tolerance": 0
     },

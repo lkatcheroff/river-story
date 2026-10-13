@@ -59,6 +59,7 @@
     ],
     "challenge": {
       "type": "guess-year",
+      "question": "¿En qué año empezó Ramón Díaz su primer ciclo como entrenador de River?",
       "correctYear": 1995,
       "tolerance": 0
     },
@@ -242,6 +243,7 @@
     ],
     "challenge": {
       "type": "who-scored",
+      "question": "¿Quién abrió el marcador a los 6 minutos en la vuelta de la final de la Libertadores 1996?",
       "options": [
         "Hernán Crespo",
         "Enzo Francescoli",
@@ -326,6 +328,7 @@
     ],
     "challenge": {
       "type": "who-scored",
+      "question": "¿Quién hizo el gol de Juventus a los 81 minutos en la Intercontinental de 1996?",
       "options": [
         "Alessandro Del Piero",
         "Hernán Crespo",

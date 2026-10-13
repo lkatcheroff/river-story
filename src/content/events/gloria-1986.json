@@ -150,6 +150,7 @@
     ],
     "challenge": {
       "type": "who-scored",
+      "question": "¿Quién hizo el único gol de la vuelta de la final de la Libertadores 1986 en el Monumental?",
       "options": [
         "Juan Gilberto Funes",
         "Antonio Alzamendi",
@@ -234,6 +235,7 @@
     ],
     "challenge": {
       "type": "who-scored",
+      "question": "¿Quién hizo el único gol de la final del mundo de 1986 contra el Steaua?",
       "options": [
         "Antonio Alzamendi",
         "Juan Gilberto Funes",
@@ -265,6 +267,7 @@
     "protagonists": [],
     "challenge": {
       "type": "guess-year",
+      "question": "¿En qué año se jugó el desempate de la semifinal de la Libertadores que clasificó a River a la final?",
       "correctYear": 1986,
       "tolerance": 0
     },

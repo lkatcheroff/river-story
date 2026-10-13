@@ -1,5 +1,6 @@
-import type { Challenge } from "./schema";import { describe, expect, it } from "vitest";
-import { isCorrect, pointsFor, nextStreak, isEraUnlocked, isEraComplete } from "./game";
+import type { Challenge } from "./schema";
+import { describe, expect, it } from "vitest";
+import { yearFeedback, isCorrect, pointsFor, nextStreak, isEraUnlocked, isEraComplete } from "./game";
 
 describe("isCorrect", () => {
   it("quiz", () => {
@@ -8,12 +9,12 @@ describe("isCorrect", () => {
     expect(isCorrect(c, 0)).toBe(false);
   });
   it("guess-year sin tolerancia: 1996 no es 1995", () => {
-    const c = { type: "guess-year", correctYear: 1995, tolerance: 0 } satisfies Challenge;
+    const c = { type: "guess-year", question: "?", correctYear: 1995, tolerance: 0 } satisfies Challenge;
     expect(isCorrect(c, 1995)).toBe(true);
     expect(isCorrect(c, 1996)).toBe(false);
   });
   it("guess-year respeta tolerancia", () => {
-    const c = { type: "guess-year", correctYear: 1986, tolerance: 2 } satisfies Challenge;
+    const c = { type: "guess-year", question: "?", correctYear: 1986, tolerance: 2 } satisfies Challenge;
     expect(isCorrect(c, 1988)).toBe(true);
     expect(isCorrect(c, 1989)).toBe(false);
   });
@@ -41,4 +42,20 @@ describe("desbloqueo", () => {
   });
   it("flag libre", () => expect(isEraUnlocked(1, eras, {}, true)).toBe(true));
   it("época vacía no cuenta como completa", () => expect(isEraComplete([], {})).toBe(false));
+});
+
+describe("devolución del año con margen", () => {
+  it("exacto", () => expect(yearFeedback(1995, 0, 1995)).toMatchObject({ ok: true, text: expect.stringContaining("Exacto") }));
+  it("sin margen, 1996 no es 1995 y dice hacia dónde", () => {
+    const f = yearFeedback(1995, 0, 1996);
+    expect(f.ok).toBe(false);
+    expect(f.text).toContain("1 año antes de lo que pusiste");
+    expect(yearFeedback(1995, 0, 1990).text).toContain("5 años después de lo que pusiste");
+  });
+  it("dentro del margen cuenta y lo aclara", () => {
+    const f = yearFeedback(1995, 1, 1996);
+    expect(f.ok).toBe(true);
+    expect(f.text).toMatch(/Casi.*±1/);
+  });
+  it("fuera del margen recuerda el margen", () => expect(yearFeedback(1995, 1, 1998).text).toContain("±1"));
 });

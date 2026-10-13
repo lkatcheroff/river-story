@@ -59,6 +59,7 @@
     ],
     "challenge": {
       "type": "guess-year",
+      "question": "¿En qué año debutó Adolfo Pedernera en Primera con River?",
       "correctYear": 1935,
       "tolerance": 0
     },

@@ -241,6 +241,7 @@
     ],
     "challenge": {
       "type": "who-scored",
+      "question": "¿Quién abrió el marcador ante Tigres en la final de vuelta de la Libertadores 2015?",
       "options": [
         "Lucas Alario",
         "Teófilo Gutiérrez",

@@ -40,3 +40,17 @@ export function isEraUnlocked(
   if (free || index === 0) return true;
   return isEraComplete(eraSceneIds[index - 1], completed);
 }
+
+/** Devolución de una respuesta de año, teniendo en cuenta el margen aceptado. */
+export function yearFeedback(correctYear: number, tolerance: number, guess: number): { ok: boolean; text: string } {
+  const diff = guess - correctYear;
+  if (diff === 0) return { ok: true, text: `¡Exacto! Fue en ${correctYear}.` };
+  const margin = Math.abs(diff);
+  const years = `${margin} ${margin === 1 ? "año" : "años"}`;
+  if (margin <= tolerance)
+    return { ok: true, text: `¡Casi, y cuenta! Fue en ${correctYear}: te pasaste por ${years}, pero se acepta un margen de ±${tolerance}.` };
+  return {
+    ok: false,
+    text: `No era esa. Fue en ${correctYear}, ${years} ${diff > 0 ? "antes" : "después"} de lo que pusiste.${tolerance > 0 ? ` (Se aceptaba ±${tolerance}.)` : ""}`,
+  };
+}
