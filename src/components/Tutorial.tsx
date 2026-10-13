@@ -5,7 +5,8 @@ import { ComicScene, type SceneState } from "./ComicScene";
 
 const TUTORIAL_SCENE_ID = "intercontinental-86-tokio";
 const TOKIO = "Estadio Nacional de Tokio";
-const FIXED = { settings: ["La cancha", TOKIO, "La tribuna"], cast: ["River", "Steaua Bucarest", "Antonio Alzamendi", "Hinchas"] };
+const CANCHA = "La cancha";
+const FIXED = { settings: [CANCHA, TOKIO, "La tribuna"], cast: ["River", "Steaua Bucarest", "Antonio Alzamendi", "Hinchas"] };
 
 export const TUTORIAL_KEY = "river-story-tutorial-done";
 export const tutorialDone = () => { try { return localStorage.getItem(TUTORIAL_KEY) === "1"; } catch { return false; } };
@@ -21,53 +22,109 @@ function buildScene(): Scene | null {
 
 type Step = {
   title: string;
-  text: string;
+  /** Qué es y para qué sirve (contexto). */
+  why: string;
+  /** Qué hacer exactamente. */
+  action?: string;
+  /** Lo único que se puede tocar en este paso (el resto queda bloqueado y atenuado). */
   targets: string[];
-  /** Condición para pasar sola al siguiente paso. Sin condición = botón "Entendido". */
+  /** Condición para avanzar sola. Sin condición = botón "Entendido". */
   done?: (s: SceneState) => boolean;
 };
 
 const sameCast = (a: string[], b: string[]) => a.length === b.length && b.every((x) => a.includes(x));
+const cast = (s: SceneState, i: number) => s.slots[i].cast;
+const WRONG = "Probá a propósito algo que no es: así aprendés a leer las pistas.";
 
 const STEPS: Step[] = [
   {
-    title: "¡Bienvenido a River Story!",
-    text: "Cada escena es una tira de cómic con viñetas vacías. Tu misión: contar la historia real poniendo en cada viñeta el LUGAR y los PERSONAJES correctos. Vamos con un ejemplo corto: la final del mundo de 1986.",
+    title: "Así se juega",
+    why: "Cada escena es una tira de cómic con viñetas vacías. Tu misión es contar la historia real de River: en cada viñeta ponés DÓNDE pasó (un lugar) y QUIÉN actuó (personajes). Vamos a armar juntos la final del mundo de 1986, en 2 viñetas.",
     targets: [],
   },
   {
-    title: "1 · Elegí el lugar",
-    text: `Abajo están los lugares. Arrastrá (o tocá) «${TOKIO}» hasta la viñeta 1. Si lo tocás, se pone en la viñeta marcada.`,
+    title: "Viñeta 1 · el lugar",
+    why: "La final del mundo se jugó en Tokio. Los lugares están en la bandeja de abajo.",
+    action: `Arrastrá «${TOKIO}» hasta la viñeta 1. (También podés tocarlo: va a la viñeta marcada.)`,
     targets: [`setting:${TOKIO}`, "panel:0"],
     done: (s) => s.slots[0].setting === TOKIO,
   },
   {
-    title: "2 · Sumá personajes",
-    text: "Ahora los protagonistas de esa viñeta: River y el Steaua Bucarest, el rival de esa final. Arrastralos (o tocalos) a la viñeta 1. Si te equivocás, tocá un personaje dentro de la viñeta para sacarlo.",
-    targets: ["cast:River", "cast:Steaua Bucarest", "panel:0"],
-    done: (s) => sameCast(s.slots[0].cast, ["River", "Steaua Bucarest"]),
+    title: "Viñeta 1 · primer personaje",
+    why: "Ahora, quiénes actúan. Los personajes están debajo de los lugares. Cada viñeta admite hasta 3.",
+    action: "Arrastrá (o tocá) a «River» hasta la viñeta 1.",
+    targets: ["cast:River", "panel:0"],
+    done: (s) => cast(s, 0).includes("River"),
   },
   {
-    title: "3 · Reproducí",
-    text: "Apretá «Reproducir» para ver si la viñeta cuenta bien la historia.",
+    title: "Viñeta 1 · segundo personaje",
+    why: "En esta final River enfrentó al Steaua de Bucarest. Si te equivocás con un personaje, tocalo dentro de la viñeta para sacarlo.",
+    action: "Arrastrá (o tocá) a «Bucarest» (Steaua Bucarest) hasta la viñeta 1.",
+    targets: ["cast:Steaua Bucarest", "panel:0"],
+    done: (s) => sameCast(cast(s, 0), ["River", "Steaua Bucarest"]),
+  },
+  {
+    title: "Reproducir",
+    why: "Con «Reproducir» el juego prueba tu viñeta: los personajes actúan y te dice si cuenta bien la historia.",
+    action: "Tocá «Reproducir».",
     targets: ["play"],
     done: (s) => s.locked[0],
   },
   {
     title: "¡Viñeta bloqueada!",
-    text: "Cuando una viñeta es correcta se bloquea con el 🔒 y aparece su relato. No hay que volver a probarla. Ahora la viñeta 2 trata del gol. Probá a propósito con «La cancha» y «Antonio Alzamendi», y reproducí: vas a ver cómo te ayuda el juego cuando algo no cierra.",
-    targets: ["setting:La cancha", "cast:Antonio Alzamendi", "play"],
+    why: "Cuando una viñeta es correcta se bloquea con un 🔒 y aparece su relato. Queda fija: no hay que volver a probarla. «Reproducir» ahora solo prueba las que faltan.",
+    targets: [],
+  },
+  {
+    title: "Pedir una pista",
+    why: "Si no sabés qué va en una viñeta, usá «Pista». La primera te da el guion de esa viñeta (qué pasa), la segunda el lugar y la tercera los personajes. En el juego real, pedir pistas hace perder el bonus de puntos.",
+    action: "Tocá «Pista» para leer el guion de la viñeta 2.",
+    targets: ["clue"],
+    done: (s) => s.hints >= 1,
+  },
+  {
+    title: "Viñeta 2 · probá equivocarte",
+    why: `El guion habla del gol. ${WRONG} Vas a poner un lugar incorrecto a propósito.`,
+    action: "Arrastrá (o tocá) «La cancha» hasta la viñeta 2.",
+    targets: [`setting:${CANCHA}`, "panel:1"],
+    done: (s) => s.slots[1].setting === CANCHA,
+  },
+  {
+    title: "Viñeta 2 · el personaje",
+    why: "Quien hizo el gol fue Antonio Alzamendi.",
+    action: "Arrastrá (o tocá) a «Alzamendi» hasta la viñeta 2.",
+    targets: ["cast:Antonio Alzamendi", "panel:1"],
+    done: (s) => sameCast(cast(s, 1), ["Antonio Alzamendi"]),
+  },
+  {
+    title: "Reproducir otra vez",
+    why: "El personaje es el correcto, pero el lugar no. Veamos qué te dice el juego.",
+    action: "Tocá «Reproducir».",
+    targets: ["play"],
     done: (s) => s.attempts >= 2 && !s.solved,
   },
   {
-    title: "Leé las pistas",
-    text: "Debajo de la viñeta, el cartel te dice qué está bien y qué falta: si el lugar es correcto, cuántos personajes están bien, y si algo sobra o va en otro momento. Corregí el lugar de la viñeta 2 y reproducí otra vez.",
-    targets: [`setting:${TOKIO}`, "play"],
+    title: "Leé el cartel de la viñeta",
+    why: "Debajo de la viñeta 2 el cartel te dice qué está bien y qué falta: si el reparto es correcto, si el lugar no es ese, cuántos personajes están bien, cuáles faltan o sobran, o si la escena existe pero va en otro momento.",
+    targets: [],
+  },
+  {
+    title: "Corregí el lugar",
+    why: "Las pistas dicen que el reparto está bien: lo que falla es el lugar. La final se jugó en Tokio.",
+    action: `Arrastrá (o tocá) «${TOKIO}» hasta la viñeta 2.`,
+    targets: [`setting:${TOKIO}`, "panel:1"],
+    done: (s) => s.slots[1].setting === TOKIO,
+  },
+  {
+    title: "Reproducir de nuevo",
+    action: "Tocá «Reproducir».",
+    why: "Si ahora cuenta bien la historia, se bloquea la última viñeta y la escena queda resuelta.",
+    targets: ["play"],
     done: (s) => s.solved,
   },
   {
     title: "¡Lo lograste!",
-    text: "Cuando se bloquean todas las viñetas, la escena está resuelta. Si te trabás, el botón «Pista» te da primero el guion, después el lugar y después los personajes (pierde el bonus). También podés mover una viñeta agarrándola del número. ¡A jugar!",
+    why: "Con todas las viñetas bloqueadas, la escena está resuelta y ganás puntos (más si no usás pistas ni te equivocás). Tres cosas más: podés mover una viñeta agarrándola de su número; las escenas se pueden jugar en cualquier orden; y siempre podés reiniciar una escena para volver a jugarla.",
     targets: [],
   },
 ];
@@ -79,45 +136,61 @@ export function Tutorial({ onFinish }: { onFinish: () => void }) {
   const [run, setRun] = useState(0);
   const era = eras.find((e) => e.id === scene?.eraId) ?? eras[0];
 
-  if (!scene) return <p className="comic-box">El tutorial no está disponible.</p>;
-
-  const cur = STEPS[Math.min(step, STEPS.length - 1)];
-  const last = step >= STEPS.length - 1;
   // Avanza sola cuando se cumple la condición del paso (incluso si ya se cumplía al llegar).
   useEffect(() => {
     if (!state) return;
     if (state.solved && step < STEPS.length - 1) setStep(STEPS.length - 1);
     else if (STEPS[step]?.done?.(state)) setStep((x) => Math.min(x + 1, STEPS.length - 1));
   }, [state, step]);
+
+  if (!scene) return <p className="comic-box">El tutorial no está disponible.</p>;
+
+  const cur = STEPS[Math.min(step, STEPS.length - 1)];
+  const last = step >= STEPS.length - 1;
   const finish = () => { markDone(); onFinish(); };
-  const css = cur.targets.map((t) => `[data-tut="${t}"]`).join(",");
+  const restart = () => { setRun((r) => r + 1); setStep(1); setState(null); };
+  const allow = cur.targets.map((t) => `.tut-scope [data-tut="${t}"], .tut-scope [data-tut="${t}"] *`).join(",");
+  const highlight = cur.targets.map((t) => `.tut-scope [data-tut="${t}"]`).join(",");
 
   return (
     <div className="flex flex-col gap-3">
-      {css && <style>{`${css}{outline:4px solid #2563eb;outline-offset:2px;animation:tut-pulse 1s ease-in-out infinite}`}</style>}
+      {/* Todo lo de la escena queda bloqueado y atenuado, salvo lo que este paso pide tocar. */}
+      <style>{`
+        .tut-scope button, .tut-scope [role="button"], .tut-scope [data-tut], .tut-scope [data-drop] { pointer-events: none !important; ${cur.action ? "opacity: .3;" : ""} }
+        ${allow ? `${allow} { pointer-events: auto !important; opacity: 1 !important; }` : ""}
+        ${highlight ? `${highlight} { outline: 4px solid #2563eb; outline-offset: 2px; animation: tut-pulse 1s ease-in-out infinite; }` : ""}
+      `}</style>
       <div className="sticky top-2 z-30 border-4 border-ink bg-white p-3 shadow-[4px_4px_0_#111]" role="status" aria-live="polite">
         <div className="flex items-center justify-between text-xs font-bold uppercase text-river">
-          <span>Tutorial · paso {Math.min(step + 1, STEPS.length)} de {STEPS.length}</span>
+          <span>Tutorial · {Math.min(step + 1, STEPS.length)}/{STEPS.length}</span>
           <button className="underline" onClick={finish}>Saltar tutorial</button>
         </div>
+        <div className="my-1 h-1.5 border border-ink bg-neutral-200"><div className="h-full bg-river transition-all" style={{ width: `${((step + 1) / STEPS.length) * 100}%` }} /></div>
         <p className="font-display text-xl leading-none">{cur.title}</p>
-        <p className="mt-1 text-[13px] font-semibold leading-snug">{cur.text}</p>
+        <p className="mt-1 text-[13px] font-semibold leading-snug">{cur.why}</p>
+        {cur.action && <p className="mt-1.5 border-2 border-blue-600 bg-blue-50 p-1.5 text-[13px] font-extrabold leading-snug">👉 {cur.action}</p>}
+        {cur.action && <p className="mt-1 text-[11px] font-semibold text-neutral-600">Por ahora solo se puede tocar lo marcado en azul.</p>}
         {!cur.done && (
           <button className="btn mt-2 w-full !py-2" onClick={last ? finish : () => setStep((x) => x + 1)}>
             {last ? "¡A jugar!" : "Entendido"}
           </button>
         )}
         {cur.done && (
-          <button className="mt-2 text-xs font-bold underline" onClick={() => setStep((x) => x + 1)}>Saltar este paso</button>
+          <div className="mt-1 flex gap-3 text-xs font-bold underline">
+            <button onClick={restart}>Reiniciar práctica</button>
+            <button onClick={() => setStep((x) => x + 1)}>Saltar este paso</button>
+          </div>
         )}
       </div>
-      <ComicScene
-        key={run}
-        era={era} scene={scene} index={0} total={1}
-        practice fixedPieces={FIXED} onState={setState}
-        onNext={finish} nextLabel="Terminar tutorial ▶"
-        onReplay={() => { setRun((r) => r + 1); setStep(1); setState(null); }}
-      />
+      <div className="tut-scope">
+        <ComicScene
+          key={run}
+          era={era} scene={scene} index={0} total={1}
+          practice fixedPieces={FIXED} onState={setState}
+          onNext={finish} nextLabel="Terminar tutorial ▶"
+          onReplay={restart}
+        />
+      </div>
     </div>
   );
 }

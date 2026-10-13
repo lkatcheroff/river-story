@@ -94,7 +94,7 @@ function PanelView({
   );
 }
 
-export type SceneState = { slots: Slot[]; locked: boolean[]; attempts: number; analysis: Analysis[] | null; solved: boolean };
+export type SceneState = { slots: Slot[]; locked: boolean[]; attempts: number; analysis: Analysis[] | null; solved: boolean; hints: number };
 
 export function ComicScene({ era, scene, index, total, onNext, onReplay, practice = false, fixedPieces, onState, nextLabel }: {
   era: Era; scene: Scene; index: number; total: number; onNext: () => void; onReplay: () => void;
@@ -126,9 +126,9 @@ export function ComicScene({ era, scene, index, total, onNext, onReplay, practic
 
   const solved = n > 0 && locked.every(Boolean);
   useEffect(() => {
-    onState?.({ slots, locked, attempts, analysis: result_, solved });
+    onState?.({ slots, locked, attempts, analysis: result_, solved, hints: Object.values(clues).reduce((a, b) => a + b, 0) });
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [slots, locked, attempts, result_, solved]);
+  }, [slots, locked, attempts, result_, solved, clues]);
   const busy = playing !== null;
   const c = scene.challenge;
   const quizKey = `${scene.id}:q`;
