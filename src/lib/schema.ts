@@ -39,6 +39,17 @@ export const GOAL_PIECE = "Arco";
 export const VARIANTS = ["tiro-libre", "corner", "taco", "media-vuelta", "palomita", "volea", "chilena", "rebote"] as const;
 export type Variant = (typeof VARIANTS)[number];
 
+/**
+ * Dónde ocurre la acción, solo si las fuentes lo documentan.
+ * side: banda desde la que actúa quien protagoniza la viñeta (desde su punto de vista de ataque).
+ * zone: qué tan lejos del arco está (medio = mitad de cancha, lejos = unos 25 m, borde = borde del área,
+ * area = dentro del área, area-chica = pegado al arco).
+ */
+export const SIDES = ["derecha", "izquierda"] as const;
+export const ZONES = ["medio", "lejos", "borde", "area", "area-chica"] as const;
+export type Side = (typeof SIDES)[number];
+export type Zone = (typeof ZONES)[number];
+
 export const PanelSchema = z.object({
   /** Viñeta: 1–2 oraciones que reformulan SOLO hechos ya presentes en la escena verificada. */
   caption: z.string().min(1).max(160),
@@ -52,6 +63,10 @@ export const PanelSchema = z.object({
   tone: z.enum(["calma", "tension", "drama", "gloria"]),
   /** Variante documentada de la acción (opcional). */
   variant: z.enum(VARIANTS).optional(),
+  /** Banda desde la que actúa (derecha/izquierda), si está documentado. */
+  side: z.enum(SIDES).optional(),
+  /** Distancia al arco, si está documentada. */
+  zone: z.enum(ZONES).optional(),
 });
 
 export const SceneSchema = z

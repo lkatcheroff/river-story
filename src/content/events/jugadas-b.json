@@ -38,7 +38,8 @@
           "Antonio Alzamendi",
           "Arco"
         ],
-        "tone": "drama"
+        "tone": "drama",
+        "zone": "area"
       },
       {
         "caption": "En el rebote, Alzamendi no perdona y cabecea.",
@@ -116,7 +117,8 @@
           "Roque Alfaro",
           "Norberto Alonso"
         ],
-        "tone": "tension"
+        "tone": "tension",
+        "side": "derecha"
       },
       {
         "caption": "Alonso se eleva solo y cabecea cruzado ante la salida del arquero.",
@@ -260,7 +262,8 @@
           "Leopoldo Luque",
           "Pedro González"
         ],
-        "tone": "tension"
+        "tone": "tension",
+        "side": "izquierda"
       },
       {
         "caption": "González queda solo, gana el mano a mano con Gatti y define con el arco libre: River gana en La Bombonera.",
@@ -272,7 +275,8 @@
           "Pedro González",
           "Arco"
         ],
-        "tone": "gloria"
+        "tone": "gloria",
+        "zone": "area"
       }
     ],
     "challenge": {

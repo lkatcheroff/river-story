@@ -365,7 +365,8 @@
           "Carlos Sánchez",
           "Arco"
         ],
-        "tone": "tension"
+        "tone": "tension",
+        "zone": "area"
       },
       {
         "caption": "Gol de Sánchez: 1-0 a Boca en la ida de los octavos de la Libertadores.",
@@ -434,7 +435,8 @@
           "Enzo Francescoli",
           "Arco"
         ],
-        "tone": "tension"
+        "tone": "tension",
+        "zone": "area"
       },
       {
         "caption": "Gol de Ortega: River amplía en La Bombonera.",
@@ -458,7 +460,8 @@
           "Marcelo Gallardo",
           "Arco"
         ],
-        "tone": "tension"
+        "tone": "tension",
+        "zone": "area"
       },
       {
         "caption": "Gol de Gallardo: 3-0 en la cancha de Boca.",
@@ -531,7 +534,8 @@
           "Arco"
         ],
         "tone": "tension",
-        "variant": "tiro-libre"
+        "variant": "tiro-libre",
+        "zone": "borde"
       },
       {
         "caption": "Gol de Francescoli: 1-1 en La Bombonera.",
@@ -669,7 +673,8 @@
           "Fernando Cavenaghi"
         ],
         "tone": "tension",
-        "variant": "corner"
+        "variant": "corner",
+        "zone": "area"
       },
       {
         "caption": "Cavenaghi aparece por el segundo palo y cabecea.",
@@ -749,7 +754,8 @@
           "Arco"
         ],
         "tone": "tension",
-        "variant": "taco"
+        "variant": "taco",
+        "zone": "area"
       },
       {
         "caption": "Gol de taco de Higuaín: River se pone arriba en el Monumental.",
@@ -818,7 +824,8 @@
           "Arco"
         ],
         "tone": "tension",
-        "variant": "tiro-libre"
+        "variant": "tiro-libre",
+        "zone": "lejos"
       },
       {
         "caption": "Gol de Gallardo: 1-1 en La Bombonera y silencio en la cancha de Boca.",

@@ -35,3 +35,10 @@ Las viñetas de estas escenas llevan escenario/reparto genéricos porque el text
 **Jugadas:** Tokio 1986 (Wikipedia: pegó en el palo; La Página Millonaria: entre arquero y palo); pelota naranja (centro vs tiro libre de Alfaro); Bruno 1975 (relato de un solo origen: su testimonio); Cavenaghi 2004 (las 3 fuentes son del mismo sitio); Higuaín 2006 (dos versiones del armado); Trezeguet 2012 (quién dio el pelotazo previo: Ponzio vs Ramiro Funes Mori).
 **Fuentes que dieron 403:** El Gráfico y las crónicas de época; hace falta hemeroteca (Biblioteca Nacional) para el desarrollo de jugadas de los años 30 y 40.
 **Pendientes sin cubrir:** gol de Pratto en la ida de la final 2018, Mora 2013 en Mar del Plata, el córner del gol de Mercado 2014.
+
+## Tercera tanda (jugadas animadas)
+- Detalle espacial (banda/distancia) completado solo donde hay ≥2 fuentes; el resto queda sin definir y la jugada se ve con la ubicación por defecto.
+- Sin confirmar (podría cargarse con una segunda fuente): banda del centro de Funes Mori en Pezzella 2014; banda del córner de Pezzella en 2014 (Infobae dice izquierda); banda del tiro libre de Gallardo 2009 (Bleacher Report: izquierda); punto de remate de Pity en Madrid; banda de Quintero en Madrid 2018 (Cadena 3: derecha); distancia del tiro libre de Alonso en Tokio (fuentes: círculo central / 22 m / tres cuartos); Bruno 1975 (dentro del área, al segundo palo: solo El Gráfico, 403).
+- 5-4 de 1972, Morete: una fuente dice "centro", otra "pelota parada"; no se marcó variante.
+- Cavenaghi 2004: el córner salió desde la derecha, pero la viñeta muestra a Husaín (que peina), por eso no lleva banda.
+- Caption "a los 5 minutos" (descuento de Pedernera 1942) vs. Ser de River "2 minutos".

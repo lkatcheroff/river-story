@@ -1,0 +1,820 @@
+[
+  {
+    "id": "jugada-pratto-saque-del-medio-bombonera-2018",
+    "eraId": "era-gallardo",
+    "order": 316,
+    "title": "El gol sacando del medio",
+    "date": "2018-11-11",
+    "headline": "Pratto empata en La Bombonera apenas River saca del medio",
+    "description": "El 11 de noviembre de 2018, en La Bombonera, Boca se puso 1-0 en la ida de la final de la Libertadores con gol de Ábila. River sacó del medio, Gonzalo Martínez metió un pase filtrado y Lucas Pratto, que le ganó a Izquierdoz, definió cruzado: era el 1-1. Las crónicas discrepan en el minuto.",
+    "protagonists": [
+      "Gonzalo Martínez",
+      "Lucas Pratto"
+    ],
+    "rival": "Boca Juniors",
+    "result": "Boca Juniors 2-2 River Plate",
+    "stadium": "La Bombonera",
+    "panels": [
+      {
+        "caption": "Boca gana 1 a 0, River saca del medio y Gonzalo Martínez levanta la cabeza para meter un pase filtrado.",
+        "setting": {
+          "label": "Pase",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Gonzalo Martínez",
+          "Lucas Pratto"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Pratto le gana a Izquierdoz en velocidad y define cruzado ante Rossi.",
+        "setting": {
+          "label": "Tiro al arco",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Lucas Pratto",
+          "Arco"
+        ],
+        "tone": "drama"
+      },
+      {
+        "caption": "Gol de Pratto: 1 a 1 en La Bombonera, apenas después del gol de Boca.",
+        "setting": {
+          "label": "Gol",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Lucas Pratto",
+          "Arco"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "who-scored",
+      "question": "¿Quién empató para River en La Bombonera, sacando del medio, en la ida de la final de la Libertadores 2018?",
+      "options": [
+        "Lucas Pratto",
+        "Rafael Santos Borré",
+        "Gonzalo Martínez",
+        "Juan Fernando Quintero"
+      ],
+      "answerIndex": 0
+    },
+    "sources": [
+      {
+        "label": "Wikipedia - 2018 Copa Libertadores Finals",
+        "url": "https://en.wikipedia.org/wiki/2018_Copa_Libertadores_Finals"
+      },
+      {
+        "label": "Perfil 442 - Pratto y el gol sacando del medio",
+        "url": "https://442.perfil.com/noticias/futbol/river-boca-pratto-cumpleanos-gol-final-libertadores.phtml"
+      },
+      {
+        "label": "Diario de Cuyo - Partidazo que terminó en tablas",
+        "url": "https://www.diariodecuyo.com.ar/noticias/partidazo-que-termino-en-tablas-361806.html"
+      },
+      {
+        "label": "La Página Millonaria - A cuatro años del gol sacando del medio",
+        "url": "https://lapaginamillonaria.com/riverplate/A-cuatro-anos-del-gol-sacando-del-medio-y-de-una-final-inolvidable-20221111-0010.html"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "jugada-izquierdoz-gol-en-contra-bombonera-2018",
+    "eraId": "era-gallardo",
+    "order": 317,
+    "title": "El gol en contra de Izquierdoz",
+    "date": "2018-11-11",
+    "headline": "Una pelota parada de Pity Martínez termina en el arco de Boca",
+    "description": "En el segundo tiempo de la ida de la final de 2018 en La Bombonera, Boca ganaba 2-1. Gonzalo Martínez mandó la pelota al área, Pratto fue a buscarla y Carlos Izquierdoz, al intentar desviarla, la metió en su propio arco: 2-2 final. Las crónicas discrepan en si fue centro o tiro libre y en el minuto.",
+    "protagonists": [
+      "Gonzalo Martínez",
+      "Lucas Pratto"
+    ],
+    "rival": "Boca Juniors",
+    "result": "Boca Juniors 2-2 River Plate",
+    "stadium": "La Bombonera",
+    "panels": [
+      {
+        "caption": "Segundo tiempo y River pierde 2 a 1: Gonzalo Martínez manda la pelota parada al área.",
+        "setting": {
+          "label": "Centro",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Gonzalo Martínez",
+          "Lucas Pratto"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Pratto va a buscarla y Carlos Izquierdoz intenta desviarla con la cabeza.",
+        "setting": {
+          "label": "Cabezazo",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Carlos Izquierdoz",
+          "Arco"
+        ],
+        "tone": "drama"
+      },
+      {
+        "caption": "Gol en contra de Izquierdoz: 2 a 2 en La Bombonera.",
+        "setting": {
+          "label": "Gol",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Carlos Izquierdoz",
+          "Arco"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Cómo llegó el segundo gol de River en la ida de la final de la Libertadores 2018 en La Bombonera?",
+      "options": [
+        "Gol en contra de Carlos Izquierdoz",
+        "Penal de Gonzalo Martínez",
+        "Cabezazo de Lucas Pratto",
+        "Remate de Juan Fernando Quintero"
+      ],
+      "answerIndex": 0,
+      "explanation": "Una pelota parada de Gonzalo Martínez con Pratto buscándola terminó en un desvío de Izquierdoz hacia su propio arco."
+    },
+    "sources": [
+      {
+        "label": "Wikipedia - 2018 Copa Libertadores Finals",
+        "url": "https://en.wikipedia.org/wiki/2018_Copa_Libertadores_Finals"
+      },
+      {
+        "label": "Montevideo Portal - Boca y River igualaron 2-2 en La Bombonera",
+        "url": "https://www.montevideo.com.uy/Deportes/Libertadores-Boca-Juniors-y-River-igualaron-2-2-en-la-final-de-ida-en-La-Bombonera-uc701317"
+      },
+      {
+        "label": "Diario de Cuyo - Partidazo que terminó en tablas",
+        "url": "https://www.diariodecuyo.com.ar/noticias/partidazo-que-termino-en-tablas-361806.html"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "jugada-scocco-abre-wilstermann-2017",
+    "eraId": "era-gallardo",
+    "order": 318,
+    "title": "Scocco abre la remontada",
+    "date": "2017-09-20",
+    "headline": "El primero de los cinco goles de Scocco a Wilstermann",
+    "description": "El 20 de septiembre de 2017, en el Monumental, River necesitaba dar vuelta el 0-3 de la ida con Wilstermann por los cuartos de la Libertadores. Ignacio Scocco ganó en velocidad, eludió al arquero Olivares y empujó la pelota a la red. Terminó 8-0 y Scocco hizo cinco goles. Las fuentes dan minutos distintos.",
+    "protagonists": [
+      "Ignacio Scocco"
+    ],
+    "rival": "Wilstermann",
+    "result": "River Plate 8-0 Wilstermann (global 8-3)",
+    "stadium": "Monumental",
+    "panels": [
+      {
+        "caption": "Scocco se escapa por velocidad en el comienzo del partido y se queda solo ante el arquero Olivares.",
+        "setting": {
+          "label": "Tiro al arco",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Ignacio Scocco",
+          "Arco"
+        ],
+        "tone": "tension",
+        "zone": "area"
+      },
+      {
+        "caption": "Gol de Scocco: River empieza a dar vuelta el 0 a 3 en el Monumental.",
+        "setting": {
+          "label": "Gol",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Ignacio Scocco",
+          "Arco"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Cuántos goles hizo Ignacio Scocco en el 8-0 de River a Wilstermann en la Libertadores 2017?",
+      "options": [
+        "Cinco",
+        "Tres",
+        "Cuatro",
+        "Seis"
+      ],
+      "answerIndex": 0,
+      "explanation": "Scocco marcó cinco goles, el primer jugador de River con cinco en un partido de Libertadores."
+    },
+    "sources": [
+      {
+        "label": "ESPN - River Plate v Wilstermann",
+        "url": "https://espndeportes.espn.com/futbol/reporte/_/juegoId/493702"
+      },
+      {
+        "label": "Placar - River massacra Wilstermann por 8 a 0",
+        "url": "https://placar.com.br/placar/libertadores-river-massacra-wilstermann-por-8-a-0-e-chega-a-semi"
+      },
+      {
+        "label": "Soccer America - Scocco, cinco goles",
+        "url": "https://www.socceramerica.com/?p=68040"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "jugada-scocco-quinto-wilstermann-2017",
+    "eraId": "era-gallardo",
+    "order": 319,
+    "title": "El quinto de Scocco",
+    "date": "2017-09-20",
+    "headline": "Scocco completa sus cinco goles tras un córner y un rebote",
+    "description": "En el 8-0 a Wilstermann del 20 de septiembre de 2017 en el Monumental, River tuvo un córner y el arquero Olivares volvió a fallar. Ignacio Scocco aprovechó el rebote y marcó su quinto gol de la noche. Las fuentes dan el minuto entre el 57 y el 58.",
+    "protagonists": [
+      "Ignacio Scocco"
+    ],
+    "rival": "Wilstermann",
+    "result": "River Plate 8-0 Wilstermann (global 8-3)",
+    "stadium": "Monumental",
+    "panels": [
+      {
+        "caption": "Tras un córner, Olivares no logra controlar y la pelota queda picando en el área.",
+        "setting": {
+          "label": "Tiro al arco",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Ignacio Scocco",
+          "Arco"
+        ],
+        "tone": "tension",
+        "variant": "rebote",
+        "zone": "area"
+      },
+      {
+        "caption": "Gol de Scocco: su quinto de la noche en el Monumental.",
+        "setting": {
+          "label": "Gol",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Ignacio Scocco",
+          "Arco"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "who-scored",
+      "question": "¿Quién marcó cinco goles en el 8-0 de River a Wilstermann por la Libertadores 2017?",
+      "options": [
+        "Ignacio Scocco",
+        "Enzo Pérez",
+        "Ignacio Fernández",
+        "Rafael Santos Borré"
+      ],
+      "answerIndex": 0
+    },
+    "sources": [
+      {
+        "label": "ESPN - River Plate v Wilstermann",
+        "url": "https://espndeportes.espn.com/futbol/reporte/_/juegoId/493702"
+      },
+      {
+        "label": "Placar - River massacra Wilstermann por 8 a 0",
+        "url": "https://placar.com.br/placar/libertadores-river-massacra-wilstermann-por-8-a-0-e-chega-a-semi"
+      },
+      {
+        "label": "Soccer America - Scocco, cinco goles",
+        "url": "https://www.socceramerica.com/?p=68040"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "jugada-pity-penal-supercopa-2018",
+    "eraId": "era-gallardo",
+    "order": 320,
+    "title": "El penal del Pity en Mendoza",
+    "date": "2018-03-14",
+    "headline": "Pity Martínez abre el 2-0 de River a Boca en la Supercopa",
+    "description": "El 14 de marzo de 2018, en el estadio Malvinas Argentinas de Mendoza, River jugó la Supercopa Argentina contra Boca. Carlos Cardona cometió penal sobre Ignacio Fernández y Gonzalo Martínez, el Pity, lo convirtió en el primer tiempo ante Rossi. River ganó 2-0. Las fuentes dan minutos distintos.",
+    "protagonists": [
+      "Gonzalo Martínez",
+      "Ignacio Fernández"
+    ],
+    "rival": "Boca Juniors",
+    "result": "River Plate 2-0 Boca Juniors",
+    "stadium": "Malvinas Argentinas",
+    "panels": [
+      {
+        "caption": "Cardona derriba a Nacho Fernández en el área y el árbitro Loustau marca penal para River.",
+        "setting": {
+          "label": "Penal",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Gonzalo Martínez",
+          "Arco"
+        ],
+        "tone": "tension",
+        "zone": "area"
+      },
+      {
+        "caption": "Gol del Pity: River pone el 1 a 0 sobre Boca en Mendoza.",
+        "setting": {
+          "label": "Gol",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Gonzalo Martínez",
+          "Arco"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Quién convirtió el penal de River a Boca en la Supercopa Argentina 2018 en Mendoza?",
+      "options": [
+        "Gonzalo Martínez",
+        "Ignacio Scocco",
+        "Lucas Pratto",
+        "Juan Fernando Quintero"
+      ],
+      "answerIndex": 0,
+      "explanation": "Gonzalo Pity Martínez cambió el penal por gol, y Scocco puso el 2-0 en el segundo tiempo."
+    },
+    "sources": [
+      {
+        "label": "La Página Millonaria - Los goles del Pity y Scocco contra Boca",
+        "url": "https://lapaginamillonaria.com/riverplate/Los-goles-del-Pity-y-Scocco-contra-Boca-20180314-0005.html"
+      },
+      {
+        "label": "Perfil 442 - River le ganó a Boca la Supercopa",
+        "url": "https://442.perfil.com/noticias/futbol/2018-03-14-589763-river-le-gano-a-boca-la-supercopa-argentina.phtml"
+      },
+      {
+        "label": "Goal - El Pity no falla de penal",
+        "url": "https://www.goal.com/es/noticias/video-el-pity-no-falla-de-penal-martinez-puso-la-ventaja-de-river-ante-boca-en-mendoza/1mthbegaoohu1wwrapx4rot1d"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "jugada-scocco-supercopa-2018",
+    "eraId": "era-gallardo",
+    "order": 321,
+    "title": "Scocco sentencia la Supercopa",
+    "date": "2018-03-14",
+    "headline": "Scocco hace el 2-0 y River gana la Supercopa ante Boca",
+    "description": "En la Supercopa Argentina del 14 de marzo de 2018 en el estadio Malvinas Argentinas de Mendoza, River ganaba 1-0 a Boca con el penal del Pity. En el segundo tiempo, Ignacio Scocco definió cruzado ante Rossi para el 2-0 final. Las crónicas no detallan quién armó la jugada y discrepan en el minuto.",
+    "protagonists": [
+      "Ignacio Scocco"
+    ],
+    "rival": "Boca Juniors",
+    "result": "River Plate 2-0 Boca Juniors",
+    "stadium": "Malvinas Argentinas",
+    "panels": [
+      {
+        "caption": "Scocco queda de frente al arco de Boca en el segundo tiempo y remata cruzado.",
+        "setting": {
+          "label": "Tiro al arco",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Ignacio Scocco",
+          "Arco"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Gol de Scocco: 2 a 0 y River se queda con la Supercopa Argentina.",
+        "setting": {
+          "label": "Gol",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Ignacio Scocco",
+          "Arco"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "who-scored",
+      "question": "¿Quién hizo el segundo gol de River a Boca en la Supercopa Argentina 2018?",
+      "options": [
+        "Ignacio Scocco",
+        "Gonzalo Martínez",
+        "Rafael Santos Borré",
+        "Lucas Pratto"
+      ],
+      "answerIndex": 0
+    },
+    "sources": [
+      {
+        "label": "La Página Millonaria - Los goles del Pity y Scocco contra Boca",
+        "url": "https://lapaginamillonaria.com/riverplate/Los-goles-del-Pity-y-Scocco-contra-Boca-20180314-0005.html"
+      },
+      {
+        "label": "Perfil 442 - River le ganó a Boca la Supercopa",
+        "url": "https://442.perfil.com/noticias/futbol/2018-03-14-589763-river-le-gano-a-boca-la-supercopa-argentina.phtml"
+      },
+      {
+        "label": "Correo del Sur - Martínez y Scocco someten a Boca",
+        "url": "https://correodelsur.com/deporte/20180314/martinez-y-scocco-someten-a-boca-y-dan-a-river-la-supercopa-argentina.html"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "jugada-borre-scocco-independiente-2018",
+    "eraId": "era-gallardo",
+    "order": 322,
+    "title": "Borré y Scocco ante Independiente",
+    "date": "2018-10-02",
+    "headline": "Borré se la deja a Scocco y River se pone 1-0 en cuartos",
+    "description": "El 2 de octubre de 2018, en el Monumental, River y Independiente definían los cuartos de la Libertadores tras el 0-0 de la ida. Al comienzo del segundo tiempo, Rafael Santos Borré encaró y asistió a Ignacio Scocco, que definió para el 1-0. River ganó 3-1. Las fuentes dan el minuto entre el 46 y el 47.",
+    "protagonists": [
+      "Rafael Santos Borré",
+      "Ignacio Scocco"
+    ],
+    "rival": "Independiente",
+    "result": "River Plate 3-1 Independiente",
+    "stadium": "Monumental",
+    "panels": [
+      {
+        "caption": "Arranca el segundo tiempo y Borré encara y se la deja a Scocco.",
+        "setting": {
+          "label": "Pase",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Rafael Santos Borré",
+          "Ignacio Scocco"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Scocco define ante el arquero de Independiente.",
+        "setting": {
+          "label": "Tiro al arco",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Ignacio Scocco",
+          "Arco"
+        ],
+        "tone": "drama",
+        "zone": "area"
+      },
+      {
+        "caption": "Gol de Scocco: 1 a 0 en el Monumental.",
+        "setting": {
+          "label": "Gol",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Ignacio Scocco",
+          "Arco"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Quién asistió a Scocco en su gol a Independiente en los cuartos de la Libertadores 2018?",
+      "options": [
+        "Rafael Santos Borré",
+        "Gonzalo Martínez",
+        "Juan Fernando Quintero",
+        "Ignacio Fernández"
+      ],
+      "answerIndex": 0,
+      "explanation": "Borré encaró y dejó a Scocco para el 1-0, según ESPN y Footmercato."
+    },
+    "sources": [
+      {
+        "label": "ESPN - River derrotó a Independiente y avanzó a las semifinales",
+        "url": "https://espndeportes.espn.com/futbol/reporte/_/juegoId/526512"
+      },
+      {
+        "label": "Footmercato - River Plate vs Independiente",
+        "url": "https://www.footmercato.net/live/7037549444538920165-river-plate-vs-independiente"
+      },
+      {
+        "label": "Montevideo Portal - River le ganó 3-1 a Independiente",
+        "url": "https://www.montevideo.com.uy/Deportes/Copa-Libertadores-River-le-gano-3-1-a-Independiente-con-dos-goles-colombianos-uc697182"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "jugada-quintero-independiente-2018",
+    "eraId": "era-gallardo",
+    "order": 323,
+    "title": "Quintero desde afuera del área",
+    "date": "2018-10-02",
+    "headline": "Quintero, recién ingresado, hace el 2-1 a Independiente",
+    "description": "El 2 de octubre de 2018, en el Monumental, Independiente había empatado 1-1 por los cuartos de la Libertadores. Juan Fernando Quintero entró desde el banco y definió con un remate desde afuera del área para el 2-1. River ganó 3-1 y pasó a semifinales. Las fuentes dan el minuto entre el 68 y el 69.",
+    "protagonists": [
+      "Juan Fernando Quintero"
+    ],
+    "rival": "Independiente",
+    "result": "River Plate 3-1 Independiente",
+    "stadium": "Monumental",
+    "panels": [
+      {
+        "caption": "Quintero, que había entrado desde el banco, se acomoda afuera del área y remata.",
+        "setting": {
+          "label": "Tiro al arco",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Juan Fernando Quintero",
+          "Arco"
+        ],
+        "tone": "tension",
+        "zone": "borde"
+      },
+      {
+        "caption": "Gol de Quintero: 2 a 1 en el Monumental y River se acerca a las semifinales.",
+        "setting": {
+          "label": "Gol",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Juan Fernando Quintero",
+          "Arco"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "who-scored",
+      "question": "¿Quién hizo el 2-1 de River a Independiente con un remate desde afuera del área en cuartos de la Libertadores 2018?",
+      "options": [
+        "Juan Fernando Quintero",
+        "Ignacio Scocco",
+        "Rafael Santos Borré",
+        "Gonzalo Martínez"
+      ],
+      "answerIndex": 0
+    },
+    "sources": [
+      {
+        "label": "ESPN - River derrotó a Independiente y avanzó a las semifinales",
+        "url": "https://espndeportes.espn.com/futbol/reporte/_/juegoId/526512"
+      },
+      {
+        "label": "Footmercato - River Plate vs Independiente",
+        "url": "https://www.footmercato.net/live/7037549444538920165-river-plate-vs-independiente"
+      },
+      {
+        "label": "Montevideo Portal - River le ganó 3-1 a Independiente",
+        "url": "https://www.montevideo.com.uy/Deportes/Copa-Libertadores-River-le-gano-3-1-a-Independiente-con-dos-goles-colombianos-uc697182"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "jugada-pedernera-empate-bombonera-1942",
+    "eraId": "la-maquina",
+    "order": 22,
+    "title": "Pedernera empata en La Bombonera",
+    "date": "1942-11-08",
+    "headline": "El Maestro Pedernera iguala 2-2 y River da la vuelta en la cancha de Boca",
+    "description": "El 8 de noviembre de 1942, en La Bombonera, Boca ganaba 2-0 con dos goles de Bernardo Gandulla. Adolfo Pedernera descontó en el segundo tiempo y volvió a marcar para el 2-2 final, un empate que le dio a River la primera vuelta olímpica en la cancha de Boca. Las fuentes discrepan en los minutos y no coinciden en cómo se armó el gol.",
+    "protagonists": [
+      "Adolfo Pedernera"
+    ],
+    "rival": "Boca Juniors",
+    "result": "Boca Juniors 2-2 River Plate",
+    "stadium": "La Bombonera",
+    "panels": [
+      {
+        "caption": "Pedernera busca el empate en el segundo tiempo y remata al arco de Boca.",
+        "setting": {
+          "label": "Tiro al arco",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Adolfo Pedernera",
+          "Arco"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Gol de Pedernera: 2 a 2 en La Bombonera y River festeja el título en la cancha de Boca.",
+        "setting": {
+          "label": "Gol",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Adolfo Pedernera",
+          "Arco"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "who-scored",
+      "question": "¿Quién hizo los dos goles de River en el 2-2 de 1942 en La Bombonera?",
+      "options": [
+        "Adolfo Pedernera",
+        "Ángel Labruna",
+        "José Manuel Moreno",
+        "Félix Loustau"
+      ],
+      "answerIndex": 0
+    },
+    "sources": [
+      {
+        "label": "La Página Millonaria - La inolvidable vuelta de La Máquina en La Bombonera",
+        "url": "https://lapaginamillonaria.com/riverplate/La-inolvidable-vuelta-de-La-Maquina-en-La-Bombonera-20121108-0004.html"
+      },
+      {
+        "label": "Infobae - Hace 70 años River daba la primera de las tres vueltas en La Bombonera",
+        "url": "https://www.infobae.com/2012/11/07/680135-hace-70-anos-river-daba-la-primera-las-tres-vueltas-la-bombonera/"
+      },
+      {
+        "label": "La Página Millonaria - A 73 años de una vuelta histórica",
+        "url": "https://lapaginamillonaria.com/riverplate/A-73-anos-de-una-vuelta-historica-20151108-0019.html"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "jugada-mastrangelo-abre-5-4-1972",
+    "eraId": "era-labruna",
+    "order": 32,
+    "title": "Más y Mastrángelo abren el 5-4",
+    "date": "1972-10-15",
+    "headline": "Un pase de Más y el gol de Mastrángelo al comienzo del 5-4 a Boca",
+    "description": "El 15 de octubre de 1972, en la cancha de Vélez (José Amalfitani), River le ganó 5-4 a Boca en el Nacional. En los primeros minutos, Oscar Más pasó para Ernesto Mastrángelo, que entró al área y abrió la cuenta. Pronto River ganaba 2-0, pero Boca dio vuelta el partido antes del final.",
+    "protagonists": [
+      "Oscar Más",
+      "Ernesto Mastrángelo"
+    ],
+    "rival": "Boca Juniors",
+    "result": "River Plate 5-4 Boca Juniors",
+    "stadium": "José Amalfitani",
+    "panels": [
+      {
+        "caption": "En los primeros minutos del Nacional, Oscar Más le pasa la pelota a Mastrángelo.",
+        "setting": {
+          "label": "Pase",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Oscar Más",
+          "Ernesto Mastrángelo"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Mastrángelo entra al área y define.",
+        "setting": {
+          "label": "Tiro al arco",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Ernesto Mastrángelo",
+          "Arco"
+        ],
+        "tone": "drama"
+      },
+      {
+        "caption": "Gol de Mastrángelo: River arranca ganando el partido de los nueve goles.",
+        "setting": {
+          "label": "Gol",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Ernesto Mastrángelo",
+          "Arco"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "who-scored",
+      "question": "¿Quién abrió el marcador en el 5-4 de River a Boca de 1972?",
+      "options": [
+        "Ernesto Mastrángelo",
+        "Carlos Morete",
+        "Oscar Más",
+        "Jorge Dominichi"
+      ],
+      "answerIndex": 0
+    },
+    "sources": [
+      {
+        "label": "La Página Millonaria - En la previa del Superclásico, uno de los mejores recuerdos",
+        "url": "https://lapaginamillonaria.com/riverplate/En-la-previa-del-Superclasico-uno-de-los-mejores-recuerdos-20121015-0005.html"
+      },
+      {
+        "label": "El Gráfico - Boca-River, a 52 años del clásico más increíble",
+        "url": "https://elgrafico.com.ar/articulo/%C2%A1habla-memoria!/21698/boca-river-a-52-anios-del-clasico-mas-increible-de-la-historia"
+      },
+      {
+        "label": "RSSSF - Superclásicos de la era profesional",
+        "url": "https://rsssf.org/tablesb/bocariverpro.html"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "jugada-morete-5-4-boca-1972",
+    "eraId": "era-labruna",
+    "order": 33,
+    "title": "Dominichi, Morete y el 5-4",
+    "date": "1972-10-15",
+    "headline": "Morete marca el 5-4 sobre la hora ante Boca",
+    "description": "El 15 de octubre de 1972, en el Amalfitani, River y Boca igualaban 4-4 en el Nacional. En el descuento, Jorge Dominichi mandó la pelota al área desde un tiro libre y Carlos Morete la metió en la red para el 5-4. Las crónicas difieren en si fue centro o tiro libre.",
+    "protagonists": [
+      "Jorge Dominichi",
+      "Carlos Morete"
+    ],
+    "rival": "Boca Juniors",
+    "result": "River Plate 5-4 Boca Juniors",
+    "stadium": "José Amalfitani",
+    "panels": [
+      {
+        "caption": "Tiempo de descuento y 4 a 4: Dominichi manda la pelota parada al área.",
+        "setting": {
+          "label": "Centro",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Jorge Dominichi",
+          "Carlos Morete"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Morete la recibe cerca del arco y define.",
+        "setting": {
+          "label": "Tiro al arco",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Carlos Morete",
+          "Arco"
+        ],
+        "tone": "drama"
+      },
+      {
+        "caption": "Gol de Morete: 5 a 4 para River sobre el final.",
+        "setting": {
+          "label": "Gol",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Carlos Morete",
+          "Arco"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Quién hizo el 5-4 de River a Boca en 1972, en tiempo de descuento?",
+      "options": [
+        "Carlos Morete",
+        "Ernesto Mastrángelo",
+        "Oscar Más",
+        "Jorge Dominichi"
+      ],
+      "answerIndex": 0,
+      "explanation": "Carlos Morete marcó dos goles, el último en el descuento tras la pelota de Dominichi."
+    },
+    "sources": [
+      {
+        "label": "La Página Millonaria - El mejor Superclásico de todos los tiempos",
+        "url": "https://lapaginamillonaria.com/riverplate/El-mejor-Superclasico-de-todos-los-tiempos-20151015-0011.html"
+      },
+      {
+        "label": "El Gráfico - Boca-River, a 52 años del clásico más increíble",
+        "url": "https://elgrafico.com.ar/articulo/%C2%A1habla-memoria!/21698/boca-river-a-52-anios-del-clasico-mas-increible-de-la-historia"
+      },
+      {
+        "label": "Diario de Cuyo - En la retina",
+        "url": "https://www.diariodecuyo.com.ar/noticias/en-la-retina-1012705.html"
+      }
+    ],
+    "verified": true
+  }
+]

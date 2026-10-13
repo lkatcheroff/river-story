@@ -26,7 +26,8 @@
           "Ignacio Fernández",
           "Lucas Pratto"
         ],
-        "tone": "tension"
+        "tone": "tension",
+        "side": "derecha"
       },
       {
         "caption": "Pratto define ante Andrada y es el 1-1 en el Bernabéu.",
@@ -94,7 +95,8 @@
           "Juan Fernando Quintero",
           "Arco"
         ],
-        "tone": "tension"
+        "tone": "tension",
+        "zone": "borde"
       },
       {
         "caption": "La pelota entra y River pasa al frente en el alargue.",
@@ -231,7 +233,8 @@
           "Leonel Vangioni",
           "Lucas Alario"
         ],
-        "tone": "tension"
+        "tone": "tension",
+        "side": "izquierda"
       },
       {
         "caption": "Alario se tira en palomita en el área chica y cabecea.",
@@ -244,7 +247,8 @@
           "Arco"
         ],
         "tone": "drama",
-        "variant": "palomita"
+        "variant": "palomita",
+        "zone": "area-chica"
       },
       {
         "caption": "Es el 1-0 casi sobre el descanso, con el Monumental bajo el diluvio.",
@@ -315,7 +319,8 @@
           "Gabriel Mercado"
         ],
         "tone": "tension",
-        "variant": "corner"
+        "variant": "corner",
+        "side": "izquierda"
       },
       {
         "caption": "Mercado cabecea al segundo palo y abre el marcador.",
@@ -542,7 +547,8 @@
           "Hernán Crespo",
           "Arco"
         ],
-        "tone": "tension"
+        "tone": "tension",
+        "zone": "area-chica"
       },
       {
         "caption": "Empuja la pelota y River empieza a dar vuelta la final.",
@@ -610,7 +616,8 @@
           "Rafael Santos Borré",
           "Arco"
         ],
-        "tone": "drama"
+        "tone": "drama",
+        "zone": "area"
       },
       {
         "caption": "Es el 1-1 en Porto Alegre y River sigue con vida.",
@@ -815,7 +822,8 @@
           "Matías Suárez",
           "Ignacio Fernández"
         ],
-        "tone": "tension"
+        "tone": "tension",
+        "side": "derecha"
       },
       {
         "caption": "Nacho la empuja de cerca y es el 2-0.",

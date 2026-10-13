@@ -13,8 +13,8 @@ import { useGame } from "../lib/store";
 import { Backdrop } from "./Backdrop";
 import { Defender, Figure, type Mood } from "./Figure";
 import { ActionIcon, isOrderedAction } from "./ActionIcon";
-import { choreo } from "../lib/choreo";
-import type { Variant } from "../lib/schema";
+import { choreo, LANE_BOTTOM, LANE_SCALE } from "../lib/choreo";
+import type { Side, Variant, Zone } from "../lib/schema";
 
 const registry = buildRegistry(allScenes);
 const BUBBLE: Record<Panel["tone"], string> = {
@@ -44,18 +44,20 @@ function shuffleIndices(n: number): number[] {
 }
 
 function PanelView({
-  index, tone, slot, locked, active, over, playing, reacting, scene, drag, onClear, play, variant,
+  index, tone, slot, locked, active, over, playing, reacting, scene, drag, onClear, play, variant, side, zone,
 }: {
   index: number; tone: Panel["tone"]; slot: Slot; locked: boolean; active: boolean; over: boolean; playing: boolean;
   reacting: boolean; scene: Scene; drag: ReturnType<typeof useDrag>;
   onClear: () => void; play: boolean;
   /** Variante documentada: solo se muestra cuando la viñeta es correcta (no revela la respuesta antes). */
   variant?: Variant;
+  side?: Side;
+  zone?: Zone;
 }) {
   const kind = play ? "cancha" : slot.setting ? registry.settings.get(slot.setting) : undefined;
   const n = slot.cast.length;
   const live = play && !!slot.setting && n > 0 && (locked || playing);
-  const ch = choreo(live ? slot.setting : null, variant, slot.cast);
+  const ch = choreo(live ? slot.setting : null, variant, slot.cast, { side, zone });
   const clash = playing && slot.cast.some(isRivalName) && slot.cast.some((c) => !isRivalName(c));
   const mood: Mood = locked || playing || reacting ? REACT[tone].mood : "idle";
   return (
@@ -106,6 +108,11 @@ function PanelView({
           transition={{ duration: 1.1, ease: "easeInOut", repeat: Infinity, repeatDelay: playing ? 0.2 : 2.2 }}
         >⚽</motion.span>
       )}
+      {live && (side || zone) && (
+        <span aria-hidden className="absolute right-1 top-7 z-10 border border-ink bg-white/90 px-1 text-[9px] font-extrabold uppercase leading-tight">
+          {[side ? `por la ${side}` : "", zone ? ({ medio: "desde mitad de cancha", lejos: "a unos 25 m", borde: "borde del área", area: "dentro del área", "area-chica": "área chica" } as const)[zone] : ""].filter(Boolean).join(" · ")}
+        </span>
+      )}
       {live && ch.flag && <span aria-hidden className="absolute bottom-[8%] left-[1%] z-10 text-xl">🚩</span>}
       {live && ch.wall && (
         <div aria-hidden className="absolute bottom-[4%] z-[2] flex" style={{ left: `${Math.round((ch.ball?.left[0] ?? 25) + ((ch.ball?.left[1] ?? 75) - (ch.ball?.left[0] ?? 25)) * 0.3)}%` }}>
@@ -122,8 +129,12 @@ function PanelView({
       <div className="relative z-[1] flex min-h-32 flex-1 items-end justify-center gap-0 px-1 pt-8">
         {slot.cast.length === 0 && <span className="m-auto font-display text-3xl text-ink/40">{play ? (slot.setting ? "¿quiénes?" : "¿qué acción?") : slot.setting ? "¿quién?" : "¿dónde y quién?"}</span>}
         {slot.cast.map((c, i) => (
-          <motion.div
+          <div
             key={c}
+            className={live && ch.layout ? "absolute" : "contents"}
+            style={live && ch.layout ? { left: `${ch.layout[i].x}%`, bottom: `${LANE_BOTTOM[ch.layout[i].lane]}%`, transform: `translateX(-50%) scale(${LANE_SCALE[ch.layout[i].lane]})`, transformOrigin: "bottom center", zIndex: ch.layout[i].lane === "near" ? 5 : ch.layout[i].lane === "mid" ? 4 : 3 } : undefined}
+          >
+          <motion.div
             initial={{ y: -40, opacity: 0, scale: 0.7 }}
             animate={
               live && ch.figs[i] && (ch.figs[i].x || ch.figs[i].y || ch.figs[i].rotate)
@@ -147,6 +158,7 @@ function PanelView({
             <Figure name={c} sceneId={scene.id} mood={mood} size={46} pose={live ? ch.figs[i]?.pose : "none"} keeper={live && c === "Arco" ? ch.keeper ?? "idle" : "idle"} />
             <span className="-mt-1 max-w-16 truncate border border-ink bg-white px-0.5 text-[9px] font-bold leading-tight">{c.split(" ").slice(-1)[0]}</span>
           </motion.div>
+          </div>
         ))}
       </div>
     </div>
@@ -284,6 +296,8 @@ export function ComicScene({ era, scene, index, total, onNext, onReplay, practic
     }
   };
 
+  // Los detalles documentados (variante, banda, distancia) solo se ven cuando la viñeta es correcta.
+  const revealed = (i: number) => locked[i] || (playing === i && played?.[i]?.verdict === "exact");
   const bubble = (i: number): { text: string; kind: Verdict } | null => {
     if (locked[i]) return { text: panels[i].caption, kind: "exact" };
     const a = result_?.[i] ?? (playing !== null && i <= playing ? played?.[i] : undefined);
@@ -343,7 +357,7 @@ export function ComicScene({ era, scene, index, total, onNext, onReplay, practic
               <PanelView
                 index={i} tone={p.tone} slot={slots[i]} locked={locked[i]} active={!solved && active === i}
                 over={drag.over === i && drag.ghost !== null}
-                playing={playing === i} reacting={reaction?.panel === i} scene={scene} drag={drag} play={isPlay} variant={locked[i] || (playing === i && played?.[i]?.verdict === "exact") ? p.variant : undefined}
+                playing={playing === i} reacting={reaction?.panel === i} scene={scene} drag={drag} play={isPlay} variant={revealed(i) ? p.variant : undefined} side={revealed(i) ? p.side : undefined} zone={revealed(i) ? p.zone : undefined}
                 onClear={() => change(i, () => ({ setting: null, cast: [] }))}
               />
               {b && (
