@@ -155,11 +155,11 @@ export function Tutorial({ onFinish }: { onFinish: () => void }) {
   return (
     <div className="flex flex-col gap-3">
       {/* Todo lo de la escena queda bloqueado y atenuado, salvo lo que este paso pide tocar. */}
-      <style>{`
+      {!last && <style>{`
         .tut-scope button, .tut-scope [role="button"], .tut-scope [data-tut], .tut-scope [data-drop] { pointer-events: none !important; ${cur.action ? "opacity: .3;" : ""} }
         ${allow ? `${allow} { pointer-events: auto !important; opacity: 1 !important; }` : ""}
         ${highlight ? `${highlight} { outline: 4px solid #2563eb; outline-offset: 2px; animation: tut-pulse 1s ease-in-out infinite; }` : ""}
-      `}</style>
+      `}</style>}
       <div className="sticky top-2 z-30 border-4 border-ink bg-white p-3 shadow-[4px_4px_0_#111]" role="status" aria-live="polite">
         <div className="flex items-center justify-between text-xs font-bold uppercase text-river">
           <span>Tutorial · {Math.min(step + 1, STEPS.length)}/{STEPS.length}</span>
