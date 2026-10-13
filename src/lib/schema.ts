@@ -31,6 +31,14 @@ export const ACTIONS = ["Pase", "Centro", "Gambeta", "Tiro al arco", "Cabezazo",
 export const ORDERED_ACTIONS: readonly string[] = ["Pase", "Centro"];
 export const GOAL_PIECE = "Arco";
 
+/**
+ * Cómo se hizo la acción, solo si las fuentes lo documentan (define cómo se anima la jugada):
+ * tiro-libre (aparece la barrera), corner (bandera y centro desde la esquina), taco, media-vuelta,
+ * palomita (cabezazo en el aire), volea, chilena, rebote (la pelota vuelve y se define de nuevo).
+ */
+export const VARIANTS = ["tiro-libre", "corner", "taco", "media-vuelta", "palomita", "volea", "chilena", "rebote"] as const;
+export type Variant = (typeof VARIANTS)[number];
+
 export const PanelSchema = z.object({
   /** Viñeta: 1–2 oraciones que reformulan SOLO hechos ya presentes en la escena verificada. */
   caption: z.string().min(1).max(160),
@@ -42,6 +50,8 @@ export const PanelSchema = z.object({
   /** Personajes que actúan en la viñeta (1–3): protagonistas/rival de la escena, o "River", "Hinchas", "Árbitro" si el texto los menciona. */
   figures: z.array(z.string()).min(1).max(3),
   tone: z.enum(["calma", "tension", "drama", "gloria"]),
+  /** Variante documentada de la acción (opcional). */
+  variant: z.enum(VARIANTS).optional(),
 });
 
 export const SceneSchema = z

@@ -243,7 +243,8 @@
           "Lucas Alario",
           "Arco"
         ],
-        "tone": "drama"
+        "tone": "drama",
+        "variant": "palomita"
       },
       {
         "caption": "Es el 1-0 casi sobre el descanso, con el Monumental bajo el diluvio.",
@@ -313,7 +314,8 @@
           "Leonardo Pisculichi",
           "Gabriel Mercado"
         ],
-        "tone": "tension"
+        "tone": "tension",
+        "variant": "corner"
       },
       {
         "caption": "Mercado cabecea al segundo palo y abre el marcador.",
@@ -337,7 +339,8 @@
           "Leonardo Pisculichi",
           "Germán Pezzella"
         ],
-        "tone": "tension"
+        "tone": "tension",
+        "variant": "corner"
       },
       {
         "caption": "Pezzella también cabecea y es el 2-0.",

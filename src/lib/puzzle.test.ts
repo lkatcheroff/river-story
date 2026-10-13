@@ -175,3 +175,22 @@ describe("jugadas: acciones con jugadores", () => {
     expect(p.cast).not.toContain("Arco");
   });
 });
+
+describe("jugadas: el arco no se cuenta como jugador", () => {
+  const act = (label: string, figures: string[]): Panel => ({ caption: "x", tone: "gloria", setting: { label, kind: "jugada" }, figures });
+  const shot = [act("Tiro al arco", ["Gallardo", "Arco"]), act("Gol", ["Gallardo", "Arco"]), act("Penal", ["Gallardo", "Arco"])];
+  it("si falta el arco lo dice, no 'falta 1 jugador'", () => {
+    const m = analyze(shot, [{ setting: "Tiro al arco", cast: ["Gallardo"] }, { setting: null, cast: [] }, { setting: null, cast: [] }])[0].message;
+    expect(m).toBe("La acción es correcta; 1 jugador bien, falta el arco.".replace(/^L/, "l").replace(/^./, (c) => c.toUpperCase()));
+    expect(m).not.toMatch(/falta 1 jugador/);
+  });
+  it("si falta el jugador y no el arco, lo dice", () => {
+    const m = analyze(shot, [{ setting: "Tiro al arco", cast: ["Arco"] }, { setting: null, cast: [] }, { setting: null, cast: [] }])[0].message;
+    expect(m).toMatch(/ningún jugador coincide, falta 1 jugador/);
+    expect(m).not.toMatch(/arco/i.test("x") ? /falta el arco/ : /^$/);
+  });
+  it("si sobra el arco lo dice", () => {
+    const m = analyze([act("Pase", ["A", "B"]), act("Centro", ["B", "C"]), act("Gol", ["C", "Arco"])], [{ setting: "Pase", cast: ["A", "B", "Arco"] }, { setting: null, cast: [] }, { setting: null, cast: [] }])[0].message;
+    expect(m).toMatch(/sobra el arco/);
+  });
+});

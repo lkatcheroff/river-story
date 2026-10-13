@@ -42,18 +42,28 @@ const isPlay = (p: Panel) => p.setting.kind === "jugada";
 /** Palabras según el tipo de escena: lugar/personajes o acción/jugadores. */
 const W = (p: Panel) => (isPlay(p) ? { place: "la acción", placeIs: "la acción es correcta", placeNot: "la acción no es esta", cast: "jugadores", castShort: "jugador" } : { place: "el lugar", placeIs: "el lugar es correcto", placeNot: "el lugar no es este", cast: "personajes", castShort: "personaje" });
 
-/** Qué tan cerca está una combinación de una viñeta: lugar, personajes bien, faltan y sobran. */
+/** Qué tan cerca está una combinación de una viñeta: lugar/acción, personajes bien, faltan y sobran. */
 function detail(p: Panel, s: Slot): string {
   const d = distance(p, s);
   const w = W(p);
-  const right = p.figures.length - d.missing;
   const place = d.settingOk ? w.placeIs : w.placeNot;
   if (d.reversed) return `${d.settingOk ? `${w.placeIs} y los ${w.cast} también` : `${w.cast} correctos`}, pero está al revés: ¿quién da y quién recibe?`;
-  if (d.missing === 0 && d.extra === 0) return d.settingOk ? `${w.place} y los ${w.cast} son correctos.`.replace(/^./, (c) => c) : `los ${w.cast} son los correctos, pero ${w.placeNot}.`;
+  if (d.missing === 0 && d.extra === 0) return d.settingOk ? `${w.place} y los ${w.cast} son correctos.` : `los ${w.cast} son los correctos, pero ${w.placeNot}.`;
+  // En las jugadas el arco no es un jugador: se nombra aparte para no confundir ("falta 1 jugador" cuando falta el arco).
+  const isGoal = (n: string) => n === GOAL_PIECE;
+  const play = isPlay(p);
+  const missingList = p.figures.filter((f) => !s.cast.includes(f));
+  const extraList = s.cast.filter((c) => !p.figures.includes(c));
+  const missPlayers = play ? missingList.filter((m) => !isGoal(m)).length : missingList.length;
+  const extraPlayers = play ? extraList.filter((m) => !isGoal(m)).length : extraList.length;
+  const right = p.figures.filter((f) => s.cast.includes(f) && !(play && isGoal(f))).length;
+  const noun = (n: number) => (n === 1 ? w.castShort : w.cast);
   const cast = [
-    right ? plural(right, `${w.castShort} bien`, `${w.cast} bien`) : `ningún ${w.castShort} coincide`,
-    d.missing ? `falta${d.missing > 1 ? "n" : ""} ${d.missing}` : "",
-    d.extra ? `sobra${d.extra > 1 ? "n" : ""} ${d.extra}` : "",
+    right ? `${right} ${right === 1 ? `${w.castShort} bien` : `${w.cast} bien`}` : `ningún ${w.castShort} coincide`,
+    missPlayers ? `falta${missPlayers > 1 ? "n" : ""} ${missPlayers} ${noun(missPlayers)}` : "",
+    play && missingList.some(isGoal) ? "falta el arco" : "",
+    extraPlayers ? `sobra${extraPlayers > 1 ? "n" : ""} ${extraPlayers} ${noun(extraPlayers)}` : "",
+    play && extraList.some(isGoal) ? "sobra el arco" : "",
   ].filter(Boolean);
   return `${place}; ${cast.join(", ")}.`;
 }

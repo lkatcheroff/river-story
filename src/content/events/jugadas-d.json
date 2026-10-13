@@ -49,7 +49,8 @@
           "Germán Pezzella",
           "Arco"
         ],
-        "tone": "drama"
+        "tone": "drama",
+        "variant": "rebote"
       },
       {
         "caption": "Gol de Pezzella: 1 a 1 en el Monumental, bajo la lluvia.",
@@ -118,7 +119,8 @@
           "Leonardo Pisculichi",
           "Ramiro Funes Mori"
         ],
-        "tone": "tension"
+        "tone": "tension",
+        "variant": "corner"
       },
       {
         "caption": "Funes Mori se eleva por encima de todos y cabecea ante Nahuel Guzmán.",
@@ -528,7 +530,8 @@
           "Enzo Francescoli",
           "Arco"
         ],
-        "tone": "tension"
+        "tone": "tension",
+        "variant": "tiro-libre"
       },
       {
         "caption": "Gol de Francescoli: 1-1 en La Bombonera.",
@@ -608,7 +611,8 @@
           "Hernán Crespo",
           "Arco"
         ],
-        "tone": "gloria"
+        "tone": "gloria",
+        "variant": "rebote"
       }
     ],
     "challenge": {
@@ -664,7 +668,8 @@
           "Claudio Husaín",
           "Fernando Cavenaghi"
         ],
-        "tone": "tension"
+        "tone": "tension",
+        "variant": "corner"
       },
       {
         "caption": "Cavenaghi aparece por el segundo palo y cabecea.",
@@ -743,7 +748,8 @@
           "Gonzalo Higuaín",
           "Arco"
         ],
-        "tone": "tension"
+        "tone": "tension",
+        "variant": "taco"
       },
       {
         "caption": "Gol de taco de Higuaín: River se pone arriba en el Monumental.",
@@ -755,7 +761,8 @@
           "Gonzalo Higuaín",
           "Arco"
         ],
-        "tone": "gloria"
+        "tone": "gloria",
+        "variant": "taco"
       }
     ],
     "challenge": {
@@ -810,7 +817,8 @@
           "Marcelo Gallardo",
           "Arco"
         ],
-        "tone": "tension"
+        "tone": "tension",
+        "variant": "tiro-libre"
       },
       {
         "caption": "Gol de Gallardo: 1-1 en La Bombonera y silencio en la cancha de Boca.",

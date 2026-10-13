@@ -11,8 +11,10 @@ import {
 import { useDrag, type Payload } from "../lib/useDrag";
 import { useGame } from "../lib/store";
 import { Backdrop } from "./Backdrop";
-import { Figure, type Mood } from "./Figure";
+import { Defender, Figure, type Mood } from "./Figure";
 import { ActionIcon, isOrderedAction } from "./ActionIcon";
+import { choreo } from "../lib/choreo";
+import type { Variant } from "../lib/schema";
 
 const registry = buildRegistry(allScenes);
 const BUBBLE: Record<Panel["tone"], string> = {
@@ -42,18 +44,18 @@ function shuffleIndices(n: number): number[] {
 }
 
 function PanelView({
-  index, tone, slot, locked, active, over, playing, reacting, scene, drag, onClear, play,
+  index, tone, slot, locked, active, over, playing, reacting, scene, drag, onClear, play, variant,
 }: {
   index: number; tone: Panel["tone"]; slot: Slot; locked: boolean; active: boolean; over: boolean; playing: boolean;
   reacting: boolean; scene: Scene; drag: ReturnType<typeof useDrag>;
   onClear: () => void; play: boolean;
+  /** Variante documentada: solo se muestra cuando la viñeta es correcta (no revela la respuesta antes). */
+  variant?: Variant;
 }) {
   const kind = play ? "cancha" : slot.setting ? registry.settings.get(slot.setting) : undefined;
   const n = slot.cast.length;
-  const xs = slot.cast.map((_, i) => ((i + 0.5) / Math.max(n, 1)) * 100);
-  const ballOn = play && !!slot.setting && n > 0 && (locked || playing || reacting);
-  const from = xs[0] ?? 50;
-  const to = slot.setting === "Pase" || slot.setting === "Centro" ? xs[1] ?? from : xs[n - 1] ?? from;
+  const live = play && !!slot.setting && n > 0 && (locked || playing);
+  const ch = choreo(live ? slot.setting : null, variant, slot.cast);
   const clash = playing && slot.cast.some(isRivalName) && slot.cast.some((c) => !isRivalName(c));
   const mood: Mood = locked || playing || reacting ? REACT[tone].mood : "idle";
   return (
@@ -94,16 +96,28 @@ function PanelView({
           {REACT[tone].say}
         </motion.span>
       )}
-      {ballOn && (
+      {live && ch.ball && (
         <motion.span
-          key={`${slot.setting}-${playing}`}
+          key={`${slot.setting}-${playing}-${variant ?? ""}`}
           aria-hidden
-          className="absolute z-20 text-2xl drop-shadow"
-          style={{ bottom: slot.setting === "Pase" || slot.setting === "Gambeta" ? "34%" : "44%" }}
-          initial={{ left: `${from}%` }}
-          animate={{ left: `${to}%`, y: slot.setting === "Centro" || slot.setting === "Cabezazo" ? [0, -34, 0] : slot.setting === "Tiro al arco" || slot.setting === "Penal" ? [0, -10, 0] : 0 }}
-          transition={{ duration: 0.9, repeat: playing ? Infinity : 0, repeatDelay: 0.4, ease: "easeInOut" }}
+          className="absolute z-20 -translate-x-1/2 text-2xl drop-shadow"
+          initial={{ left: `${ch.ball.left[0]}%`, bottom: `${ch.ball.bottom[0]}%` }}
+          animate={{ left: ch.ball.left.map((v) => `${v}%`), bottom: ch.ball.bottom.map((v) => `${v}%`) }}
+          transition={{ duration: 1.1, ease: "easeInOut", repeat: Infinity, repeatDelay: playing ? 0.2 : 2.2 }}
         >⚽</motion.span>
+      )}
+      {live && ch.flag && <span aria-hidden className="absolute bottom-[8%] left-[1%] z-10 text-xl">🚩</span>}
+      {live && ch.wall && (
+        <div aria-hidden className="absolute bottom-[4%] z-[2] flex" style={{ left: `${Math.round((ch.ball?.left[0] ?? 25) + ((ch.ball?.left[1] ?? 75) - (ch.ball?.left[0] ?? 25)) * 0.3)}%` }}>
+          {[0, 1, 2, 3].map((k) => <Defender key={k} team={scene.rival} size={28} index={k} />)}
+        </div>
+      )}
+      {play && !slot.cast.length && slot.setting && (
+        <div className="absolute inset-0 z-[2] flex flex-col items-center justify-center gap-1 bg-white/55">
+          <ActionIcon action={slot.setting} size={70} />
+          <span className="border-2 border-ink bg-white px-2 font-display text-2xl uppercase leading-tight">{slot.setting}</span>
+          <span className="bg-white/80 px-1 text-[11px] font-bold">Sumá los jugadores</span>
+        </div>
       )}
       <div className="relative z-[1] flex min-h-32 flex-1 items-end justify-center gap-0 px-1 pt-8">
         {slot.cast.length === 0 && <span className="m-auto font-display text-3xl text-ink/40">{play ? (slot.setting ? "¿quiénes?" : "¿qué acción?") : slot.setting ? "¿quién?" : "¿dónde y quién?"}</span>}
@@ -111,8 +125,16 @@ function PanelView({
           <motion.div
             key={c}
             initial={{ y: -40, opacity: 0, scale: 0.7 }}
-            animate={clash ? { x: [0, isRivalName(c) ? -12 : 12, 0], y: 0, opacity: 1, scale: 1 } : { y: 0, opacity: 1, scale: 1 }}
-            transition={clash ? { repeat: 2, duration: 0.5, delay: i * 0.1 } : { type: "spring", stiffness: 300, damping: 18 }}
+            animate={
+              live && ch.figs[i] && (ch.figs[i].x || ch.figs[i].y || ch.figs[i].rotate)
+                ? { x: ch.figs[i].x ?? 0, y: ch.figs[i].y ?? 0, rotate: ch.figs[i].rotate ?? 0, opacity: 1, scale: 1 }
+                : clash ? { x: [0, isRivalName(c) ? -12 : 12, 0], y: 0, opacity: 1, scale: 1 } : { y: 0, x: 0, rotate: 0, opacity: 1, scale: 1 }
+            }
+            transition={
+              live && ch.figs[i] && (ch.figs[i].x || ch.figs[i].y || ch.figs[i].rotate)
+                ? { duration: 1.1, ease: "easeInOut", repeat: Infinity, repeatDelay: playing ? 0.2 : 2.2 }
+                : clash ? { repeat: 2, duration: 0.5, delay: i * 0.1 } : { type: "spring", stiffness: 300, damping: 18 }
+            }
             {...(locked ? {} : drag.bind({ kind: "cast", value: c, from: index }))}
             onPointerDown={locked ? undefined : (e) => { e.stopPropagation(); drag.bind({ kind: "cast", value: c, from: index }).onPointerDown(e); }}
             onClick={(e) => e.stopPropagation()}
@@ -122,7 +144,7 @@ function PanelView({
             {play && i > 0 && isOrderedAction(slot.setting) && (
               <span aria-hidden className="absolute -ml-7 mb-10 font-display text-3xl text-river drop-shadow-[1px_1px_0_#fff]">➜</span>
             )}
-            <Figure name={c} sceneId={scene.id} mood={mood} size={46} />
+            <Figure name={c} sceneId={scene.id} mood={mood} size={46} pose={live ? ch.figs[i]?.pose : "none"} keeper={live && c === "Arco" ? ch.keeper ?? "idle" : "idle"} />
             <span className="-mt-1 max-w-16 truncate border border-ink bg-white px-0.5 text-[9px] font-bold leading-tight">{c.split(" ").slice(-1)[0]}</span>
           </motion.div>
         ))}
@@ -321,7 +343,7 @@ export function ComicScene({ era, scene, index, total, onNext, onReplay, practic
               <PanelView
                 index={i} tone={p.tone} slot={slots[i]} locked={locked[i]} active={!solved && active === i}
                 over={drag.over === i && drag.ghost !== null}
-                playing={playing === i} reacting={reaction?.panel === i} scene={scene} drag={drag} play={isPlay}
+                playing={playing === i} reacting={reaction?.panel === i} scene={scene} drag={drag} play={isPlay} variant={locked[i] || (playing === i && played?.[i]?.verdict === "exact") ? p.variant : undefined}
                 onClear={() => change(i, () => ({ setting: null, cast: [] }))}
               />
               {b && (

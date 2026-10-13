@@ -3,6 +3,8 @@ import { lookFor, type Kit, type Look } from "../lib/characters";
 import { GOAL_PIECE } from "../lib/schema";
 
 export type Mood = "idle" | "calma" | "tension" | "drama" | "gloria";
+import type { Pose } from "../lib/choreo";
+export type { Pose };
 
 const OUT = "#111";
 const SW = 1.8;
@@ -51,15 +53,17 @@ function Hair({ look }: { look: Look }) {
   return <path d={d} fill={look.hair} stroke={OUT} strokeWidth="1.2" />;
 }
 
-function Person({ look, mood, id }: { look: Look; mood: Mood; id: string }) {
+function Person({ look, mood, id, pose = "none" }: { look: Look; mood: Mood; id: string; pose?: Pose }) {
   const { kit } = look;
-  const arms = ARMS[mood];
+  const arms = pose === "wall" ? { l: "M17 35 L27 64", r: "M43 35 L33 64" } : pose === "header" ? { l: "M17 35 L8 52", r: "M43 35 L52 44" } : ARMS[mood];
+  const legPose = pose === "kick" ? "rotate(-66 36 84)" : pose === "backheel" ? "rotate(62 36 84)" : pose === "dribble" ? "rotate(-26 36 84)" : undefined;
+  const lean = pose === "header" ? "rotate(-13 30 104)" : pose === "dribble" ? "rotate(-7 30 104)" : pose === "kick" ? "rotate(5 30 104)" : undefined;
   const suit = look.kind === "coach" || look.kind === "exec" || look.kind === "press";
   const sleeve = suit ? kit.c1 : kit.c1 === "#ffffff" || kit.pattern === "sash" ? "#ffffff" : kit.c1;
   const torso = "M16 33 Q30 30 44 33 L43 70 L17 70 Z";
   const tilt = mood === "drama" ? "rotate(7 30 28)" : undefined;
   return (
-    <g>
+    <g transform={lean}>
       {/* piernas */}
       {suit ? (
         <>
@@ -69,13 +73,17 @@ function Person({ look, mood, id }: { look: Look; mood: Mood; id: string }) {
       ) : (
         <>
           <rect x="20" y="82" width="7" height="22" fill={look.skin} stroke={OUT} strokeWidth={SW} />
-          <rect x="33" y="82" width="7" height="22" fill={look.skin} stroke={OUT} strokeWidth={SW} />
           <rect x="20" y="92" width="7" height="12" fill={kit.socks} stroke={OUT} strokeWidth={SW} />
-          <rect x="33" y="92" width="7" height="12" fill={kit.socks} stroke={OUT} strokeWidth={SW} />
+          <g transform={legPose}>
+            <rect x="33" y="82" width="7" height="22" fill={look.skin} stroke={OUT} strokeWidth={SW} />
+            <rect x="33" y="92" width="7" height="12" fill={kit.socks} stroke={OUT} strokeWidth={SW} />
+            <path d="M31 104 h11 l1 6 h-13 Z" fill={OUT} />
+          </g>
           <path d="M17 70 H43 L41 85 H31 L30 78 L29 85 H19 Z" fill={kit.shorts} stroke={OUT} strokeWidth={SW} />
         </>
       )}
-      <path d="M17 104 h11 l1 6 h-13 Z M31 104 h11 l1 6 h-13 Z" fill={OUT} />
+      <path d="M17 104 h11 l1 6 h-13 Z" fill={OUT} />
+      {suit && <path d="M31 104 h11 l1 6 h-13 Z" fill={OUT} />}
       {/* brazos */}
       {[arms.l, arms.r].map((d, i) => (
         <g key={i}>
@@ -96,7 +104,7 @@ function Person({ look, mood, id }: { look: Look; mood: Mood; id: string }) {
       {/* manos */}
       {mood === "gloria" ? <><circle cx="6" cy="12" r="4" fill={look.skin} stroke={OUT} strokeWidth="1.4" /><circle cx="54" cy="12" r="4" fill={look.skin} stroke={OUT} strokeWidth="1.4" /></> : null}
       {/* cuello y cabeza */}
-      <g transform={tilt}>
+      <g transform={pose === "header" ? "translate(5 -1) rotate(-8 30 28)" : tilt}>
         <rect x="26" y="26" width="8" height="8" fill={look.skin} stroke={OUT} strokeWidth="1.4" />
         <circle cx="30" cy="17" r="11" fill={look.skin} stroke={OUT} strokeWidth={SW} />
         <Hair look={look} />
@@ -128,7 +136,7 @@ function Crowd({ look, mood }: { look: Look; mood: Mood }) {
 }
 
 /** Personaje dibujado a mano. Los equipos se muestran como un grupo de tres jugadores. */
-function Goal({ mood }: { mood: Mood }) {
+function Goal({ mood, keeper = "idle" }: { mood: Mood; keeper?: "idle" | "dive" | "beaten" }) {
   // Arco con red y arquero (guantes, camiseta verde). En festejo el arquero baja la cabeza.
   const sad = mood === "gloria";
   return (
@@ -136,7 +144,7 @@ function Goal({ mood }: { mood: Mood }) {
       <rect x="2" y="12" width="116" height="84" fill="#fff" stroke={OUT} strokeWidth="4" />
       {Array.from({ length: 10 }).map((_, i) => <line key={`v${i}`} x1={14 + i * 11} y1="12" x2={14 + i * 11} y2="96" stroke="#c9c9c9" strokeWidth="1.2" />)}
       {Array.from({ length: 6 }).map((_, i) => <line key={`h${i}`} x1="2" y1={26 + i * 12} x2="118" y2={26 + i * 12} stroke="#c9c9c9" strokeWidth="1.2" />)}
-      <g transform={`translate(32 ${sad ? 30 : 22}) scale(.62)`}>
+      <g transform={keeper === "dive" ? "translate(34 36) rotate(-72 30 60) scale(.62)" : keeper === "beaten" ? "translate(32 40) scale(.62)" : `translate(32 ${sad ? 30 : 22}) scale(.62)`}>
         <rect x="18" y="82" width="9" height="22" fill="#f3d2a8" stroke={OUT} strokeWidth={SW} />
         <rect x="33" y="82" width="9" height="22" fill="#f3d2a8" stroke={OUT} strokeWidth={SW} />
         <path d="M17 70 H43 L41 85 H19 Z" fill="#222" stroke={OUT} strokeWidth={SW} />
@@ -154,7 +162,7 @@ function Goal({ mood }: { mood: Mood }) {
   );
 }
 
-export function Figure({ name, sceneId, mood = "idle", size = 64, rival }: { name: string; sceneId?: string; mood?: Mood; size?: number; rival?: boolean }) {
+export function Figure({ name, sceneId, mood = "idle", size = 64, rival, pose = "none", keeper = "idle" }: { name: string; sceneId?: string; mood?: Mood; size?: number; rival?: boolean; pose?: Pose; keeper?: "idle" | "dive" | "beaten" }) {
   const id = useId().replace(/:/g, "");
   const look = lookFor(name, sceneId);
   void rival;
@@ -162,7 +170,7 @@ export function Figure({ name, sceneId, mood = "idle", size = 64, rival }: { nam
     return (
       <svg width={size * 1.5} height={size * 1.2} viewBox="-2 8 124 92" role="img" aria-label="Arco con arquero">
         <title>Arco con arquero</title>
-        <Goal mood={mood} />
+        <Goal mood={mood} keeper={keeper} />
       </svg>
     );
   const anim = mood === "gloria" ? "anim-gloria" : mood === "tension" ? "anim-tension" : mood === "drama" ? "anim-drama" : "anim-idle";
@@ -187,7 +195,19 @@ export function Figure({ name, sceneId, mood = "idle", size = 64, rival }: { nam
   return (
     <svg width={size * 0.62} height={size * 1.15} viewBox="0 0 60 112" role="img" aria-label={name} className={anim}>
       <title>{name}</title>
-      <Person look={look} mood={mood} id={id} />
+      <Person look={look} mood={mood} id={id} pose={pose} />
+    </svg>
+  );
+}
+
+/** Defensor de la barrera: un jugador con la camiseta del equipo (brazos cruzados abajo). */
+export function Defender({ team, size = 30, index = 0 }: { team?: string; size?: number; index?: number }) {
+  const id = useId().replace(/:/g, "");
+  const base = lookFor(team ?? "", "");
+  const look: Look = { ...base, kind: "player", skin: ["#f3d2a8", "#d79c6e", "#e8b98a", "#b97b52"][index % 4], hair: ["#1b1b1b", "#3a2616", "#6b4423", "#1b1b1b"][index % 4] };
+  return (
+    <svg width={size * 0.62} height={size * 1.15} viewBox="0 0 60 112" aria-hidden>
+      <Person look={look} mood="idle" id={id} pose="wall" />
     </svg>
   );
 }
