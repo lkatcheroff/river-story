@@ -40,7 +40,9 @@ export function useDrag(opts: {
     let dragging = false;
     let timer: ReturnType<typeof setTimeout> | undefined;
     if (needsHold) timer = setTimeout(() => { armed = true; navigator.vibrate?.(15); }, hold);
-    const lock = (ev: TouchEvent) => { if (armed) ev.preventDefault(); };
+    // Solo se frena el scroll del navegador en el "mantener apretado" de las viñetas. En las fichas de la bandeja
+    // (touch-action: pan-x) el deslizamiento horizontal tiene que seguir siendo del navegador.
+    const lock = (ev: TouchEvent) => { if (needsHold && armed && ev.cancelable) ev.preventDefault(); };
     window.addEventListener("touchmove", lock, { passive: false });
     const move = (ev: PointerEvent) => {
       const far = Math.hypot(ev.clientX - sx, ev.clientY - sy) >= THRESHOLD;
