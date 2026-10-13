@@ -5,6 +5,7 @@ import { isEraComplete, isEraUnlocked } from "./lib/game";
 import { useGame } from "./lib/store";
 import type { Era, Scene } from "./lib/schema";
 import { ComicScene } from "./components/ComicScene";
+import { Tutorial, tutorialDone } from "./components/Tutorial";
 
 type View =
   | { name: "home" }
@@ -13,6 +14,7 @@ type View =
   | { name: "scene"; eraId: string; index: number }
   | { name: "summary"; eraId: string }
   | { name: "collection" }
+  | { name: "tutorial" }
   | { name: "about" };
 
 type Go = ((v: View) => void) & { back: (fallback: View) => void; replace: (v: View) => void };
@@ -26,6 +28,7 @@ const toHash = (v: View): string => {
     case "summary": return `#/resumen/${v.eraId}`;
     case "collection": return "#/album";
     case "about": return "#/acerca";
+    case "tutorial": return "#/tutorial";
   }
 };
 
@@ -39,6 +42,7 @@ const fromHash = (hash: string): View => {
   if (page === "resumen" && known(a)) return { name: "summary", eraId: a };
   if (page === "album") return { name: "collection" };
   if (page === "acerca") return { name: "about" };
+  if (page === "tutorial") return { name: "tutorial" };
   return { name: "home" };
 };
 
@@ -75,7 +79,8 @@ function Home({ go }: { go: Go }) {
       <div className="flex flex-1 flex-col justify-center gap-6">
         <h1 className="font-display text-7xl leading-none text-river">River<br />Story</h1>
         <p className="text-lg">Revivi la historia del Millonario, época por época. Proyecto de fans, sin fines comerciales.</p>
-        <button className="btn" onClick={() => go({ name: "map" })}>Empezar</button>
+        <button className="btn" onClick={() => go({ name: tutorialDone() ? "map" : "tutorial" })}>Empezar</button>
+        <button className="btn-ghost" onClick={() => go({ name: "tutorial" })}>¿Cómo se juega?</button>
         <button className="btn-ghost" onClick={() => go({ name: "collection" })}>Mi álbum</button>
         <button className="text-sm underline" onClick={() => go({ name: "about" })}>Acerca de / Fuentes</button>
       </div>
@@ -201,6 +206,14 @@ function Collection({ go }: { go: Go }) {
   );
 }
 
+function TutorialView({ go }: { go: Go }) {
+  return (
+    <Shell hud={false} onBack={() => go.back({ name: "home" })}>
+      <Tutorial onFinish={() => go.replace({ name: "map" })} />
+    </Shell>
+  );
+}
+
 function About({ go }: { go: Go }) {
   const sources = useMemo(() => {
     const m = new Map<string, string>();
@@ -259,6 +272,7 @@ export default function App() {
         {view.name === "summary" && <Summary era={era(view.eraId)} go={go} />}
         {view.name === "collection" && <Collection go={go} />}
         {view.name === "about" && <About go={go} />}
+        {view.name === "tutorial" && <TutorialView go={go} />}
       </div>
     </AnimatePresence>
   );

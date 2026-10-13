@@ -44,6 +44,7 @@ function PanelView({
   return (
     <div
       data-drop={locked ? undefined : index}
+      data-tut={`panel:${index}`}
       role="button" tabIndex={0} onClick={onSelect} onKeyDown={(e) => e.key === "Enter" && onSelect()}
       className={`comic-panel ${locked ? "" : "cursor-pointer"} ${active ? "ring-4 ring-river" : ""} ${over ? "ring-4 ring-blue-600 scale-[1.03]" : ""} ${locked ? "outline outline-4 outline-green-600" : ""} transition-transform`}
       aria-label={`Viñeta ${index + 1}${locked ? " (correcta)" : ""}`}
@@ -93,12 +94,21 @@ function PanelView({
   );
 }
 
-export function ComicScene({ era, scene, index, total, onNext, onReplay }: { era: Era; scene: Scene; index: number; total: number; onNext: () => void; onReplay: () => void }) {
+export type SceneState = { slots: Slot[]; locked: boolean[]; attempts: number; analysis: Analysis[] | null; solved: boolean };
+
+export function ComicScene({ era, scene, index, total, onNext, onReplay, practice = false, fixedPieces, onState, nextLabel }: {
+  era: Era; scene: Scene; index: number; total: number; onNext: () => void; onReplay: () => void;
+  /** Modo práctica (tutorial): no suma puntos ni guarda progreso. */
+  practice?: boolean;
+  fixedPieces?: { settings: string[]; cast: string[] };
+  onState?: (s: SceneState) => void;
+  nextLabel?: string;
+}) {
   const { completed, result, answer } = useGame();
   const panels = scene.panels;
   const n = panels?.length ?? 0;
   const alreadyDone = scene.id in completed;
-  const pieces = useMemo(() => buildPieces(scene, registry), [scene]);
+  const pieces = useMemo(() => fixedPieces ?? buildPieces(scene, registry), [scene, fixedPieces]);
   const [slots, setSlots] = useState<Slot[]>(() => (panels && alreadyDone ? panels.map((p) => ({ setting: p.setting.label, cast: [...p.figures] })) : emptySlots(n)));
   const [locked, setLocked] = useState<boolean[]>(() => Array(n).fill(alreadyDone));
   const [active, setActive] = useState(0);
@@ -115,6 +125,10 @@ export function ComicScene({ era, scene, index, total, onNext, onReplay }: { era
   useEffect(() => () => clearTimeout(timer.current), []);
 
   const solved = n > 0 && locked.every(Boolean);
+  useEffect(() => {
+    onState?.({ slots, locked, attempts, analysis: result_, solved });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [slots, locked, attempts, result_, solved]);
   const busy = playing !== null;
   const c = scene.challenge;
   const quizKey = `${scene.id}:q`;
@@ -197,7 +211,7 @@ export function ComicScene({ era, scene, index, total, onNext, onReplay }: { era
     const nextLocked = locked.map((l, i) => l || v[i] === "exact");
     setLocked(nextLocked);
     if (nextLocked.every(Boolean)) {
-      result(scene.id, attempts === 0 && !hint);
+      if (!practice) result(scene.id, attempts === 0 && !hint);
     } else {
       const k = nextLocked.findIndex((l, i) => !l && v[i] !== "exact");
       if (k >= 0) setActive(k);
@@ -231,27 +245,30 @@ export function ComicScene({ era, scene, index, total, onNext, onReplay }: { era
 
   return (
     <div className="flex flex-col gap-4">
-      <div className="h-3 overflow-hidden border-2 border-ink bg-white">
-        <div className="h-full bg-river transition-all" style={{ width: `${((index + lockedCount / n) / total) * 100}%` }} />
-      </div>
-      <div className="comic-title">
-        <small>{era.name} · {scene.date}</small>
-        {scene.title}
-      </div>
-      {!scene.verified && <p className="comic-box text-xs">⚠️ Sin verificar (solo visible en desarrollo)</p>}
-      {!solved && (
+      {!practice && (
         <>
-          <p className="comic-box">
-            <span className="font-extrabold">Objetivo: {scene.headline}</span>
-            <span className="mt-1 block text-xs font-semibold">Arrastrá o tocá lugares y personajes hacia las viñetas. Movelas desde el número. Las correctas se bloquean.</span>
-          </p>
-          <button className="text-left text-sm font-bold underline" onClick={() => setHint(true)}>
-            📖 {hint ? "Libro de historia (pista usada)" : "Abrir el libro de historia (pierde el bonus)"}
-          </button>
-          {hint && <p className="comic-box text-sm">{scene.description}</p>}
+      <div className="h-3 overflow-hidden border-2 border-ink bg-white">
+          <div className="h-full bg-river transition-all" style={{ width: `${((index + lockedCount / n) / total) * 100}%` }} />
+        </div>
+        <div className="comic-title">
+          <small>{era.name} · {scene.date}</small>
+          {scene.title}
+        </div>
+        {!scene.verified && <p className="comic-box text-xs">⚠️ Sin verificar (solo visible en desarrollo)</p>}
+        {!solved && (
+          <>
+            <p className="comic-box">
+              <span className="font-extrabold">Objetivo: {scene.headline}</span>
+              <span className="mt-1 block text-xs font-semibold">Arrastrá o tocá lugares y personajes hacia las viñetas. Movelas desde el número. Las correctas se bloquean.</span>
+            </p>
+            <button className="text-left text-sm font-bold underline" onClick={() => setHint(true)}>
+              📖 {hint ? "Libro de historia (pista usada)" : "Abrir el libro de historia (pierde el bonus)"}
+            </button>
+            {hint && <p className="comic-box text-sm">{scene.description}</p>}
+          </>
+        )}
         </>
       )}
-
       <div className="grid grid-cols-2 gap-3">
         {panels.map((p, i) => {
           const b = bubble(i);
@@ -284,7 +301,7 @@ export function ComicScene({ era, scene, index, total, onNext, onReplay }: { era
             <p className="font-display text-lg leading-none">Lugares {activeFree && <span className="text-xs font-sans">→ viñeta {active + 1}</span>}</p>
             <div className="flex gap-2 overflow-x-auto pb-1">
               {pieces.settings.map((st) => (
-                <div key={st} {...drag.bind({ kind: "setting", value: st }, "pan-x")} role="button" tabIndex={0}
+                <div key={st} data-tut={`setting:${st}`} {...drag.bind({ kind: "setting", value: st }, "pan-x")} role="button" tabIndex={0}
                   className={`relative h-12 w-20 shrink-0 select-none overflow-hidden border-2 border-ink ${cur.setting === st && activeFree ? "ring-4 ring-river" : ""}`}>
                   <Backdrop kind={registry.settings.get(st) ?? "cancha"} label={st} />
                   <span className="absolute inset-x-0 bottom-0 bg-white/90 px-0.5 text-center text-[10px] font-extrabold uppercase leading-tight">{st}</span>
@@ -294,7 +311,7 @@ export function ComicScene({ era, scene, index, total, onNext, onReplay }: { era
             <p className="font-display text-lg leading-none">Personajes <span className="text-xs font-sans">(máx. 3 por viñeta)</span></p>
             <div className="flex gap-2 overflow-x-auto pb-1">
               {pieces.cast.map((nm) => (
-                <div key={nm} {...drag.bind({ kind: "cast", value: nm }, "pan-x")} role="button" tabIndex={0} title={nm}
+                <div key={nm} data-tut={`cast:${nm}`} {...drag.bind({ kind: "cast", value: nm }, "pan-x")} role="button" tabIndex={0} title={nm}
                   className={`flex w-16 shrink-0 select-none flex-col items-center border-2 border-ink bg-white px-0.5 pt-1 ${cur.cast.includes(nm) && activeFree ? "ring-4 ring-river" : ""}`}>
                   <Figure name={nm} sceneId={scene.id} size={30} />
                   <span className="w-full truncate text-center text-[10px] font-bold leading-tight">{nm.split(" ").slice(-1)[0]}</span>
@@ -302,8 +319,8 @@ export function ComicScene({ era, scene, index, total, onNext, onReplay }: { era
               ))}
             </div>
           </section>
-          <button className="btn" disabled={busy || nothingToPlay} onClick={play}>{busy ? "Reproduciendo…" : "▶ Reproducir lo que falta"}</button>
-          <button className="btn-ghost text-sm" disabled={busy || firstFree() < 0 || (clues[locked[active] ? firstFree() : active] ?? 0) >= MAX_CLUE} onClick={askClue}>
+          <button data-tut="play" className="btn" disabled={busy || nothingToPlay} onClick={play}>{busy ? "Reproduciendo…" : "▶ Reproducir lo que falta"}</button>
+          <button data-tut="clue" className="btn-ghost text-sm" disabled={busy || firstFree() < 0 || (clues[locked[active] ? firstFree() : active] ?? 0) >= MAX_CLUE} onClick={askClue}>
             💡 {(clues[active] ?? 0) === 0 ? "Pista" : "Otra pista"} para la viñeta {(locked[active] ? firstFree() : active) + 1} (pierde el bonus)
           </button>
           {[...Array(clues[locked[active] ? firstFree() : active] ?? 0)].map((_, k) => (
@@ -318,7 +335,7 @@ export function ComicScene({ era, scene, index, total, onNext, onReplay }: { era
       {solved && (
         <>
           <p className="comic-box">{scene.description}</p>
-          {c && (
+          {c && !practice && (
             <section className="comic-box flex flex-col gap-2">
               <p className="font-display text-2xl">Pregunta extra</p>
               {c.type === "quiz" && <p className="font-semibold">{c.question}</p>}
@@ -341,10 +358,10 @@ export function ComicScene({ era, scene, index, total, onNext, onReplay }: { era
               )}
             </section>
           )}
-          <button className="btn" disabled={!!c && !quizAnswered} onClick={onNext}>
-            {index + 1 < total ? "Siguiente tira ▶" : "Terminar época"}
+          <button className="btn" disabled={!!c && !practice && !quizAnswered} onClick={onNext}>
+            {nextLabel ?? (index + 1 < total ? "Siguiente tira ▶" : "Terminar época")}
           </button>
-          <button className="btn-ghost" onClick={onReplay}>↻ Jugar de nuevo esta escena</button>
+          {!practice && <button className="btn-ghost" onClick={onReplay}>↻ Jugar de nuevo esta escena</button>}
         </>
       )}
 

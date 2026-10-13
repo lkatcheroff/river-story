@@ -92,7 +92,7 @@ describe("análisis de casos", () => {
   it("reparto incompleto, sobrante y escenario equivocado", () => {
     expect(run([S("Monumental", ["A"]), empty, empty])[0].message).toMatch(/falta 1/);
     expect(run([empty, S("La sede", ["A", "B"]), empty])[1].message).toMatch(/sobra 1/);
-    expect(run([S("Cali", ["A", "B"]), empty, empty])[0].message).toMatch(/el lugar no es este/i);
+    expect(run([S("Cali", ["A", "B"]), empty, empty])[0].message).toMatch(/reparto es el correcto, pero el lugar no es este/i);
   });
 
   it("se parece a otro momento", () => {

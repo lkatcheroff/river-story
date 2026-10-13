@@ -37,7 +37,7 @@ function detail(p: Panel, s: Slot): string {
   const d = distance(p, s);
   const right = p.figures.length - d.missing;
   const place = d.settingOk ? "el lugar es correcto" : "el lugar no es este";
-  if (d.missing === 0 && d.extra === 0) return `${place}, y el reparto también.`;
+  if (d.missing === 0 && d.extra === 0) return d.settingOk ? "el lugar y el reparto son correctos." : "el reparto es el correcto, pero el lugar no es este.";
   const cast = [
     right ? plural(right, "personaje bien", "personajes bien") : "ningún personaje coincide",
     d.missing ? `falta${d.missing > 1 ? "n" : ""} ${d.missing}` : "",

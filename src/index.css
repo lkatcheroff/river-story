@@ -47,3 +47,5 @@ body {
 .anim-drama { animation: fig-slump 1.4s ease-in-out infinite; transform-origin: bottom; }
 .anim-idle { animation: fig-bob 2.4s ease-in-out infinite; }
 @media (prefers-reduced-motion: reduce) { .anim-gloria, .anim-tension, .anim-drama, .anim-idle { animation: none; } }
+
+@keyframes tut-pulse { 0%,100% { outline-color: #2563eb; } 50% { outline-color: #93c5fd; } }
