@@ -5,7 +5,7 @@ import { scenes as allScenes } from "../lib/content";
 import { isCorrect, yearFeedback } from "../lib/game";
 import { isRivalName } from "../lib/characters";
 import {
-  MAX_CLUE, analyze, buildPieces, buildRegistry, clue, emptySlots, summary, toggleCast,
+  MAX_CLUE, analyze, buildPieces, hadMistake, buildRegistry, clue, emptySlots, summary, toggleCast,
   type Analysis, type Slot, type Verdict,
 } from "../lib/puzzle";
 import { useDrag, type Payload } from "../lib/useDrag";
@@ -188,6 +188,8 @@ export function ComicScene({ era, scene, index, total, onNext, onReplay, practic
   const [played, setPlayed] = useState<Analysis[] | null>(null);
   const [playing, setPlaying] = useState<number | null>(null);
   const [attempts, setAttempts] = useState(0);
+  /** Cantidad de reproducciones con algún intento incorrecto (vacías y ya correctas no cuentan). */
+  const [mistakes, setMistakes] = useState(0);
   const [hint, setHint] = useState(false);
   const [clues, setClues] = useState<Record<number, number>>({});
   const [reaction, setReaction] = useState<Reaction>(null);
@@ -286,10 +288,12 @@ export function ComicScene({ era, scene, index, total, onNext, onReplay, practic
     setPlaying(null);
     setResult(an);
     setAttempts((a) => a + 1);
+    const mistakesNow = mistakes + (hadMistake(v, locked) ? 1 : 0);
+    setMistakes(mistakesNow);
     const nextLocked = locked.map((l, i) => l || v[i] === "exact");
     setLocked(nextLocked);
     if (nextLocked.every(Boolean)) {
-      if (!practice) result(scene.id, attempts === 0 && !hint);
+      if (!practice) result(scene.id, mistakesNow === 0 && !hint);
     } else {
       const k = nextLocked.findIndex((l, i) => !l && v[i] !== "exact");
       if (k >= 0) setActive(k);

@@ -59,7 +59,7 @@ export type EraStats = {
   total: number;
   /** Escenas resueltas (con o sin ayuda). */
   solved: number;
-  /** Resueltas a la primera, sin pistas ni intentos fallidos. */
+  /** Resueltas a la primera: sin intentos incorrectos ni pistas (armar de a tandas no cuenta como error). */
   firstTry: number;
   /** Preguntas extra acertadas / preguntas extra respondidas. */
   quizHits: number;

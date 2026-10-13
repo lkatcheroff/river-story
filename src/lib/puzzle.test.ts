@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { judge, isSolved, toggleCast, fiction, buildPieces, buildRegistry, analyze, summary, clue, type Slot } from "./puzzle";
+import { hadMistake, judge, isSolved, toggleCast, fiction, buildPieces, buildRegistry, analyze, summary, clue, type Slot } from "./puzzle";
 import type { Panel, Scene } from "./schema";
 
 const mk = (label: string, figures: string[]): Panel => ({
@@ -192,5 +192,19 @@ describe("jugadas: el arco no se cuenta como jugador", () => {
   it("si sobra el arco lo dice", () => {
     const m = analyze([act("Pase", ["A", "B"]), act("Centro", ["B", "C"]), act("Gol", ["C", "Arco"])], [{ setting: "Pase", cast: ["A", "B", "Arco"] }, { setting: null, cast: [] }, { setting: null, cast: [] }])[0].message;
     expect(m).toMatch(/sobra el arco/);
+  });
+});
+
+describe("errores al armar de a tandas", () => {
+  it("viñetas bien o vacías no son error", () => {
+    expect(hadMistake(["exact", "empty", "empty"], [false, false, false])).toBe(false);
+    expect(hadMistake(["exact", "exact", "empty"], [true, false, false])).toBe(false);
+  });
+  it("una viñeta probada que no estaba bien sí es error", () => {
+    for (const v of ["mismatch", "partial", "duplicate", "swapped", "other-moment"] as const)
+      expect(hadMistake(["exact", v], [false, false])).toBe(true);
+  });
+  it("una viñeta ya bloqueada no cuenta aunque su veredicto cambie", () => {
+    expect(hadMistake(["mismatch", "exact"], [true, false])).toBe(false);
   });
 });

@@ -17,6 +17,13 @@ const sameSeq = (a: string[], b: string[]) => a.length === b.length && a.every((
 const matches = (p: Panel, s: Slot) =>
   s.setting === p.setting.label && (isOrdered(p) ? sameSeq(s.cast, p.figures) : sameSet(s.cast, p.figures));
 
+/**
+ * ¿Esta reproducción tuvo un intento incorrecto? Solo cuentan las viñetas que se probaron y no estaban bien:
+ * las que ya estaban bloqueadas y las vacías no son errores (se puede armar la tira de a tandas).
+ */
+export const hadMistake = (verdicts: Verdict[], locked: boolean[]) =>
+  verdicts.some((v, i) => !locked[i] && v !== "exact" && v !== "empty");
+
 export const isSolved = (verdicts: Verdict[]) => verdicts.every((v) => v === "exact");
 
 export function toggleCast(slot: Slot, name: string): Slot {

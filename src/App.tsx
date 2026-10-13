@@ -174,7 +174,7 @@ function Summary({ era, go }: { era: Era; go: Go }) {
       <h2 className="font-display text-5xl">{era.name}</h2>
       <div className="comic-box flex flex-col gap-0.5">
         <p className="text-lg font-extrabold">{st.solved} de {st.total} escenas resueltas</p>
-        <p>⭐ {st.firstTry} a la primera (sin pistas ni errores)</p>
+        <p>⭐ {st.firstTry} a la primera (sin errores ni pistas)</p>
         {st.quizAnswered > 0 && <p>❓ {st.quizHits} de {st.quizAnswered} preguntas extra acertadas</p>}
         <p>🏆 {st.points} puntos en esta época · {score} en total</p>
       </div>
@@ -183,7 +183,7 @@ function Summary({ era, go }: { era: Era; go: Go }) {
           <li key={s.id}>{!(s.id in completed) ? "·" : completed[s.id] ? "⭐" : "✅"} {s.title}</li>
         ))}
       </ul>
-      <p className="text-xs">⭐ a la primera · ✅ resuelta con ayuda o más de un intento · · sin jugar</p>
+      <p className="text-xs">⭐ a la primera (sin errores) · ✅ resuelta con pistas o con algún intento incorrecto · · sin jugar</p>
       <button className="btn" onClick={async () => { try { await navigator.clipboard.writeText(text); setCopied(true); } catch { /* sin permiso */ } }}>
         {copied ? "¡Copiado!" : "Copiar resultado"}
       </button>

@@ -12,7 +12,7 @@ type State = {
   /** Puntos ganados por escena (clave de la escena o `<id>:q` para la pregunta extra). */
   points: Record<string, number>;
   answer: (sceneId: string, challenge: Challenge, answer: number) => boolean;
-  /** Resultado de armar la tira (acierto a la primera = true). */
+  /** Resultado de armar la tira (true = sin intentos incorrectos ni pistas; armar de a tandas no cuenta como error). */
   result: (sceneId: string, ok: boolean) => void;
   complete: (sceneId: string) => void;
   /** Vuelve a dejar una escena sin jugar: quita su estado y los puntos que dio. */
