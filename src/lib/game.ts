@@ -48,9 +48,9 @@ export function yearFeedback(correctYear: number, tolerance: number, guess: numb
   const margin = Math.abs(diff);
   const years = `${margin} ${margin === 1 ? "año" : "años"}`;
   if (margin <= tolerance)
-    return { ok: true, text: `¡Casi, y cuenta! Fue en ${correctYear}: te pasaste por ${years}, pero se acepta un margen de ±${tolerance}.` };
+    return { ok: true, text: `¡Casi, y cuenta! Fue en ${correctYear}: ${diff > 0 ? `te pasaste por ${years}` : `te quedaste ${years} corto`}, pero se acepta un margen de ±${tolerance} ${tolerance === 1 ? "año" : "años"}.` };
   return {
     ok: false,
-    text: `No era esa. Fue en ${correctYear}, ${years} ${diff > 0 ? "antes" : "después"} de lo que pusiste.${tolerance > 0 ? ` (Se aceptaba ±${tolerance}.)` : ""}`,
+    text: `No era esa. Fue en ${correctYear}, ${years} ${diff > 0 ? "antes" : "después"} de lo que pusiste.${tolerance > 0 ? ` (Se aceptaba un margen de ±${tolerance} ${tolerance === 1 ? "año" : "años"}.)` : ""}`,
   };
 }

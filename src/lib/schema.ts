@@ -22,13 +22,22 @@ export const ChallengeSchema = z.discriminatedUnion("type", [
   }),
 ]);
 
+/**
+ * Acciones de las escenas de "jugada" (setting.kind = "jugada", label = acción).
+ * En Pase y Centro el orden de `figures` importa: [quien da, quien recibe].
+ * En Tiro al arco, Cabezazo, Penal y Gol, `figures` = [quien define, "Arco"] ("Arco" es el arco con su arquero).
+ */
+export const ACTIONS = ["Pase", "Centro", "Gambeta", "Tiro al arco", "Cabezazo", "Penal", "Gol"] as const;
+export const ORDERED_ACTIONS: readonly string[] = ["Pase", "Centro"];
+export const GOAL_PIECE = "Arco";
+
 export const PanelSchema = z.object({
   /** Viñeta: 1–2 oraciones que reformulan SOLO hechos ya presentes en la escena verificada. */
   caption: z.string().min(1).max(160),
   /** Escenario donde ocurre la viñeta. kind define el fondo dibujado. */
   setting: z.object({
     label: z.string().min(1).max(40),
-    kind: z.enum(["cancha", "tribuna", "sede", "ciudad"]),
+    kind: z.enum(["cancha", "tribuna", "sede", "ciudad", "jugada"]),
   }),
   /** Personajes que actúan en la viñeta (1–3): protagonistas/rival de la escena, o "River", "Hinchas", "Árbitro" si el texto los menciona. */
   figures: z.array(z.string()).min(1).max(3),
@@ -47,8 +56,10 @@ export const SceneSchema = z
     protagonists: z.array(z.string()),
     rival: z.string().optional(),
     result: z.string().optional(),
-    /** Tira de cómic: 3–4 viñetas en orden cronológico. */
-    panels: z.array(PanelSchema).min(3).max(4).optional(),
+    /** Estadio donde ocurre la jugada: fondo fijo de todas las viñetas (solo escenas de jugada). */
+    stadium: z.string().optional(),
+    /** Tira de cómic: 3–4 viñetas en orden cronológico (las jugadas pueden tener 2). */
+    panels: z.array(PanelSchema).min(2).max(4).optional(),
     challenge: ChallengeSchema.optional(),
     sources: z.array(z.object({ label: z.string(), url: z.url() })),
     verified: z.boolean(),
@@ -61,7 +72,12 @@ export const SceneSchema = z
     if (s.verified && !s.panels)
       ctx.addIssue({ code: "custom", message: "verified:true requiere panels (tira de cómic)", path: ["panels"] });
     if (s.panels) {
-      const keys = s.panels.map((p) => `${p.setting.label}|${[...p.figures].sort().join(",")}`);
+      const isPlay = s.panels.some((p) => p.setting.kind === "jugada");
+      if (isPlay && !s.stadium) ctx.addIssue({ code: "custom", message: "las jugadas necesitan `stadium`", path: ["stadium"] });
+      if (isPlay && !s.panels.every((p) => p.setting.kind === "jugada" && (ACTIONS as readonly string[]).includes(p.setting.label)))
+        ctx.addIssue({ code: "custom", message: `en una jugada todas las viñetas usan una acción de ${ACTIONS.join("/")}`, path: ["panels"] });
+      if (!isPlay && s.panels.length < 3) ctx.addIssue({ code: "custom", message: "una escena normal tiene 3–4 viñetas", path: ["panels"] });
+      const keys = s.panels.map((p) => `${p.setting.label}|${(ORDERED_ACTIONS.includes(p.setting.label) ? [...p.figures] : [...p.figures].sort()).join(",")}`);
       if (new Set(keys).size !== keys.length)
         ctx.addIssue({ code: "custom", message: "dos viñetas con mismo escenario y personajes", path: ["panels"] });
     }

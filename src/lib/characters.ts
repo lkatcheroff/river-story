@@ -1,3 +1,5 @@
+import { scenes } from "./content";
+
 /** Aspecto de cada personaje. Dibujos propios: camisetas por colores/diseño, sin escudos ni marcas. */
 export type Pattern = "sash" | "solid" | "vstripes" | "hband" | "halves";
 export type Kit = { pattern: Pattern; c1: string; c2: string; shorts: string; socks: string };
@@ -37,6 +39,10 @@ const CLUB_KITS: Record<string, Kit> = {
   "Almirante Brown": k("vstripes", "#f5c518", "#111111", "#111111", "#f5c518"),
   "Argentinos Juniors": k("solid", "#d4101f", "#ffffff", "#ffffff", "#d4101f"),
   "Rosario Central": k("vstripes", "#1c4fa0", "#f5c518", "#1c4fa0", "#1c4fa0"),
+  "São Paulo": k("hband", "#ffffff", "#d4101f", "#ffffff", "#ffffff"),
+  Gremio: k("vstripes", "#1c9fd6", "#111111", "#ffffff", "#ffffff"),
+  "Independiente Rivadavia": k("solid", "#1c4fa0", "#1c4fa0", "#1c4fa0", "#1c4fa0"),
+  Atlanta: k("vstripes", "#1c4fa0", "#f5c518", "#1c4fa0", "#1c4fa0"),
   "Universidad de Chile": k("solid", "#1c4fa0", "#1c4fa0", "#1c4fa0", "#ffffff"),
 };
 const NEUTRAL_KIT = k("solid", "#6b6b7a", "#6b6b7a", "#333", "#6b6b7a");
@@ -48,11 +54,16 @@ const PLAYER_CLUB: Record<string, string> = {
   "César Pereyra": "Belgrano",
   "Guillermo Farré": "Belgrano",
   "Darío Benedetto": "Boca Juniors",
+  "Mario Boyé": "Boca Juniors",
 };
 
-const COACHES = new Set(["Renato Cesarini", "Héctor Veira", "Ramón Díaz", "Marcelo Gallardo", "Matías Almeyda"]);
+const COACHES = new Set(["Renato Cesarini", "Héctor Veira", "Ramón Díaz"]);
+/** Gallardo: jugador hasta 2009 y director técnico desde 2014. */
+const COACH_FROM_YEAR: Record<string, number> = { "Marcelo Gallardo": 2014 };
 /** Ángel Labruna: jugador en los años 30/40 y director técnico desde 1975. */
 const COACH_BY_SCENE: Record<string, string[]> = {
+  /** Matías Almeyda: jugador en los años 90 y técnico en el ascenso de 2012. */
+  "Matías Almeyda": ["ascenso-river-2012"],
   "Ángel Labruna": ["labruna-vuelve-1975", "metropolitano-1975", "nacional-1975", "balance-labruna"],
 };
 const EXECS = new Set(["Antonio Vespucio Liberti"]);
@@ -65,6 +76,8 @@ const HAIRS = ["#1b1b1b", "#3a2616", "#6b4423", "#a67c3d", "#7d7d7d"];
 const STYLES: Look["hairStyle"][] = ["short", "short", "curly", "long", "bald"];
 const hash = (s: string) => [...s].reduce((a, c) => (a * 31 + c.charCodeAt(0)) >>> 0, 7);
 
+const sceneYear = (sceneId: string) => Number.parseInt(scenes.find((s) => s.id === sceneId)?.date ?? "", 10);
+
 export function lookFor(name: string, sceneId = ""): Look {
   const h = hash(name);
   const base = { skin: SKINS[h % SKINS.length], hair: HAIRS[(h >> 3) % HAIRS.length], hairStyle: STYLES[(h >> 5) % STYLES.length], label: name };
@@ -72,7 +85,7 @@ export function lookFor(name: string, sceneId = ""): Look {
   if (TEAM_NAMES.has(name)) return { ...base, kind: "team", kit: name.startsWith("River") ? RIVER_KIT : CLUB_KITS[name] ?? NEUTRAL_KIT };
   if (EXECS.has(name)) return { ...base, kind: "exec", kit: k("solid", "#243b63", "#243b63", "#243b63", "#111") };
   if (PRESS.has(name)) return { ...base, kind: "press", kit: k("solid", "#8a6a3f", "#8a6a3f", "#4b3b24", "#111") };
-  if (COACHES.has(name) || COACH_BY_SCENE[name]?.includes(sceneId))
+  if (COACHES.has(name) || COACH_BY_SCENE[name]?.includes(sceneId) || (name in COACH_FROM_YEAR && sceneYear(sceneId) >= COACH_FROM_YEAR[name]))
     return { ...base, kind: "coach", kit: k("solid", "#2b2f3a", "#2b2f3a", "#2b2f3a", "#111") };
   const club = PLAYER_CLUB[name];
   return { ...base, kind: "player", kit: club ? CLUB_KITS[club] ?? NEUTRAL_KIT : RIVER_KIT };

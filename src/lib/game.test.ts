@@ -55,7 +55,8 @@ describe("devolución del año con margen", () => {
   it("dentro del margen cuenta y lo aclara", () => {
     const f = yearFeedback(1995, 1, 1996);
     expect(f.ok).toBe(true);
-    expect(f.text).toMatch(/Casi.*±1/);
+    expect(f.text).toMatch(/Casi.*te pasaste por 1 año.*±1 año/);
+    expect(yearFeedback(1995, 1, 1994).text).toMatch(/te quedaste 1 año corto/);
   });
   it("fuera del margen recuerda el margen", () => expect(yearFeedback(1995, 1, 1998).text).toContain("±1"));
 });

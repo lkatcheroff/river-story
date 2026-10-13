@@ -1,8 +1,92 @@
 [
   {
+    "id": "pelota-naranja-1986",
+    "eraId": "gloria-1986",
+    "title": "La pelota naranja",
+    "date": "1986-04-06",
+    "headline": "Boca 0-2 River: Alonso, de cabeza y de tiro libre, en La Bombonera",
+    "description": "El 6 de abril de 1986, River ganó 2-0 en La Bombonera con dos goles de Norberto Alonso. Con papelitos en el campo, la pelota fue naranja para que se viera. Alonso abrió de cabeza y el segundo fue de tiro libre. Después, River dio la vuelta olímpica en la cancha de Boca.",
+    "protagonists": [
+      "Norberto Alonso"
+    ],
+    "rival": "Boca Juniors",
+    "result": "Boca Juniors 0-2 River Plate",
+    "panels": [
+      {
+        "caption": "Superclásico en La Bombonera: los papelitos en el campo complican la visión de la pelota blanca.",
+        "setting": {
+          "label": "La tribuna",
+          "kind": "tribuna"
+        },
+        "figures": [
+          "Hinchas"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "La solución es una pelota naranja.",
+        "setting": {
+          "label": "La Bombonera",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River",
+          "Boca Juniors"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Norberto Alonso abre de cabeza y marca el segundo de tiro libre: 2-0.",
+        "setting": {
+          "label": "La Bombonera",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Norberto Alonso"
+        ],
+        "tone": "drama"
+      },
+      {
+        "caption": "River da la vuelta olímpica en La Bombonera, frente a los hinchas de Boca.",
+        "setting": {
+          "label": "La Bombonera",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿De qué color fue la pelota en el 2-0 de River a Boca en La Bombonera en 1986?",
+      "options": [
+        "Naranja",
+        "Amarilla",
+        "Roja",
+        "Blanca con franjas"
+      ],
+      "answerIndex": 0,
+      "explanation": "Por los papelitos en la cancha se usó una pelota naranja; Alonso hizo los dos goles."
+    },
+    "sources": [
+      {
+        "label": "ESPN Deportes - El día que el Beto Alonso pintó La Bombonera de naranja",
+        "url": "https://espndeportes.espn.com/futbol/argentina/nota/_/id/16512134/superclasico-boca-vs-river-beto-alonso-pelota-naranja-la-bombonera-1986"
+      },
+      {
+        "label": "La Nación - Boca-River: el gol con la pelota naranja",
+        "url": "https://www.lanacion.com.ar/deportes/futbol/boca-river-32-anos-despues-del-gol-pelota-nid2187887/"
+      }
+    ],
+    "verified": true,
+    "order": 1
+  },
+  {
     "id": "libertadores-86-ida-cali",
     "eraId": "gloria-1986",
-    "order": 1,
+    "order": 2,
     "title": "Ida en Cali",
     "date": "1986-10-22",
     "headline": "River le gana a América en Cali y se lleva ventaja",
@@ -18,7 +102,7 @@
       {
         "caption": "Final de la Libertadores: la ida se juega en el Pascual Guerrero, con Veira en el banco.",
         "setting": {
-          "label": "Cali",
+          "label": "Pascual Guerrero",
           "kind": "cancha"
         },
         "figures": [
@@ -30,7 +114,7 @@
       {
         "caption": "River golpea primero: Funes a los 22 y Beto Alonso a los 25.",
         "setting": {
-          "label": "Cali",
+          "label": "Pascual Guerrero",
           "kind": "cancha"
         },
         "figures": [
@@ -42,7 +126,7 @@
       {
         "caption": "En el arranque del segundo tiempo, Cabañas descuenta para América.",
         "setting": {
-          "label": "Cali",
+          "label": "Pascual Guerrero",
           "kind": "cancha"
         },
         "figures": [
@@ -89,7 +173,7 @@
   {
     "id": "libertadores-86-vuelta-monumental",
     "eraId": "gloria-1986",
-    "order": 2,
+    "order": 3,
     "title": "La vuelta en el Monumental",
     "date": "1986-10-29",
     "headline": "Funes marca el gol de la primera Libertadores",
@@ -174,7 +258,7 @@
   {
     "id": "intercontinental-86-tokio",
     "eraId": "gloria-1986",
-    "order": 3,
+    "order": 4,
     "title": "Campeón del mundo en Tokio",
     "date": "1986-12-14",
     "headline": "River 1, Steaua Bucarest 0 en el Estadio Nacional",
@@ -259,24 +343,92 @@
   {
     "id": "libertadores-86-desempate",
     "eraId": "gloria-1986",
-    "order": 4,
+    "order": 5,
     "title": "El desempate de la semifinal",
-    "date": "1986",
-    "headline": "Un 0-0 y la diferencia de gol abren la puerta de la final",
-    "description": "Antes de la final, River empató sin goles un desempate de la fase semifinal y avanzó por diferencia de gol. Por ese margen mínimo llegó a jugarle a América de Cali la definición de la Copa.",
+    "date": "1986-10",
+    "headline": "River 0-0 Argentinos Juniors: la diferencia de gol lo lleva a la final",
+    "description": "En la fase semifinal de la Libertadores 1986, River y Argentinos Juniors terminaron el grupo con 5 puntos cada uno. Hizo falta un desempate: terminó 0-0 y River pasó a la final por mejor diferencia de gol, sin penales ni sorteo. Esa final fue contra América de Cali.",
     "protagonists": [],
     "challenge": {
-      "type": "guess-year",
-      "question": "¿En qué año se jugó el desempate de la semifinal de la Libertadores que clasificó a River a la final?",
-      "correctYear": 1986,
-      "tolerance": 0
+      "type": "quiz",
+      "question": "¿Cómo clasificó River a la final de la Libertadores 1986 tras el desempate con Argentinos Juniors?",
+      "options": [
+        "0-0 y mejor diferencia de gol del grupo",
+        "Por penales",
+        "Por sorteo",
+        "Con un gol de oro en la prórroga"
+      ],
+      "answerIndex": 0,
+      "explanation": "El desempate terminó 0-0 y River pasó por mejor diferencia de gol, sin penales ni sorteo."
     },
     "sources": [
       {
         "label": "RSSSF - Copa Libertadores 1986",
         "url": "https://rsssf.org/sacups/copa86.html"
+      },
+      {
+        "label": "Wikipedia (es) - Copa Libertadores 1986",
+        "url": "https://es.wikipedia.org/wiki/Copa_Libertadores_1986"
+      },
+      {
+        "label": "Wikipedia (en) - 1986 Copa Libertadores",
+        "url": "https://en.wikipedia.org/wiki/1986_Copa_Libertadores"
+      },
+      {
+        "label": "La Página Millonaria - El histórico cruce entre River y Argentinos en la Libertadores 1986",
+        "url": "https://lapaginamillonaria.com/riverplate/El-historico-cruce-entre-River-y-Argentinos-en-la-Libertadores-1986-20210601-0009.html"
       }
     ],
-    "verified": false
+    "verified": true,
+    "rival": "Argentinos Juniors",
+    "result": "0-0",
+    "panels": [
+      {
+        "caption": "River y Argentinos Juniors terminan el grupo de semifinales igualados con 5 puntos.",
+        "tone": "tension",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "River",
+          "Argentinos Juniors"
+        ]
+      },
+      {
+        "caption": "Hay que jugar un desempate para saber quién va a la final.",
+        "tone": "drama",
+        "setting": {
+          "label": "La tribuna",
+          "kind": "tribuna"
+        },
+        "figures": [
+          "Hinchas"
+        ]
+      },
+      {
+        "caption": "El desempate termina 0-0 y River pasa por mejor diferencia de gol.",
+        "tone": "gloria",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "River"
+        ]
+      },
+      {
+        "caption": "River llega a la final de la Libertadores contra América de Cali.",
+        "tone": "calma",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "River",
+          "América de Cali"
+        ]
+      }
+    ]
   }
 ]

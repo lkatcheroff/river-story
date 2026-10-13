@@ -42,11 +42,11 @@ describe("guía del tutorial: el paso sale siempre del estado real", () => {
     const locked = { locked: [true, false] as boolean[], hints: 1 };
     const d = ["intro", "locked"];
     const s2 = (setting: string | null, cast: string[]) => base({ ...locked, slots: [{ setting: TOKIO, cast: ["River", "Steaua Bucarest"] }, { setting, cast }] });
-    expect(id(step(s2("La cancha", []), d))).toBe("b2");
-    expect(id(step(s2("La cancha", ["Antonio Alzamendi"]), d))).toBe("b3");
+    expect(id(step(s2("Monumental", []), d))).toBe("b2");
+    expect(id(step(s2("Monumental", ["Antonio Alzamendi"]), d))).toBe("b3");
     const afterWrong = [...d, "wrong"];
-    expect(id(step(s2("La cancha", ["Antonio Alzamendi"]), afterWrong))).toBe("cartel");
-    expect(id(step(s2("La cancha", ["Antonio Alzamendi"]), [...afterWrong, "cartel"]))).toBe("f1");
+    expect(id(step(s2("Monumental", ["Antonio Alzamendi"]), afterWrong))).toBe("cartel");
+    expect(id(step(s2("Monumental", ["Antonio Alzamendi"]), [...afterWrong, "cartel"]))).toBe("f1");
     expect(id(step(s2(TOKIO, []), [...afterWrong, "cartel"]))).toBe("f2");
     expect(id(step(s2(null, []), [...afterWrong, "cartel"]))).toBe("f1");
     expect(id(step(s2(TOKIO, ["Antonio Alzamendi"]), [...afterWrong, "cartel"]))).toBe("f3");

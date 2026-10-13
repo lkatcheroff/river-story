@@ -25,8 +25,8 @@
       {
         "caption": "Con él al frente, el club gana la Libertadores de 1996.",
         "setting": {
-          "label": "La cancha",
-          "kind": "cancha"
+          "label": "La tribuna",
+          "kind": "tribuna"
         },
         "figures": [
           "Ramón Díaz",
@@ -37,8 +37,8 @@
       {
         "caption": "Después llega la Supercopa de 1997.",
         "setting": {
-          "label": "La cancha",
-          "kind": "cancha"
+          "label": "La tribuna",
+          "kind": "tribuna"
         },
         "figures": [
           "Ramón Díaz"
@@ -61,7 +61,7 @@
       "type": "guess-year",
       "question": "¿En qué año empezó Ramón Díaz su primer ciclo como entrenador de River?",
       "correctYear": 1995,
-      "tolerance": 0
+      "tolerance": 1
     },
     "sources": [
       {
@@ -80,18 +80,94 @@
     "eraId": "era-ramon",
     "order": 2,
     "title": "Semifinal ante la U de Chile",
-    "date": "1996",
-    "headline": "River sufre, pero llega a la final",
-    "description": "En las semifinales de la Libertadores 1996 River se midió con Universidad de Chile y avanzó a la final. Fue una serie ajustada, definida por pocos goles.",
-    "protagonists": [],
+    "date": "1996-06-12",
+    "headline": "River 1-0 a la U en el Monumental con gol de Almeyda: global 3-2 y a la final",
+    "description": "En las semifinales de la Libertadores 1996, River empató 2-2 con Universidad de Chile en Santiago, con goles de Francescoli y Sorín. En la vuelta, en el Monumental, ganó 1-0 con un gol de Matías Almeyda en el primer tiempo. Global de 3-2 y pase a la final contra América de Cali.",
+    "protagonists": [
+      "Enzo Francescoli",
+      "Juan Pablo Sorín",
+      "Matías Almeyda"
+    ],
     "rival": "Universidad de Chile",
     "sources": [
       {
         "label": "RSSSF - Copa Libertadores 1996",
         "url": "https://rsssf.org/sacups/copa96.html"
+      },
+      {
+        "label": "Wikipedia (en) - 1996 Copa Libertadores final stages",
+        "url": "https://en.wikipedia.org/wiki/1996_Copa_Libertadores_final_stages"
+      },
+      {
+        "label": "La Página Millonaria - El camino de River en la Copa Libertadores de 1996",
+        "url": "https://lapaginamillonaria.com/amp/riverplate/El-camino-de-River-en-la-Copa-Libertadores-de-1996-20210612-0008.html"
+      },
+      {
+        "label": "Wikipedia (es) - Copa Libertadores 1996",
+        "url": "https://es.wikipedia.org/wiki/Copa_Libertadores_1996"
       }
     ],
-    "verified": false
+    "verified": true,
+    "panels": [
+      {
+        "caption": "En Santiago, la ida de la semifinal termina 2-2.",
+        "tone": "tension",
+        "setting": {
+          "label": "Estadio Nacional de Santiago",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River",
+          "Universidad de Chile"
+        ]
+      },
+      {
+        "caption": "Francescoli y Sorín marcan los dos goles de River.",
+        "tone": "gloria",
+        "setting": {
+          "label": "Estadio Nacional de Santiago",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Enzo Francescoli",
+          "Juan Pablo Sorín"
+        ]
+      },
+      {
+        "caption": "En el Monumental, River gana 1-0 en la vuelta.",
+        "tone": "tension",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River",
+          "Universidad de Chile"
+        ]
+      },
+      {
+        "caption": "Gol de Matías Almeyda: global 3-2 y pase a la final.",
+        "tone": "gloria",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Matías Almeyda"
+        ]
+      }
+    ],
+    "challenge": {
+      "type": "who-scored",
+      "question": "¿Quién hizo el gol de la victoria de River en la vuelta de la semifinal de la Libertadores 1996 en el Monumental?",
+      "options": [
+        "Matías Almeyda",
+        "Hernán Crespo",
+        "Ariel Ortega",
+        "Enzo Francescoli"
+      ],
+      "answerIndex": 0
+    }
   },
   {
     "id": "libertadores-96-ida-cali",
@@ -110,7 +186,7 @@
       {
         "caption": "En la ida de la final, River visita a América de Cali en el Pascual Guerrero.",
         "setting": {
-          "label": "Cali",
+          "label": "Pascual Guerrero",
           "kind": "cancha"
         },
         "figures": [
@@ -122,7 +198,7 @@
       {
         "caption": "A los 26 minutos, Anthony de Ávila marca para América.",
         "setting": {
-          "label": "Cali",
+          "label": "Pascual Guerrero",
           "kind": "cancha"
         },
         "figures": [
@@ -133,8 +209,8 @@
       {
         "caption": "América gana 1-0.",
         "setting": {
-          "label": "La cancha",
-          "kind": "cancha"
+          "label": "La tribuna",
+          "kind": "tribuna"
         },
         "figures": [
           "América de Cali"
@@ -376,8 +452,8 @@
       {
         "caption": "Gana el Apertura 1996.",
         "setting": {
-          "label": "La cancha",
-          "kind": "cancha"
+          "label": "La tribuna",
+          "kind": "tribuna"
         },
         "figures": [
           "Ramón Díaz"
@@ -398,8 +474,8 @@
       {
         "caption": "Cierra con el Apertura 1997, con 45 puntos, uno más que Boca: tres torneos locales seguidos.",
         "setting": {
-          "label": "La cancha",
-          "kind": "cancha"
+          "label": "La tribuna",
+          "kind": "tribuna"
         },
         "figures": [
           "Ramón Díaz",
@@ -432,6 +508,186 @@
       {
         "label": "Wikipedia ES - Ramón Ángel Díaz",
         "url": "https://es.wikipedia.org/wiki/Ramón_Ángel_Díaz"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "supercopa-97-salas",
+    "eraId": "era-ramon",
+    "order": 7,
+    "title": "Salas define la Supercopa",
+    "date": "1997-12-17",
+    "headline": "River 2, São Paulo 1: dos goles de Salas en el Monumental",
+    "description": "El 17 de diciembre de 1997, en el Monumental, River recibió a São Paulo en la vuelta de la final de la Supercopa, tras el 0-0 de la ida en el Morumbí. Marcelo Salas hizo los dos goles de River en el segundo tiempo; Dodó había igualado para los brasileños. El 2-1 global le dio la Supercopa a River.",
+    "protagonists": [
+      "Marcelo Salas"
+    ],
+    "rival": "São Paulo",
+    "result": "River Plate 2-1 São Paulo",
+    "panels": [
+      {
+        "caption": "En la ida, en el Morumbí, River y São Paulo empatan 0-0.",
+        "setting": {
+          "label": "Morumbí",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River",
+          "São Paulo"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "El 17 de diciembre de 1997, la vuelta de la final se juega en el Monumental.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River",
+          "São Paulo"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "En el segundo tiempo Marcelo Salas marca para River; Dodó empata para São Paulo.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Marcelo Salas",
+          "São Paulo"
+        ],
+        "tone": "drama"
+      },
+      {
+        "caption": "Salas vuelve a marcar y River gana 2-1: es campeón de la Supercopa.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Marcelo Salas",
+          "River"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "who-scored",
+      "question": "¿Quién hizo los dos goles de River en la vuelta de la final de la Supercopa 1997 ante São Paulo?",
+      "options": [
+        "Marcelo Salas",
+        "Enzo Francescoli",
+        "Ariel Ortega",
+        "Hernán Crespo"
+      ],
+      "answerIndex": 0
+    },
+    "sources": [
+      {
+        "label": "Wikipedia - 1997 Supercopa Libertadores",
+        "url": "https://en.wikipedia.org/wiki/1997_Supercopa_Libertadores"
+      },
+      {
+        "label": "La Página Millonaria: A 15 años de la inolvidable Supercopa",
+        "url": "https://lapaginamillonaria.com/riverplate/A-15-anos-de-la-inolvidable-Supercopa-20121217-0011.html"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "superclasico-1999-aimar-angel",
+    "eraId": "era-ramon",
+    "order": 8,
+    "title": "Aimar y Ángel le ganan a Boca",
+    "date": "1999-10-17",
+    "headline": "River 2-0 Boca en el Monumental por el Apertura 1999",
+    "description": "El 17 de octubre de 1999, en el Monumental, River le ganó 2-0 a Boca por el Apertura 1999, con Ramón Díaz como técnico. Pablo Aimar abrió el marcador con un derechazo que se metió por encima del arquero Óscar Córdoba y Juan Pablo Ángel liquidó el partido en el segundo tiempo.",
+    "protagonists": [
+      "Pablo Aimar",
+      "Juan Pablo Ángel",
+      "Ramón Díaz"
+    ],
+    "rival": "Boca Juniors",
+    "result": "River Plate 2-0 Boca Juniors",
+    "panels": [
+      {
+        "caption": "El 17 de octubre de 1999, River y Boca se enfrentan en el Monumental por el Apertura 1999.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River",
+          "Boca Juniors"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Pablo Aimar abre el marcador con un derechazo que pasa por encima del arquero Óscar Córdoba.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Pablo Aimar"
+        ],
+        "tone": "gloria"
+      },
+      {
+        "caption": "En el segundo tiempo, Juan Pablo Ángel define y liquida el partido.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Juan Pablo Ángel"
+        ],
+        "tone": "gloria"
+      },
+      {
+        "caption": "River gana 2-0, con Ramón Díaz como técnico.",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "Ramón Díaz",
+          "River"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "who-scored",
+      "question": "¿Quiénes hicieron los goles de River en el 2-0 a Boca del 17 de octubre de 1999?",
+      "options": [
+        "Pablo Aimar y Juan Pablo Ángel",
+        "Marcelo Salas y Hernán Crespo",
+        "Ariel Ortega y Enzo Francescoli",
+        "Javier Saviola y Leonel Gancedo"
+      ],
+      "answerIndex": 0
+    },
+    "sources": [
+      {
+        "label": "La Página Millonaria: Aimar y Ángel, una alegría para el recuerdo",
+        "url": "https://lapaginamillonaria.com/riverplate/Aimar-y-ngel-una-alegria-para-el-recuerdo-20121017-0002.html"
+      },
+      {
+        "label": "La Página Millonaria: La última alegría, Superclásica del milenio",
+        "url": "https://lapaginamillonaria.com/riverplate/La-ultima-alegria-Superclasica-del-milenio-20161017-0005.html"
+      },
+      {
+        "label": "Goal: Todos los partidos de Riquelme ante River",
+        "url": "https://www.goal.com/es/noticias/todos-los-partidos-de-riquelme-ante-river/1hgznz1t5wk4r10rk8sbae0wcc"
+      },
+      {
+        "label": "ESPN Deportes: Boca, que cinco años no es nada",
+        "url": "https://espndeportes.espn.com/futbolargentino/noticias/boca5anios20021024.html"
       }
     ],
     "verified": true

@@ -14,8 +14,8 @@
       {
         "caption": "En 1957 River gana el campeonato de Primera con la autoridad de un equipo que ya era leyenda.",
         "setting": {
-          "label": "La cancha",
-          "kind": "cancha"
+          "label": "La sede",
+          "kind": "sede"
         },
         "figures": [
           "River Plate"
@@ -60,7 +60,7 @@
       "type": "guess-year",
       "question": "¿En qué año ganó River el último campeonato antes de la larga sequía?",
       "correctYear": 1957,
-      "tolerance": 0
+      "tolerance": 1
     },
     "sources": [
       {
@@ -97,7 +97,7 @@
       {
         "caption": "River llega a su primera final de Libertadores y en el Centenario cae 2-0 ante Peñarol.",
         "setting": {
-          "label": "Centenario",
+          "label": "Estadio Centenario",
           "kind": "cancha"
         },
         "figures": [
@@ -133,7 +133,7 @@
       {
         "caption": "Hay que jugar un tercer partido para definir al campeón.",
         "setting": {
-          "label": "La cancha",
+          "label": "Estadio Nacional de Santiago",
           "kind": "cancha"
         },
         "figures": [
@@ -191,7 +191,7 @@
       {
         "caption": "El 20 de mayo de 1966, en el Estadio Nacional de Santiago, River juega el partido decisivo ante Peñarol.",
         "setting": {
-          "label": "Santiago",
+          "label": "Estadio Nacional de Santiago",
           "kind": "cancha"
         },
         "figures": [
@@ -203,7 +203,7 @@
       {
         "caption": "Con goles de Daniel Onega y Solari, River se va al descanso 2-0.",
         "setting": {
-          "label": "Santiago",
+          "label": "Estadio Nacional de Santiago",
           "kind": "cancha"
         },
         "figures": [
@@ -215,7 +215,7 @@
       {
         "caption": "Peñarol lo iguala y lo gana 4-2 en el alargue, con goles de Spencer y Rocha, entre otros.",
         "setting": {
-          "label": "Santiago",
+          "label": "Estadio Nacional de Santiago",
           "kind": "cancha"
         },
         "figures": [
@@ -270,9 +270,92 @@
     "imageAlt": "Estadio Nacional de Santiago, 1966"
   },
   {
+    "id": "onega-17-goles-1966",
+    "eraId": "sequia",
+    "title": "Los 17 goles de Onega",
+    "date": "1966",
+    "headline": "Daniel Onega, goleador récord de una Libertadores",
+    "description": "En la Copa Libertadores 1966, Daniel Onega fue el goleador del torneo con 17 goles, la mayor cantidad en una sola edición: un récord que nunca se igualó. River terminó subcampeón, pero el nombre de Onega quedó en la historia de la Copa.",
+    "protagonists": [
+      "Daniel Onega"
+    ],
+    "panels": [
+      {
+        "caption": "1966: River juega la Copa Libertadores y termina primero en su grupo de la primera fase.",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "River"
+        ],
+        "tone": "calma"
+      },
+      {
+        "caption": "Daniel Onega convierte gol tras gol a lo largo del torneo.",
+        "setting": {
+          "label": "La tribuna",
+          "kind": "tribuna"
+        },
+        "figures": [
+          "Hinchas",
+          "Daniel Onega"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Suma 17 goles: es el máximo goleador y el récord de una edición.",
+        "setting": {
+          "label": "La tribuna",
+          "kind": "tribuna"
+        },
+        "figures": [
+          "Daniel Onega"
+        ],
+        "tone": "gloria"
+      },
+      {
+        "caption": "River llega a la final y la pierde, pero el récord de Onega sigue sin igualarse.",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "River",
+          "Daniel Onega"
+        ],
+        "tone": "drama"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Cuántos goles hizo Daniel Onega en la Copa Libertadores 1966, récord para una sola edición?",
+      "options": [
+        "11",
+        "14",
+        "17",
+        "21"
+      ],
+      "answerIndex": 2,
+      "explanation": "Fueron 17 goles, marca que todavía no fue superada."
+    },
+    "sources": [
+      {
+        "label": "Wikipedia - Daniel Onega",
+        "url": "https://en.wikipedia.org/wiki/Daniel_Onega"
+      },
+      {
+        "label": "Wikipedia - Copa Libertadores 1966",
+        "url": "https://es.wikipedia.org/wiki/Copa_Libertadores_1966"
+      }
+    ],
+    "verified": true,
+    "order": 4
+  },
+  {
     "id": "puerta-12-1968",
     "eraId": "sequia",
-    "order": 4,
+    "order": 5,
     "title": "Puerta 12",
     "date": "1968-06-23",
     "headline": "La tragedia más dura del fútbol argentino ocurre en el Monumental",
@@ -356,7 +439,7 @@
   {
     "id": "labruna-vuelve-1975",
     "eraId": "sequia",
-    "order": 5,
+    "order": 6,
     "title": "Vuelve el máximo goleador",
     "date": "1975-01",
     "headline": "River contrata a Ángel Labruna para dirigir al equipo",
@@ -402,8 +485,8 @@
       {
         "caption": "Llega con una promesa simple y enorme: terminar con la sequía.",
         "setting": {
-          "label": "La cancha",
-          "kind": "cancha"
+          "label": "La ciudad",
+          "kind": "ciudad"
         },
         "figures": [
           "Ángel Labruna"

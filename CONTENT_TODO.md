@@ -27,3 +27,11 @@ Las viñetas de estas escenas llevan escenario/reparto genéricos porque el text
 - campeon-1937 (4 viñetas solo con "River" en sede/cancha/ciudad/tribuna), ultimo-titulo-1957 (solo "River Plate"), campeon-1942, nacional-1975, copa-campeonato-1936.
 - campeon-1941: La Plata aparece como "La ciudad" en la viñeta 1 y como "La Plata" en las otras.
 - Idea: pedir más detalle verificable (rival, goleadores, sede) para diferenciar las viñetas, o marcar escenarios como flexibles.
+
+## Segunda tanda (jugadas icónicas, estadios, investigación a fondo)
+**Siguen ocultas:** jugada-pedernera-descuento-bombonera-1942 (versiones del descuento en conflicto: Ser de River vs. relato de Labruna en El Gráfico; ninguna con 2 fuentes).
+**Fechas en disputa:** desempate de la semifinal 1986 (3 vs 4/10; se usa "1986-10"); 6-2 a Chacarita 1942 (7 vs 12/6); final de la Copa Argentina 2016 (15/12/2016 confirmado por una sola fuente); final de 1966 (ida 12 vs 14/5); Metropolitano 1979 vuelta (19 vs 20/8); firma de Trezeguet (19 vs 20/12/2011).
+**Estadios a reforzar con una segunda fuente:** Cali 1996 y Tigres 2015 (RSSSF no los nombra); estadio del desempate 1986 (Amalfitani solo en La Página Millonaria); Gasómetro como local de Huracán en 1946; debut de Labruna 1939 (¿1 y 57?); estadio de Atlanta 1939.
+**Jugadas:** Tokio 1986 (Wikipedia: pegó en el palo; La Página Millonaria: entre arquero y palo); pelota naranja (centro vs tiro libre de Alfaro); Bruno 1975 (relato de un solo origen: su testimonio); Cavenaghi 2004 (las 3 fuentes son del mismo sitio); Higuaín 2006 (dos versiones del armado); Trezeguet 2012 (quién dio el pelotazo previo: Ponzio vs Ramiro Funes Mori).
+**Fuentes que dieron 403:** El Gráfico y las crónicas de época; hace falta hemeroteca (Biblioteca Nacional) para el desarrollo de jugadas de los años 30 y 40.
+**Pendientes sin cubrir:** gol de Pratto en la ida de la final 2018, Mora 2013 en Mar del Plata, el córner del gol de Mercado 2014.

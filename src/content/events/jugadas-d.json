@@ -1,0 +1,859 @@
+[
+  {
+    "id": "jugada-pezzella-boca-2014",
+    "eraId": "era-gallardo",
+    "order": 313,
+    "title": "Funes Mori centra y Pezzella no se rinde",
+    "date": "2014-10-05",
+    "headline": "Un cabezazo atajado, el rebote y el empate bajo la lluvia ante Boca",
+    "description": "El 5 de octubre de 2014, en el Monumental y bajo una fuerte lluvia, Boca ganaba 1 a 0 con gol de Lisandro Magallán. Germán Pezzella entró de delantero, Ramiro Funes Mori mandó un centro largo al área, Pezzella cabeceó, Orión no la retuvo y él empujó el rebote para el 1-1 final. Las crónicas discrepan en el minuto.",
+    "protagonists": [
+      "Ramiro Funes Mori",
+      "Germán Pezzella"
+    ],
+    "rival": "Boca Juniors",
+    "result": "River Plate 1-1 Boca Juniors",
+    "stadium": "Monumental",
+    "panels": [
+      {
+        "caption": "River pierde 1 a 0 con Boca y Gallardo manda a Pezzella de 9. Funes Mori tira un centro largo al área.",
+        "setting": {
+          "label": "Centro",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Ramiro Funes Mori",
+          "Germán Pezzella"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Pezzella cabecea de frente al arco, pero Orión no la deja entrar.",
+        "setting": {
+          "label": "Cabezazo",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Germán Pezzella",
+          "Arco"
+        ],
+        "tone": "drama"
+      },
+      {
+        "caption": "Sin dar la pelota por perdida, Pezzella busca el rebote y la empuja con un remate.",
+        "setting": {
+          "label": "Tiro al arco",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Germán Pezzella",
+          "Arco"
+        ],
+        "tone": "drama"
+      },
+      {
+        "caption": "Gol de Pezzella: 1 a 1 en el Monumental, bajo la lluvia.",
+        "setting": {
+          "label": "Gol",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Germán Pezzella",
+          "Arco"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Quién mandó el centro del que nació el gol de Pezzella a Boca en el Monumental, en octubre de 2014?",
+      "options": [
+        "Ramiro Funes Mori",
+        "Leonardo Pisculichi",
+        "Leonel Vangioni",
+        "Gabriel Mercado"
+      ],
+      "answerIndex": 0,
+      "explanation": "Ramiro Funes Mori cruzó la mitad de la cancha y tiró el centro; Pezzella cabeceó, Orión dio rebote y lo empujó."
+    },
+    "sources": [
+      {
+        "label": "ESPN - River, el Superclásico bajo la lluvia y el gol de Pezzella",
+        "url": "https://espndeportes.espn.com/futbol/argentina/nota/_/id/14184050/river-superclasico-pezzella-balance-boca-clasicos-gol-lluvia-monumental"
+      },
+      {
+        "label": "Diario de Cuyo - Con la lluvia de protagonista, River le aguó la fiesta a Boca",
+        "url": "https://www.diariodecuyo.com.ar/noticias/con-la-lluvia-de-protagonista-river-le-aguo-la-fiesta-a-boca-670565.html"
+      },
+      {
+        "label": "Página/12 - Superclásico River 1-1 Boca (6/10/2014)",
+        "url": "https://www.pagina12.com.ar/imprimir/diario/suplementos/libero/10-8730-2014-10-06.html"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "jugada-funes-mori-tigres-2015",
+    "eraId": "era-gallardo",
+    "order": 314,
+    "title": "El córner de Pisculichi y el cabezazo de Funes Mori",
+    "date": "2015-08-05",
+    "headline": "Un córner y un cabezazo sellan el 3-0 en la final de la Libertadores",
+    "description": "El 5 de agosto de 2015, en el Monumental, River ganaba 2 a 0 a Tigres en la final de la Libertadores tras los goles de Alario y Carlos Sánchez. Leonardo Pisculichi, que había entrado como suplente, ejecutó un córner y Ramiro Funes Mori cabeceó para el 3-0. Las fuentes dan minutos distintos.",
+    "protagonists": [
+      "Leonardo Pisculichi",
+      "Ramiro Funes Mori"
+    ],
+    "rival": "Tigres",
+    "result": "River Plate 3-0 Tigres",
+    "stadium": "Monumental",
+    "panels": [
+      {
+        "caption": "Córner para River: Pisculichi, recién ingresado, manda el centro al área.",
+        "setting": {
+          "label": "Centro",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Leonardo Pisculichi",
+          "Ramiro Funes Mori"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Funes Mori se eleva por encima de todos y cabecea ante Nahuel Guzmán.",
+        "setting": {
+          "label": "Cabezazo",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Ramiro Funes Mori",
+          "Arco"
+        ],
+        "tone": "drama"
+      },
+      {
+        "caption": "Gol de Funes Mori: 3-0 y River toca la gloria.",
+        "setting": {
+          "label": "Gol",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Ramiro Funes Mori",
+          "Arco"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Quién ejecutó el córner del tercer gol de River a Tigres en la final de la Libertadores 2015?",
+      "options": [
+        "Leonardo Pisculichi",
+        "Leonel Vangioni",
+        "Carlos Sánchez",
+        "Leonardo Ponzio"
+      ],
+      "answerIndex": 0,
+      "explanation": "Pisculichi, que había ingresado desde el banco, sacó el córner y Ramiro Funes Mori cabeceó."
+    },
+    "sources": [
+      {
+        "label": "Wikipedia - 2015 Copa Libertadores finals",
+        "url": "https://en.wikipedia.org/wiki/2015_Copa_Libertadores_finals"
+      },
+      {
+        "label": "Vermouth Deportivo - River 3 Tigres 0",
+        "url": "https://www.vermouth-deportivo.com.ar/river-3-tigres-mex-0-millonario-de-america/"
+      },
+      {
+        "label": "ESPN - River Plate v Tigres (reporte)",
+        "url": "https://espndeportes.espn.com/futbol/reporte/_/juegoId/431452"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "jugada-trezeguet-primer-gol-ascenso-2012",
+    "eraId": "descenso",
+    "order": 30,
+    "title": "Trezeguet y Funes Mori, un dos y un gol de ascenso",
+    "date": "2012-06-23",
+    "headline": "Cabezazos, pared y zurdazo: el gol que devolvió a River a Primera",
+    "description": "El 23 de junio de 2012, en el Monumental, River y Almirante Brown jugaban 0-0 la última fecha de la B Nacional. Al inicio del segundo tiempo, la pelota larga llegó a Trezeguet, que de cabeza cedió a Rogelio Funes Mori; este se la devolvió de cabeza y Trezeguet la bajó y definió de zurda. ESPN marcó una posición adelantada previa de Funes Mori.",
+    "protagonists": [
+      "David Trezeguet",
+      "Rogelio Funes Mori"
+    ],
+    "rival": "Almirante Brown",
+    "result": "River Plate 2-0 Almirante Brown",
+    "stadium": "Monumental",
+    "panels": [
+      {
+        "caption": "Una pelota larga llega a la cabeza de Trezeguet, que la cede a Rogelio Funes Mori.",
+        "setting": {
+          "label": "Pase",
+          "kind": "jugada"
+        },
+        "figures": [
+          "David Trezeguet",
+          "Rogelio Funes Mori"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Funes Mori se la devuelve de cabeza al francés.",
+        "setting": {
+          "label": "Pase",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Rogelio Funes Mori",
+          "David Trezeguet"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Trezeguet define de zurda, sin chances para el arquero Monasterio.",
+        "setting": {
+          "label": "Tiro al arco",
+          "kind": "jugada"
+        },
+        "figures": [
+          "David Trezeguet",
+          "Arco"
+        ],
+        "tone": "drama"
+      },
+      {
+        "caption": "Gol de Trezeguet en el comienzo del segundo tiempo: River se acerca a Primera.",
+        "setting": {
+          "label": "Gol",
+          "kind": "jugada"
+        },
+        "figures": [
+          "David Trezeguet",
+          "Arco"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Con qué pie definió David Trezeguet el primer gol del ascenso ante Almirante Brown?",
+      "options": [
+        "Pierna izquierda",
+        "Pierna derecha",
+        "De cabeza",
+        "De taco"
+      ],
+      "answerIndex": 0,
+      "explanation": "Trezeguet definió de zurda, tras cabecear para Rogelio Funes Mori y recibir de cabeza la devolución."
+    },
+    "sources": [
+      {
+        "label": "Infobae - River logró vencer a Almirante Brown y regresó a la A",
+        "url": "https://www.infobae.com/2012/06/22/655037-river-logro-vencer-almirante-brown-se-consagro-campeon-y-regreso-la-a/"
+      },
+      {
+        "label": "El Litoral - River 2, Almirante Brown 0",
+        "url": "https://www.ellitoral.com/edicion-online/river-2-almirante-brown-0_0_I9nmPRcTvd.html"
+      },
+      {
+        "label": "ESPN - El fin de la pesadilla: dos goles de David Trezeguet",
+        "url": "https://www.espn.com.ar/futbol/argentina/nota/_/id/10538623/el-fin-de-la-pesadilla-dos-goles-de-david-trezeguet-y-el-regreso-de-river-plate-a-primera"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "jugada-trezeguet-segundo-gol-ascenso-2012",
+    "eraId": "descenso",
+    "order": 31,
+    "title": "El centro de Funes Mori y el 2-0 de Trezeguet",
+    "date": "2012-06-23",
+    "headline": "Rogelio Funes Mori asiste a Trezeguet para sellar el ascenso",
+    "description": "El 23 de junio de 2012, en el Monumental, River ganó 2 a 0 a Almirante Brown y volvió a Primera. En el segundo gol, Rogelio Funes Mori ganó una pelota, entró al área y tiró un centro bajo al medio que capitalizó Trezeguet. Las fuentes dan minutos distintos y solo una detalla cómo definió.",
+    "protagonists": [
+      "Rogelio Funes Mori",
+      "David Trezeguet"
+    ],
+    "rival": "Almirante Brown",
+    "result": "River Plate 2-0 Almirante Brown",
+    "stadium": "Monumental",
+    "panels": [
+      {
+        "caption": "Cerca del final, Rogelio Funes Mori gana el duelo con un defensor y entra al área.",
+        "setting": {
+          "label": "Centro",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Rogelio Funes Mori",
+          "David Trezeguet"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Gol de Trezeguet: 2-0 y River vuelve a Primera.",
+        "setting": {
+          "label": "Gol",
+          "kind": "jugada"
+        },
+        "figures": [
+          "David Trezeguet",
+          "Arco"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "who-scored",
+      "question": "¿Quién asistió a David Trezeguet en su segundo gol ante Almirante Brown?",
+      "options": [
+        "Rogelio Funes Mori",
+        "Fernando Cavenaghi",
+        "Alejandro Domínguez",
+        "Leonardo Ponzio"
+      ],
+      "answerIndex": 0
+    },
+    "sources": [
+      {
+        "label": "Infobae - River logró vencer a Almirante Brown y regresó a la A",
+        "url": "https://www.infobae.com/2012/06/22/655037-river-logro-vencer-almirante-brown-se-consagro-campeon-y-regreso-la-a/"
+      },
+      {
+        "label": "El Litoral - River 2, Almirante Brown 0",
+        "url": "https://www.ellitoral.com/edicion-online/river-2-almirante-brown-0_0_I9nmPRcTvd.html"
+      },
+      {
+        "label": "ESPN - El fin de la pesadilla: dos goles de David Trezeguet",
+        "url": "https://www.espn.com.ar/futbol/argentina/nota/_/id/10538623/el-fin-de-la-pesadilla-dos-goles-de-david-trezeguet-y-el-regreso-de-river-plate-a-primera"
+      },
+      {
+        "label": "442 Perfil - River en los diarios del mundo",
+        "url": "https://442.perfil.com/noticias/general/2012-06-23-137088-river-en-los-diarios-del-mundo.phtml"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "jugada-sanchez-penal-boca-2015",
+    "eraId": "era-gallardo",
+    "order": 315,
+    "title": "El penal de Carlos Sánchez a Boca",
+    "date": "2015-05-07",
+    "headline": "Sánchez discute con Mora, patea y River gana la ida contra Boca",
+    "description": "El 7 de mayo de 2015, en el Monumental, River ganó 1 a 0 a Boca la ida de los octavos de la Libertadores con un penal de Carlos Sánchez. Según La Nación, discutió con Rodrigo Mora quién lo pateaba y se quedó con la ejecución. Las fuentes no describen cómo lo ejecutó.",
+    "protagonists": [
+      "Carlos Sánchez"
+    ],
+    "rival": "Boca Juniors",
+    "result": "River Plate 1-0 Boca Juniors",
+    "stadium": "Monumental",
+    "panels": [
+      {
+        "caption": "Penal para River en el Monumental: Carlos Sánchez se hace cargo de la ejecución.",
+        "setting": {
+          "label": "Penal",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Carlos Sánchez",
+          "Arco"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Gol de Sánchez: 1-0 a Boca en la ida de los octavos de la Libertadores.",
+        "setting": {
+          "label": "Gol",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Carlos Sánchez",
+          "Arco"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "who-scored",
+      "question": "¿Quién convirtió el penal del 1-0 de River a Boca por los octavos de la Libertadores 2015?",
+      "options": [
+        "Carlos Sánchez",
+        "Rodrigo Mora",
+        "Teófilo Gutiérrez",
+        "Leonardo Pisculichi"
+      ],
+      "answerIndex": 0
+    },
+    "sources": [
+      {
+        "label": "La Nación - Carlos Sánchez, entre el gol más importante y un desahogo necesario",
+        "url": "https://www.lanacion.com.ar/deportes/futbol/carlos-sanchez-river-boca-nid1791029/"
+      },
+      {
+        "label": "ESPN - Los goles de los uruguayos más recordados por los hinchas de River",
+        "url": "https://espndeportes.espn.com/futbol/argentina/nota/_/id/13269650/goles-uruguayos-mas-recordados-por-hinchas-river-clasico-contra-boca"
+      },
+      {
+        "label": "ESPN - Superclásicos inolvidables en el Monumental",
+        "url": "https://espndeportes.espn.com/futbol/argentina/nota/_/id/4993140/superclasicos-inolvidables-en-el-monumental"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "jugada-apertura-94-bombonera-3-0",
+    "eraId": "era-ramon",
+    "order": 311,
+    "title": "Penal, golazo y penal: 3-0 en La Bombonera",
+    "date": "1994-12-11",
+    "headline": "Francescoli, Ortega y Gallardo golean a Boca camino al título invicto",
+    "description": "El 11 de diciembre de 1994, en La Bombonera, River goleó 3 a 0 a Boca por el Apertura con goles de Enzo Francescoli (penal), Ariel Ortega y Marcelo Gallardo (penal). Dos días después sería campeón invicto. Las fuentes consultadas no coinciden en cómo se armó cada gol.",
+    "protagonists": [
+      "Enzo Francescoli",
+      "Ariel Ortega",
+      "Marcelo Gallardo"
+    ],
+    "rival": "Boca Juniors",
+    "result": "Boca Juniors 0-3 River Plate",
+    "stadium": "La Bombonera",
+    "panels": [
+      {
+        "caption": "Penal para River: Enzo Francescoli, el Príncipe, lo ejecuta.",
+        "setting": {
+          "label": "Penal",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Enzo Francescoli",
+          "Arco"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Gol de Ortega: River amplía en La Bombonera.",
+        "setting": {
+          "label": "Gol",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Ariel Ortega",
+          "Arco"
+        ],
+        "tone": "gloria"
+      },
+      {
+        "caption": "Otro penal para River: esta vez lo patea Marcelo Gallardo.",
+        "setting": {
+          "label": "Penal",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Marcelo Gallardo",
+          "Arco"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Gol de Gallardo: 3-0 en la cancha de Boca.",
+        "setting": {
+          "label": "Gol",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Marcelo Gallardo",
+          "Arco"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Quiénes marcaron los goles del 3-0 de River a Boca en La Bombonera, en diciembre de 1994?",
+      "options": [
+        "Francescoli, Ortega y Gallardo",
+        "Francescoli, Crespo y Berti",
+        "Ortega, Gallardo y Crespo",
+        "Francescoli, Ortega y Astrada"
+      ],
+      "answerIndex": 0,
+      "explanation": "Francescoli y Gallardo de penal y un golazo de Ortega."
+    },
+    "sources": [
+      {
+        "label": "La Página Millonaria - Las mejores visitas a La Boca: 3 a 0 para ser campeón invicto",
+        "url": "https://lapaginamillonaria.com/riverplate/Las-mejores-visitas-a-La-Boca-3-a-0-para-ser-campeon-invicto-20130501-0006.html"
+      },
+      {
+        "label": "La Página Millonaria - Las tres veces que River visitó a Boca en 1994",
+        "url": "https://lapaginamillonaria.com/riverplate/Las-tres-veces-que-River-visito-a-Boca-en-la-Bombonera-en-1994-20210514-0005.html"
+      },
+      {
+        "label": "Imperio River - River campeón del Torneo Apertura 1994",
+        "url": "http://imperioriver.blogspot.com/2018/12/river-campeon-del-torneo-apertura-1994.html"
+      },
+      {
+        "label": "ESPN - Los goles de los uruguayos más recordados por los hinchas de River",
+        "url": "https://espndeportes.espn.com/futbol/argentina/nota/_/id/13269650/goles-uruguayos-mas-recordados-por-hinchas-river-clasico-contra-boca"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "jugada-francescoli-tiro-libre-supercopa-1994",
+    "eraId": "era-ramon",
+    "order": 310,
+    "title": "El tiro libre del Príncipe en La Bombonera",
+    "date": "1994-10-13",
+    "headline": "Francescoli empata de tiro libre ante Boca por la Supercopa",
+    "description": "El 13 de octubre de 1994, en La Bombonera, Boca ganaba 1 a 0 con una acción individual de Luis Carranza cuando, al comienzo del segundo tiempo, Enzo Francescoli empató con un tiro libre que venció a Navarro Montoya. Fue 1-1 en la revancha de la Supercopa y Boca avanzó por penales.",
+    "protagonists": [
+      "Enzo Francescoli"
+    ],
+    "rival": "Boca Juniors",
+    "result": "Boca Juniors 1-1 River Plate",
+    "stadium": "La Bombonera",
+    "panels": [
+      {
+        "caption": "Tiro libre cerca del área de Boca: Francescoli patea.",
+        "setting": {
+          "label": "Tiro al arco",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Enzo Francescoli",
+          "Arco"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Gol de Francescoli: 1-1 en La Bombonera.",
+        "setting": {
+          "label": "Gol",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Enzo Francescoli",
+          "Arco"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "who-scored",
+      "question": "¿Quién empató de tiro libre para River en La Bombonera por la Supercopa de 1994?",
+      "options": [
+        "Enzo Francescoli",
+        "Ariel Ortega",
+        "Marcelo Gallardo",
+        "Hernán Crespo"
+      ],
+      "answerIndex": 0
+    },
+    "sources": [
+      {
+        "label": "Infobae - Navarro Montoya, el gestor de la eliminación de River en la Supercopa 1994",
+        "url": "https://www.infobae.com/deportes-2/2018/03/12/navarro-montoya-el-gestor-de-la-historica-eliminacion-de-river-en-la-supercopa-1994-confia-boca-es-grande/"
+      },
+      {
+        "label": "La Página Millonaria - Las tres veces que River visitó a Boca en 1994",
+        "url": "https://lapaginamillonaria.com/riverplate/Las-tres-veces-que-River-visito-a-Boca-en-la-Bombonera-en-1994-20210514-0005.html"
+      },
+      {
+        "label": "ESPN - Los goles de los uruguayos más recordados por los hinchas de River",
+        "url": "https://espndeportes.espn.com/futbol/argentina/nota/_/id/13269650/goles-uruguayos-mas-recordados-por-hinchas-river-clasico-contra-boca"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "jugada-crespo-rebote-bombonera-1994",
+    "eraId": "era-ramon",
+    "order": 309,
+    "title": "Travesaño de Toresani, rebote de Crespo",
+    "date": "1994-04-30",
+    "headline": "River corta ocho años sin ganar en La Bombonera",
+    "description": "El 30 de abril de 1994, en La Bombonera, River ganó 2 a 0 con goles de Ariel Ortega y Hernán Crespo y cortó una racha de ocho años sin triunfos allí. Con Boca apretando, Julio Toresani remató al travesaño y Crespo llegó antes que todos al rebote para el 2-0. Los minutos de los goles varían según la fuente.",
+    "protagonists": [
+      "Julio Toresani",
+      "Hernán Crespo"
+    ],
+    "rival": "Boca Juniors",
+    "result": "Boca Juniors 0-2 River Plate",
+    "stadium": "La Bombonera",
+    "panels": [
+      {
+        "caption": "Boca aprieta, pero Toresani remata y la pelota pega en el travesaño.",
+        "setting": {
+          "label": "Tiro al arco",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Julio Toresani",
+          "Arco"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Crespo llega antes que todos al rebote y la manda a la red.",
+        "setting": {
+          "label": "Gol",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Hernán Crespo",
+          "Arco"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "who-scored",
+      "question": "¿Quién marcó el 2-0 de River en La Bombonera en el Clausura 1994 tras el rebote de un remate al travesaño?",
+      "options": [
+        "Hernán Crespo",
+        "Ariel Ortega",
+        "Enzo Francescoli",
+        "Julio Toresani"
+      ],
+      "answerIndex": 0
+    },
+    "sources": [
+      {
+        "label": "La Página Millonaria - Las mejores visitas a La Boca: los pibes se hicieron grandes",
+        "url": "https://lapaginamillonaria.com/riverplate/Las-mejores-visitas-a-La-Boca-los-pibes-se-hicieron-grandes-20130502-0015.html"
+      },
+      {
+        "label": "La Página Millonaria - Las tres veces que River visitó a Boca en 1994",
+        "url": "https://lapaginamillonaria.com/riverplate/Las-tres-veces-que-River-visito-a-Boca-en-la-Bombonera-en-1994-20210514-0005.html"
+      },
+      {
+        "label": "La Página Millonaria - Las últimas alegrías en La Boca",
+        "url": "https://lapaginamillonaria.com/riverplate/Las-ultimas-alegrias-en-La-Boca-20150430-0014.html"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "jugada-cavenaghi-bombonera-2004",
+    "eraId": "los-2000",
+    "order": 312,
+    "title": "Husaín la peina, Cavenaghi la empuja",
+    "date": "2004-05-16",
+    "headline": "Un córner, dos cabezazos y el gol del Torito en La Bombonera",
+    "description": "El 16 de mayo de 2004, en La Bombonera, por el Clausura, River ganó 1 a 0 con un gol de Fernando Cavenaghi. En un córner desde la derecha, Claudio Husaín cabeceó y Cavenaghi, solo por el segundo palo, volvió a cabecear ante Abbondanzieri. Las crónicas discrepan en quién ejecutó el córner.",
+    "protagonists": [
+      "Claudio Husaín",
+      "Fernando Cavenaghi"
+    ],
+    "rival": "Boca Juniors",
+    "result": "Boca Juniors 0-1 River Plate",
+    "stadium": "La Bombonera",
+    "panels": [
+      {
+        "caption": "Córner desde la derecha: Husaín gana en el área y peina la pelota.",
+        "setting": {
+          "label": "Pase",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Claudio Husaín",
+          "Fernando Cavenaghi"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Cavenaghi aparece por el segundo palo y cabecea.",
+        "setting": {
+          "label": "Cabezazo",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Fernando Cavenaghi",
+          "Arco"
+        ],
+        "tone": "drama"
+      },
+      {
+        "caption": "Gol de Cavenaghi: 1-0 en La Bombonera y festejo besando el escudo.",
+        "setting": {
+          "label": "Gol",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Fernando Cavenaghi",
+          "Arco"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "who-scored",
+      "question": "¿Quién metió el gol de cabeza del 1-0 de River en La Bombonera, en mayo de 2004?",
+      "options": [
+        "Fernando Cavenaghi",
+        "Claudio Husaín",
+        "Marcelo Gallardo",
+        "Maximiliano López"
+      ],
+      "answerIndex": 0
+    },
+    "sources": [
+      {
+        "label": "La Página Millonaria - Héroes superclásicos: Fernando Cavenaghi - 2004",
+        "url": "https://lapaginamillonaria.com/amp/riverplate/River-vs.-Boca-Clausura-2004-el-recuerdo-del-superclasico-que-gano-River-con-gol-de-Cavenaghi-20210312-0010.html"
+      },
+      {
+        "label": "La Página Millonaria - Héroe en La Bombonera: Fernando Cavenaghi",
+        "url": "https://lapaginamillonaria.com/amp/riverplate/Heroe-en-la-Bombonera-Fernando-Cavenaghi-el-recuerdo-de-su-gol-a-Boca-en-el-Clausura-2004-20220908-0015.html"
+      },
+      {
+        "label": "La Página Millonaria - El Torito hizo su gol más importante hace ocho años",
+        "url": "https://lapaginamillonaria.com/riverplate/El-Torito-hizo-su-gol-mas-importante-hace-ocho-anos-20120516-0009.html"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "jugada-higuain-taco-boca-2006",
+    "eraId": "los-2000",
+    "order": 313,
+    "title": "El taco del Pipita",
+    "date": "2006-10-08",
+    "headline": "Gonzalo Higuaín abre el 3-1 a Boca con un gol de taco",
+    "description": "El 8 de octubre de 2006, en el Monumental, River ganó 3 a 1 a Boca por el Apertura con dos goles de Gonzalo Higuaín y uno de Ernesto Farías. El primero fue de taco, en el área, tras una falta a Farías y el desorden posterior. Las crónicas describen distinto cómo se armó la jugada.",
+    "protagonists": [
+      "Gonzalo Higuaín"
+    ],
+    "rival": "Boca Juniors",
+    "result": "River Plate 3-1 Boca Juniors",
+    "stadium": "Monumental",
+    "panels": [
+      {
+        "caption": "En el área de Boca, Higuaín aprovecha el desorden y remata de taco.",
+        "setting": {
+          "label": "Tiro al arco",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Gonzalo Higuaín",
+          "Arco"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Gol de taco de Higuaín: River se pone arriba en el Monumental.",
+        "setting": {
+          "label": "Gol",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Gonzalo Higuaín",
+          "Arco"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "who-scored",
+      "question": "¿Quién marcó de taco el primer gol de River en el 3-1 a Boca de octubre de 2006?",
+      "options": [
+        "Gonzalo Higuaín",
+        "Ernesto Farías",
+        "Marcelo Gallardo",
+        "Mauro Rosales"
+      ],
+      "answerIndex": 0
+    },
+    "sources": [
+      {
+        "label": "La Página Millonaria - Los Higuaín: el recuerdo de sus goles en el Superclásico",
+        "url": "https://lapaginamillonaria.com/riverplate/Gonzalo-y-Jorge-Higuain-el-recuerdo-de-sus-goles-en-el-Superclasico-20210310-0006.html"
+      },
+      {
+        "label": "Trivela - River vence clássico contra Boca",
+        "url": "https://trivela.com.br/america-do-sul/argentina/river-vence-classico-contra-boca/"
+      },
+      {
+        "label": "La Nación - Superclásicos eternos: los 10 River vs. Boca en el Monumental",
+        "url": "https://www.lanacion.com.ar/deportes/futbol/superclasicos-eternos-los-10-river-vs-boca-inolvidables-en-el-monumental-nid27042025/"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "jugada-gallardo-tiro-libre-bombonera-2009",
+    "eraId": "los-2000",
+    "order": 314,
+    "title": "El tiro libre del Muñeco en La Bombonera",
+    "date": "2009-04",
+    "headline": "Gallardo empata con un tiro libre que enmudece a La Bombonera",
+    "description": "En abril de 2009, por el Clausura, Boca ganaba 1 a 0 en La Bombonera con un gol de Martín Palermo. Marcelo Gallardo ejecutó un tiro libre a unos 24 metros y, con efecto, la clavó cerca del palo ante Abbondanzieri para el 1-1.",
+    "protagonists": [
+      "Marcelo Gallardo"
+    ],
+    "rival": "Boca Juniors",
+    "result": "Boca Juniors 1-1 River Plate",
+    "stadium": "La Bombonera",
+    "panels": [
+      {
+        "caption": "Tiro libre para River a unos 24 metros del arco: Marcelo Gallardo toma la pelota.",
+        "setting": {
+          "label": "Tiro al arco",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Marcelo Gallardo",
+          "Arco"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Gol de Gallardo: 1-1 en La Bombonera y silencio en la cancha de Boca.",
+        "setting": {
+          "label": "Gol",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Marcelo Gallardo",
+          "Arco"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "who-scored",
+      "question": "¿Quién empató de tiro libre para River en La Bombonera en el Clausura 2009, tras el gol de Palermo?",
+      "options": [
+        "Marcelo Gallardo",
+        "Radamel Falcao",
+        "Diego Buonanotte",
+        "Ariel Ortega"
+      ],
+      "answerIndex": 0
+    },
+    "sources": [
+      {
+        "label": "La Página Millonaria - Gallardo les arañó la victoria",
+        "url": "https://lapaginamillonaria.com/riverplate/Gallardo-les-arano-la-victoria-20090419-0009.html"
+      },
+      {
+        "label": "Diario de Cuyo - Dos viejitos piolas",
+        "url": "https://www.diariodecuyo.com.ar/noticias/dos-viejitos-piolas-971387.html"
+      },
+      {
+        "label": "La Página Millonaria - Gallardo: el gol me llena de alegría",
+        "url": "https://lapaginamillonaria.com/riverplate/Gallardo-quotEl-gol-me-llena-de-alegriaquot-20090419-0006.html"
+      },
+      {
+        "label": "Bleacher Report - Boca and River share spoils in El Superclásico",
+        "url": "https://bleacherreport.com/articles/278633-boca-and-river-share-spoils-in-el-superclasico"
+      }
+    ],
+    "verified": true
+  }
+]

@@ -1,0 +1,159 @@
+[
+  {
+    "id": "jugada-alzamendi-tokio-1986",
+    "eraId": "gloria-1986",
+    "order": 30,
+    "title": "El pase rápido del Beto y el cabezazo de Alzamendi",
+    "date": "1986-12-14",
+    "headline": "Tiro libre jugado rápido, palo y rebote: así se hizo el gol del mundo",
+    "description": "En la final de la Intercontinental ante el Steaua, Norberto Alonso sacó rápido un tiro libre y dejó mano a mano a Antonio Alzamendi. Su remate fue negado entre el arquero y el palo, y en el rebote Alzamendi marcó de cabeza. Fue el 1-0 a los 28 minutos que hizo campeón del mundo a River.",
+    "protagonists": ["Norberto Alonso", "Antonio Alzamendi"],
+    "rival": "Steaua Bucarest",
+    "result": "Steaua Bucarest 0-1 River Plate",
+    "stadium": "Estadio Nacional de Tokio",
+    "panels": [
+      { "caption": "Tras una falta, Norberto Alonso piensa más rápido que todos: saca el tiro libre y habilita a Alzamendi.", "setting": { "label": "Pase", "kind": "jugada" }, "figures": ["Norberto Alonso", "Antonio Alzamendi"], "tone": "tension" },
+      { "caption": "Alzamendi queda mano a mano y dispara: entre el arquero y el palo le niegan el gol.", "setting": { "label": "Tiro al arco", "kind": "jugada" }, "figures": ["Antonio Alzamendi", "Arco"], "tone": "drama" },
+      { "caption": "En el rebote, Alzamendi no perdona y cabecea.", "setting": { "label": "Cabezazo", "kind": "jugada" }, "figures": ["Antonio Alzamendi", "Arco"], "tone": "drama" },
+      { "caption": "Gol de River: 1-0 a los 28 minutos, el que lo hace campeón del mundo.", "setting": { "label": "Gol", "kind": "jugada" }, "figures": ["Antonio Alzamendi", "Arco"], "tone": "gloria" }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Quién sacó rápido el tiro libre que dejó mano a mano a Alzamendi en el gol de Tokio?",
+      "options": ["Norberto Alonso", "Juan Gilberto Funes", "Américo Gallego", "Héctor Enrique"],
+      "answerIndex": 0,
+      "explanation": "Alonso jugó rápido el tiro libre y Alzamendi definió de cabeza en el rebote."
+    },
+    "sources": [
+      { "label": "La Página Millonaria - Cuando River conquistó el mundo", "url": "https://lapaginamillonaria.com/riverplate/Cuando-River-conquisto-el-mundo-20161214-0020.html" },
+      { "label": "Wikipedia - 1986 Intercontinental Cup", "url": "https://en.wikipedia.org/wiki/1986_Intercontinental_Cup" }
+    ],
+    "verified": true
+  },
+  {
+    "id": "jugada-alonso-naranja-1986",
+    "eraId": "gloria-1986",
+    "order": 31,
+    "title": "El centro de Alfaro y el frentazo del Beto",
+    "date": "1986-04-06",
+    "headline": "Centro desde la derecha, cabezazo cruzado y 1-0 con la pelota naranja",
+    "description": "En La Bombonera, con la pelota naranja del primer tiempo, Roque Alfaro mandó un centro desde la derecha. Norberto Alonso se escapó de la marca, subió solo y cabeceó cruzado ante la salida de Hugo Gatti. Fue el 1-0 del 2-0 de River, con otro gol de Alonso, de tiro libre, en el segundo tiempo.",
+    "protagonists": ["Norberto Alonso", "Roque Alfaro"],
+    "rival": "Boca Juniors",
+    "result": "Boca Juniors 0-2 River Plate",
+    "stadium": "La Bombonera",
+    "panels": [
+      { "caption": "Roque Alfaro manda el centro desde la derecha.", "setting": { "label": "Centro", "kind": "jugada" }, "figures": ["Roque Alfaro", "Norberto Alonso"], "tone": "tension" },
+      { "caption": "Alonso se eleva solo y cabecea cruzado ante la salida del arquero.", "setting": { "label": "Cabezazo", "kind": "jugada" }, "figures": ["Norberto Alonso", "Arco"], "tone": "drama" },
+      { "caption": "Gol de Alonso: 1-0 para River con la pelota naranja.", "setting": { "label": "Gol", "kind": "jugada" }, "figures": ["Norberto Alonso", "Arco"], "tone": "gloria" }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Quién mandó el centro desde la derecha que Alonso cabeceó para el 1-0 de la pelota naranja?",
+      "options": ["Roque Alfaro", "Héctor Enrique", "Américo Gallego", "Antonio Alzamendi"],
+      "answerIndex": 0,
+      "explanation": "Centro de Roque Alfaro desde la derecha y cabezazo cruzado de Alonso."
+    },
+    "sources": [
+      { "label": "Infobae - Hace 25 años, River daba la vuelta olímpica en la Bombonera", "url": "https://www.infobae.com/2011/04/05/573936-hace-25-anos-river-daba-la-vuelta-olimpica-la-bombonera/" },
+      { "label": "La Nación - Boca-River: el gol con la pelota naranja", "url": "https://www.lanacion.com.ar/deportes/futbol/boca-river-32-anos-despues-del-gol-pelota-nid2187887/" },
+      { "label": "Ámbito - A 25 años de la histórica vuelta olímpica de River en la Bombonera", "url": "https://www.ambito.com/deportes/a-25-anos-la-historica-vuelta-olimpica-river-la-bombonera-n3676454" },
+      { "label": "Goal - El superclásico de la pelota naranja", "url": "https://www.goal.com/es/noticias/el-superclasico-de-la-pelota-naranja-el-dia-que-river-dio-la-vuelta-olimpica-en-la-bombonera/16oty8yy3sre2zp6napx7a3x2" }
+    ],
+    "verified": true
+  },
+  {
+    "id": "jugada-funes-libertadores-1986",
+    "eraId": "gloria-1986",
+    "order": 32,
+    "title": "La media vuelta del Búfalo",
+    "date": "1986-10-29",
+    "headline": "Funes se saca la marca, gira y define: el gol de la primera Libertadores",
+    "description": "En el Monumental, Juan Gilberto Funes se sacó de encima a su marcador con una media vuelta y definió con un zurdazo cruzado que superó al arquero Julio Falcioni. Fue el único gol de la vuelta ante América de Cali y le dio a River su primera Copa Libertadores.",
+    "protagonists": ["Juan Gilberto Funes"],
+    "rival": "América de Cali",
+    "result": "River Plate 1-0 América de Cali",
+    "stadium": "Monumental",
+    "panels": [
+      { "caption": "Funes se saca a su marcador con una media vuelta y dispara de zurda, cruzado.", "setting": { "label": "Tiro al arco", "kind": "jugada" }, "figures": ["Juan Gilberto Funes", "Arco"], "tone": "tension" },
+      { "caption": "La pelota termina en la red: Funes marca el único gol y River es campeón de América.", "setting": { "label": "Gol", "kind": "jugada" }, "figures": ["Juan Gilberto Funes", "Arco"], "tone": "gloria" }
+    ],
+    "challenge": {
+      "type": "guess-year",
+      "question": "¿En qué año Funes hizo en el Monumental el gol de la primera Copa Libertadores de River?",
+      "correctYear": 1986,
+      "tolerance": 1
+    },
+    "sources": [
+      { "label": "CONMEBOL - El desencuentro terminó: River campeón de la Copa Libertadores 1986", "url": "https://conmebol.com/es/28102014-2159/el-desencuentro-termino-river-campeon-de-la-copa-libertadores-1986" },
+      { "label": "La Página Millonaria - A 36 años de la primera conquista de América", "url": "https://lapaginamillonaria.com/riverplate/A-36-anos-de-la-primera-conquista-de-America-20221029-0009.html" }
+    ],
+    "verified": true
+  },
+  {
+    "id": "jugada-pedro-gonzalez-bombonera-1977",
+    "eraId": "era-labruna",
+    "order": 30,
+    "title": "Luque la tira al vacío y Pedro la clava",
+    "date": "1977-11-09",
+    "headline": "El gol sobre la hora en La Bombonera nació de un pase de Luque",
+    "description": "En la Bombonera, con el 1-1, Passarella rechazó largo y Leopoldo Luque la agarró por la izquierda y la metió al medio. Pedro González entró solo, ganó el mano a mano con Hugo Gatti y definió con el arco libre. Fue el gol de la victoria que encaminó el título del Metropolitano 1977.",
+    "protagonists": ["Leopoldo Luque", "Pedro González"],
+    "rival": "Boca Juniors",
+    "result": "Boca Juniors 1-2 River Plate",
+    "stadium": "La Bombonera",
+    "panels": [
+      { "caption": "Luque recoge un rechazo largo por la izquierda y la mete al medio para Pedro González.", "setting": { "label": "Pase", "kind": "jugada" }, "figures": ["Leopoldo Luque", "Pedro González"], "tone": "tension" },
+      { "caption": "González queda solo, gana el mano a mano con Gatti y define con el arco libre: River gana en La Bombonera.", "setting": { "label": "Gol", "kind": "jugada" }, "figures": ["Pedro González", "Arco"], "tone": "gloria" }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Quién habilitó a Pedro González en el gol del último minuto en La Bombonera en 1977?",
+      "options": ["Leopoldo Luque", "Daniel Passarella", "Norberto Alonso", "Oscar Más"],
+      "answerIndex": 0,
+      "explanation": "Luque tomó el rechazo largo por la izquierda y la metió al medio para González."
+    },
+    "sources": [
+      { "label": "Casos y cosas riverplatenses - Pedro González, el de los goles importantes", "url": "http://casosycosasriverplatenses.blogspot.com/2019/07/pedro-gonzalez-el-de-los-goles.html" },
+      { "label": "River el más grande - Metropolitano 1977: Boca 1 - River 2", "url": "https://riverelmasgrande.com/contenido/8459/metropolitano-1977-boca-1-river-2" },
+      { "label": "Infobae - Las memorias de Pedro González", "url": "https://www.infobae.com/deportes/2023/03/21/las-memorias-de-pedro-gonzalez-gloria-de-river-y-san-lorenzo-del-gol-que-hizo-enojar-a-su-papa-al-codazo-de-bienvenida-de-passarella-y-la-leccion-de-perfumo/" }
+    ],
+    "verified": true
+  },
+  {
+    "id": "jugada-bruno-argentinos-1975",
+    "eraId": "era-labruna",
+    "order": 31,
+    "title": "El sombrero que rebotó en la cabeza de Bruno",
+    "date": "1975-08-14",
+    "headline": "Una jugada individual de un pibe de 19 años rompió 18 años de sequía",
+    "description": "En la cancha de Vélez, Rubén Norberto Bruno avanzó con la pelota y se le fue larga. Según su propio relato, el 2 rival quiso hacerle un sombrero, la pelota le rebotó en la cabeza y le quedó boyando. Cuando salió el arquero, definió a un costado: 1-0 y River campeón tras 18 años.",
+    "protagonists": ["Rubén Norberto Bruno"],
+    "rival": "Argentinos Juniors",
+    "result": "River Plate 1-0 Argentinos Juniors",
+    "stadium": "José Amalfitani",
+    "panels": [
+      { "caption": "Bruno avanza con la pelota, se le va larga y el 2 rival intenta un sombrero: le rebota en la cabeza.", "setting": { "label": "Gambeta", "kind": "jugada" }, "figures": ["Rubén Norberto Bruno"], "tone": "tension" },
+      { "caption": "La pelota le queda boyando; sale el arquero y Bruno define a un costado: 1-0.", "setting": { "label": "Gol", "kind": "jugada" }, "figures": ["Rubén Norberto Bruno", "Arco"], "tone": "gloria" }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "Según Bruno, ¿qué pasó con la pelota justo antes de que definiera el gol del título de 1975?",
+      "options": [
+        "El lateral rival quiso hacerle un sombrero y le rebotó en la cabeza",
+        "Un compañero se la dejó con un pase filtrado",
+        "Rebotó en el palo y le quedó picando",
+        "Recibió un centro de la izquierda y la bajó de pecho"
+      ],
+      "answerIndex": 0,
+      "explanation": "Fue una jugada individual: el sombrero fallido le rebotó en la cabeza y definió cuando salió el arquero."
+    },
+    "sources": [
+      { "label": "La Página Millonaria - El fin de una racha negra de la mano de Angelito", "url": "https://lapaginamillonaria.com/riverplate/El-fin-de-una-racha-negra-de-la-mano-de-Angelito-20140814-0010.html" },
+      { "label": "LM Neuquén - El día que Bruno, un pibe desconocido, fue héroe", "url": "https://www.lmneuquen.com/el-dia-que-bruno-un-pibe-desconocido-fue-heroe-del-historico-river-campeon-del-75-n725422" },
+      { "label": "AFA - El recuerdo del River campeón del Metropolitano de 1975", "url": "https://www.afa.com.ar/s/posts/efemeride-river-1975" },
+      { "label": "ESPN - River, juveniles y gloria", "url": "https://espndeportes.espn.com/futbol/argentina/nota/_/id/15537131/river-plate-juveniles-y-gloria-el-dia-que-volvio-a-ser-campeon-14-agosto-1975-tras-18-anos" }
+    ],
+    "verified": true
+  }
+]

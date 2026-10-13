@@ -2,7 +2,8 @@ import { useId } from "react";
 import type { Kind } from "../lib/puzzle";
 import type { Panel } from "../lib/schema";
 
-const MOUNTAINS = new Set(["Santiago", "Cali", "Medellín", "Belo Horizonte", "Córdoba"]);
+/** Estadios rodeados de cerros o montañas. */
+const MOUNTAINS = new Set(["Estadio Nacional de Santiago", "Pascual Guerrero", "Atanasio Girardot", "Mineirão", "Gigante de Alberdi", "Mario Alberto Kempes", "Estadio Universitario"]);
 const TOWER = new Set(["Estadio Nacional de Tokio"]);
 const SKY: Record<Panel["tone"], [string, string]> = {
   calma: ["#8ec9f0", "#e6f4fc"],

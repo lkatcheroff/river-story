@@ -5,11 +5,11 @@
     "order": 1,
     "title": "Nace el club en La Boca",
     "date": "1901",
-    "headline": "Dos equipos de carboneros se juntan y nace River Plate",
-    "description": "En las carboneras de la Dársena Sur, en La Boca, dos equipos de barrio se disputaban la supremacía: La Rosales y Santa Rosa. Se fusionaron y eligieron llamarse River Plate, nombre que Pedro Martínez vio en unos cajones del puerto. El club sostiene 1901 como año de fundación, aunque una investigación de 2004 propone 1904.",
+    "headline": "Dos equipos de La Boca se fusionan y nace River Plate",
+    "description": "En La Boca, junto a la Dársena Sur, La Rosales y Santa Rosa se fusionaron y nació River Plate, con Leopoldo Bard como primer presidente. Pedro Martínez propuso el nombre, que leyó en unos cajones del puerto. El club sostiene el 25 de mayo de 1901 como fecha de fundación; un boletín de investigadores de 2004 propone el 15 de mayo de 1904.",
     "protagonists": [
       "Pedro Martínez",
-      "Isidoro Kitzler"
+      "Leopoldo Bard"
     ],
     "challenge": {
       "type": "quiz",
@@ -21,27 +21,77 @@
         "La Rosales y Argentino de Quilmes"
       ],
       "answerIndex": 0,
-      "explanation": "Wikipedia, ESPN y RSSSF coinciden: River nació de la fusión de La Rosales y Santa Rosa. Forward y Juventud Boquense fueron otros nombres que se barajaron para el club."
+      "explanation": "River nació de la fusión de La Rosales y Santa Rosa, en La Boca."
     },
     "sources": [
       {
-        "label": "Wikipedia - History of Club Atlético River Plate",
+        "label": "CIHF - Boletín nº 21 (2004): la fecha de fundación de River",
+        "url": "https://cihf.com.ar/wp-content/uploads/2025/06/boletin21.pdf"
+      },
+      {
+        "label": "Wikipedia (en) - History of Club Atlético River Plate",
         "url": "https://en.wikipedia.org/wiki/History_of_Club_Atl%C3%A9tico_River_Plate"
+      },
+      {
+        "label": "Wikipedia (es) - Historia del Club Atlético River Plate",
+        "url": "https://es.wikipedia.org/wiki/Historia_del_Club_Atl%C3%A9tico_River_Plate"
       },
       {
         "label": "ESPN Deportes - Una historia larga y muy rica",
         "url": "https://espndeportes.espn.com/futbolargentino/noticias/riverhistoria120502.html"
       },
       {
-        "label": "RSSSF - Club Atlético River Plate",
-        "url": "https://rsssf.org/tablesr/riverplate.html"
-      },
-      {
-        "label": "442 Perfil - River festeja su cumpleaños",
-        "url": "https://442.perfil.com/noticias/futbol/river-festeja-su-cumpleanos-121-nuestro-glorioso-pasado-y-brillante-porvenir.phtml"
+        "label": "La Página Millonaria - River cumple 123 años: por qué festeja el 25 de mayo",
+        "url": "https://lapaginamillonaria.com/riverplate/river-cumple-123-anos-por-que-festeja-su-aniversario-el-25-de-mayo"
       }
     ],
-    "verified": false
+    "verified": true,
+    "panels": [
+      {
+        "caption": "Pedro Martínez lee «The River Plate» en unos cajones del puerto de La Boca.",
+        "tone": "calma",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "Pedro Martínez"
+        ]
+      },
+      {
+        "caption": "La Rosales y Santa Rosa se fusionan: nace River Plate y Leopoldo Bard es su primer presidente.",
+        "tone": "gloria",
+        "setting": {
+          "label": "La sede",
+          "kind": "sede"
+        },
+        "figures": [
+          "Leopoldo Bard"
+        ]
+      },
+      {
+        "caption": "El club sostiene el 25 de mayo de 1901 como su fecha de fundación.",
+        "tone": "tension",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "River"
+        ]
+      },
+      {
+        "caption": "Un boletín de investigadores de 2004 propone otra fecha: el 15 de mayo de 1904.",
+        "tone": "drama",
+        "setting": {
+          "label": "La sede",
+          "kind": "sede"
+        },
+        "figures": [
+          "River"
+        ]
+      }
+    ]
   },
   {
     "id": "ascenso-1908",
@@ -80,7 +130,7 @@
       {
         "caption": "El 27 de diciembre, River le gana 7 a 0 a Racing Club y sella el ascenso.",
         "setting": {
-          "label": "La cancha",
+          "label": "Cancha de GEBA (Palermo)",
           "kind": "cancha"
         },
         "figures": [
@@ -92,7 +142,7 @@
       {
         "caption": "En 1909 debuta en Primera y le gana 5 a 0 a Argentino de Quilmes.",
         "setting": {
-          "label": "La cancha",
+          "label": "Cancha de River (Dársena Sur)",
           "kind": "cancha"
         },
         "figures": [
@@ -105,7 +155,7 @@
       "type": "guess-year",
       "question": "¿En qué año River le ganó 7 a 0 a Racing Club y consiguió el ascenso a Primera?",
       "correctYear": 1908,
-      "tolerance": 0
+      "tolerance": 1
     },
     "sources": [
       {
@@ -123,6 +173,22 @@
       {
         "label": "EFDeportes - River Plate",
         "url": "https://efdeportes.com/milenio/river.htm"
+      },
+      {
+        "label": "Wikipedia (es) - Campeonato de Segunda División 1908",
+        "url": "https://es.wikipedia.org/wiki/Campeonato_de_Segunda_Divisi%C3%B3n_1908_(Argentina)"
+      },
+      {
+        "label": "La Nación - Las dos finales entre River y Racing",
+        "url": "https://www.lanacion.com.ar/deportes/las-dos-finales-entre-river-y-racing-hace-mas-de-100-anos-un-7-0-en-el-ascenso-y-un-titulo-imposible-nid04032021/"
+      },
+      {
+        "label": "Viejos Estadios - Dársena Sur",
+        "url": "https://viejosestadios.blogspot.com/p/darsena-sur.html"
+      },
+      {
+        "label": "Ser de River - 1909 y llegó el sueño de jugar en Primera",
+        "url": "http://serderiver.blogspot.com/2015/04/1909y-llego-el-sueno-de-jugar-en-primera.html"
       }
     ],
     "verified": true
@@ -165,7 +231,7 @@
       {
         "caption": "El 13 de marzo de 1932 debuta con River.",
         "setting": {
-          "label": "La cancha",
+          "label": "Cancha de River (Alvear y Tagle)",
           "kind": "cancha"
         },
         "figures": [
@@ -189,7 +255,7 @@
       "type": "guess-year",
       "question": "¿En qué año debutó Bernabé Ferreyra con la camiseta de River?",
       "correctYear": 1932,
-      "tolerance": 0
+      "tolerance": 1
     },
     "sources": [
       {
@@ -203,6 +269,14 @@
       {
         "label": "Wikipedia - History of Club Atlético River Plate",
         "url": "https://en.wikipedia.org/wiki/History_of_Club_Atl%C3%A9tico_River_Plate"
+      },
+      {
+        "label": "IUSport - 90 años del debut de Bernabé Ferreyra",
+        "url": "https://iusport.com/archive/15868/se-cumplen-90-anos-del-debut-de-bernabe-ferreyra-en-river-plate"
+      },
+      {
+        "label": "Cazador de Noticias - Bernabé Ferreyra, 83 años de su debut",
+        "url": "https://cazadordenoticias.com.ar/nota/00062297/bernabe-ferreyra-bombazos-de-45-metros-a-83-anos-de-su-debut-en-river/"
       }
     ],
     "verified": true
@@ -238,7 +312,7 @@
       {
         "caption": "El título se define en un desempate entre los dos.",
         "setting": {
-          "label": "La cancha",
+          "label": "El Gasómetro",
           "kind": "cancha"
         },
         "figures": [
@@ -250,7 +324,7 @@
       {
         "caption": "River gana 3 a 0 con goles de Bernabé Ferreyra, Carlos Peucelle y Zatelli.",
         "setting": {
-          "label": "La cancha",
+          "label": "El Gasómetro",
           "kind": "cancha"
         },
         "figures": [
@@ -296,6 +370,96 @@
       {
         "label": "EFDeportes - River Plate",
         "url": "https://efdeportes.com/milenio/river.htm"
+      },
+      {
+        "label": "La Página Millonaria - La primera estrella de la era profesional",
+        "url": "https://lapaginamillonaria.com/riverplate/La-primera-estrella-de-la-era-profesional-20141120-0021.html"
+      },
+      {
+        "label": "Minutouno - Historia de desempates en el fútbol argentino",
+        "url": "https://www.minutouno.com/historia-desempates-el-futbol-argentino-n5281"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "ferreyra-doblete-boca-1933",
+    "eraId": "origenes",
+    "order": 5,
+    "title": "El doblete de Bernabé a Boca",
+    "date": "1933-11-19",
+    "headline": "River le gana 3 a 1 a Boca con dos goles de Ferreyra",
+    "description": "El 19 de noviembre de 1933, en la última fecha del campeonato, River venció 3 a 1 a Boca Juniors. Bernabé Ferreyra convirtió dos goles y Manuel Ferreira otro; el restante fue un gol en contra de Boca. La derrota terminó de sacar a Boca de la pelea por el título.",
+    "protagonists": [
+      "Bernabé Ferreyra",
+      "Manuel Ferreira"
+    ],
+    "rival": "Boca Juniors",
+    "result": "River Plate 3-1 Boca Juniors",
+    "panels": [
+      {
+        "caption": "Última fecha de 1933: River y Boca se miran en un superclásico con el campeonato en juego.",
+        "setting": {
+          "label": "Cancha de River (Alvear y Tagle)",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River",
+          "Boca Juniors"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Bernabé Ferreyra marca dos veces y Manuel Ferreira suma el otro tanto de River.",
+        "setting": {
+          "label": "Cancha de River (Alvear y Tagle)",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Bernabé Ferreyra",
+          "Manuel Ferreira"
+        ],
+        "tone": "gloria"
+      },
+      {
+        "caption": "River gana 3 a 1 y Boca se queda sin chances de título.",
+        "setting": {
+          "label": "Cancha de River (Alvear y Tagle)",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "who-scored",
+      "question": "¿Quién convirtió dos goles en el 3-1 de River a Boca del 19 de noviembre de 1933?",
+      "options": [
+        "Bernabé Ferreyra",
+        "Carlos Peucelle",
+        "Adolfo Pedernera",
+        "Manuel Ferreira"
+      ],
+      "answerIndex": 0
+    },
+    "sources": [
+      {
+        "label": "La Nación - Primeras filmaciones de un superclásico",
+        "url": "https://www.lanacion.com.ar/deportes/futbol/historicas-primeras-filmaciones-de-un-superclasico-boca-river-nid1625509"
+      },
+      {
+        "label": "RSSSF - Superclásicos de la era profesional",
+        "url": "https://rsssf.org/tablesb/bocariverpro.html"
+      },
+      {
+        "label": "Trivela - Boca x River en goles icónicos",
+        "url": "https://trivela.com.br/america-do-sul/argentina/historia-de-boca-x-river-no-seculo-xx-recontada-atraves-de-gols-iconicos-e-ou-grandes-idolos/"
+      },
+      {
+        "label": "Wikipedia - Estadio Alvear y Tagle",
+        "url": "https://en.wikipedia.org/wiki/Estadio_Alvear_y_Tagle"
       }
     ],
     "verified": true
@@ -303,7 +467,7 @@
   {
     "id": "inauguracion-monumental",
     "eraId": "origenes",
-    "order": 5,
+    "order": 6,
     "title": "Se inaugura el Monumental",
     "date": "1938-05",
     "headline": "Peñarol estrena el estadio de Núñez",

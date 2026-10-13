@@ -12,6 +12,7 @@ import { useDrag, type Payload } from "../lib/useDrag";
 import { useGame } from "../lib/store";
 import { Backdrop } from "./Backdrop";
 import { Figure, type Mood } from "./Figure";
+import { ActionIcon, isOrderedAction } from "./ActionIcon";
 
 const registry = buildRegistry(allScenes);
 const BUBBLE: Record<Panel["tone"], string> = {
@@ -41,13 +42,18 @@ function shuffleIndices(n: number): number[] {
 }
 
 function PanelView({
-  index, tone, slot, locked, active, over, playing, reacting, scene, drag, onClear,
+  index, tone, slot, locked, active, over, playing, reacting, scene, drag, onClear, play,
 }: {
   index: number; tone: Panel["tone"]; slot: Slot; locked: boolean; active: boolean; over: boolean; playing: boolean;
   reacting: boolean; scene: Scene; drag: ReturnType<typeof useDrag>;
-  onClear: () => void;
+  onClear: () => void; play: boolean;
 }) {
-  const kind = slot.setting ? registry.settings.get(slot.setting) : undefined;
+  const kind = play ? "cancha" : slot.setting ? registry.settings.get(slot.setting) : undefined;
+  const n = slot.cast.length;
+  const xs = slot.cast.map((_, i) => ((i + 0.5) / Math.max(n, 1)) * 100);
+  const ballOn = play && !!slot.setting && n > 0 && (locked || playing || reacting);
+  const from = xs[0] ?? 50;
+  const to = slot.setting === "Pase" || slot.setting === "Centro" ? xs[1] ?? from : xs[n - 1] ?? from;
   const clash = playing && slot.cast.some(isRivalName) && slot.cast.some((c) => !isRivalName(c));
   const mood: Mood = locked || playing || reacting ? REACT[tone].mood : "idle";
   return (
@@ -60,8 +66,8 @@ function PanelView({
       aria-label={`Viñeta ${index + 1}${locked ? " (correcta)" : ""}`}
     >
       {kind ? (
-        <motion.div key={slot.setting} className="absolute inset-0" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-          <Backdrop kind={kind} label={slot.setting ?? ""} tone={locked || playing || reacting ? tone : "calma"} />
+        <motion.div key={play ? scene.stadium : slot.setting} className="absolute inset-0" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+          <Backdrop kind={kind} label={(play ? scene.stadium : slot.setting) ?? ""} tone={locked || playing || reacting ? tone : "calma"} />
         </motion.div>
       ) : (
         <div className="absolute inset-0 bg-white/70" />
@@ -88,8 +94,19 @@ function PanelView({
           {REACT[tone].say}
         </motion.span>
       )}
+      {ballOn && (
+        <motion.span
+          key={`${slot.setting}-${playing}`}
+          aria-hidden
+          className="absolute z-20 text-2xl drop-shadow"
+          style={{ bottom: slot.setting === "Pase" || slot.setting === "Gambeta" ? "34%" : "44%" }}
+          initial={{ left: `${from}%` }}
+          animate={{ left: `${to}%`, y: slot.setting === "Centro" || slot.setting === "Cabezazo" ? [0, -34, 0] : slot.setting === "Tiro al arco" || slot.setting === "Penal" ? [0, -10, 0] : 0 }}
+          transition={{ duration: 0.9, repeat: playing ? Infinity : 0, repeatDelay: 0.4, ease: "easeInOut" }}
+        >⚽</motion.span>
+      )}
       <div className="relative z-[1] flex min-h-32 flex-1 items-end justify-center gap-0 px-1 pt-8">
-        {slot.cast.length === 0 && <span className="m-auto font-display text-3xl text-ink/40">{slot.setting ? "¿quién?" : "¿dónde y quién?"}</span>}
+        {slot.cast.length === 0 && <span className="m-auto font-display text-3xl text-ink/40">{play ? (slot.setting ? "¿quiénes?" : "¿qué acción?") : slot.setting ? "¿quién?" : "¿dónde y quién?"}</span>}
         {slot.cast.map((c, i) => (
           <motion.div
             key={c}
@@ -102,6 +119,9 @@ function PanelView({
             title={locked ? c : `${c} — tocá para sacar, o arrastrá a otra viñeta`}
             className="flex flex-col items-center"
           >
+            {play && i > 0 && isOrderedAction(slot.setting) && (
+              <span aria-hidden className="absolute -ml-7 mb-10 font-display text-3xl text-river drop-shadow-[1px_1px_0_#fff]">➜</span>
+            )}
             <Figure name={c} sceneId={scene.id} mood={mood} size={46} />
             <span className="-mt-1 max-w-16 truncate border border-ink bg-white px-0.5 text-[9px] font-bold leading-tight">{c.split(" ").slice(-1)[0]}</span>
           </motion.div>
@@ -124,6 +144,7 @@ export function ComicScene({ era, scene, index, total, onNext, onReplay, practic
   const { completed, result, answer } = useGame();
   const panels = scene.panels;
   const n = panels?.length ?? 0;
+  const isPlay = !!panels?.some((p) => p.setting.kind === "jugada");
   const alreadyDone = scene.id in completed;
   const pieces = useMemo(() => fixedPieces ?? buildPieces(scene, registry), [scene, fixedPieces]);
   const [slots, setSlots] = useState<Slot[]>(() => (panels && alreadyDone ? panels.map((p) => ({ setting: p.setting.label, cast: [...p.figures] })) : emptySlots(n)));
@@ -282,7 +303,7 @@ export function ComicScene({ era, scene, index, total, onNext, onReplay, practic
           <>
             <p className="comic-box">
               <span className="font-extrabold">Objetivo: {scene.headline}</span>
-              <span className="mt-1 block text-xs font-semibold">Arrastrá o tocá lugares y personajes hacia las viñetas. Para mover una viñeta entera, agarrala del número ⠿ (o mantenela apretada) y soltala sobre otra. Las correctas se bloquean.</span>
+              <span className="mt-1 block text-xs font-semibold">{isPlay ? "Armá la jugada: arrastrá o tocá una acción y los jugadores hasta cada viñeta, en el orden en que pasó. En un pase, primero quien la da y después quien la recibe." : "Arrastrá o tocá lugares y personajes hacia las viñetas."} Para mover una viñeta entera, agarrala del número ⠿ (o mantenela apretada) y soltala sobre otra. Las correctas se bloquean.</span>
             </p>
             <button className="text-left text-sm font-bold underline" onClick={() => setHint(true)}>
               📖 {hint ? "Libro de historia (pista usada)" : "Abrir el libro de historia (pierde el bonus)"}
@@ -300,7 +321,7 @@ export function ComicScene({ era, scene, index, total, onNext, onReplay, practic
               <PanelView
                 index={i} tone={p.tone} slot={slots[i]} locked={locked[i]} active={!solved && active === i}
                 over={drag.over === i && drag.ghost !== null}
-                playing={playing === i} reacting={reaction?.panel === i} scene={scene} drag={drag}
+                playing={playing === i} reacting={reaction?.panel === i} scene={scene} drag={drag} play={isPlay}
                 onClear={() => change(i, () => ({ setting: null, cast: [] }))}
               />
               {b && (
@@ -320,17 +341,23 @@ export function ComicScene({ era, scene, index, total, onNext, onReplay, practic
       {!solved && (
         <>
           <section className="comic-box sticky bottom-2 z-20 flex flex-col gap-1 p-2">
-            <p className="font-display text-lg leading-none">Lugares {activeFree && <span className="text-xs font-sans">→ viñeta {active + 1}</span>}</p>
+            <p className="font-display text-lg leading-none">{isPlay ? "Acciones" : "Lugares"} {activeFree && <span className="text-xs font-sans">→ viñeta {active + 1}</span>}</p>
             <div className="flex gap-2 overflow-x-auto pb-1">
               {pieces.settings.map((st) => (
                 <div key={st} data-tut={`setting:${st}`} {...drag.bind({ kind: "setting", value: st }, "pan-x")} role="button" tabIndex={0}
                   className={`relative h-12 w-20 shrink-0 select-none overflow-hidden border-2 border-ink ${cur.setting === st && activeFree ? "ring-4 ring-river" : ""}`}>
-                  <Backdrop kind={registry.settings.get(st) ?? "cancha"} label={st} />
-                  <span className="absolute inset-x-0 bottom-0 bg-white/90 px-0.5 text-center text-[10px] font-extrabold uppercase leading-tight">{st}</span>
+                  {isPlay ? (
+                    <span className="flex h-full w-full flex-col items-center justify-center bg-white"><ActionIcon action={st} size={34} /><span className="text-[10px] font-extrabold uppercase leading-tight">{st}</span></span>
+                  ) : (
+                    <>
+                      <Backdrop kind={registry.settings.get(st) ?? "cancha"} label={st} />
+                      <span className="absolute inset-x-0 bottom-0 bg-white/90 px-0.5 text-center text-[10px] font-extrabold uppercase leading-tight">{st}</span>
+                    </>
+                  )}
                 </div>
               ))}
             </div>
-            <p className="font-display text-lg leading-none">Personajes <span className="text-xs font-sans">(máx. 3 por viñeta)</span></p>
+            <p className="font-display text-lg leading-none">{isPlay ? "Jugadores" : "Personajes"} <span className="text-xs font-sans">{isPlay ? "(el orden importa: en un pase, primero quien la da)" : "(máx. 3 por viñeta)"}</span></p>
             <div className="flex gap-2 overflow-x-auto pb-1">
               {pieces.cast.map((nm) => (
                 <div key={nm} data-tut={`cast:${nm}`} {...drag.bind({ kind: "cast", value: nm }, "pan-x")} role="button" tabIndex={0} title={nm}
@@ -360,7 +387,7 @@ export function ComicScene({ era, scene, index, total, onNext, onReplay, practic
           {c && !practice && (
             <section className="comic-box flex flex-col gap-2">
               <p className="font-display text-2xl">Pregunta extra</p>
-              <p className="font-semibold">{c.question}{c.type === "guess-year" && c.tolerance > 0 ? ` (se acepta ±${c.tolerance} años)` : ""}</p>
+              <p className="font-semibold">{c.question}{c.type === "guess-year" && c.tolerance > 0 ? ` (se acepta un margen de ±${c.tolerance} ${c.tolerance === 1 ? "año" : "años"})` : ""}</p>
               {c.type !== "guess-year" ? optionOrder.map((k) => {
                 const o = c.options[k];
                 return (
@@ -393,8 +420,8 @@ export function ComicScene({ era, scene, index, total, onNext, onReplay, practic
         <div className="pointer-events-none fixed z-50 -translate-x-1/2 -translate-y-3/4 opacity-90" style={{ left: drag.ghost.x, top: drag.ghost.y }}>
           {drag.ghost.payload.kind === "cast" && <Figure name={drag.ghost.payload.value} sceneId={scene.id} size={56} />}
           {drag.ghost.payload.kind === "setting" && (
-            <div className="relative h-16 w-28 overflow-hidden border-2 border-ink shadow-lg">
-              <Backdrop kind={registry.settings.get(drag.ghost.payload.value) ?? "cancha"} label={drag.ghost.payload.value} />
+            <div className="relative h-16 w-28 overflow-hidden border-2 border-ink bg-white shadow-lg">
+              {isPlay ? <span className="flex h-full flex-col items-center justify-center"><ActionIcon action={drag.ghost.payload.value} size={40} /><span className="text-[10px] font-extrabold uppercase">{drag.ghost.payload.value}</span></span> : <Backdrop kind={registry.settings.get(drag.ghost.payload.value) ?? "cancha"} label={drag.ghost.payload.value} />}
             </div>
           )}
           {drag.ghost.payload.kind === "panel" && (

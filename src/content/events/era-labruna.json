@@ -40,7 +40,7 @@
       {
         "caption": "Rubén Norberto Bruno hace el 1-0.",
         "setting": {
-          "label": "La cancha",
+          "label": "José Amalfitani",
           "kind": "cancha"
         },
         "figures": [
@@ -51,7 +51,7 @@
       {
         "caption": "River 1-0 Argentinos Juniors: se terminó la sequía.",
         "setting": {
-          "label": "La cancha",
+          "label": "José Amalfitani",
           "kind": "cancha"
         },
         "figures": [
@@ -119,8 +119,8 @@
       {
         "caption": "Con Labruna al frente, River suma el Nacional de 1975 al Metropolitano.",
         "setting": {
-          "label": "La cancha",
-          "kind": "cancha"
+          "label": "La tribuna",
+          "kind": "tribuna"
         },
         "figures": [
           "Ángel Labruna",
@@ -131,8 +131,8 @@
       {
         "caption": "Doblete en una misma temporada.",
         "setting": {
-          "label": "La cancha",
-          "kind": "cancha"
+          "label": "La ciudad",
+          "kind": "ciudad"
         },
         "figures": [
           "Ángel Labruna"
@@ -198,7 +198,7 @@
       {
         "caption": "En 1976 River llega a la final de la Libertadores con Cruzeiro: pierde 4-1 en Belo Horizonte.",
         "setting": {
-          "label": "Belo Horizonte",
+          "label": "Mineirão",
           "kind": "cancha"
         },
         "figures": [
@@ -221,7 +221,7 @@
       {
         "caption": "Más y Urquiza anotan para River.",
         "setting": {
-          "label": "Santiago",
+          "label": "Estadio Nacional de Santiago",
           "kind": "cancha"
         },
         "figures": [
@@ -233,7 +233,7 @@
       {
         "caption": "Cruzeiro gana 3-2 con un gol sobre el final: la Libertadores sigue esquiva.",
         "setting": {
-          "label": "Santiago",
+          "label": "Estadio Nacional de Santiago",
           "kind": "cancha"
         },
         "figures": [
@@ -272,9 +272,96 @@
     "imageAlt": "Final de la Copa Libertadores 1976"
   },
   {
+    "id": "metropolitano-1977-bombonera",
+    "eraId": "era-labruna",
+    "title": "El golazo sobre la hora en La Bombonera",
+    "date": "1977-11",
+    "headline": "Pedro González gana el partido en el último minuto en la cancha de Boca",
+    "description": "En la penúltima fecha del Metropolitano 1977, River visitó a Boca en La Bombonera y tenía que ganar. Sobre el final, Pedro González metió un golazo en el último minuto. Fue el triunfo que encaminó el título: River se consagró campeón en el torneo más largo de la historia del profesionalismo.",
+    "protagonists": [
+      "Pedro González"
+    ],
+    "rival": "Boca Juniors",
+    "panels": [
+      {
+        "caption": "Penúltima fecha del Metropolitano 1977: River visita a Boca y tiene que ganar sí o sí.",
+        "setting": {
+          "label": "La Bombonera",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River",
+          "Boca Juniors"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Un empate no alcanza y la presión pesa sobre el equipo.",
+        "setting": {
+          "label": "La tribuna",
+          "kind": "tribuna"
+        },
+        "figures": [
+          "Hinchas"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "En el último minuto, Pedro González clava un golazo en La Bombonera.",
+        "setting": {
+          "label": "La Bombonera",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Pedro González"
+        ],
+        "tone": "drama"
+      },
+      {
+        "caption": "River se consagra campeón del Metropolitano 1977.",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "River",
+          "Pedro González"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "who-scored",
+      "question": "¿Quién marcó el golazo del último minuto en La Bombonera que encaminó el Metropolitano 1977 de River?",
+      "options": [
+        "Pedro González",
+        "Daniel Passarella",
+        "Leopoldo Luque",
+        "Norberto Alonso"
+      ],
+      "answerIndex": 0
+    },
+    "sources": [
+      {
+        "label": "ESPN Deportes - Los partidos históricos de River en La Bombonera",
+        "url": "https://espndeportes.espn.com/futbol/copa-libertadores/nota/_/id/4948130/los-partidos-historicos-de-river-en-la-bombonera"
+      },
+      {
+        "label": "La Página Millonaria - El único campeón visitante",
+        "url": "https://lapaginamillonaria.com/riverplate/El-unico-campeon-visitante-la-memoria-quotQuemadaquot-20100813-0013.html"
+      },
+      {
+        "label": "La Página Millonaria - 1970-1979",
+        "url": "https://lapaginamillonaria.com/riverplate/1970-1979-20090228-0007.html"
+      }
+    ],
+    "verified": true,
+    "order": 4
+  },
+  {
     "id": "metropolitano-1979",
     "eraId": "era-labruna",
-    "order": 4,
+    "order": 5,
     "title": "7-1 a Vélez",
     "date": "1979-08",
     "headline": "River aplasta a Vélez en la final del Metropolitano",
@@ -291,8 +378,8 @@
       {
         "caption": "En agosto de 1979 River juega la final del Metropolitano ante Vélez.",
         "setting": {
-          "label": "La cancha",
-          "kind": "cancha"
+          "label": "La ciudad",
+          "kind": "ciudad"
         },
         "figures": [
           "River",
@@ -303,7 +390,7 @@
       {
         "caption": "En Liniers gana 2-0.",
         "setting": {
-          "label": "Vélez",
+          "label": "José Amalfitani",
           "kind": "cancha"
         },
         "figures": [
@@ -364,7 +451,7 @@
   {
     "id": "nacional-1979",
     "eraId": "era-labruna",
-    "order": 5,
+    "order": 6,
     "title": "El gol de Alonso en Santa Fe",
     "date": "1979",
     "headline": "River se queda con el Nacional por gol de visitante y es bicampeón del año",
@@ -378,8 +465,8 @@
       {
         "caption": "River llega a la final del Nacional 1979 con Unión de Santa Fe.",
         "setting": {
-          "label": "La cancha",
-          "kind": "cancha"
+          "label": "La ciudad",
+          "kind": "ciudad"
         },
         "figures": [
           "River",
@@ -402,7 +489,7 @@
       {
         "caption": "Ya sobre el final en Santa Fe, aparece el gol de Alonso.",
         "setting": {
-          "label": "Santa Fe",
+          "label": "15 de Abril",
           "kind": "cancha"
         },
         "figures": [
@@ -448,9 +535,101 @@
     "imageAlt": "River bicampeón 1979"
   },
   {
+    "id": "river-5-2-boca-1980",
+    "eraId": "era-labruna",
+    "title": "El 5-2 en La Bombonera",
+    "date": "1980-03-02",
+    "headline": "River le gana 5-2 a Boca en su propia cancha",
+    "description": "El 2 de marzo de 1980, por la cuarta fecha, River goleó 5-2 a Boca en La Bombonera: dos goles de Ramón Díaz, dos de Juan Ramón Carrasco y uno de Oscar Ortiz. Para Boca descontaron Randazzo y Perotti. Es la mayor goleada de River en cancha de Boca.",
+    "protagonists": [
+      "Ramón Díaz",
+      "Juan Ramón Carrasco",
+      "Oscar Ortiz"
+    ],
+    "rival": "Boca Juniors",
+    "result": "Boca Juniors 2-5 River Plate",
+    "panels": [
+      {
+        "caption": "Cuarta fecha de 1980: River visita a Boca en La Bombonera.",
+        "setting": {
+          "label": "La Bombonera",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River",
+          "Boca Juniors"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Ramón Díaz abre el marcador.",
+        "setting": {
+          "label": "La Bombonera",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Ramón Díaz"
+        ],
+        "tone": "drama"
+      },
+      {
+        "caption": "Carrasco convierte dos y Ortiz otro: River golpea y Boca queda groggy.",
+        "setting": {
+          "label": "La Bombonera",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Juan Ramón Carrasco",
+          "Oscar Ortiz"
+        ],
+        "tone": "gloria"
+      },
+      {
+        "caption": "Díaz marca su segundo y River se va con un 5-2 histórico.",
+        "setting": {
+          "label": "La Bombonera",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Ramón Díaz",
+          "River"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Cuál fue el resultado de River en La Bombonera el 2 de marzo de 1980?",
+      "options": [
+        "Boca 2-5 River",
+        "Boca 1-4 River",
+        "Boca 0-3 River",
+        "Boca 2-4 River"
+      ],
+      "answerIndex": 0,
+      "explanation": "River goleó 5-2: Díaz x2, Carrasco x2 y Ortiz."
+    },
+    "sources": [
+      {
+        "label": "ESPN Deportes - Los partidos históricos de River en La Bombonera",
+        "url": "https://espndeportes.espn.com/futbol/copa-libertadores/nota/_/id/4948130/los-partidos-historicos-de-river-en-la-bombonera"
+      },
+      {
+        "label": "La Página Millonaria - El baile inolvidable de 1980",
+        "url": "https://lapaginamillonaria.com/riverplate/El-baile-inolvidable-de-1980-20100302-0002.html"
+      },
+      {
+        "label": "La Página Millonaria - El recuerdo de la mayor goleada en La Boca",
+        "url": "https://lapaginamillonaria.com/riverplate/El-recuerdo-de-la-mayor-goleada-en-La-Boca-20150302-0006.html"
+      }
+    ],
+    "verified": true,
+    "order": 7
+  },
+  {
     "id": "balance-labruna",
     "eraId": "era-labruna",
-    "order": 6,
+    "order": 8,
     "title": "Seis campeonatos y una cuenta pendiente",
     "date": "1981",
     "headline": "Labruna se va de River tras seis títulos de liga",
@@ -462,8 +641,8 @@
       {
         "caption": "Entre 1975 y 1980, Labruna conquista seis campeonatos de liga con River.",
         "setting": {
-          "label": "La cancha",
-          "kind": "cancha"
+          "label": "La sede",
+          "kind": "sede"
         },
         "figures": [
           "River",
@@ -496,8 +675,8 @@
       {
         "caption": "Se va con el club en lo más alto, pero con la Libertadores todavía sin ganar.",
         "setting": {
-          "label": "La cancha",
-          "kind": "cancha"
+          "label": "La tribuna",
+          "kind": "tribuna"
         },
         "figures": [
           "Ángel Labruna"

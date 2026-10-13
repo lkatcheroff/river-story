@@ -128,7 +128,7 @@ function EraScenes({ era, go }: { era: Era; go: Go }) {
           <li key={s.id}>
             <div className="flex items-stretch gap-2">
               <button onClick={() => go({ name: "scene", eraId: era.id, index: i })} className="comic-card min-w-0 flex-1">
-                <div className="font-display text-2xl">{s.id in completed ? (completed[s.id] ? "⭐ " : "✅ ") : ""}{s.title}</div>
+                <div className="font-display text-2xl">{s.id in completed ? (completed[s.id] ? "⭐ " : "✅ ") : ""}{s.panels?.some((p) => p.setting.kind === "jugada") ? "⚽ " : ""}{s.title}</div>
                 <div className="text-xs text-neutral-600">{s.date} · {s.headline}</div>
               </button>
               {s.id in completed && (

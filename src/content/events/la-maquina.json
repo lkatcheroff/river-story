@@ -1,8 +1,106 @@
 [
   {
-    "id": "campeon-1941",
+    "id": "superclasico-5-1-boca-1941",
     "eraId": "la-maquina",
     "order": 1,
+    "title": "El 5 a 1 a Boca",
+    "date": "1941-10-19",
+    "headline": "La Máquina golea 5 a 1 a Boca en el Monumental",
+    "description": "El 19 de octubre de 1941, por la fecha 29, River goleó 5 a 1 a Boca en el Monumental. Labruna abrió a los 11, Moreno marcó a los 39, Deambrosi hizo dos (43 y 56) y Pedernera puso el quinto a los 75. Mario Boyé descontó sobre el final. A la fecha siguiente, River se consagró campeón.",
+    "protagonists": [
+      "Ángel Labruna",
+      "José Manuel Moreno",
+      "Aristóbulo Deambrosi",
+      "Adolfo Pedernera",
+      "Mario Boyé"
+    ],
+    "rival": "Boca Juniors",
+    "result": "River Plate 5-1 Boca Juniors",
+    "panels": [
+      {
+        "caption": "Superclásico en el Monumental: Labruna abre la cuenta a los 11 minutos.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Ángel Labruna",
+          "Boca Juniors"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Moreno marca a los 39 y Deambrosi hace dos, a los 43 y a los 56.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "José Manuel Moreno",
+          "Aristóbulo Deambrosi"
+        ],
+        "tone": "gloria"
+      },
+      {
+        "caption": "Pedernera pone el quinto a los 75 y Boyé descuenta sobre el final.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Adolfo Pedernera",
+          "Mario Boyé"
+        ],
+        "tone": "drama"
+      },
+      {
+        "caption": "River manda 5 a 1 y a la fecha siguiente sería campeón.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Cuál fue el resultado del superclásico River-Boca del 19 de octubre de 1941 en el Monumental?",
+      "options": [
+        "River 5-1 Boca",
+        "River 3-0 Boca",
+        "River 4-1 Boca",
+        "River 6-2 Boca"
+      ],
+      "answerIndex": 0,
+      "explanation": "River ganó 5 a 1, con goles de Labruna, Moreno, Deambrosi (2) y Pedernera."
+    },
+    "sources": [
+      {
+        "label": "RSSSF - Superclásicos de la era profesional",
+        "url": "https://rsssf.org/tablesb/bocariverpro.html"
+      },
+      {
+        "label": "442 Perfil - Mayores goleadas del superclásico",
+        "url": "https://442.perfil.com/noticias/futbol/las-10-mayores-goleadas-en-la-historia-del-superclasico-argentino.phtml"
+      },
+      {
+        "label": "ESPN - Superclásicos inolvidables en el Monumental",
+        "url": "https://espndeportes.espn.com/futbol/argentina/nota/_/id/4993140/superclasicos-inolvidables-en-el-monumental"
+      },
+      {
+        "label": "Wikipedia - Campeonato de Primera División 1941",
+        "url": "https://es.wikipedia.org/wiki/Campeonato_de_Primera_Divisi%C3%B3n_1941_(Argentina)"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "campeon-1941",
+    "eraId": "la-maquina",
+    "order": 2,
     "title": "Campeón de 1941",
     "date": "1941",
     "headline": "Se define en La Plata, bajo la lluvia",
@@ -27,7 +125,7 @@
       {
         "caption": "River visita a Estudiantes de La Plata con el título en juego.",
         "setting": {
-          "label": "La Plata",
+          "label": "Cancha de Estudiantes (1 y 57)",
           "kind": "cancha"
         },
         "figures": [
@@ -39,7 +137,7 @@
       {
         "caption": "Gana 3 a 1 como visitante y se consagra campeón.",
         "setting": {
-          "label": "La Plata",
+          "label": "Cancha de Estudiantes (1 y 57)",
           "kind": "cancha"
         },
         "figures": [
@@ -83,6 +181,10 @@
       {
         "label": "Wikipedia (en): La Máquina",
         "url": "https://en.wikipedia.org/wiki/La_M%C3%A1quina"
+      },
+      {
+        "label": "Wikipedia - Estadio Jorge Luis Hirschi",
+        "url": "https://en.wikipedia.org/wiki/Estadio_Jorge_Luis_Hirschi"
       }
     ],
     "verified": true
@@ -90,7 +192,7 @@
   {
     "id": "nace-la-maquina-1942",
     "eraId": "la-maquina",
-    "order": 2,
+    "order": 3,
     "title": "Nace el apodo",
     "date": "1942",
     "headline": "6 a 2 a Chacarita y Borocotó bautiza al equipo",
@@ -106,9 +208,9 @@
     "result": "River 6-2 Chacarita Juniors",
     "panels": [
       {
-        "caption": "En 1942, por la octava fecha, River recibe a Chacarita Juniors.",
+        "caption": "En 1942, por la octava fecha, River visita a Chacarita Juniors.",
         "setting": {
-          "label": "La cancha",
+          "label": "Cancha de Chacarita (Villa Crespo)",
           "kind": "cancha"
         },
         "figures": [
@@ -120,7 +222,7 @@
       {
         "caption": "River le gana 6 a 2 a Chacarita Juniors.",
         "setting": {
-          "label": "La cancha",
+          "label": "Cancha de Chacarita (Villa Crespo)",
           "kind": "cancha"
         },
         "figures": [
@@ -179,6 +281,14 @@
       {
         "label": "Wikipedia: Campeonato de Primera División 1942",
         "url": "https://es.wikipedia.org/wiki/Campeonato_de_Primera_Divisi%C3%B3n_1942_(Argentina)"
+      },
+      {
+        "label": "RSSSF - Argentina 1942",
+        "url": "https://rsssf.org/tablesa/arg42.html"
+      },
+      {
+        "label": "Wikipedia - Estadio de Chacarita Juniors",
+        "url": "https://en.wikipedia.org/wiki/Estadio_de_Chacarita_Juniors"
       }
     ],
     "verified": true
@@ -186,7 +296,7 @@
   {
     "id": "debut-loustau-1942",
     "eraId": "la-maquina",
-    "order": 3,
+    "order": 4,
     "title": "Debuta Loustau",
     "date": "1942-06-28",
     "headline": "Por primera vez, los cinco juntos",
@@ -274,9 +384,92 @@
     "verified": true
   },
   {
+    "id": "superclasico-4-0-boca-1942",
+    "eraId": "la-maquina",
+    "order": 5,
+    "title": "Otro baile a Boca",
+    "date": "1942-07-19",
+    "headline": "River le gana 4 a 0 a Boca en el Monumental",
+    "description": "El 19 de julio de 1942, por la fecha 13, River goleó 4 a 0 a Boca en el Monumental. Deambrosi abrió a los 21, Labruna hizo dos (46 y 71) y Moreno puso el tercero a los 69. Fue el segundo baile consecutivo de La Máquina a Boca en el Monumental, tras el 5 a 1 de 1941.",
+    "protagonists": [
+      "Aristóbulo Deambrosi",
+      "Ángel Labruna",
+      "José Manuel Moreno"
+    ],
+    "rival": "Boca Juniors",
+    "result": "River Plate 4-0 Boca Juniors",
+    "panels": [
+      {
+        "caption": "Monumental, 19 de julio de 1942: Deambrosi abre la cuenta a los 21.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Aristóbulo Deambrosi",
+          "Boca Juniors"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Labruna marca a los 46 y Moreno a los 69.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Ángel Labruna",
+          "José Manuel Moreno"
+        ],
+        "tone": "gloria"
+      },
+      {
+        "caption": "Labruna aparece otra vez a los 71 y cierra el 4 a 0.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Ángel Labruna"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "who-scored",
+      "question": "¿Quién hizo dos goles en el 4-0 de River a Boca del 19 de julio de 1942?",
+      "options": [
+        "Ángel Labruna",
+        "Adolfo Pedernera",
+        "Aristóbulo Deambrosi",
+        "Félix Loustau"
+      ],
+      "answerIndex": 0
+    },
+    "sources": [
+      {
+        "label": "RSSSF - Superclásicos de la era profesional",
+        "url": "https://rsssf.org/tablesb/bocariverpro.html"
+      },
+      {
+        "label": "442 Perfil - Mayores goleadas del superclásico",
+        "url": "https://442.perfil.com/noticias/futbol/las-10-mayores-goleadas-en-la-historia-del-superclasico-argentino.phtml"
+      },
+      {
+        "label": "Wikipedia - Campeonato de Primera División 1942",
+        "url": "https://es.wikipedia.org/wiki/Campeonato_de_Primera_Divisi%C3%B3n_1942_(Argentina)"
+      },
+      {
+        "label": "Trivela - Boca x River en goles icónicos",
+        "url": "https://trivela.com.br/america-do-sul/argentina/historia-de-boca-x-river-no-seculo-xx-recontada-atraves-de-gols-iconicos-e-ou-grandes-idolos/"
+      }
+    ],
+    "verified": true
+  },
+  {
     "id": "campeon-1942",
     "eraId": "la-maquina",
-    "order": 4,
+    "order": 6,
     "title": "Bicampeón de la Máquina",
     "date": "1942",
     "headline": "Un 2 a 2 con Boca alcanza para repetir",
@@ -299,7 +492,7 @@
       {
         "caption": "En la fecha 28 de 30 visita a Boca Juniors.",
         "setting": {
-          "label": "La cancha",
+          "label": "La Bombonera",
           "kind": "cancha"
         },
         "figures": [
@@ -311,7 +504,7 @@
       {
         "caption": "El 2 a 2 como visitante alcanza para ser campeón con dos fechas de anticipación.",
         "setting": {
-          "label": "La cancha",
+          "label": "La Bombonera",
           "kind": "cancha"
         },
         "figures": [
@@ -351,6 +544,14 @@
       {
         "label": "RSSSF: Argentina - Vueltas Olímpicas in League",
         "url": "https://rsssf.org/miscellaneous/arg-honourround.html"
+      },
+      {
+        "label": "Infobae - Hace 70 años River daba la primera vuelta en La Bombonera",
+        "url": "https://www.infobae.com/2012/11/07/680135-hace-70-anos-river-daba-la-primera-las-tres-vueltas-la-bombonera/"
+      },
+      {
+        "label": "La Página Millonaria - La inolvidable vuelta de La Máquina en La Bombonera",
+        "url": "https://lapaginamillonaria.com/riverplate/La-inolvidable-vuelta-de-La-Maquina-en-La-Bombonera-20121108-0004.html"
       }
     ],
     "verified": true
@@ -358,7 +559,7 @@
   {
     "id": "campeon-1945",
     "eraId": "la-maquina",
-    "order": 5,
+    "order": 7,
     "title": "Campeón de 1945",
     "date": "1945",
     "headline": "Labruna goleador y título en el Monumental",
@@ -446,7 +647,7 @@
   {
     "id": "fin-de-la-maquina-1946-47",
     "eraId": "la-maquina",
-    "order": 6,
+    "order": 8,
     "title": "El último partido juntos",
     "date": "1946-11-17",
     "headline": "Un 2 a 2 con Huracán cierra el quinteto",
@@ -464,7 +665,7 @@
       {
         "caption": "El 17 de noviembre de 1946 River empata 2 a 2 con Huracán.",
         "setting": {
-          "label": "La cancha",
+          "label": "El Gasómetro (San Lorenzo)",
           "kind": "cancha"
         },
         "figures": [
@@ -476,7 +677,7 @@
       {
         "caption": "Es el último partido con la delantera completa.",
         "setting": {
-          "label": "La cancha",
+          "label": "El Gasómetro (San Lorenzo)",
           "kind": "cancha"
         },
         "figures": [
@@ -541,6 +742,10 @@
       {
         "label": "La Página Millonaria: Pedernera, sinónimo de talento y de River",
         "url": "https://lapaginamillonaria.com/riverplate/Pedernera-sinonimo-de-talento-y-de-River-20151115-0010.html"
+      },
+      {
+        "label": "Wikipedia - Estadio Tomás Adolfo Ducó",
+        "url": "https://en.wikipedia.org/wiki/Estadio_Tom%C3%A1s_Adolfo_Duc%C3%B3"
       }
     ],
     "verified": true

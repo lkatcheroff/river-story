@@ -86,13 +86,13 @@ describe("análisis de casos", () => {
 
   it("combinación repetida que no existe en la historia", () => {
     const r = run([S("Cali", ["Z"]), S("Cali", ["Z"]), empty]);
-    expect(r[0].message).toMatch(/Repetiste el mismo escenario/);
+    expect(r[0].message).toMatch(/Repetiste la misma combinación/);
   });
 
   it("reparto incompleto, sobrante y escenario equivocado", () => {
     expect(run([S("Monumental", ["A"]), empty, empty])[0].message).toMatch(/falta 1/);
     expect(run([empty, S("La sede", ["A", "B"]), empty])[1].message).toMatch(/sobra 1/);
-    expect(run([S("Cali", ["A", "B"]), empty, empty])[0].message).toMatch(/reparto es el correcto, pero el lugar no es este/i);
+    expect(run([S("Cali", ["A", "B"]), empty, empty])[0].message).toMatch(/personajes son los correctos, pero el lugar no es este/i);
   });
 
   it("se parece a otro momento", () => {
@@ -119,9 +119,9 @@ describe("resumen y pistas", () => {
 
 describe("señuelos verosímiles", () => {
   const sc = (id: string, date: string, ps: Panel[], rival?: string) => ({ id, date, panels: ps, rival }) as unknown as Scene;
-  const old = sc("viejo", "1932", [mk("La sede", ["Bernabé"]), mk("La cancha", ["River"]), mk("La ciudad", ["Peñarol"])]);
-  const near = sc("cercano", "1938", [mk("Monumental", ["Moreno"]), mk("La cancha", ["Peucelle"]), mk("La ciudad", ["River"])]);
-  const far = sc("lejano", "2018", [mk("Bernabéu", ["Pratto"]), mk("La cancha", ["Boca Juniors"]), mk("La tribuna", ["Hinchas"])]);
+  const old = sc("viejo", "1932", [mk("La sede", ["Bernabé"]), mk("Gasómetro", ["River"]), mk("La ciudad", ["Peñarol"])]);
+  const near = sc("cercano", "1938", [mk("Monumental", ["Moreno"]), mk("Gasómetro", ["Peucelle"]), mk("La ciudad", ["River"])]);
+  const far = sc("lejano", "2018", [mk("Bernabéu", ["Pratto"]), mk("Bombonera", ["Boca Juniors"]), mk("La tribuna", ["Hinchas"])]);
   const reg = buildRegistry([old, near, far]);
   it("prefiere personajes y lugares de la misma época", () => {
     const p = buildPieces(old, reg, () => 0);
@@ -130,8 +130,48 @@ describe("señuelos verosímiles", () => {
     expect(p.settings).toContain("Monumental");
     expect(p.settings).not.toContain("Bernabéu");
   });
-  it("los lugares genéricos siempre están disponibles", () => {
+  it("los lugares que no son estadio siempre están disponibles", () => {
     const p = buildPieces(old, reg, () => 0);
-    expect(p.settings).toEqual(expect.arrayContaining(["La cancha", "La sede", "La ciudad", "La tribuna"]));
+    expect(p.settings).toEqual(expect.arrayContaining(["La sede", "La ciudad", "La tribuna"]));
+    expect(p.settings).not.toContain("La cancha");
+  });
+});
+
+describe("jugadas: acciones con jugadores", () => {
+  const act = (label: string, figures: string[]): Panel => ({ caption: "x", tone: "gloria", setting: { label, kind: "jugada" }, figures });
+  const play = [act("Pase", ["Quintero", "Pity"]), act("Tiro al arco", ["Pity", "Arco"]), act("Gol", ["Pity", "Arco"])];
+  const S = (setting: string | null, cast: string[]) => ({ setting, cast });
+  const run = (slots: ReturnType<typeof S>[]) => analyze(play, slots);
+
+  it("el orden en un pase importa: quien da y quien recibe", () => {
+    const ok = run([S("Pase", ["Quintero", "Pity"]), S(null, []), S(null, [])])[0];
+    expect(ok.verdict).toBe("exact");
+    const rev = run([S("Pase", ["Pity", "Quintero"]), S(null, []), S(null, [])])[0];
+    expect(rev.verdict).toBe("partial");
+    expect(rev.message).toMatch(/al revés.*quién da y quién recibe/);
+  });
+  it("tiro y gol con el mismo reparto se distinguen por la acción", () => {
+    const r = run([S(null, []), S("Gol", ["Pity", "Arco"]), S("Tiro al arco", ["Pity", "Arco"])]);
+    expect(r[1].verdict).toBe("swapped");
+    expect(r[2].verdict).toBe("swapped");
+  });
+  it("la devolución habla de acción y jugadores", () => {
+    const r = run([S("Centro", ["Quintero", "Pity"]), S(null, []), S(null, [])])[0];
+    expect(r.message).toMatch(/la acción no es esta/);
+    expect(run([S(null, []), S(null, []), S(null, [])])[0].message).toBe("Vacía: falta la acción y los jugadores.");
+  });
+  it("la bandeja de una jugada trae todas las acciones y el arco", () => {
+    const scene = { id: "j", date: "2018", panels: play } as unknown as Scene;
+    const reg = buildRegistry([scene]);
+    const p = buildPieces(scene, reg, () => 0);
+    expect(p.settings).toEqual(["Pase", "Centro", "Gambeta", "Tiro al arco", "Cabezazo", "Penal", "Gol"]);
+    expect(p.cast).toEqual(expect.arrayContaining(["Quintero", "Pity", "Arco"]));
+  });
+  it("las escenas normales no reciben acciones ni arco como señuelo", () => {
+    const normal = { id: "n", date: "2018", panels: [mk("Monumental", ["A"]), mk("La sede", ["B"]), mk("La ciudad", ["C"])] } as unknown as Scene;
+    const reg = buildRegistry([normal, { id: "j", date: "2018", panels: play } as unknown as Scene]);
+    const p = buildPieces(normal, reg, () => 0);
+    expect(p.settings).not.toContain("Pase");
+    expect(p.cast).not.toContain("Arco");
   });
 });

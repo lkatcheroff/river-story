@@ -38,8 +38,8 @@
       {
         "caption": "Dice que es un privilegio ocupar ese lugar y que quiere un equipo protagonista, dueño de la pelota.",
         "setting": {
-          "label": "La cancha",
-          "kind": "cancha"
+          "label": "La tribuna",
+          "kind": "tribuna"
         },
         "figures": [
           "Marcelo Gallardo"
@@ -87,9 +87,92 @@
     "verified": true
   },
   {
-    "id": "sudamericana-2014",
+    "id": "pisculichi-boca-2014",
     "eraId": "era-gallardo",
     "order": 2,
+    "title": "El gol de Pisculichi a Boca",
+    "date": "2014-11-27",
+    "headline": "River 1-0 Boca y a la final de la Sudamericana",
+    "description": "El 27 de noviembre de 2014, en un Monumental colmado de hinchas, River recibió a Boca en la vuelta de la semifinal de la Copa Sudamericana. A los 16 minutos, Leonardo Pisculichi marcó con un disparo rasante el único gol del partido. River pasó a la final, frente a Atlético Nacional.",
+    "protagonists": [
+      "Leonardo Pisculichi"
+    ],
+    "rival": "Boca Juniors",
+    "result": "River Plate 1-0 Boca Juniors",
+    "panels": [
+      {
+        "caption": "El 27 de noviembre de 2014, el Monumental recibe la vuelta de la semifinal de la Sudamericana ante Boca.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River",
+          "Boca Juniors"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "A los 16 minutos, Leonardo Pisculichi marca con un disparo rasante.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Leonardo Pisculichi"
+        ],
+        "tone": "gloria"
+      },
+      {
+        "caption": "El 1-0 es el único gol de la noche en un Monumental colmado de hinchas.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Hinchas"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "River pasa a la final de la Sudamericana, frente a Atlético Nacional.",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "River"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "who-scored",
+      "question": "¿Quién hizo el gol del 1-0 a Boca en la vuelta de la semifinal de la Sudamericana 2014?",
+      "options": [
+        "Leonardo Pisculichi",
+        "Teófilo Gutiérrez",
+        "Carlos Sánchez",
+        "Rodrigo Mora"
+      ],
+      "answerIndex": 0
+    },
+    "sources": [
+      {
+        "label": "Cooperativa: River Plate es el segundo finalista de la Sudamericana",
+        "url": "https://cooperativa.cl/noticias/deportes/futbol/copa-sudamericana/river-plate-es-el-segundo-finalista-de-la-copa-sudamericana-tras/2014-11-27/224543.html"
+      },
+      {
+        "label": "La Página Millonaria: Pisculichi y su gol icónico a Boca",
+        "url": "https://lapaginamillonaria.com/river-plate/pisculichi-y-el-emotivo-recuerdo-a-10-anos-de-su-gol-iconico-a-boca-ese-ruido-increible-de-los-hinchas"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "sudamericana-2014",
+    "eraId": "era-gallardo",
+    "order": 3,
     "title": "Campeón de la Sudamericana",
     "date": "2014-12-10",
     "headline": "River 2-0 Atlético Nacional en el Monumental",
@@ -106,7 +189,7 @@
       {
         "caption": "En la final de la Sudamericana, River y Atlético Nacional habían empatado 1-1 en Medellín.",
         "setting": {
-          "label": "Medellín",
+          "label": "Atanasio Girardot",
           "kind": "cancha"
         },
         "figures": [
@@ -178,7 +261,7 @@
   {
     "id": "libertadores-2015",
     "eraId": "era-gallardo",
-    "order": 3,
+    "order": 4,
     "title": "La tercera Libertadores",
     "date": "2015-08-05",
     "headline": "River 3-0 Tigres en el Monumental",
@@ -195,7 +278,7 @@
       {
         "caption": "La ida en México contra Tigres había terminado 0-0.",
         "setting": {
-          "label": "México",
+          "label": "Estadio Universitario",
           "kind": "cancha"
         },
         "figures": [
@@ -265,7 +348,7 @@
   {
     "id": "copa-argentina-2016",
     "eraId": "era-gallardo",
-    "order": 4,
+    "order": 5,
     "title": "Una final para el infarto",
     "date": "2016-12",
     "headline": "River 4-3 Rosario Central en Córdoba",
@@ -280,7 +363,7 @@
       {
         "caption": "En diciembre de 2016, en el Kempes de Córdoba, River y Rosario Central juegan la final de la Copa Argentina.",
         "setting": {
-          "label": "Kempes",
+          "label": "Mario Alberto Kempes",
           "kind": "cancha"
         },
         "figures": [
@@ -292,7 +375,7 @@
       {
         "caption": "Es una final de siete goles.",
         "setting": {
-          "label": "Kempes",
+          "label": "Mario Alberto Kempes",
           "kind": "cancha"
         },
         "figures": [
@@ -303,7 +386,7 @@
       {
         "caption": "Lucas Alario hace tres, dos de ellos de penal, e Iván Alonso pone el cuarto.",
         "setting": {
-          "label": "Kempes",
+          "label": "Mario Alberto Kempes",
           "kind": "cancha"
         },
         "figures": [
@@ -353,9 +436,182 @@
     "verified": true
   },
   {
+    "id": "supercopa-argentina-2018-boca",
+    "eraId": "era-gallardo",
+    "order": 6,
+    "title": "Supercopa en Mendoza",
+    "date": "2018-03-14",
+    "headline": "River 2-0 Boca: la primera Supercopa Argentina",
+    "description": "El 14 de marzo de 2018, en el estadio Malvinas Argentinas de Mendoza, River le ganó 2-0 a Boca y se quedó con su primera Supercopa Argentina. Gonzalo Martínez abrió de penal a los 18 minutos e Ignacio Scocco puso el segundo en el complemento.",
+    "protagonists": [
+      "Gonzalo Martínez",
+      "Ignacio Scocco"
+    ],
+    "rival": "Boca Juniors",
+    "result": "Boca Juniors 0-2 River Plate",
+    "panels": [
+      {
+        "caption": "El 14 de marzo de 2018, River y Boca definen la Supercopa Argentina en Mendoza.",
+        "setting": {
+          "label": "Malvinas Argentinas",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River",
+          "Boca Juniors"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "A los 18 minutos, Gonzalo Martínez abre el marcador de penal.",
+        "setting": {
+          "label": "Malvinas Argentinas",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Gonzalo Martínez"
+        ],
+        "tone": "gloria"
+      },
+      {
+        "caption": "En el segundo tiempo, Ignacio Scocco marca el 2-0.",
+        "setting": {
+          "label": "Malvinas Argentinas",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Ignacio Scocco"
+        ],
+        "tone": "gloria"
+      },
+      {
+        "caption": "River gana 2-0 y suma su primera Supercopa Argentina.",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "River"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "who-scored",
+      "question": "¿Quién convirtió el penal del 1-0 a los 18 minutos en la Supercopa Argentina 2018 ante Boca?",
+      "options": [
+        "Gonzalo Martínez",
+        "Ignacio Scocco",
+        "Lucas Pratto",
+        "Rafael Santos Borré"
+      ],
+      "answerIndex": 0
+    },
+    "sources": [
+      {
+        "label": "442 Perfil: River le ganó a Boca la Supercopa Argentina",
+        "url": "https://442.perfil.com/noticias/futbol/2018-03-14-589763-river-le-gano-a-boca-la-supercopa-argentina.phtml"
+      },
+      {
+        "label": "Wikipedia - 2017 Supercopa Argentina",
+        "url": "https://en.wikipedia.org/wiki/2017_Supercopa_Argentina"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "libertadores-2018-gremio",
+    "eraId": "era-gallardo",
+    "order": 7,
+    "title": "Remontada en Porto Alegre",
+    "date": "2018-10-30",
+    "headline": "Gremio 1-2 River: Borré y un penal de Martínez dan vuelta la semifinal",
+    "description": "El 30 de octubre de 2018, en el Arena do Grêmio, River necesitaba dar vuelta la serie tras caer 1-0 en la ida. Gremio se puso en ventaja en el primer tiempo; en el segundo, Rafael Santos Borré empató de cabeza y Gonzalo Martínez convirtió un penal cobrado tras revisar el VAR. El 2-1 dejó la serie 2-2 y River pasó a la final por los goles de visitante.",
+    "protagonists": [
+      "Rafael Santos Borré",
+      "Gonzalo Martínez"
+    ],
+    "rival": "Gremio",
+    "result": "Gremio 1-2 River Plate",
+    "panels": [
+      {
+        "caption": "El 30 de octubre de 2018, River visita a Gremio en Porto Alegre y necesita dar vuelta la serie.",
+        "setting": {
+          "label": "Arena do Grêmio",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River",
+          "Gremio"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Gremio se pone en ventaja en el primer tiempo.",
+        "setting": {
+          "label": "Arena do Grêmio",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Gremio"
+        ],
+        "tone": "drama"
+      },
+      {
+        "caption": "En el segundo tiempo, Rafael Santos Borré empata de cabeza.",
+        "setting": {
+          "label": "Arena do Grêmio",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Rafael Santos Borré"
+        ],
+        "tone": "gloria"
+      },
+      {
+        "caption": "Tras revisar el VAR, penal: Gonzalo Martínez lo convierte y River pasa a la final por goles de visitante.",
+        "setting": {
+          "label": "Arena do Grêmio",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Gonzalo Martínez",
+          "River"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "who-scored",
+      "question": "¿Quién convirtió el penal que dio el 2-1 a River sobre Gremio en la semifinal de la Libertadores 2018?",
+      "options": [
+        "Gonzalo Martínez",
+        "Ignacio Scocco",
+        "Rafael Santos Borré",
+        "Lucas Pratto"
+      ],
+      "answerIndex": 0
+    },
+    "sources": [
+      {
+        "label": "Montevideo Portal: River venció a Gremio 2-1 con un penal del VAR",
+        "url": "https://www.montevideo.com.uy/Deportes/Copa-Libertadores-River-vencio-a-Gremio-2-1-con-un-penal-del-VAR-y-es-finalista-uc700101"
+      },
+      {
+        "label": "La Voz de San Justo: River venció a Gremio",
+        "url": "https://www.lavozdesanjusto.com.ar/river-vencio-a-gremio-y-se-clasifica-a-la-final-de-la-copa-libertadores--49971"
+      },
+      {
+        "label": "La Capital MdP: Hazaña de River",
+        "url": "https://www.lacapitalmdp.com/hazana-de-river-y-clasificacion-a-la-final-de-la-copa-libertadores/"
+      }
+    ],
+    "verified": true
+  },
+  {
     "id": "final-madrid-2018",
     "eraId": "era-gallardo",
-    "order": 5,
+    "order": 8,
     "title": "La final en Madrid",
     "date": "2018-12-09",
     "headline": "River 3-1 Boca en el Bernabéu, tras alargue",
@@ -436,6 +692,94 @@
       {
         "label": "Montevideo Portal: River se coronó campeón al vencer a Boca 3-1",
         "url": "https://www.montevideo.com.uy/Deportes/Libertadores-River-Plate-se-corono-campeon-al-vencer-a-Boca-Juniors-3-1-de-atras-uc704204"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "libertadores-2019-boca-ida",
+    "eraId": "era-gallardo",
+    "order": 9,
+    "title": "Superclásico de semifinal",
+    "date": "2019-10-01",
+    "headline": "River 2-0 Boca en la ida de la semifinal",
+    "description": "El 1 de octubre de 2019, en el Monumental, River le ganó 2-0 a Boca en la ida de la semifinal de la Copa Libertadores. Rafael Santos Borré abrió de penal a los 7 minutos, tras una revisión del VAR, e Ignacio Fernández marcó el segundo en el complemento.",
+    "protagonists": [
+      "Rafael Santos Borré",
+      "Ignacio Fernández"
+    ],
+    "rival": "Boca Juniors",
+    "result": "River Plate 2-0 Boca Juniors",
+    "panels": [
+      {
+        "caption": "El 1 de octubre de 2019, River recibe a Boca en el Monumental por la ida de la semifinal.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River",
+          "Boca Juniors"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "A los 7 minutos, penal tras revisar el VAR: Rafael Santos Borré abre el marcador.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Rafael Santos Borré"
+        ],
+        "tone": "gloria"
+      },
+      {
+        "caption": "En el segundo tiempo, Ignacio Fernández marca el 2-0.",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Ignacio Fernández"
+        ],
+        "tone": "gloria"
+      },
+      {
+        "caption": "River gana 2-0 la ida de la semifinal.",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "River"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "who-scored",
+      "question": "¿Quién convirtió el penal del 1-0 a los 7 minutos en la ida de la semifinal de la Libertadores 2019 ante Boca?",
+      "options": [
+        "Rafael Santos Borré",
+        "Ignacio Fernández",
+        "Matías Suárez",
+        "Exequiel Palacios"
+      ],
+      "answerIndex": 0
+    },
+    "sources": [
+      {
+        "label": "442 Perfil: River-Boca, semifinal ida",
+        "url": "http://442.perfil.com/2019-10-01-680788-river-boca-semifinal-ida-copa-libertadores-monumental"
+      },
+      {
+        "label": "El Heraldo: River 2, Boca 0",
+        "url": "https://www.elheraldo.co/deportes/river-2-boca-0-borre-marco-el-camino-669678"
+      },
+      {
+        "label": "Correo del Sur: River le gana a Boca en la ida",
+        "url": "https://correodelsur.com/deporte/20191001/river-le-gana-a-boca-en-el-partido-de-ida-de-la-semifinal-de-la-libertadores.html"
       }
     ],
     "verified": true

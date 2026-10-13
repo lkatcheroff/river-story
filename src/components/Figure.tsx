@@ -1,5 +1,6 @@
 import { useId } from "react";
 import { lookFor, type Kit, type Look } from "../lib/characters";
+import { GOAL_PIECE } from "../lib/schema";
 
 export type Mood = "idle" | "calma" | "tension" | "drama" | "gloria";
 
@@ -127,10 +128,43 @@ function Crowd({ look, mood }: { look: Look; mood: Mood }) {
 }
 
 /** Personaje dibujado a mano. Los equipos se muestran como un grupo de tres jugadores. */
+function Goal({ mood }: { mood: Mood }) {
+  // Arco con red y arquero (guantes, camiseta verde). En festejo el arquero baja la cabeza.
+  const sad = mood === "gloria";
+  return (
+    <g>
+      <rect x="2" y="12" width="116" height="84" fill="#fff" stroke={OUT} strokeWidth="4" />
+      {Array.from({ length: 10 }).map((_, i) => <line key={`v${i}`} x1={14 + i * 11} y1="12" x2={14 + i * 11} y2="96" stroke="#c9c9c9" strokeWidth="1.2" />)}
+      {Array.from({ length: 6 }).map((_, i) => <line key={`h${i}`} x1="2" y1={26 + i * 12} x2="118" y2={26 + i * 12} stroke="#c9c9c9" strokeWidth="1.2" />)}
+      <g transform={`translate(32 ${sad ? 30 : 22}) scale(.62)`}>
+        <rect x="18" y="82" width="9" height="22" fill="#f3d2a8" stroke={OUT} strokeWidth={SW} />
+        <rect x="33" y="82" width="9" height="22" fill="#f3d2a8" stroke={OUT} strokeWidth={SW} />
+        <path d="M17 70 H43 L41 85 H19 Z" fill="#222" stroke={OUT} strokeWidth={SW} />
+        <path d="M17 35 L6 12 M43 35 L54 12" stroke={OUT} strokeWidth="9.4" strokeLinecap="round" />
+        <path d="M17 35 L6 12 M43 35 L54 12" stroke="#2e9d4f" strokeWidth="6.4" strokeLinecap="round" />
+        <circle cx="6" cy="12" r="5.5" fill="#f5c518" stroke={OUT} strokeWidth="1.6" />
+        <circle cx="54" cy="12" r="5.5" fill="#f5c518" stroke={OUT} strokeWidth="1.6" />
+        <path d="M16 33 Q30 30 44 33 L43 70 L17 70 Z" fill="#2e9d4f" stroke={OUT} strokeWidth={SW} />
+        <circle cx="30" cy="17" r="11" fill="#e8b98a" stroke={OUT} strokeWidth={SW} />
+        <path d="M19.5 14 C19 5 41 5 40.5 14 L37 11 L23 11 Z" fill="#1b1b1b" />
+        <circle cx="26.5" cy="16" r="1.3" fill={OUT} /><circle cx="33.5" cy="16" r="1.3" fill={OUT} />
+        <path d={sad ? "M27 24 Q30 21 33 24" : "M27 23 L33 23"} stroke={OUT} strokeWidth="1.3" fill="none" />
+      </g>
+    </g>
+  );
+}
+
 export function Figure({ name, sceneId, mood = "idle", size = 64, rival }: { name: string; sceneId?: string; mood?: Mood; size?: number; rival?: boolean }) {
   const id = useId().replace(/:/g, "");
   const look = lookFor(name, sceneId);
   void rival;
+  if (name === GOAL_PIECE)
+    return (
+      <svg width={size * 1.5} height={size * 1.2} viewBox="-2 8 124 92" role="img" aria-label="Arco con arquero">
+        <title>Arco con arquero</title>
+        <Goal mood={mood} />
+      </svg>
+    );
   const anim = mood === "gloria" ? "anim-gloria" : mood === "tension" ? "anim-tension" : mood === "drama" ? "anim-drama" : "anim-idle";
   if (look.kind === "team") {
     return (

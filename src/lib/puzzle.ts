@@ -1,5 +1,5 @@
 import { TEAM_NAMES, isRivalName } from "./characters";
-import type { Panel, Scene } from "./schema";
+import { ACTIONS, GOAL_PIECE, ORDERED_ACTIONS, type Panel, type Scene } from "./schema";
 
 export type Slot = { setting: string | null; cast: string[] };
 export type Verdict = "exact" | "duplicate" | "swapped" | "other-moment" | "partial" | "mismatch" | "empty";
@@ -12,7 +12,10 @@ const sameSet = (a: string[], b: string[]) => a.length === b.length && a.every((
 
 export const emptySlots = (n: number): Slot[] => Array.from({ length: n }, () => ({ setting: null, cast: [] }));
 
-const matches = (p: Panel, s: Slot) => s.setting === p.setting.label && sameSet(s.cast, p.figures);
+const isOrdered = (p: Panel) => ORDERED_ACTIONS.includes(p.setting.label);
+const sameSeq = (a: string[], b: string[]) => a.length === b.length && a.every((x, i) => x === b[i]);
+const matches = (p: Panel, s: Slot) =>
+  s.setting === p.setting.label && (isOrdered(p) ? sameSeq(s.cast, p.figures) : sameSet(s.cast, p.figures));
 
 export const isSolved = (verdicts: Verdict[]) => verdicts.every((v) => v === "exact");
 
@@ -29,17 +32,26 @@ const sameSlot = (a: Slot, b: Slot) => a.setting === b.setting && sameSet(a.cast
 function distance(p: Panel, s: Slot) {
   const missing = p.figures.filter((f) => !s.cast.includes(f)).length;
   const extra = s.cast.filter((c) => !p.figures.includes(c)).length;
-  return { missing, extra, settingOk: s.setting === p.setting.label, score: (s.setting === p.setting.label ? 0 : 1) + missing + extra };
+  const settingOk = s.setting === p.setting.label;
+  // Pase y Centro: los jugadores son los correctos pero quien da y quien recibe están al revés.
+  const reversed = isOrdered(p) && missing === 0 && extra === 0 && !sameSeq(s.cast, p.figures);
+  return { missing, extra, settingOk, reversed, score: (settingOk ? 0 : 1) + missing + extra + (reversed ? 1 : 0) };
 }
+
+const isPlay = (p: Panel) => p.setting.kind === "jugada";
+/** Palabras según el tipo de escena: lugar/personajes o acción/jugadores. */
+const W = (p: Panel) => (isPlay(p) ? { place: "la acción", placeIs: "la acción es correcta", placeNot: "la acción no es esta", cast: "jugadores", castShort: "jugador" } : { place: "el lugar", placeIs: "el lugar es correcto", placeNot: "el lugar no es este", cast: "personajes", castShort: "personaje" });
 
 /** Qué tan cerca está una combinación de una viñeta: lugar, personajes bien, faltan y sobran. */
 function detail(p: Panel, s: Slot): string {
   const d = distance(p, s);
+  const w = W(p);
   const right = p.figures.length - d.missing;
-  const place = d.settingOk ? "el lugar es correcto" : "el lugar no es este";
-  if (d.missing === 0 && d.extra === 0) return d.settingOk ? "el lugar y el reparto son correctos." : "el reparto es el correcto, pero el lugar no es este.";
+  const place = d.settingOk ? w.placeIs : w.placeNot;
+  if (d.reversed) return `${d.settingOk ? `${w.placeIs} y los ${w.cast} también` : `${w.cast} correctos`}, pero está al revés: ¿quién da y quién recibe?`;
+  if (d.missing === 0 && d.extra === 0) return d.settingOk ? `${w.place} y los ${w.cast} son correctos.`.replace(/^./, (c) => c) : `los ${w.cast} son los correctos, pero ${w.placeNot}.`;
   const cast = [
-    right ? plural(right, "personaje bien", "personajes bien") : "ningún personaje coincide",
+    right ? plural(right, `${w.castShort} bien`, `${w.cast} bien`) : `ningún ${w.castShort} coincide`,
     d.missing ? `falta${d.missing > 1 ? "n" : ""} ${d.missing}` : "",
     d.extra ? `sobra${d.extra > 1 ? "n" : ""} ${d.extra}` : "",
   ].filter(Boolean);
@@ -54,9 +66,9 @@ export function analyze(panels: Panel[], slots: Slot[]): Analysis[] {
   const dir = (from: number, to: number) => (to < from ? "antes" : "después");
 
   return slots.map((s, i): Analysis => {
-    if (s.setting === null && s.cast.length === 0) return { verdict: "empty", message: "Vacía: falta el escenario y los personajes." };
-    if (s.setting === null) return { verdict: "empty", message: "Falta elegir el escenario." };
-    if (s.cast.length === 0) return { verdict: "empty", message: "Faltan personajes." };
+    if (s.setting === null && s.cast.length === 0) return { verdict: "empty", message: isPlay(panels[0]) ? "Vacía: falta la acción y los jugadores." : "Vacía: falta el escenario y los personajes." };
+    if (s.setting === null) return { verdict: "empty", message: isPlay(panels[0]) ? "Falta elegir la acción." : "Falta elegir el escenario." };
+    if (s.cast.length === 0) return { verdict: "empty", message: isPlay(panels[0]) ? "Faltan jugadores." : "Faltan personajes." };
     if (m[i] === i) return { verdict: "exact", message: panels[i].caption };
 
     if (m[i] >= 0) {
@@ -69,7 +81,7 @@ export function analyze(panels: Panel[], slots: Slot[]): Analysis[] {
     }
 
     const same = slots.findIndex((o, k) => k !== i && !isEmpty(o) && sameSlot(o, s));
-    if (same >= 0) return { verdict: "duplicate", message: `Repetiste el mismo escenario y reparto de la viñeta ${same + 1}. En cada viñeta pasa algo distinto.` };
+    if (same >= 0) return { verdict: "duplicate", message: `Repetiste la misma combinación de la viñeta ${same + 1}. En cada viñeta pasa algo distinto.` };
 
     const own = distance(panels[i], s);
     let best = i;
@@ -107,6 +119,10 @@ export const MAX_CLUE = 3;
 /** Escalera de pistas por viñeta: 1 = guion (qué pasa), 2 = escenario, 3 = personajes. */
 export function clue(panel: Panel, level: 1 | 2 | 3): string {
   if (level === 1) return `Guion: «${panel.caption}»`;
+  if (isPlay(panel)) {
+    if (level === 2) return `Pista: la acción de esta viñeta es «${panel.setting.label}».`;
+    return `Pista: «${panel.setting.label}» con ${isOrdered(panel) ? `${panel.figures[0]} dándosela a ${panel.figures[1]}` : panel.figures.join(" y ")}.`;
+  }
   if (level === 2) return `Pista: esta viñeta transcurre en «${panel.setting.label}».`;
   return `Pista: actúan ${panel.figures.join(", ")} en «${panel.setting.label}».`;
 }
@@ -129,7 +145,8 @@ export type Registry = {
   years: Map<string, number[]>;
 };
 
-const GENERIC_SETTINGS = ["La cancha", "La tribuna", "La sede", "La ciudad"];
+/** Lugares que no son un estadio. Los partidos siempre se ubican en el estadio concreto. */
+const GENERIC_SETTINGS = ["La tribuna", "La sede", "La ciudad"];
 const yearOf = (s: Scene) => Number.parseInt(s.date, 10);
 
 export function buildRegistry(scenes: Scene[]): Registry {
@@ -190,14 +207,21 @@ export function buildPieces(scene: Scene, reg: Registry, rng: () => number = Mat
   const needS = [...new Set(panels.map((p) => p.setting.label))];
   const needC = [...new Set(panels.flatMap((p) => p.figures))];
 
-  // Escenarios: los cuatro genéricos siempre son creíbles + lugares con nombre de la misma época.
+  // Jugadas: siempre todas las acciones, y el arco con su arquero.
+  if (panels.some(isPlay)) {
+    const players = [...reg.cast].filter((k) => !needC.includes(k) && k !== GOAL_PIECE && !isTeam(k) && !reg.rivals.has(k) && k !== "Hinchas" && !k.startsWith("River"));
+    const decoys = nearest(reg, players, year, 4, rng);
+    return { settings: [...ACTIONS] as string[], cast: pick([...new Set([...needC, GOAL_PIECE, ...decoys])], 12, rng) };
+  }
+
+  // Escenarios: los lugares que no son estadio siempre son creíbles + estadios de la misma época.
   const generic = GENERIC_SETTINGS.filter((g) => reg.settings.has(g) && !needS.includes(g));
-  const named = [...reg.settings.keys()].filter((k) => !needS.includes(k) && !GENERIC_SETTINGS.includes(k));
+  const named = [...reg.settings.keys()].filter((k) => !needS.includes(k) && !GENERIC_SETTINGS.includes(k) && reg.settings.get(k) !== "jugada");
   const settings = pick([...needS, ...generic, ...nearest(reg, named, year, 3, rng)], 10, rng);
 
   // Personajes: rivales y compañeros de la misma época, más "Hinchas"/"River" si son creíbles.
   // "River Plate" y "River" son lo mismo: no se ofrecen como señuelo una de la otra.
-  const others = [...reg.cast].filter((k) => !needC.includes(k) && !(k.startsWith("River") && needC.some((n) => n.startsWith("River"))) && k !== "River Plate");
+  const others = [...reg.cast].filter((k) => !needC.includes(k) && k !== GOAL_PIECE && !(k.startsWith("River") && needC.some((n) => n.startsWith("River"))) && k !== "River Plate");
   const rivals = others.filter((k) => reg.rivals.has(k) && isTeam(k));
   const mine = others.filter((k) => !reg.rivals.has(k));
   const decoys = [...nearest(reg, rivals, year, 2, rng), ...nearest(reg, mine, year, 4, rng)];

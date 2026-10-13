@@ -5,8 +5,8 @@ import { ComicScene, type SceneState } from "./ComicScene";
 
 const TUTORIAL_SCENE_ID = "intercontinental-86-tokio";
 const TOKIO = "Estadio Nacional de Tokio";
-const CANCHA = "La cancha";
-const FIXED = { settings: [CANCHA, TOKIO, "La tribuna"], cast: ["River", "Steaua Bucarest", "Antonio Alzamendi", "Hinchas"] };
+const WRONG_PLACE = "Monumental";
+const FIXED = { settings: [WRONG_PLACE, TOKIO, "La tribuna"], cast: ["River", "Steaua Bucarest", "Antonio Alzamendi", "Hinchas"] };
 
 export const TUTORIAL_KEY = "river-story-tutorial-done";
 export const tutorialDone = () => { try { return localStorage.getItem(TUTORIAL_KEY) === "1"; } catch { return false; } };
@@ -105,9 +105,9 @@ const STEPS: Step[] = [
     id: "b1",
     title: "Viñeta 2 · probá equivocarte",
     why: `El guion habla del gol. ${WRONG} Vas a poner un lugar incorrecto a propósito.`,
-    action: "Arrastrá (o tocá) «La cancha» hasta la viñeta 2.",
-    targets: [`setting:${CANCHA}`, "panel:1"],
-    met: ({ s, done }) => done.has("wrong") || s.slots[1].setting === CANCHA,
+    action: "Arrastrá (o tocá) «Monumental» hasta la viñeta 2.",
+    targets: [`setting:${WRONG_PLACE}`, "panel:1"],
+    met: ({ s, done }) => done.has("wrong") || s.slots[1].setting === WRONG_PLACE,
   },
   {
     id: "b2",

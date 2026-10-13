@@ -1,0 +1,858 @@
+[
+  {
+    "id": "jugada-pratto-madrid-2018",
+    "eraId": "era-gallardo",
+    "order": 301,
+    "stadium": "Bernabéu",
+    "title": "El centro atrás que empató en Madrid",
+    "date": "2018-12-09",
+    "headline": "Nacho Fernández centra y Pratto empata la final ante Boca",
+    "description": "En la final de vuelta de la Libertadores 2018, en el Bernabéu, Boca ganaba 1-0. En el segundo tiempo, Ignacio Fernández combinó por la derecha con Exequiel Palacios, tiró el centro atrás y Lucas Pratto definió ante Esteban Andrada para el 1-1. River terminó ganando 3-1 en el alargue.",
+    "protagonists": [
+      "Ignacio Fernández",
+      "Lucas Pratto",
+      "Exequiel Palacios"
+    ],
+    "rival": "Boca Juniors",
+    "result": "River 3-1 Boca Juniors (alargue; global 5-3)",
+    "panels": [
+      {
+        "caption": "Tras combinar con Palacios por la derecha, Nacho Fernández tira el centro atrás al área.",
+        "setting": {
+          "label": "Centro",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Ignacio Fernández",
+          "Lucas Pratto"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Pratto define ante Andrada y es el 1-1 en el Bernabéu.",
+        "setting": {
+          "label": "Gol",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Lucas Pratto",
+          "Arco"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Quién tiró el centro atrás que Pratto convirtió en el 1-1 de la final de Madrid?",
+      "options": [
+        "Ignacio Fernández",
+        "Juan Fernando Quintero",
+        "Gonzalo Martínez",
+        "Leonardo Ponzio"
+      ],
+      "answerIndex": 0,
+      "explanation": "Infobae y Libertad Digital cuentan que fue Nacho Fernández quien puso el centro para Pratto."
+    },
+    "sources": [
+      {
+        "label": "Infobae: el gol de Pratto tras una brillante jugada colectiva",
+        "url": "https://www.infobae.com/deportes-2/2018/12/09/el-gol-de-pratto-que-le-dio-el-empate-a-river-tras-una-brillante-jugada-colectiva/"
+      },
+      {
+        "label": "Infobae: crónica de la final River-Boca en el Bernabéu",
+        "url": "https://www.infobae.com/america/deportes/2018/12/09/river-boca-vuelta-final-copa-libertadores-2018-santiago-bernabeu/"
+      },
+      {
+        "label": "Libertad Digital: Quintero toca el cielo en Madrid",
+        "url": "https://www.libertaddigital.com/deportes/futbol/2018-12-09/quintero-toca-el-cielo-en-madrid-y-proclama-a-river-campeon-en-una-final-epica-3-1-1276629612/"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "jugada-quintero-madrid-2018",
+    "eraId": "era-gallardo",
+    "order": 302,
+    "stadium": "Bernabéu",
+    "title": "El zurdazo de Juanfer en el alargue",
+    "date": "2018-12-09",
+    "headline": "Quintero la clava con la zurda y pone el 2-1 en Madrid",
+    "description": "En el primer tiempo del alargue de la final de la Libertadores 2018, en el Bernabéu, Juan Fernando Quintero recibió en el borde del área y sacó un zurdazo potente que entró en el arco de Esteban Andrada. Era el 2-1 para River, que terminó ganando 3-1 a Boca.",
+    "protagonists": [
+      "Juan Fernando Quintero"
+    ],
+    "rival": "Boca Juniors",
+    "result": "River 3-1 Boca Juniors (alargue; global 5-3)",
+    "panels": [
+      {
+        "caption": "Quintero, en el borde del área, sacude un zurdazo fuerte.",
+        "setting": {
+          "label": "Tiro al arco",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Juan Fernando Quintero",
+          "Arco"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "La pelota entra y River pasa al frente en el alargue.",
+        "setting": {
+          "label": "Gol",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Juan Fernando Quintero",
+          "Arco"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Con qué pierna convirtió Quintero su gol en la final de Madrid?",
+      "options": [
+        "La zurda",
+        "La derecha",
+        "De cabeza",
+        "De taco"
+      ],
+      "answerIndex": 0,
+      "explanation": "Las crónicas coinciden en que fue un zurdazo potente que entró en el arco de Andrada."
+    },
+    "sources": [
+      {
+        "label": "Libertad Digital: Quintero toca el cielo en Madrid",
+        "url": "https://www.libertaddigital.com/deportes/futbol/2018-12-09/quintero-toca-el-cielo-en-madrid-y-proclama-a-river-campeon-en-una-final-epica-3-1-1276629612/"
+      },
+      {
+        "label": "Cadena 3: siete años de la final entre River y Boca",
+        "url": "https://www.cadena3.com/noticia/deportes/se-cumplen-siete-anos-de-la-inolvidable-final-de-copa-libertadores-entre-river-y-boca_495555"
+      },
+      {
+        "label": "Infobae: crónica de la final River-Boca en el Bernabéu",
+        "url": "https://www.infobae.com/america/deportes/2018/12/09/river-boca-vuelta-final-copa-libertadores-2018-santiago-bernabeu/"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "jugada-pity-madrid-2018",
+    "eraId": "era-gallardo",
+    "order": 303,
+    "stadium": "Bernabéu",
+    "title": "La corrida del Pity en el Bernabéu",
+    "date": "2018-12-09",
+    "headline": "Pity Martínez corre solo y sentencia la final con el arco descubierto",
+    "description": "Al final del alargue de la Libertadores 2018, Esteban Andrada había subido a rematar y Boca quedó abierto. Gonzalo Martínez, el Pity, corrió casi media cancha con la pelota y definió de zurda con el arco descubierto. Fue el 3-1 que cerró la final en el Bernabéu.",
+    "protagonists": [
+      "Gonzalo Martínez"
+    ],
+    "rival": "Boca Juniors",
+    "result": "River 3-1 Boca Juniors (alargue; global 5-3)",
+    "panels": [
+      {
+        "caption": "Con Andrada arriba, el Pity corre medio campo y apunta al arco vacío.",
+        "setting": {
+          "label": "Tiro al arco",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Gonzalo Martínez",
+          "Arco"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Define de zurda con el arco descubierto: 3-1 y la Copa es de River.",
+        "setting": {
+          "label": "Gol",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Gonzalo Martínez",
+          "Arco"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Quién había subido al área rival cuando el Pity Martínez salió a definir en Madrid?",
+      "options": [
+        "El arquero de Boca, Esteban Andrada",
+        "El arquero de River, Franco Armani",
+        "Darío Benedetto",
+        "Carlos Tevez"
+      ],
+      "answerIndex": 0,
+      "explanation": "Las crónicas coinciden en que Andrada estaba en el área de River y dejó el arco descubierto."
+    },
+    "sources": [
+      {
+        "label": "Infobae: crónica de la final River-Boca en el Bernabéu",
+        "url": "https://www.infobae.com/america/deportes/2018/12/09/river-boca-vuelta-final-copa-libertadores-2018-santiago-bernabeu/"
+      },
+      {
+        "label": "Cadena 3: siete años de la final entre River y Boca",
+        "url": "https://www.cadena3.com/noticia/deportes/se-cumplen-siete-anos-de-la-inolvidable-final-de-copa-libertadores-entre-river-y-boca_495555"
+      },
+      {
+        "label": "Libertad Digital: Quintero toca el cielo en Madrid",
+        "url": "https://www.libertaddigital.com/deportes/futbol/2018-12-09/quintero-toca-el-cielo-en-madrid-y-proclama-a-river-campeon-en-una-final-epica-3-1-1276629612/"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "jugada-alario-libertadores-2015",
+    "eraId": "era-gallardo",
+    "order": 304,
+    "stadium": "Monumental",
+    "title": "La palomita bajo la lluvia",
+    "date": "2015-08-05",
+    "headline": "Vangioni centra desde la izquierda y Alario cabecea el primero de la final",
+    "description": "El 5 de agosto de 2015, en el Monumental y bajo la lluvia, River empataba sin goles con Tigres en la final de la Libertadores. Sobre el final del primer tiempo, Leonel Vangioni se la mandó desde la izquierda y Lucas Alario, en palomita, la metió de cabeza en el área chica. River ganó 3-0.",
+    "protagonists": [
+      "Lucas Alario",
+      "Leonel Vangioni"
+    ],
+    "rival": "Tigres",
+    "result": "River 3-0 Tigres (global 3-0)",
+    "panels": [
+      {
+        "caption": "Tras una gran jugada, Vangioni saca el centro desde la izquierda.",
+        "setting": {
+          "label": "Centro",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Leonel Vangioni",
+          "Lucas Alario"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Alario se tira en palomita en el área chica y cabecea.",
+        "setting": {
+          "label": "Cabezazo",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Lucas Alario",
+          "Arco"
+        ],
+        "tone": "drama"
+      },
+      {
+        "caption": "Es el 1-0 casi sobre el descanso, con el Monumental bajo el diluvio.",
+        "setting": {
+          "label": "Gol",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Lucas Alario",
+          "Arco"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Quién tiró el centro del gol de Alario en la final de la Libertadores 2015?",
+      "options": [
+        "Leonel Vangioni",
+        "Carlos Sánchez",
+        "Leonardo Pisculichi",
+        "Gabriel Mercado"
+      ],
+      "answerIndex": 0,
+      "explanation": "Vangioni centró desde la izquierda y Alario definió de cabeza, según La Página Millonaria y T13."
+    },
+    "sources": [
+      {
+        "label": "La Página Millonaria: la noche que Alario siguió los pasos de Funes y Crespo",
+        "url": "https://lapaginamillonaria.com/riverplate/La-noche-que-Alario-siguio-los-pasos-de-Funes-y-Crespo-20210805-0006.html"
+      },
+      {
+        "label": "T13: River campeón de la Libertadores 3-0 a Tigres",
+        "url": "https://www.t13.cl/noticia/deportes13/futbol-internacional/river-campeon-copa-libertadores-cuadro-millonario-se-impuso-3-0-tigres"
+      },
+      {
+        "label": "La Gaceta: River se corona en la Libertadores",
+        "url": "https://www.lagaceta.com.ar/nota/648218/deportes/river-corona.html"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "jugada-corners-sudamericana-2014",
+    "eraId": "era-gallardo",
+    "order": 305,
+    "stadium": "Monumental",
+    "title": "Dos córners, dos cabezazos, una Copa",
+    "date": "2014-12-10",
+    "headline": "Pisculichi tira los córners; Mercado y Pezzella cabecean",
+    "description": "En la final de vuelta de la Sudamericana 2014, en el Monumental, el 0-0 se rompió en el segundo tiempo. Leonardo Pisculichi tiró un córner desde la izquierda y Gabriel Mercado cabeceó al gol; unos minutos después, otro córner suyo lo cabeceó Germán Pezzella. Fue el 2-0 sobre Atlético Nacional.",
+    "protagonists": [
+      "Leonardo Pisculichi",
+      "Gabriel Mercado",
+      "Germán Pezzella"
+    ],
+    "rival": "Atlético Nacional",
+    "result": "River 2-0 Atlético Nacional (global 3-1)",
+    "panels": [
+      {
+        "caption": "Pisculichi tira el córner desde la izquierda buscando la cabeza de Mercado.",
+        "setting": {
+          "label": "Centro",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Leonardo Pisculichi",
+          "Gabriel Mercado"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Mercado cabecea al segundo palo y abre el marcador.",
+        "setting": {
+          "label": "Gol",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Gabriel Mercado",
+          "Arco"
+        ],
+        "tone": "gloria"
+      },
+      {
+        "caption": "Otro córner de Pisculichi, esta vez para Pezzella.",
+        "setting": {
+          "label": "Centro",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Leonardo Pisculichi",
+          "Germán Pezzella"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Pezzella también cabecea y es el 2-0.",
+        "setting": {
+          "label": "Gol",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Germán Pezzella",
+          "Arco"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Quién ejecutó los dos córners de los que salieron los goles de la final de la Sudamericana 2014?",
+      "options": [
+        "Leonardo Pisculichi",
+        "Carlos Sánchez",
+        "Ariel Rojas",
+        "Teófilo Gutiérrez"
+      ],
+      "answerIndex": 0,
+      "explanation": "Cooperativa e Infobae cuentan que Pisculichi tiró ambos córners, cabeceados por Mercado y Pezzella."
+    },
+    "sources": [
+      {
+        "label": "Cooperativa: River Plate se coronó campeón de la Sudamericana",
+        "url": "https://cooperativa.cl/noticias/deportes/futbol/copa-sudamericana/river-plate-se-corono-campeon-de-la-copa-sudamericana-tras-superar-a/2014-12-10/231024.html"
+      },
+      {
+        "label": "Infobae: River venció a Atlético Nacional y se consagró",
+        "url": "https://www.infobae.com/2014/12/10/1614290-river-vencio-atletico-nacional-y-se-consagro-la-copa-sudamericana/"
+      },
+      {
+        "label": "Diario de Cuyo: River, de cabeza a una nueva consagración",
+        "url": "https://www.diariodecuyo.com.ar/noticias/river-de-cabeza-a-una-nueva-consagracion-internacional-692776.html"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "jugada-pisculichi-boca-2014",
+    "eraId": "era-gallardo",
+    "order": 306,
+    "stadium": "Monumental",
+    "title": "El zurdazo que eliminó a Boca",
+    "date": "2014-11-27",
+    "headline": "Vangioni mete el centro y Pisculichi define de primera con la zurda",
+    "description": "El 27 de noviembre de 2014, en el Monumental, River y Boca jugaban la vuelta de la semifinal de la Sudamericana. A los 16 minutos, una buena jugada colectiva terminó en un centro de Leonel Vangioni; Leonardo Pisculichi la tomó de primera con la zurda, la puso junto al palo de Agustín Orión y marcó el 1-0.",
+    "protagonists": [
+      "Leonardo Pisculichi",
+      "Leonel Vangioni"
+    ],
+    "rival": "Boca Juniors",
+    "result": "River 1-0 Boca Juniors",
+    "panels": [
+      {
+        "caption": "Tras una jugada colectiva, Vangioni mete el centro al área.",
+        "setting": {
+          "label": "Centro",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Leonel Vangioni",
+          "Leonardo Pisculichi"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Pisculichi la toma de primera con la zurda y la clava junto al palo de Orión.",
+        "setting": {
+          "label": "Gol",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Leonardo Pisculichi",
+          "Arco"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Quién tiró el centro del gol de Pisculichi a Boca en 2014?",
+      "options": [
+        "Leonel Vangioni",
+        "Carlos Sánchez",
+        "Rodrigo Mora",
+        "Leonardo Ponzio"
+      ],
+      "answerIndex": 0,
+      "explanation": "Diario de Cuyo y eju.tv coinciden en que el centro fue de Vangioni."
+    },
+    "sources": [
+      {
+        "label": "Diario de Cuyo: River y el grito sagrado",
+        "url": "https://diariodecuyo.com.ar/pasiondeportiva/River-y-el-grito-sagrado--20141128-0061.html"
+      },
+      {
+        "label": "eju.tv: River aprovechó su chance, le ganó a Boca y está en la final",
+        "url": "https://eju.tv/?p=523439"
+      },
+      {
+        "label": "La Página Millonaria: Pisculichi recuerda su gol icónico a Boca",
+        "url": "https://lapaginamillonaria.com/river-plate/pisculichi-y-el-emotivo-recuerdo-a-10-anos-de-su-gol-iconico-a-boca-ese-ruido-increible-de-los-hinchas"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "jugada-aimar-superclasico-1999",
+    "eraId": "era-ramon",
+    "order": 307,
+    "stadium": "Monumental",
+    "title": "El centro que se hizo gol",
+    "date": "1999-10-17",
+    "headline": "Aimar quiso centrar y la pelota se coló por encima de Córdoba",
+    "description": "El 17 de octubre de 1999, en el Monumental, River le ganaba a Boca en el Apertura. Pablo Aimar sacó un derechazo que se metió por encima del arquero Óscar Córdoba. Según él mismo reconoció, su intención había sido tirar un centro. Después Juan Pablo Ángel puso el 2-0.",
+    "protagonists": [
+      "Pablo Aimar"
+    ],
+    "rival": "Boca Juniors",
+    "result": "River 2-0 Boca Juniors",
+    "panels": [
+      {
+        "caption": "Aimar saca un derechazo; después dirá que quería tirar un centro.",
+        "setting": {
+          "label": "Tiro al arco",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Pablo Aimar",
+          "Arco"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "La pelota pasa por encima de Óscar Córdoba y se mete en el arco.",
+        "setting": {
+          "label": "Gol",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Pablo Aimar",
+          "Arco"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Qué reconoció Aimar sobre su gol a Boca en 1999?",
+      "options": [
+        "Que en realidad quería tirar un centro",
+        "Que lo había ensayado toda la semana",
+        "Que la pelota había pegado en un defensor",
+        "Que quería patear al primer palo"
+      ],
+      "answerIndex": 0,
+      "explanation": "La Página Millonaria cuenta que Aimar admitió que su intención era centrar."
+    },
+    "sources": [
+      {
+        "label": "La Página Millonaria: Aimar y Ángel, una alegría para el recuerdo",
+        "url": "https://lapaginamillonaria.com/riverplate/Aimar-y-ngel-una-alegria-para-el-recuerdo-20121017-0002.html"
+      },
+      {
+        "label": "La Página Millonaria: la última alegría, el Superclásico del milenio",
+        "url": "https://lapaginamillonaria.com/riverplate/La-ultima-alegria-Superclasica-del-milenio-20161017-0005.html"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "jugada-crespo-libertadores-1996",
+    "eraId": "era-ramon",
+    "order": 308,
+    "stadium": "Monumental",
+    "title": "Crespo abre la noche de la Libertadores",
+    "date": "1996-06-26",
+    "headline": "Hernán Crespo empuja la pelota a los 6 minutos de la final de vuelta",
+    "description": "El 26 de junio de 1996, en el Monumental, River necesitaba dar vuelta la final ante América de Cali, que había ganado 1-0 en la ida. A los 6 minutos, Hernán Crespo empujó la pelota en el borde del área chica y abrió el marcador. En el segundo tiempo volvió a marcar y el 2-0 dio la Copa.",
+    "protagonists": [
+      "Hernán Crespo",
+      "Ramón Díaz"
+    ],
+    "rival": "América de Cali",
+    "result": "River 2-0 América de Cali",
+    "panels": [
+      {
+        "caption": "A los 6 minutos Crespo se planta en el borde del área chica.",
+        "setting": {
+          "label": "Tiro al arco",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Hernán Crespo",
+          "Arco"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Empuja la pelota y River empieza a dar vuelta la final.",
+        "setting": {
+          "label": "Gol",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Hernán Crespo",
+          "Arco"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Cuántos goles hizo Hernán Crespo en la final de vuelta de la Libertadores 1996?",
+      "options": [
+        "Dos",
+        "Uno",
+        "Tres",
+        "Ninguno"
+      ],
+      "answerIndex": 0,
+      "explanation": "River ganó 2-0 con un doblete de Crespo, a los 6 y a los 59 minutos."
+    },
+    "sources": [
+      {
+        "label": "La Página Millonaria: la segunda Libertadores, un recuerdo imborrable",
+        "url": "https://lapaginamillonaria.com/riverplate/La-segunda-Libertadores-un-recuerdo-imborrable-20120626-0008.html"
+      },
+      {
+        "label": "worldfootball.net: ficha de la final River-América de Cali",
+        "url": "https://www.worldfootball.net/report/copa-libertadores-1996-finale-river-plate-america-de-cali/"
+      },
+      {
+        "label": "Wikipedia: 1996 Copa Libertadores finals",
+        "url": "https://en.wikipedia.org/wiki/1996_Copa_Libertadores_finals"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "jugada-borre-gremio-2018",
+    "eraId": "era-gallardo",
+    "order": 309,
+    "stadium": "Arena do Grêmio",
+    "title": "El cabezazo de Borré en Porto Alegre",
+    "date": "2018-10-30",
+    "headline": "Borré cabecea el empate y River se mete en la final",
+    "description": "El 30 de octubre de 2018, en el Arena do Grêmio, River perdía 1-0 y también había caído 1-0 en la ida. En el segundo tiempo Rafael Santos Borré empató de cabeza. Después, un penal cobrado tras revisar el VAR lo convirtió Gonzalo Martínez: 2-1 y final de Libertadores.",
+    "protagonists": [
+      "Rafael Santos Borré"
+    ],
+    "rival": "Gremio",
+    "result": "Gremio 1-2 River Plate",
+    "panels": [
+      {
+        "caption": "Borré se eleva y cabecea en el área de Gremio.",
+        "setting": {
+          "label": "Cabezazo",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Rafael Santos Borré",
+          "Arco"
+        ],
+        "tone": "drama"
+      },
+      {
+        "caption": "Es el 1-1 en Porto Alegre y River sigue con vida.",
+        "setting": {
+          "label": "Gol",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Rafael Santos Borré",
+          "Arco"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Cómo convirtió Rafael Santos Borré el empate ante Gremio en 2018?",
+      "options": [
+        "De cabeza",
+        "De penal",
+        "De tiro libre",
+        "De volea"
+      ],
+      "answerIndex": 0,
+      "explanation": "Montevideo Portal y La Página Millonaria coinciden en que fue de cabeza."
+    },
+    "sources": [
+      {
+        "label": "Montevideo Portal: River venció a Gremio y es finalista",
+        "url": "https://www.montevideo.com.uy/Deportes/Copa-Libertadores-River-vencio-a-Gremio-2-1-con-un-penal-del-VAR-y-es-finalista-uc700101"
+      },
+      {
+        "label": "La Página Millonaria: goles de River vs Gremio",
+        "url": "https://lapaginamillonaria.com/riverplate/river-plate-goles-vs-gremio-semifinal-revancha-vuelta-borre-copa-libertadores-2018-20181030-0026.html"
+      },
+      {
+        "label": "La Voz de San Justo: River venció a Gremio",
+        "url": "https://www.lavozdesanjusto.com.ar/river-vencio-a-gremio-y-se-clasifica-a-la-final-de-la-copa-libertadores--49971"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "jugada-pity-penal-gremio-2018",
+    "eraId": "era-gallardo",
+    "order": 310,
+    "stadium": "Arena do Grêmio",
+    "title": "El penal del VAR que llevó a River a Madrid",
+    "date": "2018-10-30",
+    "headline": "Pity Martínez convierte el penal tras una mano de Bressan",
+    "description": "Con el 1-1 en Porto Alegre, Scocco remató y el árbitro Cunha, tras revisar el VAR, sancionó una mano de Bressan y cobró penal para River. Gonzalo Martínez lo convirtió en el 2-1 que dejó la serie 2-2 y clasificó a River a la final de la Libertadores 2018 por los goles de visitante.",
+    "protagonists": [
+      "Gonzalo Martínez"
+    ],
+    "rival": "Gremio",
+    "result": "Gremio 1-2 River Plate",
+    "panels": [
+      {
+        "caption": "Tras revisar el VAR por una mano de Bressan, Pity se prepara a patear el penal.",
+        "setting": {
+          "label": "Penal",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Gonzalo Martínez",
+          "Arco"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Pity lo cambia por gol: 2-1 y River está en la final.",
+        "setting": {
+          "label": "Gol",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Gonzalo Martínez",
+          "Arco"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Quién convirtió el penal que clasificó a River a la final de la Libertadores 2018?",
+      "options": [
+        "Gonzalo Martínez",
+        "Rafael Santos Borré",
+        "Lucas Pratto",
+        "Ignacio Scocco"
+      ],
+      "answerIndex": 0,
+      "explanation": "La Página Millonaria y Montevideo Portal coinciden en que Pity Martínez cambió el penal por gol."
+    },
+    "sources": [
+      {
+        "label": "La Página Millonaria: goles de River vs Gremio",
+        "url": "https://lapaginamillonaria.com/riverplate/river-plate-goles-vs-gremio-semifinal-revancha-vuelta-borre-copa-libertadores-2018-20181030-0026.html"
+      },
+      {
+        "label": "Montevideo Portal: River venció a Gremio y es finalista",
+        "url": "https://www.montevideo.com.uy/Deportes/Copa-Libertadores-River-vencio-a-Gremio-2-1-con-un-penal-del-VAR-y-es-finalista-uc700101"
+      },
+      {
+        "label": "La Voz de San Justo: River venció a Gremio",
+        "url": "https://www.lavozdesanjusto.com.ar/river-vencio-a-gremio-y-se-clasifica-a-la-final-de-la-copa-libertadores--49971"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "jugada-borre-penal-boca-2019",
+    "eraId": "era-gallardo",
+    "order": 311,
+    "stadium": "Monumental",
+    "title": "El penal del VAR en la semi con Boca",
+    "date": "2019-10-01",
+    "headline": "Borré patea el penal y abre el 2-0 en el Monumental",
+    "description": "El 1 de octubre de 2019, en el Monumental, River y Boca jugaban la ida de la semifinal de la Libertadores. A los 7 minutos, tras una revisión del VAR, el árbitro cobró penal y Rafael Santos Borré lo convirtió en el 1-0. River ganó 2-0.",
+    "protagonists": [
+      "Rafael Santos Borré"
+    ],
+    "rival": "Boca Juniors",
+    "result": "River 2-0 Boca Juniors",
+    "panels": [
+      {
+        "caption": "Tras la revisión del VAR, Borré se queda con la pelota para patear el penal.",
+        "setting": {
+          "label": "Penal",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Rafael Santos Borré",
+          "Arco"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Borré no falla desde los doce pasos y River se pone 1-0.",
+        "setting": {
+          "label": "Gol",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Rafael Santos Borré",
+          "Arco"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Quién convirtió el penal del 1-0 de River a Boca en la ida de la semifinal 2019?",
+      "options": [
+        "Rafael Santos Borré",
+        "Ignacio Fernández",
+        "Matías Suárez",
+        "Gonzalo Montiel"
+      ],
+      "answerIndex": 0,
+      "explanation": "Misiones Online y El Heraldo cuentan que Borré tomó el penal y lo convirtió."
+    },
+    "sources": [
+      {
+        "label": "El Heraldo: River 2, Boca 0, Borré marcó el camino",
+        "url": "https://www.elheraldo.co/deportes/river-2-boca-0-borre-marco-el-camino-669678"
+      },
+      {
+        "label": "Misiones Online: River se quedó con la primera semifinal",
+        "url": "https://misionesonline.net/2019/10/01/river-se-quedo-la-primera-semifinal-frente-boca-contundente-2-0/"
+      },
+      {
+        "label": "442 (Perfil): crónica de la ida de la semifinal",
+        "url": "http://442.perfil.com/2019-10-01-680788-river-boca-semifinal-ida-copa-libertadores-monumental"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "jugada-nacho-suarez-boca-2019",
+    "eraId": "era-gallardo",
+    "order": 312,
+    "stadium": "Monumental",
+    "title": "Suárez se la deja a Nacho",
+    "date": "2019-10-01",
+    "headline": "Centro de Matías Suárez y Nacho Fernández empuja el 2-0 a Boca",
+    "description": "En la ida de la semifinal de la Libertadores 2019, en el Monumental, River ganaba 1-0 a Boca. En el segundo tiempo, Ignacio Fernández avanzó con la pelota hacia la derecha hasta Matías Suárez, que mandó el centro, y Nacho la empujó casi sin arquero. Fue el 2-0 final.",
+    "protagonists": [
+      "Ignacio Fernández",
+      "Matías Suárez"
+    ],
+    "rival": "Boca Juniors",
+    "result": "River 2-0 Boca Juniors",
+    "panels": [
+      {
+        "caption": "Suárez manda el centro al medio del área con la defensa de Boca desacomodada.",
+        "setting": {
+          "label": "Centro",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Matías Suárez",
+          "Ignacio Fernández"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Nacho la empuja de cerca y es el 2-0.",
+        "setting": {
+          "label": "Gol",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Ignacio Fernández",
+          "Arco"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Quién asistió a Nacho Fernández en el 2-0 a Boca de la semifinal 2019?",
+      "options": [
+        "Matías Suárez",
+        "Rafael Santos Borré",
+        "Exequiel Palacios",
+        "Juan Fernando Quintero"
+      ],
+      "answerIndex": 0,
+      "explanation": "El Heraldo y World Football Index cuentan que Suárez centró y Nacho definió."
+    },
+    "sources": [
+      {
+        "label": "El Heraldo: River 2, Boca 0, Borré marcó el camino",
+        "url": "https://www.elheraldo.co/deportes/river-2-boca-0-borre-marco-el-camino-669678"
+      },
+      {
+        "label": "World Football Index: River Plate vs Boca Juniors report",
+        "url": "https://worldfootballindex.com/2019/10/river-plate-boca-juniors-copa-libertadores-report/"
+      },
+      {
+        "label": "Misiones Online: Nacho Fernández hizo un golazo",
+        "url": "https://misionesonline.net/2019/10/01/copa-libertadores-nacho-fernandez-hizo-un-golazo-y-river-le-gana-2-0-a-boca/"
+      }
+    ],
+    "verified": true
+  }
+]

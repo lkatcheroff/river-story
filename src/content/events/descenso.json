@@ -17,7 +17,7 @@
       {
         "caption": "El 22 de junio de 2011, River viaja a Córdoba para la ida de la promoción ante Belgrano.",
         "setting": {
-          "label": "Córdoba",
+          "label": "Gigante de Alberdi",
           "kind": "cancha"
         },
         "figures": [
@@ -29,7 +29,7 @@
       {
         "caption": "César Mansanelli, de penal, pone el 1-0 para Belgrano.",
         "setting": {
-          "label": "Córdoba",
+          "label": "Gigante de Alberdi",
           "kind": "cancha"
         },
         "figures": [
@@ -40,7 +40,7 @@
       {
         "caption": "César Pereyra marca el segundo: Belgrano gana 2-0.",
         "setting": {
-          "label": "Córdoba",
+          "label": "Gigante de Alberdi",
           "kind": "cancha"
         },
         "figures": [
@@ -178,14 +178,97 @@
     "eraId": "descenso",
     "order": 3,
     "title": "Un campeón del mundo en la B",
-    "date": "2012",
-    "headline": "Trezeguet se pone la banda roja en la B Nacional",
-    "description": "En plena B Nacional, River sumó a David Trezeguet, un delantero de peso internacional que eligió jugar en la categoría de ascenso para ayudar a volver a Primera. Fue uno de los refuerzos que marcaron la campaña de la vuelta. Fecha exacta de firma y debut pendientes de confirmar.",
+    "date": "2012-02-18",
+    "headline": "Trezeguet llega a River y hace su primer gol en la B Nacional",
+    "description": "A fines de diciembre de 2011 David Trezeguet firmó con River para jugar la B Nacional. Debutó en febrero de 2012 en el 2-0 a Chacarita y el 18 de ese mes, en el Monumental, hizo su primer gol con la banda roja: el tercero del 3-0 a Independiente Rivadavia. Terminó el torneo con 13 goles.",
     "protagonists": [
       "David Trezeguet"
     ],
-    "sources": [],
-    "verified": false
+    "sources": [
+      {
+        "label": "Diario de Cuyo - River venció a Independiente Rivadavia y sigue arriba",
+        "url": "https://www.diariodecuyo.com.ar/noticias/river-vencio-a-independiente-rivadavia-y-sigue-arriba-780954.html"
+      },
+      {
+        "label": "Wikipedia (es) - David Trezeguet",
+        "url": "https://es.wikipedia.org/wiki/David_Trezeguet"
+      },
+      {
+        "label": "La Página Millonaria - Trezeguet: «Este gol es muy especial»",
+        "url": "https://lapaginamillonaria.com/riverplate/Trezeguet-quotEste-gol-es-muy-especialquot-20120218-0005.html"
+      },
+      {
+        "label": "La Página Millonaria - Trezeguet puso la firma",
+        "url": "https://lapaginamillonaria.com/riverplate/Trezeguet-puso-la-firma-20111220-0005.html"
+      },
+      {
+        "label": "Wikipedia (en) - David Trezeguet",
+        "url": "https://en.wikipedia.org/wiki/David_Trezeguet"
+      }
+    ],
+    "verified": true,
+    "rival": "Independiente Rivadavia",
+    "result": "3-0",
+    "panels": [
+      {
+        "caption": "A fines de diciembre de 2011, David Trezeguet firma con River para jugar la B Nacional.",
+        "tone": "calma",
+        "setting": {
+          "label": "La sede",
+          "kind": "sede"
+        },
+        "figures": [
+          "David Trezeguet"
+        ]
+      },
+      {
+        "caption": "El 18 de febrero de 2012 River recibe a Independiente Rivadavia en el Monumental.",
+        "tone": "tension",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River",
+          "Independiente Rivadavia"
+        ]
+      },
+      {
+        "caption": "Trezeguet marca el tercero del 3-0: su primer gol con la banda roja.",
+        "tone": "gloria",
+        "setting": {
+          "label": "Monumental",
+          "kind": "cancha"
+        },
+        "figures": [
+          "David Trezeguet"
+        ]
+      },
+      {
+        "caption": "Termina la B Nacional con 13 goles y River vuelve a Primera.",
+        "tone": "gloria",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "David Trezeguet",
+          "River"
+        ]
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Contra qué equipo hizo David Trezeguet su primer gol en River?",
+      "options": [
+        "Independiente Rivadavia",
+        "Chacarita Juniors",
+        "Almirante Brown",
+        "Racing de Córdoba"
+      ],
+      "answerIndex": 0,
+      "explanation": "Fue el tercero del 3-0 a Independiente Rivadavia, el 18 de febrero de 2012 en el Monumental."
+    }
   },
   {
     "id": "ascenso-river-2012",

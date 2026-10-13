@@ -25,7 +25,7 @@
       {
         "caption": "En 1935 debuta en Primera.",
         "setting": {
-          "label": "La cancha",
+          "label": "Cancha de River (Alvear y Tagle)",
           "kind": "cancha"
         },
         "figures": [
@@ -36,8 +36,8 @@
       {
         "caption": "Con los años se retrasa como centrodelantero y es el eje de la delantera más famosa del club.",
         "setting": {
-          "label": "La cancha",
-          "kind": "cancha"
+          "label": "La sede",
+          "kind": "sede"
         },
         "figures": [
           "Adolfo Pedernera",
@@ -61,7 +61,7 @@
       "type": "guess-year",
       "question": "¿En qué año debutó Adolfo Pedernera en Primera con River?",
       "correctYear": 1935,
-      "tolerance": 0
+      "tolerance": 1
     },
     "sources": [
       {
@@ -71,6 +71,18 @@
       {
         "label": "Wikipedia (en): Adolfo Pedernera",
         "url": "https://en.wikipedia.org/wiki/Adolfo_Pedernera"
+      },
+      {
+        "label": "River y su gran historia - El debut de Adolfo Pedernera",
+        "url": "https://riverysugranhistoria.blogspot.com/2024/11/el-debut-de-adolfo-pedernera-en-primera.html"
+      },
+      {
+        "label": "Infobae - A 30 años de la muerte de Adolfo Pedernera",
+        "url": "https://www.infobae.com/deportes/2025/05/12/a-30-anos-de-la-muerte-de-adolfo-pedernera-cerebro-de-la-maquina-de-river-idolo-en-colombia-y-un-maestro-para-sus-dirigidos/"
+      },
+      {
+        "label": "Wikipedia - Estadio Alvear y Tagle",
+        "url": "https://en.wikipedia.org/wiki/Estadio_Alvear_y_Tagle"
       }
     ],
     "verified": true
@@ -79,10 +91,10 @@
     "id": "copa-campeonato-1936",
     "eraId": "monumental-fiera",
     "order": 2,
-    "title": "Copa Campeonato 1936",
+    "title": "Copa de Oro 1936",
     "date": "1936",
-    "headline": "River gana la final 4 a 2 sobre San Lorenzo",
-    "description": "En 1936 River se queda con la Copa Campeonato: la final es un 4 a 2 sobre San Lorenzo. Ese mismo año suma también la Copa de Oro. Pedernera, que había debutado un año antes, ya figura entre los campeones de esa temporada.",
+    "headline": "River gana la Copa de Oro: 4 a 2 sobre San Lorenzo",
+    "description": "El 20 de diciembre de 1936 River le ganó 4 a 2 a San Lorenzo en la final de la Copa de Oro, en la cancha de Independiente. Llegaba como campeón de la Copa Campeonato; San Lorenzo, como campeón de la Copa de Honor. Pedernera, que había debutado un año antes, ya figura entre los campeones de esa temporada.",
     "protagonists": [
       "Adolfo Pedernera"
     ],
@@ -102,9 +114,9 @@
         "tone": "calma"
       },
       {
-        "caption": "River llega a la final de la Copa Campeonato frente a San Lorenzo.",
+        "caption": "River llega a la final de la Copa de Oro frente a San Lorenzo, campeón de la Copa de Honor.",
         "setting": {
-          "label": "La cancha",
+          "label": "Estadio de Independiente",
           "kind": "cancha"
         },
         "figures": [
@@ -114,9 +126,9 @@
         "tone": "tension"
       },
       {
-        "caption": "River gana la final 4 a 2 y se queda con la Copa Campeonato.",
+        "caption": "River gana la final 4 a 2 y se queda con la Copa de Oro.",
         "setting": {
-          "label": "La cancha",
+          "label": "Estadio de Independiente",
           "kind": "cancha"
         },
         "figures": [
@@ -125,7 +137,7 @@
         "tone": "gloria"
       },
       {
-        "caption": "Ese mismo año suma también la Copa de Oro.",
+        "caption": "Antes había ganado la Copa Campeonato de 1936, que lo clasificó a la final.",
         "setting": {
           "label": "La ciudad",
           "kind": "ciudad"
@@ -138,7 +150,7 @@
     ],
     "challenge": {
       "type": "quiz",
-      "question": "¿A qué rival venció River en la final de la Copa Campeonato de 1936?",
+      "question": "¿A qué rival venció River en la final de la Copa de Oro de 1936?",
       "options": [
         "Boca Juniors",
         "San Lorenzo",
@@ -146,7 +158,7 @@
         "Racing"
       ],
       "answerIndex": 1,
-      "explanation": "La final fue 4 a 2 sobre San Lorenzo, según Wikipedia y el registro de RSSSF."
+      "explanation": "La final del 20 de diciembre de 1936 fue 4 a 2 sobre San Lorenzo, según Wikipedia y RSSSF."
     },
     "sources": [
       {
@@ -160,6 +172,26 @@
       {
         "label": "La Página Millonaria: Pedernera, sinónimo de talento y de River",
         "url": "https://lapaginamillonaria.com/riverplate/Pedernera-sinonimo-de-talento-y-de-River-20151115-0010.html"
+      },
+      {
+        "label": "Wikipedia - 1936 Copa de Oro",
+        "url": "https://en.wikipedia.org/wiki/1936_Copa_de_Oro"
+      },
+      {
+        "label": "RSSSF - Argentina Copa de Oro 1936",
+        "url": "https://rsssf.org/tablesa/arg-oro36.html"
+      },
+      {
+        "label": "Wikipedia (es) - Campeonato de Primera División 1936",
+        "url": "https://es.wikipedia.org/wiki/Campeonato_de_Primera_Divisi%C3%B3n_1936_(Argentina)"
+      },
+      {
+        "label": "Wikipedia - La Doble Visera (Estadio de Independiente)",
+        "url": "https://en.wikipedia.org/wiki/La_Doble_Visera"
+      },
+      {
+        "label": "Diario Uno - El Rojo cerraba la Doble Visera",
+        "url": "https://www.diariouno.com.ar/ovacion/ya-fue/el-rojo-cerraba-la-doble-visera-12092018_rJxEjbhqkV"
       }
     ],
     "verified": true
@@ -176,47 +208,36 @@
     "panels": [
       {
         "caption": "River arranca el campeonato de 1937 y juega una campaña casi sin fisuras.",
+        "tone": "calma",
         "setting": {
           "label": "La sede",
           "kind": "sede"
         },
         "figures": [
           "River"
-        ],
-        "tone": "calma"
+        ]
       },
       {
         "caption": "En 34 partidos suma 27 victorias, 4 empates y 3 derrotas.",
-        "setting": {
-          "label": "La cancha",
-          "kind": "cancha"
-        },
-        "figures": [
-          "River"
-        ],
-        "tone": "tension"
-      },
-      {
-        "caption": "Se consagra campeón dos fechas antes del final.",
-        "setting": {
-          "label": "La ciudad",
-          "kind": "ciudad"
-        },
-        "figures": [
-          "River"
-        ],
-        "tone": "gloria"
-      },
-      {
-        "caption": "Termina con 58 puntos.",
+        "tone": "tension",
         "setting": {
           "label": "La tribuna",
           "kind": "tribuna"
         },
         "figures": [
           "River"
-        ],
-        "tone": "gloria"
+        ]
+      },
+      {
+        "caption": "Se consagra campeón dos fechas antes del final, con 58 puntos.",
+        "tone": "gloria",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "River"
+        ]
       }
     ],
     "challenge": {
@@ -239,6 +260,10 @@
       {
         "label": "Wikipedia: Club Atlético River Plate",
         "url": "https://es.wikipedia.org/wiki/Club_Atl%C3%A9tico_River_Plate"
+      },
+      {
+        "label": "Wikipedia - Estadio Alvear y Tagle",
+        "url": "https://en.wikipedia.org/wiki/Estadio_Alvear_y_Tagle"
       }
     ],
     "verified": true
@@ -261,7 +286,7 @@
       {
         "caption": "El 18 de junio de 1939 River juega con Estudiantes de La Plata.",
         "setting": {
-          "label": "La cancha",
+          "label": "Cancha de Estudiantes (1 y 57)",
           "kind": "cancha"
         },
         "figures": [
@@ -273,7 +298,7 @@
       {
         "caption": "Ángel Labruna entra en lugar de José Manuel Moreno y debuta en Primera.",
         "setting": {
-          "label": "La cancha",
+          "label": "Cancha de Estudiantes (1 y 57)",
           "kind": "cancha"
         },
         "figures": [
@@ -285,7 +310,7 @@
       {
         "caption": "River pierde 1 a 0, pero el partido queda en la historia por el debut.",
         "setting": {
-          "label": "La cancha",
+          "label": "Cancha de Estudiantes (1 y 57)",
           "kind": "cancha"
         },
         "figures": [
@@ -329,6 +354,99 @@
       {
         "label": "Wikipedia: Ángel Labruna",
         "url": "https://es.wikipedia.org/wiki/%C3%81ngel_Labruna"
+      },
+      {
+        "label": "Wikipedia - Ángel Labruna",
+        "url": "https://en.wikipedia.org/wiki/%C3%81ngel_Labruna"
+      },
+      {
+        "label": "Wikipedia - Estadio Jorge Luis Hirschi",
+        "url": "https://en.wikipedia.org/wiki/Estadio_Jorge_Luis_Hirschi"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "primer-gol-labruna-1939",
+    "eraId": "monumental-fiera",
+    "order": 5,
+    "title": "El primer gol del Ángel",
+    "date": "1939-10-15",
+    "headline": "Labruna convierte su primer gol en Primera ante Atlanta",
+    "description": "Ángel Labruna había debutado el 18 de junio de 1939 y tuvo que esperar cuatro meses para gritar su primer gol con River. Llegó el 15 de octubre de 1939, en la fecha 26, en el 4 a 2 sobre Atlanta. Era el primero de una cuenta que lo convertiría en el máximo goleador de la historia del club.",
+    "protagonists": [
+      "Ángel Labruna"
+    ],
+    "rival": "Atlanta",
+    "result": "Atlanta 2-4 River Plate",
+    "panels": [
+      {
+        "caption": "Labruna debutó en junio de 1939 y todavía no había convertido.",
+        "setting": {
+          "label": "La ciudad",
+          "kind": "ciudad"
+        },
+        "figures": [
+          "Ángel Labruna"
+        ],
+        "tone": "calma"
+      },
+      {
+        "caption": "El 15 de octubre, ante Atlanta, llega por fin su primer gol en Primera.",
+        "setting": {
+          "label": "Cancha de Atlanta (Villa Crespo)",
+          "kind": "cancha"
+        },
+        "figures": [
+          "Ángel Labruna",
+          "Atlanta"
+        ],
+        "tone": "gloria"
+      },
+      {
+        "caption": "River se impone 4 a 2: empezaba una cuenta goleadora que no iba a parar.",
+        "setting": {
+          "label": "Cancha de Atlanta (Villa Crespo)",
+          "kind": "cancha"
+        },
+        "figures": [
+          "River"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "quiz",
+      "question": "¿Contra qué rival convirtió Ángel Labruna su primer gol en Primera con River?",
+      "options": [
+        "Atlanta",
+        "Estudiantes de La Plata",
+        "Boca Juniors",
+        "Platense"
+      ],
+      "answerIndex": 0,
+      "explanation": "Fue el 15 de octubre de 1939 en el 4 a 2 de River sobre Atlanta, cuatro meses después de su debut."
+    },
+    "sources": [
+      {
+        "label": "RSSSF - Goles de Ángel Labruna",
+        "url": "https://rsssf.org/players/labrunadata.html"
+      },
+      {
+        "label": "Minutouno - Día del Hincha de River",
+        "url": "https://www.minutouno.com/deportes/river/por-que-el-28-septiembre-es-el-dia-del-hincha-n5288202"
+      },
+      {
+        "label": "Wikipedia - Campeonato de Primera División 1939",
+        "url": "https://es.wikipedia.org/wiki/Campeonato_de_Primera_Divisi%C3%B3n_1939_(Argentina)"
+      },
+      {
+        "label": "Rodolfo Parbst - Labruna, el Ángel de River",
+        "url": "https://rodolfoparbst.blogspot.com/2018/09/labruna-el-angel-de-river.html"
+      },
+      {
+        "label": "Wikipedia (es) - Club Atlético Atlanta",
+        "url": "https://es.wikipedia.org/wiki/Club_Atl%C3%A9tico_Atlanta"
       }
     ],
     "verified": true

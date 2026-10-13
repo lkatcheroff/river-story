@@ -12,4 +12,4 @@ const all: Scene[] = Object.values(files).flatMap((f) => z.array(SceneSchema).pa
 export const scenes = all.filter((s) => import.meta.env.DEV || s.verified);
 
 export const scenesForEra = (eraId: string) =>
-  scenes.filter((s) => s.eraId === eraId).sort((a, b) => a.order - b.order);
+  scenes.filter((s) => s.eraId === eraId).sort((a, b) => a.date.localeCompare(b.date) || a.order - b.order);

@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# notas de investigación locales
+research_notes/
+reports/

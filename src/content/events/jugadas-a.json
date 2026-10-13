@@ -1,0 +1,207 @@
+[
+  {
+    "id": "jugada-pedernera-descuento-bombonera-1942",
+    "eraId": "la-maquina",
+    "order": 20,
+    "title": "Moreno, Deambrosi y el Maestro",
+    "date": "1942",
+    "headline": "La Máquina descuenta en La Bombonera con una jugada de tres",
+    "description": "En el 2-2 de River en La Bombonera en 1942, Boca ganaba 2 a 0 con goles de Gandulla. A los cinco minutos del segundo tiempo, Pedernera descontó, según el relato de una crónica de época: pase de Moreno a Deambrosi, centro y gol del Maestro. Pedernera marcaría después el empate.",
+    "protagonists": [
+      "José Manuel Moreno",
+      "Aristóbulo Deambrosi",
+      "Adolfo Pedernera"
+    ],
+    "rival": "Boca Juniors",
+    "stadium": "La Bombonera",
+    "panels": [
+      {
+        "caption": "River pierde 2 a 0 en La Bombonera y necesita reaccionar. Moreno toca para Deambrosi.",
+        "setting": {
+          "label": "Pase",
+          "kind": "jugada"
+        },
+        "figures": [
+          "José Manuel Moreno",
+          "Aristóbulo Deambrosi"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Deambrosi manda el centro al área, donde espera Pedernera.",
+        "setting": {
+          "label": "Centro",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Aristóbulo Deambrosi",
+          "Adolfo Pedernera"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Pedernera define ante Estrada y descuenta a los cinco minutos del segundo tiempo.",
+        "setting": {
+          "label": "Gol",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Adolfo Pedernera",
+          "Arco"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "who-scored",
+      "question": "¿Quién marcó los dos goles de River en el 2-2 contra Boca en La Bombonera en 1942?",
+      "options": [
+        "Adolfo Pedernera",
+        "Ángel Labruna",
+        "José Manuel Moreno",
+        "Félix Loustau"
+      ],
+      "answerIndex": 0
+    },
+    "sources": [
+      {
+        "label": "La Página Millonaria - La inolvidable vuelta de La Máquina en La Bombonera",
+        "url": "https://lapaginamillonaria.com/riverplate/La-inolvidable-vuelta-de-La-Maquina-en-La-Bombonera-20121108-0004.html"
+      },
+      {
+        "label": "Ser de River - 1942, aparece La Máquina",
+        "url": "https://serderiver.blogspot.com/2015/09/amistosos-del-ano-1942-aparece-la.html"
+      }
+    ],
+    "verified": false
+  },
+  {
+    "id": "jugada-labruna-abre-5-1-1941",
+    "eraId": "la-maquina",
+    "order": 21,
+    "title": "Labruna abre la goleada",
+    "date": "1941-10-19",
+    "headline": "El Ángel abre la cuenta del 5 a 1 a Boca",
+    "description": "El 19 de octubre de 1941, en el Monumental, River goleó 5 a 1 a Boca. El primer gol fue de Ángel Labruna, que abrió la cuenta de la mayor goleada de River en el superclásico. Las crónicas consultadas dan el autor del gol, no cómo se armó la jugada.",
+    "protagonists": [
+      "Ángel Labruna"
+    ],
+    "rival": "Boca Juniors",
+    "result": "River Plate 5-1 Boca Juniors",
+    "stadium": "Monumental",
+    "panels": [
+      {
+        "caption": "Labruna remata al arco de Boca.",
+        "setting": {
+          "label": "Tiro al arco",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Ángel Labruna",
+          "Arco"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Gol de Labruna: River abre la cuenta del 5 a 1 en el Monumental.",
+        "setting": {
+          "label": "Gol",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Ángel Labruna",
+          "Arco"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "who-scored",
+      "question": "¿Quién abrió la cuenta en el 5 a 1 de River a Boca del 19 de octubre de 1941?",
+      "options": [
+        "Ángel Labruna",
+        "José Manuel Moreno",
+        "Adolfo Pedernera",
+        "Aristóbulo Deambrosi"
+      ],
+      "answerIndex": 0
+    },
+    "sources": [
+      {
+        "label": "ESPN - Superclásicos inolvidables en el Monumental",
+        "url": "https://espndeportes.espn.com/futbol/argentina/nota/_/id/4993140/superclasicos-inolvidables-en-el-monumental"
+      },
+      {
+        "label": "Trivela - Boca x River en goles icónicos",
+        "url": "https://trivela.com.br/america-do-sul/argentina/historia-de-boca-x-river-no-seculo-xx-recontada-atraves-de-gols-iconicos-e-ou-grandes-idolos/"
+      },
+      {
+        "label": "RSSSF - Superclásicos de la era profesional",
+        "url": "https://rsssf.org/tablesb/bocariverpro.html"
+      }
+    ],
+    "verified": true
+  },
+  {
+    "id": "jugada-ferreyra-gol-boca-1933",
+    "eraId": "origenes",
+    "order": 20,
+    "title": "La Fiera le pega a Boca",
+    "date": "1933-11-19",
+    "headline": "Bernabé Ferreyra, doblete en el primer triunfo profesional sobre Boca",
+    "description": "El 19 de noviembre de 1933, en la vieja cancha de River, el equipo ganó 3 a 1 a Boca, su primer triunfo en el superclásico profesional. Bernabé Ferreyra marcó dos goles. Las fuentes consultadas no describen cómo se armó cada jugada.",
+    "protagonists": [
+      "Bernabé Ferreyra"
+    ],
+    "rival": "Boca Juniors",
+    "result": "River Plate 3-1 Boca Juniors",
+    "stadium": "Cancha de River (Alvear y Tagle)",
+    "panels": [
+      {
+        "caption": "Ferreyra remata al arco de Boca.",
+        "setting": {
+          "label": "Tiro al arco",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Bernabé Ferreyra",
+          "Arco"
+        ],
+        "tone": "tension"
+      },
+      {
+        "caption": "Gol de Ferreyra: uno de los dos que le hizo a Boca en el 3 a 1.",
+        "setting": {
+          "label": "Gol",
+          "kind": "jugada"
+        },
+        "figures": [
+          "Bernabé Ferreyra",
+          "Arco"
+        ],
+        "tone": "gloria"
+      }
+    ],
+    "challenge": {
+      "type": "guess-year",
+      "question": "¿En qué año River venció 3 a 1 a Boca con dos goles de Bernabé Ferreyra?",
+      "correctYear": 1933,
+      "tolerance": 1
+    },
+    "sources": [
+      {
+        "label": "La Nación - Primeras filmaciones de un superclásico",
+        "url": "https://www.lanacion.com.ar/deportes/futbol/historicas-primeras-filmaciones-de-un-superclasico-boca-river-nid1625509"
+      },
+      {
+        "label": "RSSSF - Goles de Bernabé Ferreyra",
+        "url": "https://rsssf.org/players/bferreyradata.html"
+      },
+      {
+        "label": "Diario de Cuyo - Los superclásicos que dejaron huella",
+        "url": "https://diariodecuyo.com.ar/pasiondeportiva/Los-superclasicos-que-dejaron-una-huella-imborrable-20150501-0009.html"
+      }
+    ],
+    "verified": true
+  }
+]
