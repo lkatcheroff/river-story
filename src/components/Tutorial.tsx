@@ -160,7 +160,7 @@ const STEPS: Step[] = [
   {
     id: "end",
     title: "¡Lo lograste!",
-    why: "Con todas las viñetas bloqueadas, la escena está resuelta y ganás puntos (más si no usás pistas ni te equivocás). Tres cosas más: podés mover una viñeta agarrándola de su número; las escenas se pueden jugar en cualquier orden; y siempre podés reiniciar una escena para volver a jugarla.",
+    why: "Con todas las viñetas bloqueadas, la escena está resuelta y ganás puntos (más si no usás pistas ni te equivocás). Tres cosas más: podés mover una viñeta entera agarrándola de su número ⠿ (o manteniéndola apretada) y soltándola sobre otra; las escenas se pueden jugar en cualquier orden; y siempre podés reiniciar una escena para volver a jugarla.",
     targets: [],
     met: () => false,
   },

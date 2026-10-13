@@ -32,11 +32,11 @@ const REACT: Record<Panel["tone"], { mood: Mood; say: string }> = {
 type Reaction = { panel: number; key: number } | null;
 
 function PanelView({
-  index, tone, slot, locked, active, over, playing, reacting, scene, drag, onSelect, onClear,
+  index, tone, slot, locked, active, over, playing, reacting, scene, drag, onClear,
 }: {
   index: number; tone: Panel["tone"]; slot: Slot; locked: boolean; active: boolean; over: boolean; playing: boolean;
   reacting: boolean; scene: Scene; drag: ReturnType<typeof useDrag>;
-  onSelect: () => void; onClear: () => void;
+  onClear: () => void;
 }) {
   const kind = slot.setting ? registry.settings.get(slot.setting) : undefined;
   const clash = playing && slot.cast.some(isRivalName) && slot.cast.some((c) => !isRivalName(c));
@@ -45,8 +45,9 @@ function PanelView({
     <div
       data-drop={locked ? undefined : index}
       data-tut={`panel:${index}`}
-      role="button" tabIndex={0} onClick={onSelect} onKeyDown={(e) => e.key === "Enter" && onSelect()}
-      className={`comic-panel ${locked ? "" : "cursor-pointer"} ${active ? "ring-4 ring-river" : ""} ${over ? "ring-4 ring-blue-600 scale-[1.03]" : ""} ${locked ? "outline outline-4 outline-green-600" : ""} transition-transform`}
+      role="button" tabIndex={0}
+      {...(locked ? {} : drag.bind({ kind: "panel", value: index }, "auto", 280))}
+      className={`comic-panel ${locked ? "" : "cursor-grab"} ${active ? "ring-4 ring-river" : ""} ${over ? "ring-4 ring-blue-600 scale-[1.03]" : ""} ${locked ? "outline outline-4 outline-green-600" : ""} transition-transform`}
       aria-label={`Viñeta ${index + 1}${locked ? " (correcta)" : ""}`}
     >
       {kind ? (
@@ -59,13 +60,19 @@ function PanelView({
       {locked ? (
         <span className="panel-num bg-green-700">🔒 {index + 1}</span>
       ) : (
-        <span {...drag.bind({ kind: "panel", value: index })} className="panel-num cursor-grab" title="Arrastrá para mover la viñeta" aria-label={`Mover viñeta ${index + 1}`}>
+        <span
+          {...drag.bind({ kind: "panel", value: index })}
+          onPointerDown={(e) => { e.stopPropagation(); drag.bind({ kind: "panel", value: index }).onPointerDown(e); }}
+          className="panel-num z-30 cursor-grab !px-2 !py-1 !text-lg"
+          title="Arrastrá para mover la viñeta entera"
+          aria-label={`Mover viñeta ${index + 1}`}
+        >
           ⠿ {index + 1}
         </span>
       )}
       {slot.setting && <span className="absolute right-1 top-1 z-10 border-2 border-ink bg-white px-1 text-[10px] font-extrabold uppercase">{slot.setting}</span>}
       {!locked && (slot.cast.length > 0 || slot.setting) && (
-        <button onClick={(e) => { e.stopPropagation(); onClear(); }} aria-label="Vaciar viñeta" className="absolute bottom-1 right-1 z-10 border-2 border-ink bg-white px-1 text-xs font-bold">✕</button>
+        <button onPointerDown={(e) => e.stopPropagation()} onClick={(e) => { e.stopPropagation(); onClear(); }} aria-label="Vaciar viñeta" className="absolute bottom-1 right-1 z-30 border-2 border-ink bg-white px-1 text-xs font-bold">✕</button>
       )}
       {reacting && (
         <motion.span initial={{ scale: 0.4, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} className="absolute left-8 top-6 z-20 rounded-xl border-2 border-ink bg-white px-2 py-0.5 text-xs font-extrabold">
@@ -81,6 +88,7 @@ function PanelView({
             animate={clash ? { x: [0, isRivalName(c) ? -12 : 12, 0], y: 0, opacity: 1, scale: 1 } : { y: 0, opacity: 1, scale: 1 }}
             transition={clash ? { repeat: 2, duration: 0.5, delay: i * 0.1 } : { type: "spring", stiffness: 300, damping: 18 }}
             {...(locked ? {} : drag.bind({ kind: "cast", value: c, from: index }))}
+            onPointerDown={locked ? undefined : (e) => { e.stopPropagation(); drag.bind({ kind: "cast", value: c, from: index }).onPointerDown(e); }}
             onClick={(e) => e.stopPropagation()}
             title={locked ? c : `${c} — tocá para sacar, o arrastrá a otra viñeta`}
             className="flex flex-col items-center"
@@ -259,7 +267,7 @@ export function ComicScene({ era, scene, index, total, onNext, onReplay, practic
           <>
             <p className="comic-box">
               <span className="font-extrabold">Objetivo: {scene.headline}</span>
-              <span className="mt-1 block text-xs font-semibold">Arrastrá o tocá lugares y personajes hacia las viñetas. Movelas desde el número. Las correctas se bloquean.</span>
+              <span className="mt-1 block text-xs font-semibold">Arrastrá o tocá lugares y personajes hacia las viñetas. Para mover una viñeta entera, agarrala del número ⠿ (o mantenela apretada) y soltala sobre otra. Las correctas se bloquean.</span>
             </p>
             <button className="text-left text-sm font-bold underline" onClick={() => setHint(true)}>
               📖 {hint ? "Libro de historia (pista usada)" : "Abrir el libro de historia (pierde el bonus)"}
@@ -278,7 +286,6 @@ export function ComicScene({ era, scene, index, total, onNext, onReplay, practic
                 index={i} tone={p.tone} slot={slots[i]} locked={locked[i]} active={!solved && active === i}
                 over={drag.over === i && drag.ghost !== null}
                 playing={playing === i} reacting={reaction?.panel === i} scene={scene} drag={drag}
-                onSelect={() => !busy && !locked[i] && setActive(i)}
                 onClear={() => change(i, () => ({ setting: null, cast: [] }))}
               />
               {b && (
@@ -373,7 +380,12 @@ export function ComicScene({ era, scene, index, total, onNext, onReplay, practic
               <Backdrop kind={registry.settings.get(drag.ghost.payload.value) ?? "cancha"} label={drag.ghost.payload.value} />
             </div>
           )}
-          {drag.ghost.payload.kind === "panel" && <div className="comic-title text-xl">Viñeta {drag.ghost.payload.value + 1}</div>}
+          {drag.ghost.payload.kind === "panel" && (
+            <div className="comic-title text-xl">
+              Viñeta {drag.ghost.payload.value + 1}
+              <small className="!mb-0 normal-case">{slots[drag.ghost.payload.value]?.setting ?? "sin lugar"} · {slots[drag.ghost.payload.value]?.cast.join(", ") || "sin personajes"}</small>
+            </div>
+          )}
         </div>
       )}
     </div>
